@@ -1,0 +1,15 @@
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+= Policy models for Kav Laoved
+
+[WARNING]
+These are preliminary moddels. Use at your own risk - we are not liable for results of people using these.
+
