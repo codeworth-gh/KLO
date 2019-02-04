@@ -1,8 +1,8 @@
-EndOfWork: consists of Assertions, Benefits.
+EndOfWork: consists of Assertions, Benefits, Duties.
 
-Assertions: consists of Nationality, VisaType, AgeGroup, ReasonForLeaving, Sector, EmploymentType, TimeConstraints, Flags.
-Nationality: one of  israeli, migrant, asylum, palestinian.
-VisaType: one of b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2.
+Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment, TimeConstraints, Flags.
+EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
+LegalStatus: one of israeliCitizenship, palestinianWorkPermit, b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
 ReasonForLeaving: one of resignation ["התפטרות"], visaTermination, disease, marriageAndMoving ["חתונה ומעבר דירה"],
                     endOfConstract, workerDeath, employerDeath, employerHospitalized, employerMovedToNursingHome,
@@ -12,7 +12,13 @@ ReasonForLeaving: one of resignation ["התפטרות"], visaTermination, diseas
 TimeConstraints: some of over6Moth, over11Month, over51Month, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
-EmploymentType: one of directMonth, directHours, freelance, contractor, jointEmployment.
+Employment: consists of SalaryUnits, Type, Scope.
+SalaryUnits: one of monthly, daily, hourly.
+Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את השירות"],
+             freelance,
+             contractor ["עובד קבלן"],
+             jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
+Scope: one of partial, full, varied.
 Flags: some of visaExpired, residencyStatusChange, female.
 
 Benefits: consists of Source, Deposit, Disability, Properties.
@@ -20,3 +26,5 @@ Source: some of employer, bituachLeumi, pensionFund, deposit.
 Deposit: one of none, regular, completions.
 Disability: some of disease, workAccident, workIncapacity.
 Properties: some of priorNotice, pension, specialCompensations, unemploymentBenefits.
+
+Duties: some of findNewEmployer.

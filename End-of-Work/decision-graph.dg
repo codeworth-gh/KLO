@@ -1,13 +1,66 @@
-[>screeningStillEmployed< ask:
-  {text: Are you currently employed?}
+[>gender< ask:
+  {text: Are you a woman?}
   {answers:
-    {no:}
+    {yes: [set: Flags+=female]}
   }
 ]
-[>nationality< ask:
-  {text: Are you an Israeli citizen?}
+[>AgeGroup< ask:
+  {text: What's your age group?}
+  {terms:
+    {retirement age: Varies, add a link or a table here.}
+  }
   {answers:
-    {yes: }
-    {no:  }
+    {pre 21: [set: AgeGroup=under21]}
+    {before retirement: [set: AgeGroup=workForce]}
+    {after retirement: [set: AgeGroup=pension]}
+  }
+]
+[>status< ask:
+  {text: What's your current status in Israel? }
+  {answers:
+    {citizen: [set: LegalStatus=israeliCitizenship]}
+    {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
+    { visa of type b1Construction: [set: LegalStatus=b1Construction]}
+    { visa of type _2a5: [set: LegalStatus=_2a5]}
+    { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver]}
+    { visa of type b1General: [set: LegalStatus=b1General]}
+    { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture]}
+    { visa of type a5: [set: LegalStatus=a5]}
+    { visa of type b2: [set: LegalStatus=b2]}
+    { undocumented: [set: LegalStatus=undocumented] }
+  }
+]
+<*
+[>occupationSector< ask:
+  {text: What sector do you work in?}
+  {answers:
+    {manpower: [set: Sector=manpower]}
+    {}
+  }
+]
+*>
+[>employmentUnits< ask:
+  {text: How was your salary claculated?}
+  {answers:
+    {monthly: [set: Employment/SalaryUnits=monthly] }
+    {daily:   [set: Employment/SalaryUnits=daily] }
+    {hourly:  [set: Employment/SalaryUnits=hourly] }
+  }
+]
+[>employmentType< ask:
+  {text: How were you employed? }
+  {answers:
+      { direct:          [set: Employment/Type=direct] }
+      { freelance:       [set: Employment/Type=freelance] }
+      { contractor:      [set: Employment/Type=contractor] }
+      { jointEmployment: [set: Employment/Type=jointEmployment] }
+  }
+]
+[>employmentScope< ask:
+  {text: What was the scope of your employment?}
+  {answers:
+    {partial: [set: Employment/Scope=partial] }
+    {full:    [set: Employment/Scope=full] }
+    {varied:  [set: Employment/Scope=varied] }
   }
 ]
