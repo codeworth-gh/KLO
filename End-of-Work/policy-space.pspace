@@ -9,13 +9,14 @@ ReasonForLeaving: one of initiated ["התפטרות"], visaTermination, disease,
                     endOfConstract, employerDeath, employeeDeath, enrolledToCivilService,
                     significantCompensationReduction["הרעה מוחשית בתנאים"], significantBreachingOfRights ["הפרת זכויות חמורה"],
                     forParenting["התפטרות הורה"], familyMemberDisease, movedToEligibleLocation["מעבר ליישוב זכאי"].
+
 TimeConstraints: some of overAYear, visaExpired.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, nursing, cleaning, security.
 EmploymentType: one of directMonth, directHours, freelance, contractor.
 
 Benefits: consists of Source, Deposit, Disability, Properties.
-Source: some of employer, nationalInsurance, pensionFund, deposit.
+Source: some of employer, bituachLeumi, pensionFund, deposit.
 Deposit: one of none, regular, completions.
-Disability: some of general, workAccident, workIncapacity.
-Properties: some of preliminaryAnnouncement, pensions, specialCompensations, unemploymentBenefits.
+Disability: some of disease, workAccident, workIncapacity.
+Properties: some of priorNotice, pension, specialCompensations, unemploymentBenefits.
