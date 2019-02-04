@@ -1,11 +1,13 @@
+[>screeningStillEmployed< ask:
+  {text: Are you currently employed?}
+  {answers:
+    {no:}
+  }
+]
 [>nationality< ask:
   {text: Are you an Israeli citizen?}
   {answers:
-    {yes: [set: Nationality=israeli]}
-    {no:  [set: Nationality=foreign]}
-    {both:
-      [set: Nationality=both]
-      [>rejNationality< reject: Sorry, this is a complecated situation so please get to our offices or use the hot line.]
-    }
+    {yes: }
+    {no:  }
   }
 ]

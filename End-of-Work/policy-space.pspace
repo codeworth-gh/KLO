@@ -1,19 +1,19 @@
 EndOfWork: consists of Assertions, Benefits.
 
-Assertions: consists of Nationality, VisaType, Gender, AgeGroup, ReasonForLeaving, Sector, EmploymentType, TimeConstraints.
-Nationality: one of  israeli, foreign, both.
-VisaType: one of b1Construction, alef5, bet1Nurse, b1General, b1Agriculture.
-Gender: one of male, female.
-AgeGroup: one of workForce, pension. <-- Might also add pre21
-ReasonForLeaving: one of initiated ["התפטרות"], visaTermination, disease, marriageAndMoving ["חתונה ומעבר דירה"],
-                    endOfConstract, employerDeath, employeeDeath, enrolledToCivilService,
+Assertions: consists of Nationality, VisaType, AgeGroup, ReasonForLeaving, Sector, EmploymentType, TimeConstraints, Flags.
+Nationality: one of  israeli, migrant, asylum, palestinian.
+VisaType: one of b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2.
+AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
+ReasonForLeaving: one of resignation ["התפטרות"], visaTermination, disease, marriageAndMoving ["חתונה ומעבר דירה"],
+                    endOfConstract, workerDeath, employerDeath, employerHospitalized, employerMovedToNursingHome,
+                    enrolledToCivilService ["גיוס לצבא או לשירות לאומי"],
                     significantCompensationReduction["הרעה מוחשית בתנאים"], significantBreachingOfRights ["הפרת זכויות חמורה"],
                     forParenting["התפטרות הורה"], familyMemberDisease, movedToEligibleLocation["מעבר ליישוב זכאי"].
-
-TimeConstraints: some of over11Month, visaExpired.
+TimeConstraints: some of over6Moth, over11Month, over51Month, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
-Sector: one of other, agriculture, construction, nursing, cleaning, security.
+Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
 EmploymentType: one of directMonth, directHours, freelance, contractor, jointEmployment.
+Flags: some of visaExpired, residencyStatusChange, female.
 
 Benefits: consists of Source, Deposit, Disability, Properties.
 Source: some of employer, bituachLeumi, pensionFund, deposit.
