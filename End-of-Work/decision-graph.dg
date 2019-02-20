@@ -1,35 +1,96 @@
-[>gender< ask:
-  {text: Are you a woman?}
+<-- Detecting person properties
+[>sInitialFiltering< section:
+  {title: Initial Questionnaire}
+  [>gender< ask:
+    {text: Are you a woman?}
+    {answers:
+      {yes: [set: Flags+=female]}
+    }
+  ]
+  [>AgeGroup< ask:
+    {text: What's your age group?}
+    {terms:
+      {retirement age: Varies, add a link or a table here.}
+    }
+    {answers:
+      {pre 21: [set: AgeGroup=under21]}
+      {before retirement: [set: AgeGroup=workForce]}
+      {after retirement: [set: AgeGroup=pension]}
+    }
+  ]
+  [>status< ask:
+    {text: What's your current status in Israel? }
+    {answers:
+      {citizen: [set: LegalStatus=israeliCitizenship]}
+      { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
+      { visa of type b1Construction: [set: LegalStatus=b1Construction]}
+      { visa of type _2a5: [set: LegalStatus=_2a5]}
+      { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver]}
+      { visa of type b1General: [set: LegalStatus=b1General]}
+      { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture]}
+      { visa of type a5: [set: LegalStatus=a5]}
+      { visa of type b2: [set: LegalStatus=b2]}
+      { undocumented: [set: LegalStatus=undocumented] }
+    }
+  ]
+]
+
+[>sReasonForLeaving< section:
+  {title: Reason for leaving}
+  [>rflHowEnd< ask:
+    {text: How did the employent end?}
+    {answers:
+      {my initiative:
+        [consider:
+          {slot: LegalStatus}
+          {options:
+            {israeliCitizenship:
+              [>rflMyInitiative< ask:
+                {text: Why did you leave?}
+                {answers:
+                  {resignation: }
+                  {disease: }
+                  {end of constract: }
+                  {worker death: }
+                  {employer death: }
+                  <-- {enrolled to civil service:} <-- to enable only for AgeGroup=under21
+                  {significant compensation reduction: }
+                  {significant breaching of rights: }
+                  {parenting: }
+                  {family member disease: }
+                  {moved: }
+                }
+              ]
+            }
+          }
+          {else:
+          }
+        ]
+      }
+      {involuntary: }
+    }
+  ]
+]
+[>whyLeave< ask:
+  {text: What is the reason for leaving this job?}
   {answers:
-    {yes: [set: Flags+=female]}
+    {resignation: }
+    {visa termination: }
+    {disease: }
+    {end of constract: }
+    {worker death: }
+    {employer death: }
+    {employer hospitalized: }
+    {employer moved to nursing home: }
+    {enrolled to civil service: }
+    {significant compensation reduction: }
+    {significant breaching of rights: }
+    {parenting: }
+    {family member disease: }
+    {moved: } <-- distinguish between marriage, eligible locations, other reasons.
   }
 ]
-[>AgeGroup< ask:
-  {text: What's your age group?}
-  {terms:
-    {retirement age: Varies, add a link or a table here.}
-  }
-  {answers:
-    {pre 21: [set: AgeGroup=under21]}
-    {before retirement: [set: AgeGroup=workForce]}
-    {after retirement: [set: AgeGroup=pension]}
-  }
-]
-[>status< ask:
-  {text: What's your current status in Israel? }
-  {answers:
-    {citizen: [set: LegalStatus=israeliCitizenship]}
-    {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
-    { visa of type b1Construction: [set: LegalStatus=b1Construction]}
-    { visa of type _2a5: [set: LegalStatus=_2a5]}
-    { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver]}
-    { visa of type b1General: [set: LegalStatus=b1General]}
-    { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture]}
-    { visa of type a5: [set: LegalStatus=a5]}
-    { visa of type b2: [set: LegalStatus=b2]}
-    { undocumented: [set: LegalStatus=undocumented] }
-  }
-]
+
 <*
 [>occupationSector< ask:
   {text: What sector do you work in?}
@@ -64,3 +125,5 @@
     {varied:  [set: Employment/Scope=varied] }
   }
 ]
+
+<--
