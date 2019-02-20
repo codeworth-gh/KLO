@@ -13,3 +13,4 @@ endif::[]
 [WARNING]
 These are preliminary moddels. Use at your own risk - we are not liable for results of people using these.
 
+PolicyModels developed with https://www.kavlaoved.org.il[Kav Laoved], a worker's hotline NGO.
