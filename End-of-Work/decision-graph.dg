@@ -1,5 +1,5 @@
 <-- Detecting person properties
-[set: EmployerObligations += settlementHeshbon]
+[set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161 ]
 [>sInitialFiltering< section:
   {title: Initial Questionnaire}
   [>gender< ask:
@@ -143,7 +143,7 @@
         [>hc-acc-fm< ask:
           {text: Is the sick family member? }
           {answers:
-            {my child, parent, or spouse: }
+            {my child, parent, or spouse:[call: leaveForMedicalConditions]}
             {my grandchild, grandfather, or parent in law:
               [>hc-acc-fm-1< ask:
                 {text: Are you living with your sick relative, and providing for him?}
@@ -151,19 +151,74 @@
                   {providing: Taking active part in financing his/her needs. }
                 }
                 {answers:
-                  {yes:  }
-                  {no:
-                    [set: Benefits/Properties += unemploymentBenefitsAfter90Days]
-                  }
+                  {yes: [call: leaveForMedicalConditions]}
+                  {no: [call: benefitSet-resignation]}
                 }
               ]
             }
-            {other family member: }
+            {other family member: [call: benefitSet-resignation] }
           }
         ]
       }
-      {my health condition: }
+      {my health condition:
+        [set: ReasonForLeaving=medicalCondition]
+        [>hc-acc-adj< ask:
+          {text: can your workplace be adjusted to your medical condition?}
+          {answers:
+            {yes, employer refused:
+              [call: benefitSet-severance]
+              [set: Benefits/Properties+=specialCompensations]
+            }
+            {yes, I don't want to stay: [call: benefitSet-resignation]}
+            {no:
+              [call: leaveForMedicalConditions]
+              [set: Benefits/Properties+=disabilityAllowance; Pension=allowance]
+            }
+          }
+        ]
+        [call: leaveForMedicalConditions]
+      }
     }
   ]
+--]
 
+[-->leaveForMedicalConditions<
+  <* This part works on leaving a workplace for medical conditions,
+   * when the client may be eligible for benefits.
+  *>
+  {title: Leaving a workplace for medical conditions}
+  [>lfmm-1< ask:
+    {text: Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?}
+    {answers:
+      {yes: [set: Benefits/Properties+=severancePay; UnemploymentBenefits=immediate]}
+      {no:  [call: benefitSet-resignation]}
+    }
+  ]
+--]
+
+[-->benefitSet-resignation<
+  {title: Benefits for Resignation}
+  [consider:
+    {slot: LegalStatus}
+    {options:
+      {israeliCitizenship:
+        [set: UnemploymentBenefits=after90Days]
+  }}]
+--]
+
+<** זכויות עבור פיטורים *>
+[-->benefitSet-severance<
+  {title: Benefits for Severance}
+  [set:  UnemploymentBenefits=immediate]
+  [consider:
+    {slot: TimeConstraints}
+    {options: <-- TODO: improve once boolean conditions are implemented
+      {over11Month:  [set: Benefits/Properties+=severancePay]}
+      {over51Month:  [set: Benefits/Properties+=severancePay]}
+      {over63Months: [set: Benefits/Properties+=severancePay]}
+      {over8Years:   [set: Benefits/Properties+=severancePay]}
+      {over10Years:  [set: Benefits/Properties+=severancePay]}
+      {over13Years:  [set: Benefits/Properties+=severancePay]}
+    }
+  ]
 --]
