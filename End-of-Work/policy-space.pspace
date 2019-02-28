@@ -1,14 +1,19 @@
 EndOfWork: consists of Assertions, Benefits, Duties.
 
-Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment, TimeConstraints, Flags.
+Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
+                        EmployerObligations, TimeConstraints, Flags.
 EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
 LegalStatus: one of israeliCitizenship, palestinianWorkPermit, b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
-ReasonForLeaving: one of resignation ["התפטרות"], visaTermination, disease, marriageAndMoving ["חתונה ומעבר דירה"],
-                    endOfConstract, workerDeath, employerDeath, employerHospitalized, employerMovedToNursingHome,
+ReasonForLeaving: one of resignation ["התפטרות"], visaTermination, medicalCondition,
+                      marriageAndMoving ["חתונה ומעבר דירה"], endOfConstract, workerDeath, employerDeath,
+                      employerHospitalized, employerMovedToNursingHome,
                     enrolledToCivilService ["גיוס לצבא או לשירות לאומי"],
-                    significantCompensationReduction["הרעה מוחשית בתנאים"], significantBreachingOfRights ["הפרת זכויות חמורה"],
-                    forParenting["התפטרות הורה"], familyMemberDisease, movedToEligibleLocation["מעבר ליישוב זכאי"].
+                    significantCompensationReduction["הרעה מוחשית בתנאים"],
+                    significantBreachingOfRights ["הפרת זכויות חמורה"],
+                    forParenting["התפטרות הורה"], familyMemberDisease,
+                    movedToEligibleLocation["מעבר ליישוב זכאי"],
+                    workAccident.
 TimeConstraints: some of over6Moth, over11Month, over51Month, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
@@ -21,10 +26,19 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
 Scope: one of partial, full, varied.
 Flags: some of visaExpired, residencyStatusChange, female.
 
-Benefits: consists of Source, Deposit, Disability, Properties.
+Benefits: consists of Source, Deposit, Properties.
 Source: some of employer, bituachLeumi, pensionFund, deposit.
 Deposit: one of none, regular, completions.
-Disability: some of disease, workAccident, workIncapacity.
-Properties: some of priorNotice, pension, specialCompensations, unemploymentBenefits.
+Properties: some of priorNotice, priorNoticeSubstitute, pension, specialCompensations, unemploymentBenefits,
+                disabilityAllowance, bankrupcyAllowance, parentalLeave,
+                birthGrant, severancePay[also- "Sepa"],
+                newJobAssistence,
+                daysOffRedemption["פדיון ימי חופשה"],
+                recuperationFees["פדיון ימי הבראה"],
+                unemploymentBenefitsAfter90Days.
 
-Duties: some of findNewEmployer.
+EmployerObligations [Things the employer should do during the work termination process]: some of
+  priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice, decentProcedure,
+  settlement["גמר חשבון"].
+
+Duties: some of findNewEmployer, healthInsuranceExtension, employeePriorNotice .

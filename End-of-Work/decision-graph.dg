@@ -1,4 +1,5 @@
 <-- Detecting person properties
+[set: EmployerObligations += settlementHeshbon]
 [>sInitialFiltering< section:
   {title: Initial Questionnaire}
   [>gender< ask:
@@ -41,6 +42,7 @@
     {text: How did the employent end?}
     {answers:
       {my initiative:
+        [set: Duties += employeePriorNotice]
         [consider:
           {slot: LegalStatus}
           {options:
@@ -48,8 +50,7 @@
               [>rflMyInitiative< ask:
                 {text: Why did you leave?}
                 {answers:
-                  {resignation: }
-                  {disease: }
+                  {health issues: [call: health-citizen]}
                   {end of constract: }
                   {worker death: }
                   {employer death: }
@@ -59,6 +60,7 @@
                   {parenting: }
                   {family member disease: }
                   {moved: }
+                  {resignation for other reasons: }
                 }
               ]
             }
@@ -127,3 +129,41 @@
 ]
 
 <--
+
+[-->health-citizen<
+  {title: Health issues}
+  [>hc-acc-cause< ask:
+    {text: The health issue that made me leave is:}
+    {answers:
+      {accident during my work:}
+      {accident on my way to work:}
+      {road accident: }
+      {health condition of a family member:
+        [set: ReasonForLeaving = familyMemberDisease]
+        [>hc-acc-fm< ask:
+          {text: Is the sick family member? }
+          {answers:
+            {my child, parent, or spouse: }
+            {my grandchild, grandfather, or parent in law:
+              [>hc-acc-fm-1< ask:
+                {text: Are you living with your sick relative, and providing for him?}
+                {terms:
+                  {providing: Taking active part in financing his/her needs. }
+                }
+                {answers:
+                  {yes:  }
+                  {no:
+                    [set: Benefits/Properties += unemploymentBenefitsAfter90Days]
+                  }
+                }
+              ]
+            }
+            {other family member: }
+          }
+        ]
+      }
+      {my health condition: }
+    }
+  ]
+
+--]
