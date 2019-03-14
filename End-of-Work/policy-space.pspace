@@ -5,7 +5,7 @@ Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeavin
 EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
 LegalStatus: one of israeliCitizenship, palestinianWorkPermit, b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
-ReasonForLeaving: one of resignation ["התפטרות"], visaTermination,
+ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       medicalCondition, familyMemberDisease,
                       marriageAndMoving ["חתונה ומעבר דירה"], endOfConstract, workerDeath, employerDeath,
                       employerHospitalized, employerMovedToNursingHome,

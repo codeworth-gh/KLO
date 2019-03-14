@@ -222,25 +222,33 @@
     }
     {answers:
       {no:
-        [when:
-          { Flags+=female:
-            [>prnt-f-forChild< ask:
-              {text: Did you resign for the sake of the child?}
-              {terms:
-                {Sake of child: E.g. to be more with them, reduce commute times etc.}
-              }
-              {answers:
-                {yes:
-                  [when: <-- todo: really TimeConstraints>over6Months:
-                    {TimeConstraints=over6Months: }
-                    {else: [set: Benefits/Properties+=severancePay] }
-                  ]
-                  [end]
-                }
-              }
-            ]
+        [>prnt-f-forChild< ask:
+          {text: Did you resign for the sake of the child?}
+          {terms:
+            {Sake of child: E.g. to be more with them, reduce commute times etc.}
           }
-          {else: [todo:Male tree][end]}
+          {answers:
+            {yes:
+              [when:
+                { Flags+=female:
+                    [when: <-- todo: really TimeConstraints>over6Months:
+                      {TimeConstraints=over6Months: }
+                      {else: [set: Benefits/Properties+=severancePay] }
+                    ][end] }
+                {else:
+                  [>prnt-m-forChild< ask:
+                    {text: Are you single, or does your wife has a job? }
+                    {answers:
+                      {yes:
+                        [when: <-- todo: really TimeConstraints>over6Months:
+                          {TimeConstraints=over6Months: }
+                          {else: [set: Benefits/Properties+=severancePay] }
+                        ][end]
+                  }}]
+                }
+              ]
+            }
+          }
         ]
       }
     }
