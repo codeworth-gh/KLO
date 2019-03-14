@@ -1,7 +1,7 @@
-EndOfWork: consists of Assertions, Benefits, Duties.
+EndOfWork: consists of Assertions, Benefits, Duties, Recommendations.
 
 Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
-                        EmployerObligations, TimeConstraints, Flags.
+                        EmployerObligations, TimeConstraints, ProcessFairness, Flags.
 EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
 LegalStatus: one of israeliCitizenship, palestinianWorkPermit, b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
@@ -15,7 +15,7 @@ ReasonForLeaving: one of resignation ["התפטרות"], visaTermination,
                       forParenting["התפטרות הורה"],
                       movedToEligibleLocation["מעבר ליישוב זכאי"],
                       workAccident, abuse["התעמרות"], sexualHarrasment.
-TimeConstraints: one of over6Moth, over11Month, over51Month, over63Months, over8Years, over10Years, over13Years.
+TimeConstraints: one of over6Months, over11Months, over51Months, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
 Employment: consists of SalaryUnits, Type, Scope.
@@ -25,6 +25,7 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              contractor ["עובד קבלן"],
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
+ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 Flags: some of visaExpired, residencyStatusChange, female.
 
 Benefits: consists of Source, Deposit, UnemploymentBenefits, Pension, Properties.
@@ -33,15 +34,19 @@ Deposit: one of none, regular, completions.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],
                 compensationForMissing[פיצוי על אי הפרשות לפנסיה],
                 allowance[זכאי לקצבה].
-Properties: some of priorNotice, priorNoticeSubstitute, specialCompensations,
+Properties: some of priorNotice, priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
                 disabilityAllowance[Might be, need to look in National Insurance],
                 bankrupcyAllowance, parentalLeave,
                 birthGrant, severancePay[also- "Separation"],
-                newJobAssistence.
+                newJobAssistence, severanceCancellation["ביטול פיטורין"].
 UnemploymentBenefits: one of none, after90Days, immediate.
 
 EmployerObligations [Things the employer should do during the work termination process]: some of
   priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice, decentProcedure,
-  finalAccountSettlement["גמר חשבון"], form161.
+  finalAccountSettlement["גמר חשבון"], form161, JobTerminationConfirmation["אישור פיטורין"].
 
 Duties: some of findNewEmployer, healthInsuranceExtension, employeePriorNotice .
+
+Recommendations[Actions the worker should probably take, but does not have to]: some of
+  consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
+  sueFormerEmployerSoon.

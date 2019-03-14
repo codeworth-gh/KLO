@@ -16,7 +16,7 @@
     {answers:
       {pre 21: [set: AgeGroup=under21]}
       {before retirement: [set: AgeGroup=workForce]}
-      {after retirement: [set: AgeGroup=pension]}
+      {after retirement:  [set: AgeGroup=pension]}
     }
   ]
   [>status< ask:
@@ -43,54 +43,37 @@
     {answers:
       {my initiative:
         [set: Duties += employeePriorNotice]
-        [consider:
-          {slot: LegalStatus}
-          {options:
-            {israeliCitizenship:
-              [>rflMyInitiative< ask:
-                {text: Why did you leave?}
-                {answers:
-                  {health issues: [call: health-citizen]}
-                  {end of constract: }
-                  {worker death: }
-                  {employer death: }
-                  <-- {enrolled to civil service:} <-- to enable only for AgeGroup=under21
-                  {significant compensation reduction: }
-                  {significant breaching of rights: }
-                  {parenting: }
-                  {family member disease: }
-                  {moved: }
-                  {resignation for other reasons: }
-                }
-              ]
-            }
-          }
-          {else:
+        [>ReasonForLeaving-self< ask:
+          {text: What is the reason for your decision to leave this job?}
+          {answers:
+            {health issues:  [call: part-health]}
+            {enrolled to civil service: }
+            {parenting: [call:part-parenting]}
+            {disease: }
+            {moved: } <-- distinguish between marriage, eligible locations, other reasons.
+            {worker death: }
+            {family member disease: }
+            {significant compensation reduction: }
+            {significant breaching of rights: }
+            {resignation (other): }
           }
         ]
       }
-      {involuntary: }
+      {involuntary:
+        [>ReasonForLeaving-forced< ask:
+          {text: Why did you have to leave this job?}
+          {answers:
+            {end of constract: }
+            {visa termination: }
+            {employer death: }
+            {employer hospitalized: }
+            {employer moved to nursing home: }
+            {employer choice: [call: gradeProcess] }
+          }
+        ]
+      }
     }
   ]
-]
-[>whyLeave< ask:
-  {text: What is the reason for leaving this job?}
-  {answers:
-    {resignation: }
-    {visa termination: }
-    {disease: }
-    {end of constract: }
-    {worker death: }
-    {employer death: }
-    {employer hospitalized: }
-    {employer moved to nursing home: }
-    {enrolled to civil service: }
-    {significant compensation reduction: }
-    {significant breaching of rights: }
-    {parenting: }
-    {family member disease: }
-    {moved: } <-- distinguish between marriage, eligible locations, other reasons.
-  }
 ]
 
 <*
@@ -113,10 +96,11 @@
 [>employmentType< ask:
   {text: How were you employed? }
   {answers:
-      { direct:          [set: Employment/Type=direct] }
-      { freelance:       [set: Employment/Type=freelance] }
-      { contractor:      [set: Employment/Type=contractor] }
-      { jointEmployment: [set: Employment/Type=jointEmployment] }
+    { direct:          [set: Employment/Type=direct] }
+    { freelance:       [set: Employment/Type=freelance]
+                       [set: Recommendations+=consultLawyer] }
+    { contractor:      [set: Employment/Type=contractor] }
+    { jointEmployment: [set: Employment/Type=jointEmployment] }
   }
 ]
 [>employmentScope< ask:
@@ -130,7 +114,7 @@
 
 <--
 
-[-->health-citizen<
+[-->part-health<
   {title: Health issues}
   [>hc-acc-cause< ask:
     {text: The health issue that made me leave is:}
@@ -196,6 +180,94 @@
   ]
 --]
 
+[-->gradeProcess<
+[>gp-hearing< ask:
+  {text: Did you get a hearing prior to being fired?}
+  {terms:
+    {hearing: A meeting with the employer to declared as "before job termination" talk.}
+  }
+  {answers:
+    {no:
+      [set: ProcessFairness=flawed]
+    }
+  }
+]
+[>gp-hearing-details< ask:
+  {text: Was one of the following reasons insinuated as the reason for your job termination? (list goes here)}
+  {terms: }
+  {answers:
+    {yes:
+      [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon]
+    }
+    {no:
+      [>gp-complaint< ask:
+        {text: Were you fired after filing a complaint or getting advice from a lawyer?}
+        {answers:
+          {yes:
+            [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon]
+          }
+        }
+      ]
+    }
+  }
+]
+[set: ProcessFairness=ok] <-- ignored if the value is already set.
+--]
+
+[-->part-parenting<
+  [>prnt-time< ask:
+    {text: Did more than 9 month pass since the day you've recevied the child}
+    {terms:
+      {day: Date of birth, adoption, or other way of becoming a legal guardian of the child.}
+    }
+    {answers:
+      {no:
+        [when:
+          { Flags+=female:
+            [>prnt-f-forChild< ask:
+              {text: Did you resign for the sake of the child?}
+              {terms:
+                {Sake of child: E.g. to be more with them, reduce commute times etc.}
+              }
+              {answers:
+                {yes:
+                  [when: <-- todo: really TimeConstraints>over6Months:
+                    {TimeConstraints=over6Months: }
+                    {else: [set: Benefits/Properties+=severancePay] }
+                  ]
+                  [end]
+                }
+              }
+            ]
+          }
+          {else: [todo:Male tree][end]}
+        ]
+      }
+    }
+  ]
+  [call: benefitSet-resignation]
+--]
+
+
+<*********************
+  Benefit sets
+*********************>
+[-->benefitSet-severance<
+  {title: Benefits for Severance}
+  [set:  UnemploymentBenefits=immediate]
+  [consider:
+    {slot: TimeConstraints}
+    {options: <-- TODO: improve once boolean conditions are implemented
+      {over11Months:  [set: Benefits/Properties+=severancePay]}
+      {over51Months:  [set: Benefits/Properties+=severancePay]}
+      {over63Months: [set: Benefits/Properties+=severancePay]}
+      {over8Years:   [set: Benefits/Properties+=severancePay]}
+      {over10Years:  [set: Benefits/Properties+=severancePay]}
+      {over13Years:  [set: Benefits/Properties+=severancePay]}
+    }
+  ]
+--]
+
 [-->benefitSet-resignation<
   {title: Benefits for Resignation}
   [consider:
@@ -204,21 +276,4 @@
       {israeliCitizenship:
         [set: UnemploymentBenefits=after90Days]
   }}]
---]
-
-<** זכויות עבור פיטורים *>
-[-->benefitSet-severance<
-  {title: Benefits for Severance}
-  [set:  UnemploymentBenefits=immediate]
-  [consider:
-    {slot: TimeConstraints}
-    {options: <-- TODO: improve once boolean conditions are implemented
-      {over11Month:  [set: Benefits/Properties+=severancePay]}
-      {over51Month:  [set: Benefits/Properties+=severancePay]}
-      {over63Months: [set: Benefits/Properties+=severancePay]}
-      {over8Years:   [set: Benefits/Properties+=severancePay]}
-      {over10Years:  [set: Benefits/Properties+=severancePay]}
-      {over13Years:  [set: Benefits/Properties+=severancePay]}
-    }
-  ]
 --]
