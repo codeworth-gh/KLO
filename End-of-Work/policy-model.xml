@@ -1,27 +1,24 @@
 <policy-model>
   <title>End of Work</title>
-  <subtitle></subtitle>
-  <version>0.1</version>
+  <subtitle>Know your rights when you leave a workplace</subtitle>
+  <version>0.2</version>
   <date>2019-02-04</date>
   <!--
   <keywords></keywords>
   -->
   <authors>
     <group>
-      <name>Kav Laoved Israel</name>
+      <name url="http://www.klo.org.il">Kav Laoved Israel</name>
       <contact>www.klo.org.il</contact>
     </group>
-    <!--
-    <person orcid="123-2345-67890" url="">
-      <name>Jane Doe</name>
-      <affiliation>Institute</affiliation>
-      <email>jane.d@institute.edu</email>
+    <person>
+      <name>Michal Tadjer</name>
+      <affiliation>Kav Laoved</affiliation>
     </person>
-    <group url="">
-      <name>Working group</name>
-      <contact>hello@working-group.org</contact>
-    </group>
-      -->
+    <person url="http://codeworth.io">
+      <name>Michael Bar-Sinai</name>
+      <affiliation>CodeWorth.io</affiliation>
+    </person>
   </authors>
   <model answers-order="yes-first">
     <!-- other options: yes-last, verbatim. Default: yes-first -->
