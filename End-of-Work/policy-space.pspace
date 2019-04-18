@@ -3,7 +3,9 @@ EndOfWork: consists of Assertions, Benefits, Duties, Recommendations.
 Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         EmployerObligations, TimeConstraints, ProcessFairness, Flags.
 EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
-LegalStatus: one of israeliCitizenship, palestinianWorkPermit, b1Construction, _2a5, b1CareGiver, b1General, b1Agriculture, a5, b2, undocumented.
+LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general, A5)],
+                    palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
+                    b1Agriculture, a5, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
 ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       medicalCondition, familyMemberDisease,
@@ -45,8 +47,10 @@ EmployerObligations [Things the employer should do during the work termination p
   priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice, decentProcedure,
   finalAccountSettlement["גמר חשבון"], form161, JobTerminationConfirmation["אישור פיטורין"].
 
-Duties: some of findNewEmployer, healthInsuranceExtension, employeePriorNotice .
+Duties: some of findNewEmployer, healthInsuranceExtension, employeePriorNotice,
+  provideEvidenceForNewLocation[Worker need to provide evidence for living in a new place, such as rent contract],
+  provideDetailedResoningQoL[Worker has to proivde detalied reasonong for why their quality of life was affected.].
 
 Recommendations[Actions the worker should probably take, but does not have to]: some of
   consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
-  sueFormerEmployerSoon.
+  sueFormerEmployerSoon, eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.].

@@ -25,9 +25,9 @@
       {citizen: [set: LegalStatus=israeliCitizenship]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
       { visa of type b1Construction: [set: LegalStatus=b1Construction]}
-      { visa of type _2a5: [set: LegalStatus=_2a5]}
+      { visa of type 2a5: [set: LegalStatus=_2a5]}
       { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver]}
-      { visa of type b1General: [set: LegalStatus=b1General]}
+      { visa of type B1General or A5: [set: LegalStatus=residencyProcess]}
       { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture]}
       { visa of type a5: [set: LegalStatus=a5]}
       { visa of type b2: [set: LegalStatus=b2]}
@@ -50,7 +50,7 @@
             {enrolled to civil service: }
             {parenting: [call:part-parenting]}
             {disease: }
-            {moved: } <-- distinguish between marriage, eligible locations, other reasons.
+            {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
             {worker death: }
             {family member disease: }
             {significant compensation reduction: }
@@ -256,6 +256,87 @@
   [call: benefitSet-resignation]
 --]
 
+
+[-->part-moved<
+[>moved-who< ask:
+  {text: Who moved?}
+  {answers:
+    {me:
+      [>moved-me-filter< ask:
+        {text: Is you new place in Israel? }
+        {answers:
+          {no:[call: benefitSet-resignation]}
+          {yes:
+            [set: Duties+=provideEvidenceForNewLocation]
+            [>moved-dispatch-reason< ask:
+              {text: Did you move because of status change regarding your spouse?}
+              {terms:
+                {status change: Marriage, divorce, moving in togetehr...}
+              }
+              {answers:
+                {yes:
+                  [>moved-spouse-40km< ask:
+                    {text: Is your new home at least 40 km from your old home?}
+                    {answers:
+                      {no: [call: benefitSet-resignation]}
+                      {yes:
+                        [>moved-following-spouse< ask:
+                          {text: Which of the following apply}
+                          {terms:
+                            {Moved in with spouse: The spouse has to live there before, not just you two guys moving in together.}
+                          }
+                          {answers:
+                            {Moved in with spouse: [call: benefitSet-severance] }
+                            {My spouse moved because of work: [call: benefitSet-severance] }
+                            {Divorce: [call: benefitSet-severance]}
+                            {Other: [call: benefitSet-resignation]}
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+                {no:
+                  [>moved-no-spouse< ask:
+                    {text: Did you move ot any of the following}
+                    {answers:
+                      {to an agricaltural settlement:
+                         [set: Recommendations+=eligibleForRetroactiveTaxBenefitsWithinAYear]
+                         [call: benefitSet-severance] }
+                      {to an eligible settelment:
+                        [set: Recommendations+=eligibleForRetroactiveTaxBenefitsWithinAYear]
+                        [call: benefitSet-severance] }
+                      {to a settlement outside the green line:
+                        [set: Recommendations+=eligibleForRetroactiveTaxBenefitsWithinAYear]
+                        [call: benefitSet-severance] }
+                      {other: [call: benefitSet-resignation]}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    {my employer:
+      [>moved-employer< ask:
+        {text: Will working in the new location will significantly affect your quality of life?}
+        {terms:
+          {quality of life: This depends a lot on the specific case. }
+        }
+        {answers:
+          {yes:
+            [set: Duties += provideDetailedResoningQoL]
+            [call: benefitSet-severance]
+          }
+          {no: [call:benefitSet-resignation]}
+        }
+      ]
+    }
+  }
+]
+--]
 
 <*********************
   Benefit sets
