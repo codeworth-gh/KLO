@@ -47,10 +47,13 @@ EmployerObligations [Things the employer should do during the work termination p
   priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice, decentProcedure,
   finalAccountSettlement["גמר חשבון"], form161, JobTerminationConfirmation["אישור פיטורין"].
 
-Duties: some of findNewEmployer, healthInsuranceExtension, employeePriorNotice,
+Duties: some of findNewEmployer, healthInsuranceExtension,
+  employeePriorNoticeForEmploymentChange[Employee needs to give a chance to alter employment terms in order to keep the employee],
+  employeePriorNotice[Employee notices the emplyer in writing that they are about to leave, state the reason for leaving],
   provideEvidenceForNewLocation[Worker need to provide evidence for living in a new place, such as rent contract],
   provideDetailedResoningQoL[Worker has to proivde detalied reasonong for why their quality of life was affected.].
 
 Recommendations[Actions the worker should probably take, but does not have to]: some of
   consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
-  sueFormerEmployerSoon, eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.].
+  sueFormerEmployerSoon, eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.],
+  payKeens[Payment divided between closes keens. No need to wait for inheritance.].

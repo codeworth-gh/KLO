@@ -22,7 +22,7 @@
   [>status< ask:
     {text: What's your current status in Israel? }
     {answers:
-      {citizen: [set: LegalStatus=israeliCitizenship]}
+      { citizen: [set: LegalStatus=israeliCitizenship]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
       { visa of type b1Construction: [set: LegalStatus=b1Construction]}
       { visa of type 2a5: [set: LegalStatus=_2a5]}
@@ -32,6 +32,32 @@
       { visa of type a5: [set: LegalStatus=a5]}
       { visa of type b2: [set: LegalStatus=b2]}
       { undocumented: [set: LegalStatus=undocumented] }
+    }
+  ]
+  [>duration-dispatch< consider:
+    {slot: LegalStatus}
+    {options:
+      {israeliCitizenship:
+        [>duration< ask:
+          {text: Were you employed for more than 11 months?}
+          {answers:
+            {yes: [set: TimeConstraints=over11Months] }
+          }
+        ]
+      }
+    }
+    {else:
+      [>duration< ask:
+        {text: How long have you been o the job being terminated?}
+        {answers:
+          {Over 11 Months: [set: TimeConstraints=over11Months] }
+          {Over 51 Months: [set: TimeConstraints=over51Months] }
+          {Over 63 Months: [set: TimeConstraints=over63Months] }
+          {Over 8  Years:  [set: TimeConstraints=over8Years] }
+          {Over 10 Years:  [set: TimeConstraints=over10Years] }
+          {Over 13 Years:  [set: TimeConstraints=over13Years] }
+        }
+      ]
     }
   ]
 ]
@@ -51,7 +77,10 @@
             {parenting: [call:part-parenting]}
             {disease: }
             {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
-            {worker death: }
+            {worker death:
+              [call: benefitSet-severance]
+              [set: Recommendations+=payKeens]
+            }
             {family member disease: }
             {significant compensation reduction: }
             {significant breaching of rights: }
@@ -62,6 +91,10 @@
       {involuntary:
         [>ReasonForLeaving-forced< ask:
           {text: Why did you have to leave this job?}
+          {terms:
+            {employer collapse: Chapter 11, bankrupcy }
+            {employer change: Company takover, nursing wife and then moving to nursing the husband.}
+          }
           {answers:
             {end of constract: }
             {visa termination: }
@@ -69,6 +102,8 @@
             {employer hospitalized: }
             {employer moved to nursing home: }
             {employer choice: [call: gradeProcess] }
+            {employer collapse: }
+            {employer changed:}
           }
         ]
       }
@@ -231,28 +266,14 @@
             {yes:
               [when:
                 { Flags+=female:
-                    [when: <-- todo: really TimeConstraints>over6Months:
-                      {TimeConstraints=over6Months: }
-                      {else: [set: Benefits/Properties+=severancePay] }
-                    ][end] }
+                    [set: Benefits/Properties+=severancePay][end]}
                 {else:
                   [>prnt-m-forChild< ask:
                     {text: Are you single, or does your wife has a job? }
                     {answers:
-                      {yes:
-                        [when: <-- todo: really TimeConstraints>over6Months:
-                          {TimeConstraints=over6Months: }
-                          {else: [set: Benefits/Properties+=severancePay] }
-                        ][end]
-                  }}]
-                }
-              ]
-            }
-          }
-        ]
-      }
-    }
-  ]
+                      {yes: [set: Benefits/Properties+=severancePay][end]}}
+                  ]
+  }]}}]}}]
   [call: benefitSet-resignation]
 --]
 
@@ -267,11 +288,11 @@
         {answers:
           {no:[call: benefitSet-resignation]}
           {yes:
-            [set: Duties+=provideEvidenceForNewLocation]
+            [set: Duties+=provideEvidenceForNewLocation, employeePriorNoticeForEmploymentChange]
             [>moved-dispatch-reason< ask:
               {text: Did you move because of status change regarding your spouse?}
               {terms:
-                {status change: Marriage, divorce, moving in togetehr...}
+                {status change: Marriage, divorce, moving in together...}
               }
               {answers:
                 {yes:
@@ -349,10 +370,10 @@
     {options: <-- TODO: improve once boolean conditions are implemented
       {over11Months:  [set: Benefits/Properties+=severancePay]}
       {over51Months:  [set: Benefits/Properties+=severancePay]}
-      {over63Months: [set: Benefits/Properties+=severancePay]}
-      {over8Years:   [set: Benefits/Properties+=severancePay]}
-      {over10Years:  [set: Benefits/Properties+=severancePay]}
-      {over13Years:  [set: Benefits/Properties+=severancePay]}
+      {over63Months:  [set: Benefits/Properties+=severancePay]}
+      {over8Years:    [set: Benefits/Properties+=severancePay]}
+      {over10Years:   [set: Benefits/Properties+=severancePay]}
+      {over13Years:   [set: Benefits/Properties+=severancePay]}
     }
   ]
 --]
