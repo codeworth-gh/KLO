@@ -1,4 +1,4 @@
-EndOfWork: consists of Assertions, Benefits, Duties, Recommendations.
+EndOfWork: consists of Assertions, Benefits, Duties, Recommendations, Restrictions.
 
 Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         EmployerObligations, TimeConstraints, ProcessFairness, Flags.
@@ -28,7 +28,7 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
-Flags: some of visaExpired, residencyStatusChange, female.
+Flags: some of visaExpired, residencyStatusChange, female, nonIsraeliWorker.
 
 Benefits: consists of Source, Deposit, UnemploymentBenefits, Pension, Properties.
 Source: some of employer, bituachLeumi, pensionFund, deposit.
@@ -57,5 +57,14 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
   sueFormerEmployerSoon, eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.],
   payKeens[Payment divided between closes keens. No need to wait for inheritance.],
-  involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.]
-  .
+  involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.],
+  reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],
+  humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.]
+.
+
+Restrictions[Limitations on the worker]: some of
+  canOnlyWorkAsReleaver[With this restrictions, care giving workers can only work as relievers.],
+  requiresEmployerHumanitarianVisaApplication[New employer has to apply for humanitarian visa.],
+  cannotWorkInIsrael[It seems to be impossible to obtain a working permit.],
+  nurseNonRetiredOnly[Cannot nurse old people, only childs and disabled.]
+.

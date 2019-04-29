@@ -24,14 +24,14 @@
     {answers:
       { citizen: [set: LegalStatus=israeliCitizenship]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
-      { visa of type b1Construction: [set: LegalStatus=b1Construction]}
-      { visa of type 2a5: [set: LegalStatus=_2a5]}
-      { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver]}
-      { visa of type B1General or A5: [set: LegalStatus=residencyProcess]}
-      { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture]}
-      { visa of type a5: [set: LegalStatus=a5]}
-      { visa of type b2: [set: LegalStatus=b2]}
-      { undocumented: [set: LegalStatus=undocumented] }
+      { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker]}
+      { visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
+      { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
+      { visa of type B1General or A5: [set: LegalStatus=residencyProcess; Flags+=nonIsraeliWorker]}
+      { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Flags+=nonIsraeliWorker]}
+      { visa of type a5: [set: LegalStatus=a5; Flags+=nonIsraeliWorker]}
+      { visa of type b2: [set: LegalStatus=b2; Flags+=nonIsraeliWorker]}
+      { undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
     }
   ]
   [>duration-dispatch< consider:
@@ -90,6 +90,9 @@
             }
             {severe abuse:
               [set: Recommendations+=involveAidOrganizations]
+              [call: benefitSet-severance]
+            }
+            {retirement:
               [call: benefitSet-severance]
             }
             {resignation (other): [call: benefitSet-resignation]}
@@ -155,7 +158,17 @@
   }
 ]
 
-<--
+<* Trailers - post-processing of what we know (may require extra questions) *>
+[consider:
+  {slot: Sector}
+  {options:
+    {careGiving: [call: careGiverTrailing] }
+  }
+]
+
+<*******************
+ END OF CORE
+*******************>
 
 [-->part-health<
   {title: Health issues}
@@ -372,16 +385,20 @@
 *********************>
 [-->benefitSet-severance<
   {title: Benefits for Severance}
-  [set:  UnemploymentBenefits=immediate]
+  [consider:
+    {slot: AgeGroup }
+    {options:
+      { workForce: [set: UnemploymentBenefits=immediate] }
+  }]
   [consider:
     {slot: TimeConstraints}
     {options: <-- TODO: improve once boolean conditions are implemented
-      {over11Months:  [set: Benefits/Properties+=severancePay]}
-      {over51Months:  [set: Benefits/Properties+=severancePay]}
-      {over63Months:  [set: Benefits/Properties+=severancePay]}
-      {over8Years:    [set: Benefits/Properties+=severancePay]}
-      {over10Years:   [set: Benefits/Properties+=severancePay]}
-      {over13Years:   [set: Benefits/Properties+=severancePay]}
+      {over11Months: [set: Benefits/Properties+=severancePay]}
+      {over51Months: [set: Benefits/Properties+=severancePay]}
+      {over63Months: [set: Benefits/Properties+=severancePay]}
+      {over8Years:   [set: Benefits/Properties+=severancePay]}
+      {over10Years:  [set: Benefits/Properties+=severancePay]}
+      {over13Years:  [set: Benefits/Properties+=severancePay]}
     }
   ]
 --]
@@ -394,4 +411,48 @@
       {israeliCitizenship:
         [set: UnemploymentBenefits=after90Days]
   }}]
+--]
+
+[-->careGiverTrailing<
+  [>cgt-stay< ask:
+    {text: Do you plan to stay in Israel? }
+    {answers:
+      {yes:
+        [consider:
+          {slot: TimeConstraints}
+          {options: <-- TODO: improve once boolean conditions are implemented
+            {over11Months: [set: Duties+=findNewEmployer] [todo: geographic restrictions]}
+            {over51Months: [set: Restrictions+=canOnlyWorkAsReleaver][todo: geographic restrictions]}
+            {over63Months:
+              [>cgtHumanitarianVisa< ask:
+                {text: Did you already work for an employer that requested a humanitarian visa for you?}
+                {answers:
+                  {yes: [set: Restrictions+=cannotWorkInIsrael; Recommendations+=reducedBenefitsForOverstay2Month] }
+                  {no:  [set: Restrictions+=requiresEmployerHumanitarianVisaApplication; Duties+=findNewEmployer] }
+                }
+              ]
+            }
+            {over8Years:
+              [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
+                          Duties+=findNewEmployer;
+                 Recommendations+=humanitarianVisaWarningCareGiver]
+            }
+            {over10Years:
+              [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
+                          Duties+=findNewEmployer;
+                 Recommendations+=humanitarianVisaWarningCareGiver]
+            }
+            {over13Years:
+              [set: Restrictions+=cannotWorkInIsrael;
+                 Recommendations+=reducedBenefitsForOverstay2Month]
+            }
+          }
+          {else: <-- effectively, 0-11 months
+            [set: Duties+=findNewEmployer]
+          }
+        ]
+      }
+      {no: [todo: Handle care givern that does not plan to stay in Israel]}
+    }
+  ]
 --]
