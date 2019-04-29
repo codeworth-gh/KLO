@@ -73,18 +73,26 @@
           {text: What is the reason for your decision to leave this job?}
           {answers:
             {health issues:  [call: part-health]}
-            {enrolled to civil service: }
+            {enrolled to civil service: [call: benefitSet-severance]}
             {parenting: [call:part-parenting]}
-            {disease: }
             {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
             {worker death:
               [call: benefitSet-severance]
               [set: Recommendations+=payKeens]
             }
-            {family member disease: }
-            {significant compensation reduction: }
-            {significant breaching of rights: }
-            {resignation (other): }
+            {significant deterioration of employment conditions:
+              [set: Duties+=employeePriorNoticeForEmploymentChange]
+              [call: benefitSet-severance]
+            }
+            {significant breaching of rights:
+              [set: Duties+=employeePriorNoticeForEmploymentChange]
+              [call: benefitSet-severance]
+            }
+            {severe abuse:
+              [set: Recommendations+=involveAidOrganizations]
+              [call: benefitSet-severance]
+            }
+            {resignation (other): [call: benefitSet-resignation]}
           }
         ]
       }
