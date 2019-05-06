@@ -1,7 +1,7 @@
-EndOfWork: consists of Assertions, Benefits, Duties, Recommendations, Restrictions.
+EndOfWork: consists of Assertions, Benefits, Duties, Recommendations, Restrictions, EmployerObligations.
 
 Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
-                        EmployerObligations, TimeConstraints, ProcessFairness, Flags.
+                        TimeConstraints, ProcessFairness, Flags.
 EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general, A5)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
@@ -55,7 +55,8 @@ Duties: some of findNewEmployer, healthInsuranceExtension,
 
 Recommendations[Actions the worker should probably take, but does not have to]: some of
   consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
-  sueFormerEmployerSoon, eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.],
+  sueFormerEmployerSoon,
+  eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.],
   payKeens[Payment divided between closes keens. No need to wait for inheritance.],
   involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.],
   reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],

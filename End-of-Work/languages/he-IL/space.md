@@ -1,5 +1,8 @@
 # EndOfWork
+סיום העסקה
 מרחב הדין בסיום העסקה
+---
+כאן אפשר לפרט לגבי הנושא לעומק, כולל markdown מלא.
 
 # EndOfWork/Duties
 חובות העובד
@@ -149,7 +152,7 @@ bankrupcyAllowance
 פקדון
 
 # EndOfWork/Assertions
-תובנות מערכת
+מידע תומך
 
 # EndOfWork/Assertions/EmploymentStatus
 מצב תעסוקה
