@@ -1,1 +1,1 @@
-How long have you been o the job being terminated?
+How long have you been on the job being terminated?

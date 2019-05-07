@@ -7,7 +7,7 @@ Over 11 Months: Over 11 Months
 Over 13 Years: Over 13 Years
 Over 51 Months: Over 51 Months
 Over 63 Months: Over 63 Months
-Over 8  Years: Over 8  Years
+Over 8 Years: Over 8 Years
 accident during my work: accident during my work
 accident on my way to work: accident on my way to work
 after retirement: after retirement
@@ -22,7 +22,7 @@ employer collapse: employer collapse
 employer death: employer death
 employer hospitalized: employer hospitalized
 employer moved to nursing home: employer moved to nursing home
-end of constract: end of constract
+end of contract: end of contract
 enrolled to civil service: enrolled to civil service
 freelance: freelance
 full: full
@@ -59,7 +59,6 @@ undocumented: undocumented
 varied: varied
 visa of type 2a5: visa of type 2a5
 visa of type B1General or A5: visa of type B1General or A5
-visa of type a5: visa of type a5
 visa of type b1Agriculture: visa of type b1Agriculture
 visa of type b1CareGiver: visa of type b1CareGiver
 visa of type b1Construction: visa of type b1Construction

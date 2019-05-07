@@ -1,4 +1,5 @@
-EndOfWork: consists of Assertions, Benefits, Duties, Recommendations, Restrictions, EmployerObligations.
+EndOfWork: consists of EmployerObligations, Duties, Restrictions,
+                        Benefits,  Recommendations,  Assertions.
 
 Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         TimeConstraints, ProcessFairness, Flags.
@@ -9,7 +10,7 @@ LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towar
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
 ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       medicalCondition, familyMemberDisease,
-                      marriageAndMoving ["חתונה ומעבר דירה"], endOfConstract, workerDeath, employerDeath,
+                      marriageAndMoving ["חתונה ומעבר דירה"], endOfContract, workerDeath, employerDeath,
                       employerHospitalized, employerMovedToNursingHome,
                       enrolledToCivilService ["גיוס לצבא או לשירות לאומי"],
                       significantCompensationReduction["הרעה מוחשית בתנאים"],
