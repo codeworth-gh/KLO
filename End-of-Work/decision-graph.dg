@@ -1,5 +1,5 @@
 <-- Detecting person properties
-[set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161 ]
+[set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161,jobTerminationConfirmation ]
 [>sInitialFiltering< section:
   {title: Initial Questionnaire}
   [>gender< ask:
@@ -22,7 +22,7 @@
   [>status< ask:
     {text: What's your current status in Israel? }
     {answers:
-      { citizen: [set: LegalStatus=israeliCitizenship]}
+      { citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
       { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker]}
       { visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
@@ -99,6 +99,7 @@
         ]
       }
       {involuntary:
+        [set: EmployerObligations+=priorNotice, hearing]
         [>ReasonForLeaving-forced< ask:
           {text: Why did you have to leave this job?}
           {terms:
@@ -106,14 +107,14 @@
             {employer change: Company takover, nursing wife and then moving to nursing the husband.}
           }
           {answers:
-            {end of contract: }
-            {visa termination: }
-            {employer death: }
-            {employer hospitalized: }
-            {employer moved to nursing home: }
-            {employer choice: [call: gradeProcess] }
-            {employer collapse: }
-            {employer changed:}
+            {end of contract: [todo: implement]}
+            {visa termination: [todo: implement]}
+            {employer death: [todo: implement]}
+            {employer hospitalized: [todo: implement]}
+            {employer moved to nursing home: [todo: implement]}
+            {employer choice: [call: gradeProcess] } <-- Todo: is that all?
+            {employer collapse: [todo: implement]}
+            {employer changed: [todo: implement]}
           }
         ]
       }
@@ -444,7 +445,7 @@
           }
         ]
       }
-      {no: [todo: Handle care givern that does not plan to stay in Israel]}
+      {no: [todo: Handle care givers that do not plan to stay in Israel]}
     }
   ]
 --]

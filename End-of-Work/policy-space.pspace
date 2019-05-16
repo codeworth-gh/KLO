@@ -1,9 +1,8 @@
 EndOfWork: consists of EmployerObligations, Duties, Restrictions,
                         Benefits,  Recommendations,  Assertions.
 
-Assertions: consists of EmploymentStatus, LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
+Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         TimeConstraints, ProcessFairness, Flags.
-EmploymentStatus: one of preDecision, priorNoticePeriod, employmentEnded, atNewEmployer.
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general, A5)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
                     b1Agriculture, a5, b2, undocumented.
@@ -41,12 +40,12 @@ Properties: some of priorNotice, priorNoticeSubstitute, specialCompensations["פ
                 disabilityAllowance[Might be, need to look in National Insurance],
                 bankrupcyAllowance, parentalLeave,
                 birthGrant, severancePay[also- "Separation"],
-                newJobAssistence, severanceCancellation["ביטול פיטורין"].
+                newJobAssistance, severanceCancellation["ביטול פיטורין"].
 UnemploymentBenefits: one of none, after90Days, immediate.
 
 EmployerObligations [Things the employer should do during the work termination process]: some of
-  priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice, decentProcedure,
-  finalAccountSettlement["גמר חשבון"], form161, JobTerminationConfirmation["אישור פיטורין"].
+  priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice,
+  finalAccountSettlement["גמר חשבון"], form161, jobTerminationConfirmation["מכתב סיום העסקה"].
 
 Duties: some of findNewEmployer, healthInsuranceExtension,
   employeePriorNoticeForEmploymentChange[Employee needs to give a chance to alter employment terms before resigning.],
