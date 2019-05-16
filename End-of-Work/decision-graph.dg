@@ -24,7 +24,7 @@
     {answers:
       { citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
-      { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker]}
+      { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
       { visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
       { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
       { visa of type B1General or A5: [set: LegalStatus=residencyProcess; Flags+=nonIsraeliWorker]}
@@ -52,9 +52,9 @@
           {Over 11 Months: [set: TimeConstraints=over11Months] }
           {Over 51 Months: [set: TimeConstraints=over51Months] }
           {Over 63 Months: [set: TimeConstraints=over63Months] }
-          {Over 8 Years:   [set: TimeConstraints=over8Years] }
-          {Over 10 Years:  [set: TimeConstraints=over10Years] }
-          {Over 13 Years:  [set: TimeConstraints=over13Years] }
+          {Over 8 Years:   [set: TimeConstraints=over8Years]   }
+          {Over 10 Years:  [set: TimeConstraints=over10Years]  }
+          {Over 13 Years:  [set: TimeConstraints=over13Years]  }
         }
       ]
     }
@@ -72,19 +72,19 @@
           {text: What is the reason for your decision to leave this job?}
           {answers:
             {health issues:  [call: part-health]}
-            {enrolled to civil service: [call: benefitSet-severance]}
-            {parenting: [call:part-parenting]}
+            {enrolled to civil service: [set: ReasonForLeaving=enrolledToCivilService][call: benefitSet-severance] }
+            {parenting: [set:ReasonForLeaving=forParenting][call:part-parenting] }
             {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
             {worker death:
               [call: benefitSet-severance]
               [set: Recommendations+=payKeens]
             }
             {significant deterioration of employment conditions:
-              [set: Duties+=employeePriorNoticeForEmploymentChange]
+              [set: Duties+=employeePriorNoticeForEmploymentChange; ReasonForLeaving=significantCompensationReduction]
               [call: benefitSet-severance]
             }
             {significant breaching of rights:
-              [set: Duties+=employeePriorNoticeForEmploymentChange]
+              [set: Duties+=employeePriorNoticeForEmploymentChange; ReasonForLeaving=significantBreachingOfRights]
               [call: benefitSet-severance]
             }
             {severe abuse:
@@ -109,12 +109,12 @@
           {answers:
             {end of contract: [todo: implement]}
             {visa termination: [todo: implement]}
-            {employer death: [todo: implement]}
-            {employer hospitalized: [todo: implement]}
-            {employer moved to nursing home: [todo: implement]}
+            {employer death: [set: ReasonForLeaving=employerDeath][todo: implement]}
+            {employer hospitalized: [set: ReasonForLeaving=employerHospitalized][todo: implement]}
+            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement]}
             {employer choice: [call: gradeProcess] } <-- Todo: is that all?
             {employer collapse: [todo: implement]}
-            {employer changed: [todo: implement]}
+            {employer changed: [todo: implement]} <-- Maybe this *is* voluntary?
           }
         ]
       }
