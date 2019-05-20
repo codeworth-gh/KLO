@@ -37,7 +37,7 @@ moved: מעבר
 my child, parent, or spouse: ילד, הורה, או בן/בת הזוג שלי
 my employer: המעסיק שלי
 my grandchild, grandfather, or parent in law: נכד, סב, או גיס שלי
-my health condition: מצבי הבריאותי
+my health condition: מצב בריאותי אחר
 my initiative: יוזמה שלי
 no: לא
 other: אחר

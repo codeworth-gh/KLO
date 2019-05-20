@@ -2,7 +2,7 @@ EndOfWork: consists of EmployerObligations, Duties, Restrictions,
                         Benefits,  Recommendations,  Assertions.
 
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
-                        TimeConstraints, ProcessFairness, Flags.
+                        TimeInIsrael, ProcessFairness, Flags.
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
                     b1Agriculture, b2, undocumented.
@@ -17,7 +17,7 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       forParenting["התפטרות הורה"],
                       movedToEligibleLocation["מעבר ליישוב זכאי"],
                       workAccident, abuse["התעמרות"], sexualHarrasment.
-TimeConstraints: one of over6Months, over11Months, over51Months, over63Months, over8Years, over10Years, over13Years.
+TimeInIsrael: one of lessThan51Months, overOr51Months, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
 Employment: consists of SalaryUnits, Type, Scope.
@@ -28,18 +28,25 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
-Flags: some of visaExpired, residencyStatusChange, female, pregnant[Pregnant while the severance happaened.], nonIsraeliWorker.
+Flags: some of visaExpired, residencyStatusChange, female,
+  pregnant[Pregnant while the severance happaened.],
+  thisEmplotmentOver11months,
+  nonIsraeliWorker.
 
-Benefits: consists of Deposit, UnemploymentBenefits, Pension, Properties.
-Deposit: one of none, regular, completions.
+Benefits: consists of UnemploymentBenefits, Pension, Properties.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],
                 compensationForMissing[פיצוי על אי הפרשות לפנסיה],
                 allowance[זכאי לקצבה].
-Properties: some of priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
+Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
                 disabilityAllowance[Might be, need to look in National Insurance],
                 bankruptcyAllowance, parentalLeave,
                 birthGrant, severancePay[also- "Separation"],
-                newJobAssistance, severanceCancellation["ביטול פיטורין"].
+                newJobAssistance, severanceCancellation["ביטול פיטורין"],
+                eligibleForFlightExpenseNI[Natioal insurance can pay for flight home.],
+                eligibleForFlightExpensePI[Private insurance can pay for flight home.],
+                possible80KGrant[For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition]
+.
+
 UnemploymentBenefits: one of after90Days, immediate.
 
 EmployerObligations [Things the employer should do during the work termination process]: some of
@@ -50,7 +57,11 @@ Duties: some of findNewEmployer, healthInsuranceExtension,
   employeePriorNoticeForEmploymentChange[Employee needs to give a chance to alter employment terms before resigning.],
   employeePriorNotice[Employee notices the emplyer in writing that they are about to leave, state the reason for leaving],
   provideEvidenceForNewLocation[Worker need to provide evidence for living in a new place, such as rent contract],
-  provideDetailedResoningQoL[Worker has to proivde detalied reasonong for why their quality of life was affected.].
+  provideDetailedResoningQoL[Worker has to proivde detalied reasonong for why their quality of life was affected.],
+  possibleGeographicRestrictions[The worker may be subject to geographic restrictions],
+  issueDepositRequest[Must issue deposit request two weeks or more],
+  provideEvidenceForCaringForFamily[When leaving Israel for caring for a family member, need to provide evidence to claim rights.]
+.
 
 Recommendations[Actions the worker should probably take, but does not have to]: some of
   consultLawyer[In some cases, such as freelance work, a professional lawyer should be consulted.],
@@ -60,7 +71,8 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.],
   reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],
   humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.],
-  canReportToThePolice[This case involves a criminal activity by the employer.]
+  canReportToThePolice[This case involves a criminal activity by the employer.],
+  applyForWorkAccident[Apply to the Israeli National Insurane claiming work accident]
 .
 
 Restrictions[Limitations on the worker]: some of
