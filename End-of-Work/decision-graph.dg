@@ -5,7 +5,14 @@
   [>gender< ask:
     {text: Are you a woman?}
     {answers:
-      {yes: [set: Flags+=female]}
+      {yes: [set: Flags+=female]
+        [>isPregnant< ask:
+          {text: Were you pregnant when your employment ended?}
+          {answers:
+            {yes: [set:Flags += pregnant]}
+          }
+        ]
+      }
     }
   ]
   [>AgeGroup< ask:
@@ -23,6 +30,7 @@
     {text: What's your current status in Israel? }
     {answers:
       { citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
+      { in residency process: [set: LegalStatus=residencyProcess]}
       { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
       { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
       { visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
@@ -76,8 +84,8 @@
             {parenting: [set:ReasonForLeaving=forParenting][call:part-parenting] }
             {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
             {worker death:
+              [set: Recommendations+=payKeens; ReasonForLeaving=workerDeath]
               [call: benefitSet-severance]
-              [set: Recommendations+=payKeens]
             }
             {significant deterioration of employment conditions:
               [set: Duties+=employeePriorNoticeForEmploymentChange; ReasonForLeaving=significantCompensationReduction]
@@ -94,6 +102,11 @@
             {retirement:
               [call: benefitSet-severance]
             }
+            {I was sexually harraset:
+              [set: ReasonForLeaving=sexualHarrasment]
+              [call: benefitSet-severance]
+              [set: Properties += specialCompensations; Recommendations+=canReportToThePolice]
+            }
             {resignation (other): [call: benefitSet-resignation]}
           }
         ]
@@ -107,14 +120,14 @@
             {employer change: Company takover, nursing wife and then moving to nursing the husband.}
           }
           {answers:
-            {end of contract: [todo: implement]}
-            {visa termination: [todo: implement]}
-            {employer death: [set: ReasonForLeaving=employerDeath][todo: implement]}
+            {end of contract:       [todo: implement]}
+            {visa termination:      [todo: implement]}
+            {employer death:        [set: ReasonForLeaving=employerDeath][todo: implement]}
             {employer hospitalized: [set: ReasonForLeaving=employerHospitalized][todo: implement]}
             {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement]}
-            {employer choice: [call: gradeProcess] } <-- Todo: is that all?
+            {employer choice:  [call: gradeProcess] } <-- Todo: is that all?
             {employer collapse: [todo: implement]}
-            {employer changed: [todo: implement]} <-- Maybe this *is* voluntary?
+            {employer changed:  [todo: implement]} <-- Maybe this *is* voluntary?
           }
         ]
       }
@@ -253,7 +266,7 @@
         {text: Were you fired after filing a complaint or getting advice from a lawyer?}
         {answers:
           {yes:
-            [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon]
+            [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon; Properties+=severanceCancellation]
           }
         }
       ]
@@ -310,6 +323,7 @@
               }
               {answers:
                 {yes:
+                  [set: ReasonForLeaving=marriageAndMoving]
                   [>moved-spouse-40km< ask:
                     {text: Is your new home at least 40 km from your old home?}
                     {answers:

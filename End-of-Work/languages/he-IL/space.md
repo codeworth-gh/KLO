@@ -42,6 +42,12 @@
 עו״ד
 התייעצות עם עורך דין
 
+# EndOfWork/Recommendations/canReportToThePolice
+ניתן לפנות למשטרה
+קיים סיכוי סביר כי במהלך ההעסקה המעסיק ביצע עבירות פליליות
+---
+ישנו סיכוי כי המעביד ביצע עבירות פליליות בעת ההעסקה או לאחר מכן. במקרים אלו ניתן לפנות למשטרה, אולם אין חובה לעשות כן. 
+
 
 # EndOfWork/Recommendations/sueFormerEmployerSoon
 תביעת מעסיק
@@ -132,8 +138,8 @@
 הודעה מוקדמת
 
 # EndOfWork/Benefits/Properties/priorNoticeSubstitute
-תחליף הודעה
-תחליף להודעה מוקדמת
+חלף הודעה מוקדמת
+פיצוי כספי (למעסיק או לעובד) במקרה ולא ניתנה הודעה מוקדמת.
 
 # EndOfWork/Benefits/Properties/specialCompensations
 פיצוי מיוחד
@@ -415,7 +421,7 @@
 
 # EndOfWork/Assertions/LegalStatus/a5
 א׳5
-ויזה א׳5
+ויזה לתושבי ישראל שאינם אזרחים
 
 # EndOfWork/Assertions/LegalStatus/_2a5<--_
 2-א׳5

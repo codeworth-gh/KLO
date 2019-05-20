@@ -3,9 +3,9 @@ EndOfWork: consists of EmployerObligations, Duties, Restrictions,
 
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         TimeConstraints, ProcessFairness, Flags.
-LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general, A5)],
+LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
-                    b1Agriculture, a5, b2, undocumented.
+                    b1Agriculture, b2, undocumented.
 AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
 ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       medicalCondition, familyMemberDisease,
@@ -28,20 +28,19 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
-Flags: some of visaExpired, residencyStatusChange, female, nonIsraeliWorker.
+Flags: some of visaExpired, residencyStatusChange, female, pregnant[Pregnant while the severance happaened.], nonIsraeliWorker.
 
-Benefits: consists of Source, Deposit, UnemploymentBenefits, Pension, Properties.
-Source: some of employer, bituachLeumi, pensionFund, deposit.
+Benefits: consists of Deposit, UnemploymentBenefits, Pension, Properties.
 Deposit: one of none, regular, completions.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],
                 compensationForMissing[פיצוי על אי הפרשות לפנסיה],
                 allowance[זכאי לקצבה].
-Properties: some of priorNotice, priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
+Properties: some of priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
                 disabilityAllowance[Might be, need to look in National Insurance],
-                bankrupcyAllowance, parentalLeave,
+                bankruptcyAllowance, parentalLeave,
                 birthGrant, severancePay[also- "Separation"],
                 newJobAssistance, severanceCancellation["ביטול פיטורין"].
-UnemploymentBenefits: one of none, after90Days, immediate.
+UnemploymentBenefits: one of after90Days, immediate.
 
 EmployerObligations [Things the employer should do during the work termination process]: some of
   priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice,
@@ -60,7 +59,8 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   payKeens[Payment divided between closes keens. No need to wait for inheritance.],
   involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.],
   reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],
-  humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.]
+  humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.],
+  canReportToThePolice[This case involves a criminal activity by the employer.]
 .
 
 Restrictions[Limitations on the worker]: some of
