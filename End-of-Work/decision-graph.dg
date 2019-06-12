@@ -123,7 +123,7 @@
             {visa termination:      [todo: implement visa termination]}
             {employer death:        [set: ReasonForLeaving=employerDeath][todo: implement employer death]}
             {employer hospitalized: [set: ReasonForLeaving=employerHospitalized][todo: implement employer hospitalized]}
-            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement imployer at nursing home]}
+            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement employer at nursing home]}
             {employer choice:  [call: gradeProcess] } <-- Todo: is that all?
             {employer collapse: [todo: implement collapse]}
             {employer changed:  [todo: implement employer changed]} <-- Maybe this *is* voluntary?
@@ -401,6 +401,7 @@
 *********************>
 [-->benefitSet-severance<
   {title: Benefits for Severance}
+  [set: EffectiveTerminationType=severance]
   [consider:
     {slot: LegalStatus}
     {options:
@@ -413,7 +414,7 @@
       }
     }
     {else:
-      <* TODO non-israeli severance benefits *>
+      [todo: non-israeli severance benefits]
     }
   ]
 
@@ -425,6 +426,7 @@
 
 [-->benefitSet-resignation<
   {title: Benefits for Resignation}
+  [set: EffectiveTerminationType=resignation]
   [consider:
     {slot: LegalStatus}
     {options:

@@ -2,7 +2,7 @@ EndOfWork: consists of EmployerObligations, Duties, Restrictions,
                         Benefits,  Recommendations,  Assertions.
 
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
-                        TimeInIsrael, ProcessFairness, Flags.
+                        TimeInIsrael, ProcessFairness, Flags, EffectiveTerminationType.
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
                     b1Agriculture, b2, undocumented.
@@ -81,3 +81,5 @@ Restrictions[Limitations on the worker]: some of
   cannotWorkInIsrael[It seems to be impossible to obtain a working permit.],
   nurseNonRetiredOnly[Cannot nurse old people, only childs and disabled.]
 .
+
+EffectiveTerminationType: one of resignation, severance.
