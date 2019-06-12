@@ -1,3 +1,4 @@
+[#import trailings: trailings.dg]
 <-- Detecting person properties
 [set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161,jobTerminationConfirmation ]
 [>sInitialFiltering< section:
@@ -124,7 +125,7 @@
             {employer death:        [set: ReasonForLeaving=employerDeath][todo: implement employer death]}
             {employer hospitalized: [set: ReasonForLeaving=employerHospitalized][todo: implement employer hospitalized]}
             {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement employer at nursing home]}
-            {employer choice:  [call: gradeProcess] } <-- Todo: is that all?
+            {employer choice:  [call: gradeProcess] }
             {employer collapse: [todo: implement collapse]}
             {employer changed:  [todo: implement employer changed]} <-- Maybe this *is* voluntary?
           }
@@ -172,8 +173,8 @@
         [consider:
           {slot: Sector}
           {options:
-            {careGiving: [call: careGiverTrailing] }
-            {construction: [call: pConstructionWorkersTrailing]}
+            {careGiving: [call: trailings>careGivers] }
+            {construction: [call: trailings>constructionWorkers]}
           }
         ]
       }
@@ -435,51 +436,6 @@
   }}]
   [todo: benefitSet-resignation make more accurate]
 --]
-
-[-->careGiverTrailing<
-  [call: pDeposit]
-  [consider:
-    {slot: TimeInIsrael}
-    {options:
-      {overOr51Months:
-        [set: Restrictions+=canOnlyWorkAsReleaver; Duties+=possibleGeographicRestrictions]}
-      {over63Months:
-        [>cgtHumanitarianVisa< ask:
-          {text: Did you already work for an employer that requested a humanitarian visa for you?}
-          {answers:
-            {yes: [set: Restrictions+=cannotWorkInIsrael] }
-            {no:  [set: Restrictions+=requiresEmployerHumanitarianVisaApplication; Duties+=findNewEmployer] }
-          }
-        ]
-      }
-      {over8Years:
-        [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
-                    Duties+=findNewEmployer;
-           Recommendations+=humanitarianVisaWarningCareGiver]
-      }
-      {over10Years:
-        [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
-                    Duties+=findNewEmployer;
-           Recommendations+=humanitarianVisaWarningCareGiver]
-      }
-      {over13Years:
-        [set: Restrictions+=cannotWorkInIsrael]
-      }
-    }
-    {else: <-- effectively, 0-11 months
-      [set: Duties+=findNewEmployer]
-    }
-  ]
---]
-
-[-->pConstructionWorkersTrailing<
-  [call: pDeposit]
---]
-
-[-->pDeposit<
-  [set: Duties+=issueDepositRequest]
---]
-
 
 [-->pPlanningToLeaveIsrael<
   [>cg-whyLeave< ask:

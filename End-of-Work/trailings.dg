@@ -1,0 +1,43 @@
+[-->careGivers<
+  [call: pDeposit]
+  [consider:
+    {slot: TimeInIsrael}
+    {options:
+      {overOr51Months:
+        [set: Restrictions+=canOnlyWorkAsReleaver; Duties+=possibleGeographicRestrictions]}
+      {over63Months:
+        [>cgtHumanitarianVisa< ask:
+          {text: Did you already work for an employer that requested a humanitarian visa for you?}
+          {answers:
+            {yes: [set: Restrictions+=cannotWorkInIsrael] }
+            {no:  [set: Restrictions+=requiresEmployerHumanitarianVisaApplication; Duties+=findNewEmployer] }
+          }
+        ]
+      }
+      {over8Years:
+        [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
+                    Duties+=findNewEmployer;
+           Recommendations+=humanitarianVisaWarningCareGiver]
+      }
+      {over10Years:
+        [set: Restrictions+=requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly;
+                    Duties+=findNewEmployer;
+           Recommendations+=humanitarianVisaWarningCareGiver]
+      }
+      {over13Years:
+        [set: Restrictions+=cannotWorkInIsrael]
+      }
+    }
+    {else: <-- effectively, 0-11 months
+      [set: Duties+=findNewEmployer]
+    }
+  ]
+--]
+
+[-->constructionWorkers<
+  [call: pDeposit]
+--]
+
+[-->pDeposit<
+  [set: Duties+=issueDepositRequest]
+--]
