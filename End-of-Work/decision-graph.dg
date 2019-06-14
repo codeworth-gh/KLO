@@ -6,7 +6,7 @@
   [>gender< ask:
     {text: Are you a woman?}
     {answers:
-      {yes: [set: Flags+=female]
+      {yes: [set: Gender=female]
         [>isPregnant< ask:
           {text: Were you pregnant when your employment ended?}
           {answers:
@@ -14,18 +14,37 @@
           }
         ]
       }
+      {no: [set: Gender=male]}
     }
   ]
-  [>AgeGroup< ask:
-    {text: What's your age group?}
-    {terms:
-      {retirement age: Varies, add a link or a table here.}
-    }
-    {answers:
-      {pre 21: [set: AgeGroup=under21]}
-      {before retirement: [set: AgeGroup=workForce]}
-      {after retirement:  [set: AgeGroup=pension]}
-    }
+  [>sAgeGroup< section:
+    {title: Age group}
+    [consider:
+      {slot: Gender}
+      {options:
+        {male:
+          [>AgeGroupMale< ask:
+            {text: How old are you? }
+            {answers:
+              {under 21: [set: AgeGroup=under21]}
+              {21-67:    [set: AgeGroup=workForce]}
+              {over 67:  [set: AgeGroup=pension; Pension=allowance]}
+            }
+          ]
+        }
+        {female:
+          [>AgeGroupFemale< ask:
+            {text: How old are you? }
+            {answers:
+              {under 21: [set: AgeGroup=under21]}
+              {21-62:    [set: AgeGroup=workForce]}
+              {62-67:    [set: AgeGroup=voluntaryPension; Pension=allowance; Recommendations+=checkElderyAllowance]}
+              {over 67:  [set: AgeGroup=pension; Pension=allowance; Recommendations+=checkElderyAllowance]}
+            }
+          ]
+        }
+      }
+    ]
   ]
   [>status< ask:
     {text: What's your current status in Israel? }
@@ -45,7 +64,7 @@
   [>employment-duration< ask:
     {text: Were you employed for more than 11 months?}
     {answers:
-      {yes: [set: Flags+=thisEmplotmentOver11months] }
+      {yes: [set: Flags+=thisEmploymentOver11months] }
     }
   ]
   [>duration-dispatch< consider:
@@ -120,14 +139,16 @@
             {employer change: Company takover, nursing wife and then moving to nursing the husband.}
           }
           {answers:
-            {end of contract:       [todo: implement end of contract]}
-            {visa termination:      [todo: implement visa termination]}
-            {employer death:        [set: ReasonForLeaving=employerDeath][todo: implement employer death]}
-            {employer hospitalized: [set: ReasonForLeaving=employerHospitalized][todo: implement employer hospitalized]}
-            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome][todo: implement employer at nursing home]}
-            {employer choice:  [call: gradeProcess] }
-            {employer collapse: [todo: implement collapse]}
-            {employer changed:  [todo: implement employer changed]} <-- Maybe this *is* voluntary?
+            {end of contract:       [set: ReasonForLeaving=endOfContract][call: benefitSet-severance]}
+            {visa termination:      [set: ReasonForLeaving=visaTermination][call: benefitSet-severance]} <-- TODO only for non-israelies
+            {employer death:        [set: ReasonForLeaving=employerDeath][call: benefitSet-severance]}
+            {employer terminally hospitalized: [set: ReasonForLeaving=employerHospitalized]
+                                               [call: benefitSet-severance]} <-- TODO b12 Caregivers only
+            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]
+                                             [call: benefitSet-severance]} <-- TODO b12 Caregivers only
+            {employer choice:   [call: gradeProcess][call: benefitSet-severance]}
+            {employer collapse: [call: pEmployerCollapsed]}
+            {employer changed:  [set: ReasonForLeaving=employerChanged][call: benefitSet-severance]}
           }
         ]
       }
@@ -302,7 +323,7 @@
           {answers:
             {yes:
               [when:
-                { Flags+=female:
+                { Gender=female:
                     [set: Benefits/Properties+=severancePay][end]}
                 {else:
                   [>prnt-m-forChild< ask:
@@ -415,12 +436,12 @@
       }
     }
     {else:
-      [todo: non-israeli severance benefits]
+      [set: Properties+=monthlyPayForEachEmploymentYear]
     }
   ]
 
   [when:
-    { Flags+=thisEmplotmentOver11months: [set: Benefits/Properties+=severancePay] }
+    { Flags+=thisEmploymentOver11months: [set: Benefits/Properties+=severancePay] }
   ]
   [todo: benefitSet-severance make more accurate]
 --]
@@ -465,4 +486,16 @@
       {other: [call:benefitSet-resignation]}
     }
   ]
+--]
+
+[-->pEmployerCollapsed<
+[set: ReasonForLeaving=employerCollapse]
+[call: benefitSet-severance]
+[>employerCollapseFormalBankrupcy< ask:
+  {text: Is the employer formally declared as bankrupt?}
+  {answers:
+    {yes: [set: Properties+=bankruptcyAllowance]}
+    {no: [set: Recommendations+=uniteEmployeesToDeclareBankrupcy]}
+  }
+]
 --]

@@ -2,11 +2,15 @@ EndOfWork: consists of EmployerObligations, Duties, Restrictions,
                         Benefits,  Recommendations,  Assertions.
 
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
-                        TimeInIsrael, ProcessFairness, Flags, EffectiveTerminationType.
+                        TimeInIsrael, ProcessFairness, Gender,
+                        Flags, EffectiveTerminationType.
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
                     b1Agriculture, b2, undocumented.
-AgeGroup: one of under21, workForce, pension. <-- Might also add pre21
+AgeGroup: one of under21,
+                 workForce,
+                 voluntaryPension[Workers may retire if they want],
+                 pension[Employer can force the worker to retire].
 ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       medicalCondition, familyMemberDisease,
                       marriageAndMoving ["חתונה ומעבר דירה"], endOfContract, workerDeath, employerDeath,
@@ -16,7 +20,9 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       significantBreachingOfRights ["הפרת זכויות חמורה"],
                       forParenting["התפטרות הורה"],
                       movedToEligibleLocation["מעבר ליישוב זכאי"],
-                      workAccident, abuse["התעמרות"], sexualHarrasment.
+                      workAccident, abuse["התעמרות"], sexualHarrasment,
+                      employerCollapse[Effective bankruptcy, might not be formal],
+                      employerChanged[e.g. company was bought by another].
 TimeInIsrael: one of lessThan51Months, overOr51Months, over63Months, over8Years, over10Years, over13Years.
 <* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
@@ -28,9 +34,9 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
-Flags: some of visaExpired, residencyStatusChange, female,
+Flags: some of visaExpired, residencyStatusChange,
   pregnant[Pregnant while the severance happaened.],
-  thisEmplotmentOver11months,
+  thisEmploymentOver11months,
   nonIsraeliWorker.
 
 Benefits: consists of UnemploymentBenefits, Pension, Properties.
@@ -39,7 +45,9 @@ Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפר�
                 allowance[זכאי לקצבה].
 Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
                 disabilityAllowance[Might be, need to look in National Insurance],
-                bankruptcyAllowance, parentalLeave,
+                bankruptcyAllowance[Employee gets severence and other compensations from National Insurance instead of getting them from the employer],
+                parentalLeave,
+                monthlyPayForEachEmploymentYear[The employer has to pay a monthly payment for each employemnt year, minus deposit],
                 birthGrant, severancePay[also- "Separation"],
                 newJobAssistance, severanceCancellation["ביטול פיטורין"],
                 eligibleForFlightExpenseNI[Natioal insurance can pay for flight home.],
@@ -72,7 +80,9 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],
   humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.],
   canReportToThePolice[This case involves a criminal activity by the employer.],
-  applyForWorkAccident[Apply to the Israeli National Insurane claiming work accident]
+  applyForWorkAccident[Apply to the Israeli National Insurane claiming work accident],
+  uniteEmployeesToDeclareBankrupcy[Emplyees need to unite and demand formal bankrupcy.],
+  checkElderyAllowance[Possibly eligible for elderly allowance from NI]
 .
 
 Restrictions[Limitations on the worker]: some of
@@ -83,3 +93,5 @@ Restrictions[Limitations on the worker]: some of
 .
 
 EffectiveTerminationType: one of resignation, severance.
+
+Gender: one of male, female.
