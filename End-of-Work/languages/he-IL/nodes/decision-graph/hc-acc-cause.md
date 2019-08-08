@@ -1,1 +1,1 @@
-הבעיה הבריאותית שהביאה אותי לעזוב היא:
+The health issue that made me leave is:

@@ -1,1 +1,1 @@
-האם עברת לאחד מהיישובים הבאים:
+Did you move to any of the following

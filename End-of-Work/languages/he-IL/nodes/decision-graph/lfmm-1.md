@@ -1,1 +1,1 @@
-האם הודעת למעסיק על סיבת העזיבה, והאם נתת לו זמן לשפר את תנאי ההעסקה?
+Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?

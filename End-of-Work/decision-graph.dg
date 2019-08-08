@@ -1,4 +1,7 @@
 [#import trailings: trailings.dg]
+<*
+TODO Handle reserve duty.
+*>
 <-- Detecting person properties
 [set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161,jobTerminationConfirmation ]
 [>sInitialFiltering< section:
@@ -8,9 +11,10 @@
     {answers:
       {yes: [set: Gender=female]
         [>isPregnant< ask:
-          {text: Were you pregnant when your employment ended?}
+          {text: Were you pregnant when your employment ended,
+                 or did you give birth within 60 days before your employment ended?}
           {answers:
-            {yes: [set:Flags += pregnant]}
+            {yes: [set:Flags += pregnant; Properties+=severanceIllegalUnlessApprovedByLaborMinstry]}
           }
         ]
       }
@@ -159,7 +163,7 @@
 [>sEmploymentForm< section:
   {title: Form of employment}
   [>employmentUnits< ask:
-    {text: How was your salary claculated?}
+    {text: How was your salary calculated?}
     {answers:
       {monthly: [set: Employment/SalaryUnits=monthly] }
       {daily:   [set: Employment/SalaryUnits=daily] }

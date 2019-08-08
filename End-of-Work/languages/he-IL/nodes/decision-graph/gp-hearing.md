@@ -1,4 +1,4 @@
-האם קיבלת שימוע לפני הפיטורין
+Did you get a hearing prior to being fired?
 
-### מושגים
-* *שימוע*: פגישה עם המעסיק המוגדרת באופן רשמי כפגישה לפני פיטורין
+### Terms
+* *hearing*: A meeting with the employer to declared as "before job termination" talk.

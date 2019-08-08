@@ -1,1 +1,4 @@
-האם התפטרת למען ילד (למשל, על מנת להיות יותר זמן איתו, להקטין זמני נסיעה לעבודה וכד׳)?
+Did you resign for the sake of the child?
+
+### Terms
+* *Sake of child*: E.g. to be more with them, reduce commute times etc.

@@ -1,3 +1,4 @@
-האם עברו יותר מ-9 חודשים מאז קיבלת את הילד לחזקתך?
+Did more than 9 month pass since the day you've recevied the child
 
-התאריך הקובע הוא תאריך הלידה, האימוץ, או תהליך אחד בסופו הפכת לאפוטרופוס החוקי של הילד
+### Terms
+* *day*: Date of birth, adoption, or other way of becoming a legal guardian of the child.

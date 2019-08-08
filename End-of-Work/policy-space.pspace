@@ -52,6 +52,7 @@ Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations
                 newJobAssistance, severanceCancellation["ביטול פיטורין"],
                 eligibleForFlightExpenseNI[Natioal insurance can pay for flight home.],
                 eligibleForFlightExpensePI[Private insurance can pay for flight home.],
+                severanceIllegalUnlessApprovedByLaborMinstry[For pregnant women, or those that recently gave birth, employment termination requires special approval],
                 possible80KGrant[For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition]
 .
 

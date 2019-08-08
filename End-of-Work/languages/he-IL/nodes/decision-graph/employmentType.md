@@ -1,1 +1,1 @@
-מהו סוג ההעסקה?
+How were you employed? 

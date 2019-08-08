@@ -1,1 +1,1 @@
-איך חושב התשלום עבור ההעסקה?
+How was your salary claculated?

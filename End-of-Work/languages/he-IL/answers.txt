@@ -1,70 +1,76 @@
-Divorce: גירושין
-Moved in with spouse: מעבר למגורים עם בן/בת הזוג
-My spouse moved because of work: בן/בת הזוג עברו בגלל עבודה
-Other: אחר
-Over 10 Years: מעל 10 שנים
-Over 11 Months: מעל 11 חודשים
-Over 13 Years: מעל 13 שנים
-Over 51 Months: מעל 51 חודשים
-Over 63 Months: מעל 63 חודשים
-Over 8 Years: מעל 8 שנים
-accident during my work: תאונה במהלך העבודה
-accident on my way to work: תאונה בדרך לעבודה
-after retirement: אחרי פרישה
-before retirement: לפני פרישה
-citizen: אזרח
-contractor: קבלן
-daily: יומי
-direct: ישיר
-employer changed: שינוי מעסיק
-employer choice: בחירת המעסיק
-employer collapse: התמוטטות מעסיק
-employer death: מוותו של המעסיק
-employer hospitalized: המעסיק אושפז
-employer moved to nursing home: המעסיק עבר לבית אבות
-end of contract: סוף חוזה
-enrolled to civil service: גיוס לשירות אזרחי
-freelance: פרילנסר
-full: מלאה
-health condition of a family member: מצב בריאותי של בן משפחה
-health issues: סיבות בריאותיות
-hourly: שעתי
-involuntary: לא מיוזמתי
-jointEmployment: תעסוקה משולבת
-me: אני
-monthly: חודשי
-moved: מעבר
-my child, parent, or spouse: ילד, הורה, או בן/בת הזוג שלי
-my employer: המעסיק שלי
-my grandchild, grandfather, or parent in law: נכד, סב, או גיס שלי
-my health condition: מצב בריאותי אחר
-my initiative: יוזמה שלי
-no: לא
-other: אחר
-other family member: בן משפחה אחר
-palestinian with work permit: פלסטיני עם רשיון עבודה
-parenting: הורות
-partial: חלקי
-pre 21: מתחת לגיל 21
-resignation (other): התפטרות (אחר)
-retirement: פרישה
-road accident: תאונת דרכים
-severe abuse: התעללות חמורה
-significant breaching of rights: הפרת זכויות משמעותית
-significant deterioration of employment conditions: התדרדרות מוחשית בתנאי העבודה
-to a settlement outside the green line: לישוב מחוץ לקו הירוק
-to an agricaltural settlement: לישוב חקלאי
-to an eligible settelment: ליישוב זכאי
-undocumented: לא מתועד
-varied: משתנה
-visa of type 2a5: ויזה מסוג 2 א׳5
-visa of type B1General or A5: ויזה מסוג ב׳1 (כללי) או א׳5
-visa of type b1Agriculture: ויזה מסוג ב׳1 (חקלאות)
-visa of type b1CareGiver: ויזה מסוג ב׳1 (סיעוד)
-visa of type b1Construction: ויזה מסוג ב׳1 (בניה)
-visa of type b2: ויזה מסוג ב׳2
-visa termination: ביטול ויזה
-worker death: מוות העובד
-yes: כן
-yes, I don't want to stay: כן, אני לא רוצה להשאר
-yes, employer refused: כן, המעסיק סרב
+21-62: 21-62
+21-67: 21-67
+51 Months or more: 51 Months or more
+62-67: 62-67
+Divorce: Divorce
+I was sexually harraset: I was sexually harraset
+Less than 51 Months: Less than 51 Months
+Moved in with spouse: Moved in with spouse
+My spouse moved because of work: My spouse moved because of work
+Other: Other
+Over 10 Years: Over 10 Years
+Over 13 Years: Over 13 Years
+Over 63 Months: Over 63 Months
+Over 8 Years: Over 8 Years
+accident during my work: accident during my work
+accident on my way to work: accident on my way to work
+caring for a family member: caring for a family member
+citizen: citizen
+contractor: contractor
+daily: daily
+direct: direct
+employer changed: employer changed
+employer choice: employer choice
+employer collapse: employer collapse
+employer death: employer death
+employer moved to nursing home: employer moved to nursing home
+employer terminally hospitalized: employer terminally hospitalized
+end of contract: end of contract
+enrolled to civil service: enrolled to civil service
+freelance: freelance
+full: full
+health condition of a family member: health condition of a family member
+health issues: health issues
+hourly: hourly
+in residency process: in residency process
+involuntary: involuntary
+jointEmployment: jointEmployment
+me: me
+monthly: monthly
+moved: moved
+my child, parent, or spouse: my child, parent, or spouse
+my employer: my employer
+my grandchild, grandfather, or parent in law: my grandchild, grandfather, or parent in law
+my health condition: my health condition
+my initiative: my initiative
+my medical condition: my medical condition
+no: no
+other: other
+other family member: other family member
+over 67: over 67
+palestinian with work permit: palestinian with work permit
+parenting: parenting
+partial: partial
+resignation (other): resignation (other)
+retirement: retirement
+road accident: road accident
+severe abuse: severe abuse
+significant breaching of rights: significant breaching of rights
+significant deterioration of employment conditions: significant deterioration of employment conditions
+to a settlement outside the green line: to a settlement outside the green line
+to an agricaltural settlement: to an agricaltural settlement
+to an eligible settelment: to an eligible settelment
+under 21: under 21
+undocumented: undocumented
+varied: varied
+visa of type 2a5: visa of type 2a5
+visa of type B1General or A5: visa of type B1General or A5
+visa of type b1Agriculture: visa of type b1Agriculture
+visa of type b1CareGiver: visa of type b1CareGiver
+visa of type b1Construction: visa of type b1Construction
+visa of type b2: visa of type b2
+visa termination: visa termination
+worker death: worker death
+yes: yes
+yes, I don't want to stay: yes, I don't want to stay
+yes, employer refused: yes, employer refused

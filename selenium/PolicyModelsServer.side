@@ -115,13 +115,13 @@
       "id": "c0c0a4a8-499a-4802-b0c3-4a5578cdfe67",
       "comment": "",
       "command": "click",
-      "target": "css=.btn:nth-child(5)",
+      "target": "css=.answerButtonCtnr > .btn:nth-child(2)",
       "targets": [
-        ["css=.btn:nth-child(5)", "css:finder"],
-        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
-        ["xpath=//form[@id='answerForm']/div[2]/div/button[5]", "xpath:idRelative"],
-        ["xpath=//button[5]", "xpath:position"],
-        ["xpath=//button[contains(.,'מעל 8 שנים')]", "xpath:innerText"]
+        ["css=.answerButtonCtnr > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='answerForm']/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'yes')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -141,13 +141,13 @@
       "id": "8e721a67-1c64-4c7d-8297-29ab8864e741",
       "comment": "",
       "command": "click",
-      "target": "css=.btn:nth-child(5)",
+      "target": "css=.btn:nth-child(3)",
       "targets": [
-        ["css=.btn:nth-child(5)", "css:finder"],
-        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
-        ["xpath=//form[@id='answerForm']/div[2]/div/button[5]", "xpath:idRelative"],
-        ["xpath=//button[5]", "xpath:position"],
-        ["xpath=//button[contains(.,'המעסיק אושפז')]", "xpath:innerText"]
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='answerForm']/div[2]/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'involuntary')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -200,6 +200,19 @@
         ["xpath=//form[@id='answerForm']/div[2]/div/button[2]", "xpath:idRelative"],
         ["xpath=//div[2]/div/button[2]", "xpath:position"],
         ["xpath=//button[contains(.,'כן')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1063af55-03d4-4695-8fc5-fdfe9e37ddb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.answerButtonCtnr > .btn:nth-child(2)",
+      "targets": [
+        ["css=.answerButtonCtnr > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='answerForm']/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'yes')]", "xpath:innerText"]
       ],
       "value": ""
     }]

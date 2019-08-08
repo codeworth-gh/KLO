@@ -1,1 +1,4 @@
-האם סיום העבודה היא על מנת לטפל בקרוב חולה, והאם את/ה מפרנס/ת אותו?
+Are you living with your sick relative, and providing for him?
+
+### Terms
+* *providing*: Taking active part in financing his/her needs.

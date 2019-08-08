@@ -1,1 +1,1 @@
-סיום העסקה עקב בעיות בריאות
+Leaving a workplace for medical conditions

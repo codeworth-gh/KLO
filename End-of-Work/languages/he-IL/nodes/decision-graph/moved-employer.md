@@ -1,4 +1,4 @@
-האם תעסוקה במקום החדש תשפיע על איכות חייך לרעה באופן מוחשי?
+Will working in the new location will significantly affect your quality of life?
 
-###  מושגים
-* *השפעה לרעה באופן מוחשי*: מאוד תלוי במקרה הספציפי, יש לספק הסברים מפורטים.
+### Terms
+* *quality of life*: This depends a lot on the specific case.

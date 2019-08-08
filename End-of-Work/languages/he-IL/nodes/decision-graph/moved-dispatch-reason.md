@@ -1,4 +1,4 @@
-האם המעבר היה עקב שינוי מצב עם בן/בת הזוג?
+Did you move because of status change regarding your spouse?
 
-###  מושגים
-* *שינוי מצב*: נישואין, גירושים, מעבר למגורים משותפים
+### Terms
+* *status change*: Marriage, divorce, moving in together...

@@ -1,1 +1,1 @@
-האם הבית החדש מרוחק 40 ק״מ לפחות מביתך הקודם?
+Is your new home at least 40 km from your old home?

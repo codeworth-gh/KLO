@@ -1,5 +1,5 @@
-מדוע נאלצת לעזוב את מקום התעסוקה?
+Why did you have to leave this job?
 
-###  מושגים
-* *התמוטטות מעסיק*: פשיטת רגל
-* *שינוי מעסיק*: רכישת החברה, מעבר למטופל שונה (למשל טיפול בבן זוג ואז מעבר לבת הזוג).
+### Terms
+* *employer collapse*: Chapter 11, bankrupcy
+* *employer change*: Company takover, nursing wife and then moving to nursing the husband.

@@ -1,1 +1,1 @@
-מדוע החלטת לעזוב את מקום העבודה?
+What is the reason for your decision to leave this job?

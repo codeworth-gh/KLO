@@ -1,1 +1,1 @@
-מה היה משך ההעסקה?
+How long have you been in Israel?

@@ -1,1 +1,1 @@
-האם אתה רווק, או לחילופין האם אשתך עובדת?
+Are you single, or does your wife has a job? 

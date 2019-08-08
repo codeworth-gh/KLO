@@ -1,1 +1,1 @@
-האם החולה הוא בן משפחה?
+Is the sick family member? 

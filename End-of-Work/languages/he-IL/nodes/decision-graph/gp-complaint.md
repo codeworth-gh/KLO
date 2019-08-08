@@ -1,1 +1,1 @@
-האם פוטרת לאחר הגשת תלונה או לאחר קבלת ייעוץ מעורך דין?
+Were you fired after filing a complaint or getting advice from a lawyer?

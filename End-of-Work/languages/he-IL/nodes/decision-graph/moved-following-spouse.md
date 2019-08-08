@@ -1,4 +1,4 @@
-מה מהאפשרויות הבאות נכון?
+Which of the following apply
 
-### מונחים
-* *מעבר למגורים משותפים*: על בן הזוג לגור שם לפני המעבר. לא מדובר במצב בו שני אנשים עוברים לגור יחד במקום חדש לשניהם.
+### Terms
+* *Moved in with spouse*: The spouse has to live there before, not just you two guys moving in together.

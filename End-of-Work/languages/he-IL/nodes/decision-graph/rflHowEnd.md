@@ -1,1 +1,1 @@
-איך הסתיימה העסקה?
+How did the employent end?
