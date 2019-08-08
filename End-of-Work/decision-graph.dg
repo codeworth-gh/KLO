@@ -1,7 +1,4 @@
 [#import trailings: trailings.dg]
-<*
-TODO Handle reserve duty.
-*>
 <-- Detecting person properties
 [set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161,jobTerminationConfirmation ]
 [>sInitialFiltering< section:
@@ -9,15 +6,7 @@ TODO Handle reserve duty.
   [>gender< ask:
     {text: Are you a woman?}
     {answers:
-      {yes: [set: Gender=female]
-        [>isPregnant< ask:
-          {text: Were you pregnant when your employment ended,
-                 or did you give birth within 60 days before your employment ended?}
-          {answers:
-            {yes: [set:Flags += pregnant; Properties+=severanceIllegalUnlessApprovedByLaborMinstry]}
-          }
-        ]
-      }
+      {yes: [set: Gender=female]}
       {no: [set: Gender=male]}
     }
   ]
@@ -125,7 +114,7 @@ TODO Handle reserve duty.
             {retirement:
               [call: benefitSet-severance]
             }
-            {I was sexually harraset:
+            {I was sexually harrased:
               [set: ReasonForLeaving=sexualHarrasment]
               [call: benefitSet-severance]
               [set: Properties += specialCompensations; Recommendations+=canReportToThePolice]
@@ -150,7 +139,7 @@ TODO Handle reserve duty.
                                                [call: benefitSet-severance]} <-- TODO b12 Caregivers only
             {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]
                                              [call: benefitSet-severance]} <-- TODO b12 Caregivers only
-            {employer choice:   [call: gradeProcess][call: benefitSet-severance]}
+            {employer choice:   [call: pEmployerChoice]}
             {employer collapse: [call: pEmployerCollapsed]}
             {employer changed:  [set: ReasonForLeaving=employerChanged][call: benefitSet-severance]}
           }
@@ -277,7 +266,34 @@ TODO Handle reserve duty.
   ]
 --]
 
-[-->gradeProcess<
+[-->pEmployerChoice<
+[when:
+  { Gender=female:
+    [>isPregnant< ask:
+      {text: Were you pregnant when your employment ended?}
+      {answers:
+        {yes: [set: Flags += pregnant, possiblyIllegalSeverance;
+                    Properties+=severanceIllegalUnlessApprovedByLaborMinstry]}
+      }
+    ]
+  }
+]
+[>maternityLeave< ask:
+  {text: Were you fired during maternity leave?}
+  {terms:
+    {maternity leave: including for fathers and adopting parents.}
+  }
+  {answers:
+    {yes: [set: Flags += possiblyIllegalSeverance]}
+  }
+]
+[>reserveDuty< ask:
+  {text: Where you fired during reserve duty, or within 30 days of completing one?}
+  {answers:
+    {yes: [set: Flags+=possiblyIllegalSeverance;
+                Properties+=severanceIllegalUnlessApprovedByDefenseMinstry]}
+  }
+]
 [>gp-hearing< ask:
   {text: Did you get a hearing prior to being fired?}
   {terms:
@@ -301,7 +317,8 @@ TODO Handle reserve duty.
         {text: Were you fired after filing a complaint or getting advice from a lawyer?}
         {answers:
           {yes:
-            [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon; Properties+=severanceCancellation]
+            [set: Flags += possiblyIllegalSeverance; ProcessFairness=illegal;
+                  Recommendations+=sueFormerEmployerSoon; Properties+=severanceCancellation]
           }
         }
       ]
@@ -309,6 +326,7 @@ TODO Handle reserve duty.
   }
 ]
 [set: ProcessFairness=ok] <-- ignored if the value is already set.
+[call: benefitSet-severance]
 --]
 
 [-->part-parenting<

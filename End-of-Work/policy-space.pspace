@@ -37,7 +37,7 @@ ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, ille
 Flags: some of visaExpired, residencyStatusChange,
   pregnant[Pregnant while the severance happaened.],
   thisEmploymentOver11months,
-  nonIsraeliWorker.
+  nonIsraeliWorker, possiblyIllegalSeverance.
 
 Benefits: consists of UnemploymentBenefits, Pension, Properties.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],
@@ -49,10 +49,12 @@ Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations
                 parentalLeave,
                 monthlyPayForEachEmploymentYear[The employer has to pay a monthly payment for each employemnt year, minus deposit],
                 birthGrant, severancePay[also- "Separation"],
-                newJobAssistance, severanceCancellation["ביטול פיטורין"],
+                newJobAssistance,
+                severanceCancellation["ביטול פיטורין"],
                 eligibleForFlightExpenseNI[Natioal insurance can pay for flight home.],
                 eligibleForFlightExpensePI[Private insurance can pay for flight home.],
                 severanceIllegalUnlessApprovedByLaborMinstry[For pregnant women, or those that recently gave birth, employment termination requires special approval],
+                severanceIllegalUnlessApprovedByDefenseMinstry[Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence. ],
                 possible80KGrant[For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition]
 .
 

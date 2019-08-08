@@ -1,11 +1,9 @@
 <policy-model>
   <title>End of Work</title>
   <subtitle>Know your rights when you leave a workplace</subtitle>
-  <version>0.3</version>
-  <date>2019-05-07</date>
-  <!--
-  <keywords></keywords>
-  -->
+  <version>0.8.5</version>
+  <date>2019-08-08</date>
+  <keywords>worker rights, labor law</keywords>
   <authors>
     <group>
       <name url="http://www.klo.org.il">Kav Laoved Israel</name>
