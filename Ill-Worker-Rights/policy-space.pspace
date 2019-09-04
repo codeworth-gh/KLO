@@ -1,0 +1,66 @@
+IllnessLaborRights: consists of Duties, Benefits, Recommendations, Properties.
+
+Properties[Factual description of the case]: consists of LegalStatus, EmploymentDescription,
+                                                          TimeInIsrael, Pregnancy, AccidentType,
+                                                          ParentingGroupSize, RelatedDisability.
+
+Duties[What the employee is required do]: some of supportingMedicalDocumentation, handleVisa.
+
+Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
+                      SpouseSickness, SeveranceProtection, SicknessDaysRedumption,
+                      RoadAccidentCompensation, PersonalAccidentCompensation, UnpaidLeave,
+                      CompensationAccumulation, SeverenceBenefits, IncomeTaxExemption, IncomeSecurity,
+                      ProlongedMaternatyLeave, UnpaidVacation, PrivateInsuranceCompensation, MedicalCare.
+
+Recommendations: some of
+  niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.]
+  .
+
+LegalStatus: one of israeliCitizenship, b1Visa, other.
+
+ParentingGroupSize: one of couple, singleParent.
+
+RelatedDisability: some of parentOfDisabled,
+                           spouseOfDisabled,
+                           disabled.
+Pregnancy: one of none, regular, complicated.
+AccidentType: one of other, roadAccident.
+
+EmploymentDescription: consists of SalaryUnits, Type, Scope, Sector.
+SalaryUnits: one of monthly, daily, hourly.
+Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את השירות"],
+            freelance,
+            contractor ["עובד קבלן"],
+            jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
+Scope: one of partial, full, varied.
+
+ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
+
+Sector: one of civilService[State workers], manpower,
+                houseKeeping, security, eventFacilities[e.g. wedding gardens],
+                hotels.
+
+TimeInIsrael: one of moreThan10Years, lessThan10Years.
+
+PaidSicknessDays: TODO.
+ChildSickness: TODO.
+ParentSickness: TODO.
+SpouseSickness: TODO.
+SeveranceProtection: TODO.
+SicknessDaysRedumption: TODO.
+RoadAccidentCompensation: TODO.
+PersonalAccidentCompensation: TODO.
+UnpaidLeave: TODO.
+CompensationAccumulation: TODO.
+SeverenceBenefits: TODO.
+IncomeTaxExemption: TODO.
+IncomeSecurity["אבטחת הכנסה"]: TODO.
+ProlongedMaternatyLeave: TODO.
+UnpaidVacation: TODO.
+PrivateInsuranceCompensation: TODO.
+MedicalCare: TODO.
+SimpleBenefits: some of
+  sicknessPay[Minimal by law: 1.5 day for each employment month, to a maximum of 90 days.],
+  freeMedicalCare,
+  roadAccidentPayment[Paid by the insurance company of the car]
+  .

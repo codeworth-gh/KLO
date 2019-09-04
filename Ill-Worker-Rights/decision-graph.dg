@@ -1,0 +1,98 @@
+<**
+TODO: add the screening questionnaire, adapted.
+*>
+
+
+
+[>who< ask:
+  {text: Who suffers from the health condition in question?}
+  {answers:
+    {me: [call: pSelfCondition]}
+    {my spouse: }
+  }
+]
+
+<**
+ This part deals with medical condition of the interwiewee.
+ *>
+[-->pSelfCondition<
+  [call: pCaseProperties]
+  [>cause< ask:
+    {text: What caused the health condision in question?}
+    {terms:
+      {health condition: Could be, for example,  illness or injury.}
+    }
+    {answers:
+      {accident: [call: pAccidents]}
+      {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
+      {serious illness or disability: [todo: serious illness or disability]}
+      {work-related illness: [todo: work-related illness]}
+      {pregnancy:
+        [>pregrnancy-complications< ask:
+          {text: Were you instructed by a doctor not to work during the pregrnancy?}
+          {answers:
+            {yes: [set: Pregnancy=complicated]}
+            {no:  [set: Pregnancy=regular]}
+          }
+        ]
+      }
+      {miscarrige: [todo: miscarrige]}
+      {fertility treatments: [todo: fertility treatments]}
+    }
+  ]
+--]
+
+[-->pAccidents<
+  [>accident-type< ask:
+    {text: Describe the accident}
+    {terms:
+      {work related: An accident that happend during work, or on the way to/from it.}
+      {non work-related: An accident that did not happen at work, or on the way to/from work. }
+    }
+    {answers:
+      {road accident:
+        [>accident-road-filter< ask:
+          {text: Was the travel related to your work?}
+          {terms:
+            {work related: Travel to/from work, during work, or because of work (e.g. getting a visa).}
+          }
+          {answers:
+            {yes: [call: pWorkRelatedAcciedentBenefits] }
+            {no:
+              [set: SimpleBenefits+=roadAccidentPayment, freeMedicalCare]
+            }
+          }
+        ]
+      }
+      {work related: [call: pWorkRelatedAcciedentBenefits]}
+      {non-work related:
+        [set: SimpleBenefits += sicknessPay]
+        [consider:
+          {slot: LegalStatus}
+          {options:
+            { israeliCitizenship: [set: Recommendations+=niiAccidentPayment] }
+          }
+        ]
+      }
+    }
+  ]
+--]
+
+[-->pWorkRelatedAcciedentBenefits<
+
+--]
+
+
+<**
+Initial case data gatehring
+*>
+[-->pCaseProperties<
+  [>status< ask:
+    {text: What's your current status in Israel? }
+    {answers:
+      { citizen: [set: LegalStatus=citizen]}
+      { visa of type b1: [set: LegalStatus=b1Visa]}
+      { other: [set: LegalStatus=other] }
+    }
+  ]
+--]

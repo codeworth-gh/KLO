@@ -1,0 +1,42 @@
+<policy-model>
+  <title>Ill Worker Rights</title>
+  <subtitle></subtitle>
+  <version>0.1</version>
+  <date>2019-08-08</date>
+  <!--
+  <keywords></keywords>
+  -->
+  <authors>
+    <group>
+      <name url="http://www.klo.org.il">Kav Laoved Israel</name>
+      <contact>www.klo.org.il</contact>
+    </group>
+    <person>
+      <name>Michal Tadjer</name>
+      <affiliation>Kav Laoved</affiliation>
+    </person>
+    <person url="http://codeworth.io">
+      <name>Michael Bar-Sinai</name>
+      <affiliation>CodeWorth.io</affiliation>
+    </person>
+  </authors>
+  <model answers-order="yes-first">
+    <!-- other options: yes-last, verbatim. Default: yes-first -->
+    <!-- pathes are relative to model directory -->
+    <space root="IllnessLaborRights">policy-space.pspace</space>
+    <graph>decision-graph.dg</graph>
+    <!--
+    <valueInferrer>valueInference.vi</valueInferrer>
+    -->
+  </model>
+  <!--
+  <references>
+    <reference doi="1234567890">
+      ref1 text
+    </reference>
+    <reference url="http://somewhere.org/important/doc">
+      ref2 text
+    </reference>
+  </references>
+  -->
+</policy-model>
