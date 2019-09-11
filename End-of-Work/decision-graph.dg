@@ -42,16 +42,16 @@
   [>status< ask:
     {text: What's your current status in Israel? }
     {answers:
-      { citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
-      { in residency process: [set: LegalStatus=residencyProcess]}
-      { palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
-      { visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
-      { visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
-      { visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
-      { visa of type B1General or A5: [set: LegalStatus=residencyProcess; Flags+=nonIsraeliWorker]}
-      { visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Sector=agriculture; Flags+=nonIsraeliWorker]}
-      { visa of type b2: [set: LegalStatus=b2; Flags+=nonIsraeliWorker]}
-      { undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
+      {citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
+      {in residency process: [set: LegalStatus=residencyProcess]}
+      {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
+      {visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
+      {visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
+      {visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
+      {visa of type B1General or A5: [set: LegalStatus=residencyProcess; Flags+=nonIsraeliWorker]}
+      {visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Sector=agriculture; Flags+=nonIsraeliWorker]}
+      {visa of type b2: [set: LegalStatus=b2; Flags+=nonIsraeliWorker]}
+      {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
     }
   ]
   [>employment-duration< ask:
@@ -124,24 +124,62 @@
         ]
       }
       {involuntary:
-        [set: EmployerObligations+=priorNotice, hearing]
-        [>ReasonForLeaving-forced< ask:
-          {text: Why did you have to leave this job?}
-          {terms:
-            {employer collapse: Chapter 11, bankrupcy }
-            {employer change: Company takover, nursing wife and then moving to nursing the husband.}
+        [set: EmployerObligations+=priorNotice, hearing]<-- TODO: do these apply to care givers?
+        [call: benefitSet-severance]
+        [consider: {slot: LegalStatus}
+          {options:
+            {israeliCitizenship:
+              [>ReasonForLeaving-forced-citizens< ask:
+                {text: Why did you have to leave this job?}
+                {terms:
+                  {employer collapse: Chapter 11, bankrupcy }
+                  {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
+                }
+                {answers:
+                  {end of contract:   [set: ReasonForLeaving=endOfContract]}
+                  {employer death:    [set: ReasonForLeaving=employerDeath]}
+                  {employer choice:   [call: pEmployerChoice]}
+                  {employer collapse: [call: pEmployerCollapsed]}
+                  {employer changed:  [set: ReasonForLeaving=employerChanged]}
+                }
+              ]
+            }
+            {b1CareGiver:
+              [>ReasonForLeaving-forced-b1< ask:
+                {text: Why did you have to leave this job?}
+                {terms:
+                  {employer collapse: Chapter 11, bankrupcy }
+                  {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
+                }
+                {answers:
+                  {end of contract:   [set: ReasonForLeaving=endOfContract]}
+                  {employer death:    [set: ReasonForLeaving=employerDeath]}
+                  {visa termination:  [set: ReasonForLeaving=visaTermination]}
+                  {employer terminally hospitalized: [set: ReasonForLeaving=employerHospitalized]}
+                  {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]}
+                  {employer choice:   [call: pEmployerChoice]}
+                  {employer collapse: [call: pEmployerCollapsed]}
+                  {employer changed:  [set: ReasonForLeaving=employerChanged]}
+                }
+              ]
+            }
           }
-          {answers:
-            {end of contract:       [set: ReasonForLeaving=endOfContract][call: benefitSet-severance]}
-            {visa termination:      [set: ReasonForLeaving=visaTermination][call: benefitSet-severance]} <-- TODO only for non-israelies
-            {employer death:        [set: ReasonForLeaving=employerDeath][call: benefitSet-severance]}
-            {employer terminally hospitalized: [set: ReasonForLeaving=employerHospitalized]
-                                               [call: benefitSet-severance]} <-- TODO b12 Caregivers only
-            {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]
-                                             [call: benefitSet-severance]} <-- TODO b12 Caregivers only
-            {employer choice:   [call: pEmployerChoice]}
-            {employer collapse: [call: pEmployerCollapsed]}
-            {employer changed:  [set: ReasonForLeaving=employerChanged][call: benefitSet-severance]}
+          {else:
+            [>ReasonForLeaving-forced-others< ask:
+              {text: Why did you have to leave this job?}
+              {terms:
+                {employer collapse: Chapter 11, bankrupcy }
+                {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
+              }
+              {answers:
+                {end of contract:   [set: ReasonForLeaving=endOfContract]}
+                {employer death:    [set: ReasonForLeaving=employerDeath]}
+                {visa termination:  [set: ReasonForLeaving=visaTermination]}
+                {employer choice:   [call: pEmployerChoice]}
+                {employer collapse: [call: pEmployerCollapsed]}
+                {employer changed:  [set: ReasonForLeaving=employerChanged]}
+              }
+            ]
           }
         ]
       }
@@ -178,21 +216,30 @@
   ]
 ]
 
-[>planToLeaveOrStay< ask:
-  {text: Do you plan to stay in Israel?}
-  {answers:
-      {yes:
-        <* Trailers - post-processing of what we know (may require extra questions) *>
-        [set: Recommendations+=reducedBenefitsForOverstay2Month]
-        [consider:
-          {slot: Sector}
-          {options:
-            {careGiving: [call: trailings>careGivers] }
-            {construction: [call: trailings>constructionWorkers]}
+[consider:
+  {slot: LegalStatus}
+  {options:
+    {israeliCitizenship:}
+    {residencyProcess:}
+    {palestinianWorkPermit:}
+  }
+  {else:
+    [>planToLeaveOrStay< ask:
+      {text: Do you plan to stay in Israel?}
+      {answers:
+          {yes:
+            [set: Recommendations+=reducedBenefitsForOverstay2Month]
+            [consider:
+              {slot: Sector}
+              {options:
+                {careGiving: [call: trailings>careGivers] }
+                {construction: [call: trailings>constructionWorkers]}
+              }
+            ]
           }
-        ]
+          {no: [call: pPlanningToLeaveIsrael]}
       }
-      {no: [call: pPlanningToLeaveIsrael]}
+    ]
   }
 ]
 
@@ -254,7 +301,7 @@
 
 [-->leaveForMedicalConditions<
   <* This part works on leaving a workplace for medical conditions,
-   * when the client may be eligible for benefits.
+   * when the worker may be eligible for benefits.
   *>
   {title: Leaving a workplace for medical conditions}
   [>lfmm-1< ask:
@@ -326,7 +373,6 @@
   }
 ]
 [set: ProcessFairness=ok] <-- ignored if the value is already set.
-[call: benefitSet-severance]
 --]
 
 [-->part-parenting<
@@ -512,7 +558,6 @@
 
 [-->pEmployerCollapsed<
 [set: ReasonForLeaving=employerCollapse]
-[call: benefitSet-severance]
 [>employerCollapseFormalBankrupcy< ask:
   {text: Is the employer formally declared as bankrupt?}
   {answers:

@@ -90,7 +90,7 @@ Initial case data gatehring
   [>status< ask:
     {text: What's your current status in Israel? }
     {answers:
-      { citizen: [set: LegalStatus=citizen]}
+      { citizen: [set: LegalStatus=israeliCitizenship]}
       { visa of type b1: [set: LegalStatus=b1Visa]}
       { other: [set: LegalStatus=other] }
     }

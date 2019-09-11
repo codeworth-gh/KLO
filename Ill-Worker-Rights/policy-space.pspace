@@ -10,7 +10,8 @@ Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSic
                       SpouseSickness, SeveranceProtection, SicknessDaysRedumption,
                       RoadAccidentCompensation, PersonalAccidentCompensation, UnpaidLeave,
                       CompensationAccumulation, SeverenceBenefits, IncomeTaxExemption, IncomeSecurity,
-                      ProlongedMaternatyLeave, UnpaidVacation, PrivateInsuranceCompensation, MedicalCare.
+                      ProlongedMaternatyLeave, UnpaidVacation, PrivateInsuranceCompensation, MedicalCare
+                      .
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.]
