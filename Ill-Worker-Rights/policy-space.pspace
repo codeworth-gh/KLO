@@ -1,6 +1,6 @@
 IllnessLaborRights: consists of Duties, Benefits, Recommendations, Properties.
 
-Properties[Factual description of the case]: consists of LegalStatus, EmploymentDescription,
+Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
                                                           TimeInIsrael, Pregnancy, AccidentType,
                                                           ParentingGroupSize, RelatedDisability.
 
@@ -24,20 +24,20 @@ ParentingGroupSize: one of couple, singleParent.
 RelatedDisability: some of parentOfDisabled,
                            spouseOfDisabled,
                            disabled.
-Pregnancy: one of none, regular, complicated.
+Pregnancy: one of regular, complicated.
 AccidentType: one of other, roadAccident.
 
-EmploymentDescription: consists of SalaryUnits, Type, Scope, Sector.
+EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector.
 SalaryUnits: one of monthly, daily, hourly.
-Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את השירות"],
+EmploymentType: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את השירות"],
             freelance,
             contractor ["עובד קבלן"],
             jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
-Scope: one of partial, full, varied.
+EmploymentScope: one of partial, full, varied.
 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 
-Sector: one of civilService[State workers], manpower,
+Sector: one of other, civilService[State workers], manpower,
                 houseKeeping, security, eventFacilities[e.g. wedding gardens],
                 hotels.
 
@@ -65,3 +65,5 @@ SimpleBenefits: some of
   freeMedicalCare,
   roadAccidentPayment[Paid by the insurance company of the car]
   .
+
+Gender: one of male, female.

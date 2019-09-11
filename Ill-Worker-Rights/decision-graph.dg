@@ -1,8 +1,4 @@
-<**
-TODO: add the screening questionnaire, adapted.
-*>
-
-
+[call: pCaseProperties]
 
 [>who< ask:
   {text: Who suffers from the health condition in question?}
@@ -14,7 +10,7 @@ TODO: add the screening questionnaire, adapted.
 
 <**
  This part deals with medical condition of the interwiewee.
- *>
+*>
 [-->pSelfCondition<
   [call: pCaseProperties]
   [>cause< ask:
@@ -79,7 +75,7 @@ TODO: add the screening questionnaire, adapted.
 --]
 
 [-->pWorkRelatedAcciedentBenefits<
-
+[todo: Implement work related acciedent benefits.]
 --]
 
 
@@ -87,12 +83,59 @@ TODO: add the screening questionnaire, adapted.
 Initial case data gatehring
 *>
 [-->pCaseProperties<
-  [>status< ask:
-    {text: What's your current status in Israel? }
+[>status< ask:
+  {text: What is your current status in Israel? }
+  {answers:
+    {citizen: [set: LegalStatus=israeliCitizenship]}
+    {visa of type b1: [set: LegalStatus=b1Visa]}
+    {other: [set: LegalStatus=other] }
+  }
+]
+[>gender< ask:
+  {text: Are you a woman?}
+  {answers:
+    {yes: [set: Gender=female]}
+    {no: [set: Gender=male]}
+  }
+]
+[>sEmploymentForm< section:
+  {title: Form of employment}
+  [>employmentUnits< ask:
+    {text: How is your salary calculated?}
     {answers:
-      { citizen: [set: LegalStatus=israeliCitizenship]}
-      { visa of type b1: [set: LegalStatus=b1Visa]}
-      { other: [set: LegalStatus=other] }
+      {monthly: [set: SalaryUnits=monthly] }
+      {daily:   [set: SalaryUnits=daily] }
+      {hourly:  [set: SalaryUnits=hourly] }
     }
   ]
+  [>employmentType< ask:
+    {text: How are you employed? }
+    {answers:
+      { direct:          [set: EmploymentType=direct] }
+      { freelance:       [set: EmploymentType=freelance] }
+      { contractor:      [set: EmploymentType=contractor] }
+      { jointEmployment: [set: EmploymentType=jointEmployment] }
+    }
+  ]
+  [>employmentScope< ask:
+    {text: What is the scope of your employment?}
+    {answers:
+      {partial: [set: EmploymentScope=partial] }
+      {full:    [set: EmploymentScope=full] }
+      {varied:  [set: EmploymentScope=varied] }
+    }
+  ]
+  [>employmentSector< ask:
+    {text: Select the sector you are employed in:}
+    {answers:
+      {civil service: [set: Sector=civilService]}
+      {manpower: [set: Sector=manpower]}
+      {house keeping: [set: Sector=houseKeeping]}
+      {security: [set: Sector=security]}
+      {event facilities: [set: Sector=eventFacilities]}
+      {hotels: [set: Sector=hotels]}
+      {none of the above: [set: Sector=other]}
+    }
+  ]
+] <-- / employment form
 --]
