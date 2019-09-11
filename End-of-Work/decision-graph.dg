@@ -54,29 +54,36 @@
       {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
     }
   ]
-  [>employment-duration< ask:
+  [consider:
+    {slot: LegalStatus}
+    {options:
+      {b1CareGiver: }
+    }
+    {else:
+    }
+  ]
+  [>duration-employment< ask:
     {text: Were you employed for more than 11 months?}
     {answers:
       {yes: [set: Flags+=thisEmploymentOver11months] }
     }
   ]
-  [>duration-dispatch< consider:
+  [consider:
     {slot: LegalStatus}
     {options:
-      {israeliCitizenship:}
-    }
-    {else:
-      [>duration< ask:
-        {text: How long have you been in Israel?}
-        {answers:
-          {Less than 51 Months: [set: TimeInIsrael=lessThan51Months] }
-          {51 Months or more: [set: TimeInIsrael=overOr51Months] }
-          {Over 63 Months: [set: TimeInIsrael=over63Months] }
-          {Over 8 Years:   [set: TimeInIsrael=over8Years]   }
-          {Over 10 Years:  [set: TimeInIsrael=over10Years]  }
-          {Over 13 Years:  [set: TimeInIsrael=over13Years]  }
-        }
-      ]
+      {b1CareGiver:
+        [>duration-inIsrael< ask:
+          {text: How long have you been in Israel?}
+          {answers:
+            {Less than 51 Months: [set: TimeInIsrael=lessThan51Months] }
+            {51 Months or more: [set: TimeInIsrael=overOr51Months] }
+            {Over 63 Months: [set: TimeInIsrael=over63Months] }
+            {Over 8 Years:   [set: TimeInIsrael=over8Years]   }
+            {Over 10 Years:  [set: TimeInIsrael=over10Years]  }
+            {Over 13 Years:  [set: TimeInIsrael=over13Years]  }
+          }
+        ]
+      }
     }
   ]
 ]
@@ -108,16 +115,18 @@
               [call: benefitSet-severance]
             }
             {severe abuse:
-              [set: Recommendations+=involveAidOrganizations]
+              [set: Recommendations+=involveAidOrganizations; ReasonForLeaving=severeAbuse]
               [call: benefitSet-severance]
             }
             {retirement:
+              [set: ReasonForLeaving=retirement]
               [call: benefitSet-severance]
             }
             {I was sexually harrased:
-              [set: ReasonForLeaving=sexualHarrasment]
+              [set: ReasonForLeaving = sexualHarrasment;
+                    Properties       += specialCompensations;
+                    Recommendations  += canReportToThePolice]
               [call: benefitSet-severance]
-              [set: Properties += specialCompensations; Recommendations+=canReportToThePolice]
             }
             {resignation (other): [call: benefitSet-resignation]}
           }
