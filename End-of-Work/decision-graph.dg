@@ -334,13 +334,18 @@
     ]
   }
 ]
-[>maternityLeave< ask:
-  {text: Were you fired during maternity leave?}
-  {terms:
-    {maternity leave: including for fathers and adopting parents.}
-  }
-  {answers:
-    {yes: [set: Flags += possiblyIllegalSeverance]}
+[when:
+  {Flags+=pregnant: }
+  {else:
+    [>maternityLeave< ask:
+      {text: Were you fired during maternity leave?}
+      {terms:
+        {maternity leave: including for fathers and adopting parents.}
+      }
+      {answers:
+        {yes: [set: Flags += possiblyIllegalSeverance]}
+      }
+    ]
   }
 ]
 [>reserveDuty< ask:
