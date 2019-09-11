@@ -54,14 +54,6 @@
       {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
     }
   ]
-  [consider:
-    {slot: LegalStatus}
-    {options:
-      {b1CareGiver: }
-    }
-    {else:
-    }
-  ]
   [>duration-employment< ask:
     {text: Were you employed for more than 11 months?}
     {answers:
@@ -337,7 +329,7 @@
 [when:
   {Flags+=pregnant: }
   {else:
-    [>maternityLeave< ask:
+    [>maternityLeave< ask: <-- TODO There's a comment about asking only women, but men can take maternaty leave too, right?
       {text: Were you fired during maternity leave?}
       {terms:
         {maternity leave: including for fathers and adopting parents.}
