@@ -346,6 +346,25 @@
         {yes: [set: Flags += possiblyIllegalSeverance]}
       }
     ]
+    [>insinuatedReasons< ask:
+      {text: Was one of the following reasons insinuated as the reason for your job termination? (list goes here)}
+      {answers:
+        {yes:
+          [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon]
+        }
+        {no:
+          [>gp-complaint< ask:
+            {text: Were you fired after filing a complaint or getting advice from a lawyer?}
+            {answers:
+              {yes:
+                [set: Flags += possiblyIllegalSeverance; ProcessFairness=illegal;
+                      Recommendations+=sueFormerEmployerSoon; Properties+=severanceCancellation]
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
 [>reserveDuty< ask:
@@ -363,26 +382,6 @@
   {answers:
     {no:
       [set: ProcessFairness=flawed]
-    }
-  }
-]
-[>gp-hearing-details< ask:
-  {text: Was one of the following reasons insinuated as the reason for your job termination? (list goes here)}
-  {terms: }
-  {answers:
-    {yes:
-      [set: ProcessFairness=illegal; Recommendations+=sueFormerEmployerSoon]
-    }
-    {no:
-      [>gp-complaint< ask:
-        {text: Were you fired after filing a complaint or getting advice from a lawyer?}
-        {answers:
-          {yes:
-            [set: Flags += possiblyIllegalSeverance; ProcessFairness=illegal;
-                  Recommendations+=sueFormerEmployerSoon; Properties+=severanceCancellation]
-          }
-        }
-      ]
     }
   }
 ]
