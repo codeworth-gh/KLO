@@ -367,11 +367,18 @@
     ]
   }
 ]
-[>reserveDuty< ask:
-  {text: Where you fired during reserve duty, or within 30 days of completing one?}
-  {answers:
-    {yes: [set: Flags+=possiblyIllegalSeverance;
-                Properties+=severanceIllegalUnlessApprovedByDefenseMinstry]}
+[consider:
+  {slot: LegalStatus}
+  {options:
+    {israeliCitizenship:
+      [>reserveDuty< ask:
+        {text: Where you fired during reserve duty, or within 30 days of completing one?}
+        {answers:
+          {yes: [set: Flags+=possiblyIllegalSeverance;
+            Properties+=severanceIllegalUnlessApprovedByDefenseMinstry]}
+        }
+      ]
+    }
   }
 ]
 [>gp-hearing< ask:
@@ -380,12 +387,10 @@
     {hearing: A meeting with the employer to declared as "before job termination" talk.}
   }
   {answers:
-    {no:
-      [set: ProcessFairness=flawed]
-    }
+    {no:  [set: ProcessFairness=flawed]}
+    {yes: [set: ProcessFairness=ok]}
   }
 ]
-[set: ProcessFairness=ok] <-- ignored if the value is already set.
 --]
 
 [-->part-parenting<
