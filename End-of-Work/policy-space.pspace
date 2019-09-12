@@ -37,7 +37,7 @@ ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, ille
 Flags: some of visaExpired, residencyStatusChange,
   pregnant[Pregnant while the severance happaened.],
   thisEmploymentOver11months,
-  nonIsraeliWorker, possiblyIllegalSeverance.
+  nonIsraeliWorker, possiblyIllegalSeverance, employmentSet.
 
 Benefits: consists of UnemploymentBenefits, Pension, Properties.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],

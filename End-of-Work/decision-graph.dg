@@ -1,5 +1,5 @@
 [#import trailings: trailings.dg]
-<-- Detecting person properties
+<-- Detecting case properties
 [set: EmployerObligations += finalAccountSettlement,workPeriodLetter,form161,jobTerminationConfirmation ]
 [>sInitialFiltering< section:
   {title: Initial Questionnaire}
@@ -20,7 +20,7 @@
             {text: How old are you? }
             {answers:
               {under 67:    [set: AgeGroup=workForce]}
-              {67 and over:  [set: AgeGroup=pension; Pension=allowance]}
+              {67 and over: [set: AgeGroup=pension; Pension=allowance]}
             }
           ]
         }
@@ -51,8 +51,12 @@
             {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
             {visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
             {visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
-            {visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
-            {visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Sector=agriculture; Flags+=nonIsraeliWorker]}
+            {visa of type b1CareGiver:
+              [set: LegalStatus=b1CareGiver;         Sector=careGiving;   Flags+=nonIsraeliWorker, employmentSet;
+                    Employment/Type=jointEmployment; SalaryUnits=monthly; Employment/Scope=full]}
+            {visa of type b1Agriculture:
+               [set: LegalStatus=b1Agriculture; Sector=agriculture;  Flags+=nonIsraeliWorker, employmentSet;
+                     Employment/Type=direct;    SalaryUnits=monthly; Employment/Scope=full]}
             {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
             {other non-citizen: [set: LegalStatus=other]}
           }
@@ -175,8 +179,8 @@
             [>ReasonForLeaving-forced-others< ask:
               {text: Why did you have to leave this job?}
               {terms:
-                {employer collapse: Chapter 11, bankrupcy }
-                {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
+                {employer collapse: E.g. chapter 11, bankrupcy (either formal or not) }
+                {employer change: E.g. company takover, nursing a wife and then moving to nursing her husband.}
               }
               {answers:
                 {end of contract:   [set: ReasonForLeaving=endOfContract]}
@@ -196,42 +200,48 @@
 
 [>sEmploymentForm< section:
   {title: Form of employment}
-  [>employmentUnits< ask:
-    {text: How was your salary calculated?}
-    {answers:
-      {monthly: [set: Employment/SalaryUnits=monthly] }
-      {daily:   [set: Employment/SalaryUnits=daily] }
-      {hourly:  [set: Employment/SalaryUnits=hourly] }
-    }
-  ]
-  [>employmentType< ask:
-    {text: How were you employed? }
-    {answers:
-      { direct:          [set: Employment/Type=direct] }
-      { contractor:
-        [set: Employment/Type=contractor]
-        [>contractorChange< ask:
-          {text: Was the contractor employing you replaced by another contractor, and you stayed, in effect, at the same work place?}
-          {answers:
-            {yes: [set: EmployerObligations += honorFormerContractorSeniority]}
+  [when:
+    {Flags+=employmentSet: }
+    {else:
+      [>employmentUnits< ask:
+        {text: How was your salary calculated?}
+        {answers:
+          {monthly: [set: Employment/SalaryUnits=monthly] }
+          {daily:   [set: Employment/SalaryUnits=daily] }
+          {hourly:  [set: Employment/SalaryUnits=hourly] }
+        }
+      ]
+      [>employmentType< ask:
+        {text: How were you employed? }
+        {answers:
+          { direct:          [set: Employment/Type=direct] }
+          { contractor:
+            [set: Employment/Type=contractor]
+            [>contractorChange< ask:
+              {text: Was the contractor employing you replaced by another contractor, and you stayed, in effect, at the same work place?}
+              {answers:
+                {yes: [set: EmployerObligations += honorFormerContractorSeniority]}
+              }
+            ]
           }
-        ]
-      }
-      { jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
-      { freelance:
-        [set: Employment/Type=freelance; Recommendations+=consultLawyer]
-        [>freelance-summary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
-      }
+          { jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
+          { freelance:
+            [set: Employment/Type=freelance; Recommendations+=consultLawyer]
+            [>freelanceSummary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
+          }
+        }
+      ]
+      [>employmentScope< ask:
+        {text: What was the scope of your employment?}
+        {answers:
+          {partial: [set: Employment/Scope=partial] }
+          {full:    [set: Employment/Scope=full] }
+          {varied:  [set: Employment/Scope=varied] }
+        }
+      ]
     }
   ]
-  [>employmentScope< ask:
-    {text: What was the scope of your employment?}
-    {answers:
-      {partial: [set: Employment/Scope=partial] }
-      {full:    [set: Employment/Scope=full] }
-      {varied:  [set: Employment/Scope=varied] }
-    }
-  ]
+
 ]
 
 [consider:
