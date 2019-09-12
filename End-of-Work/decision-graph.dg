@@ -37,19 +37,24 @@
       }
     ]
   ]
-  [>status< ask:
-    {text: What's your current status in Israel? }
+  [>status1< ask:
+    {text: Are you an Israeli citizen?}
     {answers:
-      {citizen: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]}
-      {in residency process: [set: LegalStatus=residencyProcess]}
-      {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
-      {visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
-      {visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
-      {visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
-      {visa of type B1General or A5: [set: LegalStatus=residencyProcess; Flags+=nonIsraeliWorker]}
-      {visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Sector=agriculture; Flags+=nonIsraeliWorker]}
-      {visa of type b2: [set: LegalStatus=b2; Flags+=nonIsraeliWorker]}
-      {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
+      {yes: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice] }
+      {no:
+        [>status-foreign< ask:
+          {text: What's your current status in Israel? }
+          {answers:
+            {palestinian with work permit: [set: LegalStatus=palestinianWorkPermit]}
+            {visa of type b1Construction: [set: LegalStatus=b1Construction; Flags+=nonIsraeliWorker; Sector=construction]}
+            {visa of type 2a5: [set: LegalStatus=_2a5; Flags+=nonIsraeliWorker]}
+            {visa of type b1CareGiver: [set: LegalStatus=b1CareGiver; Sector=careGiving; Flags+=nonIsraeliWorker]}
+            {visa of type b1Agriculture: [set: LegalStatus=b1Agriculture; Sector=agriculture; Flags+=nonIsraeliWorker]}
+            {undocumented: [set: LegalStatus=undocumented; Flags+=nonIsraeliWorker] }
+            {other non-citizen: [set: LegalStatus=other]}
+          }
+        ]
+      }
     }
   ]
   [>duration-employment< ask:
@@ -91,7 +96,7 @@
             {health issues:  [call: part-health]}
             {enrolled to civil service: [set: ReasonForLeaving=enrolledToCivilService][call: benefitSet-severance] }
             {parenting: [set:ReasonForLeaving=forParenting][call:part-parenting] }
-            {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship, residencyProcess
+            {moved: [call:part-moved]} <-- TODO need to show only to israeliCitizenship
             {worker death:
               [set: Recommendations+=payKeens; ReasonForLeaving=workerDeath]
               [call: benefitSet-severance]
@@ -219,7 +224,6 @@
   {slot: LegalStatus}
   {options:
     {israeliCitizenship:}
-    {residencyProcess:}
     {palestinianWorkPermit:}
   }
   {else:

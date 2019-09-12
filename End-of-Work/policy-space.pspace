@@ -4,9 +4,9 @@ EndOfWork: consists of EmployerObligations, Duties, Restrictions,
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         TimeInIsrael, ProcessFairness, Gender,
                         Flags, EffectiveTerminationType.
-LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
+LegalStatus: one of israeliCitizenship,
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
-                    b1Agriculture, b2, undocumented.
+                    b1Agriculture, undocumented, other.
 AgeGroup: one of workForce,
                  voluntaryPension[Workers may retire if they want],
                  pension[Employer can force the worker to retire].
