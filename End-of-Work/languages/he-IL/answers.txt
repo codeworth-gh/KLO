@@ -1,82 +1,81 @@
 21-62: 21-62
 21-67: 21-67
-51 Months or more: 51 Months or more
+51 Months or more: 51 חודשים או יותר
 62-67: 62-67
-Divorce: Divorce
-I was sexually harraset: I was sexually harraset
-Less than 51 Months: Less than 51 Months
-Moved in with spouse: Moved in with spouse
-My spouse moved because of work: My spouse moved because of work
-Other: Other
-Over 10 Years: Over 10 Years
-Over 13 Years: Over 13 Years
-Over 63 Months: Over 63 Months
-Over 8 Years: Over 8 Years
-accident during my work: accident during my work
-accident on my way to work: accident on my way to work
-caring for a family member: caring for a family member
-citizen: citizen
-contractor: contractor
-daily: daily
-direct: direct
-employer changed: employer changed
-employer choice: employer choice
-employer collapse: employer collapse
-employer death: employer death
-employer moved to nursing home: employer moved to nursing home
-employer terminally hospitalized: employer terminally hospitalized
-end of contract: end of contract
-enrolled to civil service: enrolled to civil service
-freelance: freelance
-full: full
-health condition of a family member: health condition of a family member
-health issues: health issues
-hourly: hourly
-in residency process: in residency process
-involuntary: involuntary
-jointEmployment: jointEmployment
-me: me
-monthly: monthly
-moved: moved
-my child, parent, or spouse: my child, parent, or spouse
-my employer: my employer
-my grandchild, grandfather, or parent in law: my grandchild, grandfather, or parent in law
-my health condition: my health condition
-my initiative: my initiative
-my medical condition: my medical condition
-no: no
-other: other
-other family member: other family member
-over 67: over 67
-palestinian with work permit: palestinian with work permit
-parenting: parenting
-partial: partial
-resignation (other): resignation (other)
-retirement: retirement
-road accident: road accident
-severe abuse: severe abuse
-significant breaching of rights: significant breaching of rights
-significant deterioration of employment conditions: significant deterioration of employment conditions
-to a settlement outside the green line: to a settlement outside the green line
-to an agricaltural settlement: to an agricaltural settlement
-to an eligible settelment: to an eligible settelment
-under 21: under 21
-undocumented: undocumented
-varied: varied
-visa of type 2a5: visa of type 2a5
-visa of type B1General or A5: visa of type B1General or A5
-visa of type b1Agriculture: visa of type b1Agriculture
-visa of type b1CareGiver: visa of type b1CareGiver
-visa of type b1Construction: visa of type b1Construction
-visa of type b2: visa of type b2
-visa termination: visa termination
-worker death: worker death
-yes: yes
-yes, I don't want to stay: yes, I don't want to stay
-yes, employer refused: yes, employer refused
-62 to 67: 62 to 67
-67 and over: 67 and over
-I was sexually harrased: I was sexually harrased
-other non-citizen: other non-citizen
-under 62: under 62
-under 67: under 67
+Divorce: גירושין
+I was sexually harraset: הוטרדתי מינית
+Less than 51 Months: פחות מ-51 חודשים
+Moved in with spouse: עברתי לגור עם בן/בת זוג
+My spouse moved because of work: בן/בת זוגי עבר לצורך עבודה
+Other: אחר
+Over 10 Years: מעל 10 שנים
+Over 13 Years: מעל 13 שנה
+Over 63 Months: מעל 63 חודשים
+Over 8 Years: מעל 8 שנים
+accident during my work: תאונה במהלך העבודה
+accident on my way to work: תאונה בדרך לעבודה
+caring for a family member: טיפול בבן משפחה
+citizen: אזרח
+contractor: קבלן
+daily: יומי
+direct: ישירה
+employer changed: החלפת מעביד
+employer choice: בחירת מעביד
+employer collapse: התמוטטות מעביד
+employer death: המעביד נפטר
+employer moved to nursing home: המעביד עבר לבית אבות
+employer terminally hospitalized: המעביד אושפז לתקופה ארוכה
+end of contract: סיום חוזה
+enrolled to civil service: גיוס לצבא/שירות לאומי
+freelance: פרילנס
+full: מלאה
+health condition of a family member: מצב בריאותי של בן משפחה
+health issues: בעיות בריאות
+hourly: שעתי
+in residency process: בתהליך אזרוח
+involuntary: לא ביוזמתי
+jointEmployment: העסקה משולבת
+me: אני
+monthly: חודשית
+moved: מעבר
+my child, parent, or spouse: צאצא, הורה, או בן/בת זוג
+my employer: המעסיק שלי
+my grandchild, grandfather, or parent in law: נכד, סבא, או הורה של בן/בת זוג
+my health condition: מצבי הבריאותי
+my initiative: יוזמה שלי
+my medical condition: מצבי הרפואי
+no: לא
+other: אחר
+other family member: בן משפחה אחר
+over 67: 67 ומעלה
+palestinian with work permit: פלסטיני עם רשיון עבודה
+parenting: הורות
+partial: חלקית
+resignation (other): התפטרות (אחר)
+retirement: פרישה
+road accident: תאונת דרכים
+severe abuse: התעללות חמורה
+significant breaching of rights: הפרת זכויות חמורה
+significant deterioration of employment conditions: הדרדרות בתנאי העסקה
+to a settlement outside the green line: ליישוב מחוץ לקו הירוק
+to an agricaltural settlement: לישוב חקלאי
+to an eligible settelment: לישוב זכאי
+under 21: מתחת ל-21
+undocumented: ללא רישום
+varied: משתנה
+visa of type 2a5: ויזה 2 א׳ 5
+visa of type b1Agriculture: ויזה ב׳1 חקלאות
+visa of type b1CareGiver:ויזה ב׳1 סיעוד
+visa of type b1Construction:ויזה ב׳1 בניין
+visa of type b2: ויזה ב׳ 2
+visa termination: פקיעת ויזה
+worker death: מות העובד
+yes: כן
+yes, I don't want to stay: כן, אני לא רוצה להשאר
+yes, employer refused: כן, המעסיק סרב
+62 to 67: 62 עד 67
+67 and over: 67 ומעלה
+I was sexually harrased:הוטרדתי מינית
+other non-citizen: אחר (לא אזרח)
+under 62: פחות מ-62
+under 67: פחות מ-67

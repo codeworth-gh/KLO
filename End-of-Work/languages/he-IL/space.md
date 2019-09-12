@@ -1,6 +1,5 @@
-﻿# EndOfWork
+# EndOfWork
 סיום העסקה
-
 
 # EndOfWork/EmployerObligations
 חובות מעסיק
@@ -34,6 +33,11 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 סך הזכאויות אותן העובד לא ניצל במהלך ההעסקה
 ---
 עם תשלום השכר האחרון על המעסיק לחשב את יתרת הזכויות שנצברו בתקופת העבודה, לרבות יתרת דמי הבראה, פידיון ימי חופשה שלא נוצלו, השלמת פיצויי פיטורים או עמלות - ככל שיש זכאות.
+
+# EndOfWork/EmployerObligations/honorFormerContractorSeniority
+הכרה בותק
+הכרה בותק לצורך הזכויות הבראה, חופשה, פנסיה, תוספות ותק
+
 
 # EndOfWork/EmployerObligations/form161
 טופס 161
@@ -149,7 +153,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 זכויות בתום ההעסקה
 
 # EndOfWork/Benefits/UnemploymentBenefits
-דמי אבטלהֿ
+דמי אבטלה
 ---
 דמי אבטלה, הזכאות מותנית בגיל, בתקופת עבודה רצופה מינימלית (לאו דווקא אצל אותו מעסיק) ובמעמד תושב בישראל. לפירוט ראו:
 https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
@@ -175,7 +179,6 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 ---
 עובדים ישראלים שהגיעו לגיל פרישה זכאים לקצבה מקרן הפנסיה.
 עובדים זרים שהעסקתם הסתיימה מכל סיבה שהיא, זכאים לשווי הזכאות להפרשות לפנסיה בתום תקופת העבודה, בניכוי הסכומים שהופקדו בידי המעסיק לקרן הפיקדון לעובדים זרים.
-
 [מחשבון קו לעובד](https://www.kavlaoved.org.il/Kav-LaOved-Calculator-master/calculator_nologo.html)
 
 
@@ -210,6 +213,15 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 קצבת נכות
 יש לבדוק עם ביטוח לאומי האם העובד זכאי לקצבת נכות.
 
+# EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByLaborMinstry
+אישור פיטורין במשרד העבודה
+פיטורי אישה בהריון דורש אישור מיוחד ממשרד העבודה
+
+# EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByDefenseMinstry
+אישור פיטורין במשרד הבטחון
+פיטורין במהלך שירות מילואים, או במשך 30 יום אחריו, דורש אישור מיוחד ממשרד הבטחון
+
+
 # EndOfWork/Benefits/Properties/bankruptcyAllowance
 קצבת פשיטת רגל
 העובד מקבל פייצויי פיטורין מביטוח לאומי, במקום מהמעסיק שפשט רגל.
@@ -243,6 +255,15 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Benefits/Properties/possible80KGrant
 אפשרות למענק 80 אלף ש״ח
 לעובדי סיעוד ובניין ששהו בישראל באופן חוקי במשך יותר מ-10 שנים, וצריכים לעזוב עקב בעיות בריאות.
+
+# EndOfWork/Notices
+הודעות
+
+# EndOfWork/Notices/jointEmploymentNotice
+העסקה משולבת
+---
+החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות
+
 
 # EndOfWork/Recommendations
 המלצות
@@ -304,11 +325,6 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/LegalStatus/israeliCitizenship
 אזרחות ישראלית
 
-
-# EndOfWork/Assertions/LegalStatus/residencyProcess
-תהליך אזרוח
-העובד נמצא בתהליך שסופו אזרחות
-
 # EndOfWork/Assertions/LegalStatus/palestinianWorkPermit
 פלסטיני עם רשיון עבודה
 
@@ -325,22 +341,12 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/LegalStatus/b1Agriculture
 ב׳1 חקלאות
 
-
-# EndOfWork/Assertions/LegalStatus/b2
-ב׳2
-
-
 # EndOfWork/Assertions/LegalStatus/undocumented
 ללא רישום
 
 
 # EndOfWork/Assertions/AgeGroup
 קבוצת גיל
-
-
-# EndOfWork/Assertions/AgeGroup/under21
-מתחת ל-21
-
 
 # EndOfWork/Assertions/AgeGroup/workForce
 גיל העבודה
@@ -556,7 +562,7 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/Flags
 מסקנות ביניים
-תובניות פנימיות של המערכת לגבי התהליך. לא משנות למשתמש
+תובניות פנימיות של המערכת לגבי התהליך. אפשר להתעלם.
 ---
 בשביל להעריך את התהליך, המערכת צריכה לזכור כל מיני דברים. אנחנו זוכרים אותם פה. אם עלינו על משהו חשוב בעזרת הדברים פה, המשהו החשוב הזה מופיע במקום אחר.
 
@@ -566,6 +572,9 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/Flags/pregnant
 הריון
 בהריון בזמן הפסקת העבודה
+
+# EndOfWork/Assertions/Flags/residencyStatusChange
+שינוי מצב חוקי
 
 # EndOfWork/Assertions/Flags/thisEmploymentOver11months
 העסקה מעל 11 חודשים
