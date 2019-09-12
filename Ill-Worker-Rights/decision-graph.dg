@@ -1,39 +1,60 @@
-[call: pCaseProperties]
-
 [>who< ask:
   {text: Who suffers from the health condition in question?}
   {answers:
     {me: [call: pSelfCondition]}
-    {my spouse: }
+    {my spouse:
+      [todo: Handle spouse illness issues]
+    }
   }
 ]
 
 <**
- This part deals with medical condition of the interwiewee.
+ Handling with medical condition of the interwiewee.
 *>
 [-->pSelfCondition<
   [call: pCaseProperties]
-  [>cause< ask:
-    {text: What caused the health condision in question?}
-    {terms:
-      {health condition: Could be, for example,  illness or injury.}
-    }
-    {answers:
-      {accident: [call: pAccidents]}
-      {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
-      {serious illness or disability: [todo: serious illness or disability]}
-      {work-related illness: [todo: work-related illness]}
-      {pregnancy:
-        [>pregrnancy-complications< ask:
-          {text: Were you instructed by a doctor not to work during the pregrnancy?}
+  [consider: <-- TODO move to conditional answers when implemented.
+    {slot: Gender}
+    {options:
+      {male:
+        [>cause-male< ask:
+          {text: What caused the health condision in question?}
+          {terms:
+            {health condition: Could be, for example,  illness or injury.}
+          }
           {answers:
-            {yes: [set: Pregnancy=complicated]}
-            {no:  [set: Pregnancy=regular]}
+            {accident: [call: pAccidents]}
+            {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
+            {serious illness or disability: [todo: serious illness or disability]}
+            {work-related illness: [todo: work-related illness]}
           }
         ]
       }
-      {miscarrige: [todo: miscarrige]}
-      {fertility treatments: [todo: fertility treatments]}
+      {female:
+        [>cause-female< ask:
+          {text: What caused the health condision in question?}
+          {terms:
+            {health condition: Could be, for example,  illness or injury.}
+          }
+          {answers:
+            {accident: [call: pAccidents]}
+            {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
+            {serious illness or disability: [todo: serious illness or disability]}
+            {work-related illness: [todo: work-related illness]}
+            {pregnancy:
+              [>pregrnancy-complications< ask:
+                {text: Were you instructed by a doctor not to work during the pregrnancy?}
+                {answers:
+                  {yes: [set: Pregnancy=complicated]}
+                  {no:  [set: Pregnancy=regular]}
+                }
+              ]
+            }
+            {miscarrige: [todo: miscarrige]}
+            {fertility treatments: [todo: fertility treatments]}
+          }
+        ]
+      }
     }
   ]
 --]
@@ -137,5 +158,5 @@ Initial case data gatehring
       {none of the above: [set: Sector=other]}
     }
   ]
-] <-- / employment form
+] <-- / employment form section
 --]

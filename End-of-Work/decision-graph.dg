@@ -514,7 +514,7 @@
       }
     }
     {else:
-      [set: Properties+=monthlyPayForEachEmploymentYear]
+      [set: Properties+=severancePay]
     }
   ]
 
