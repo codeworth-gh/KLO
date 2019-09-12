@@ -1,5 +1,4 @@
 [-->careGivers<
-  [call: pDeposit]
   [consider:
     {slot: TimeInIsrael}
     {options:
@@ -35,9 +34,4 @@
 --]
 
 [-->constructionWorkers<
-  [call: pDeposit]
---]
-
-[-->pDeposit<
-  [set: Duties+=issueDepositRequest]
 --]

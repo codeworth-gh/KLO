@@ -245,20 +245,18 @@
       {text: Do you plan to stay in Israel?}
       {answers:
           {yes:
-            [set: Recommendations+=reducedBenefitsForOverstay2Month]
             [consider:
               {slot: Sector}
               {options:
-                {careGiving: [call: trailings>careGivers] }
-                {construction: [call: trailings>constructionWorkers]}
+                {careGiving: [set: Recommendations+=reducedBenefitsForOverstay2Month]
+                             [call: trailings>careGivers] }
+                {construction: [set: Recommendations+=reducedBenefitsForOverstay2Month]
+                               [call: trailings>constructionWorkers]}
               }
             ]
           }
           {no: [call: pPlanningToLeaveIsrael]}
-      }
-    ]
-  }
-]
+}]}]
 
 <*******************
  END OF CORE
@@ -553,6 +551,7 @@
 --]
 
 [-->pPlanningToLeaveIsrael<
+  [set: Duties+=issueDepositRequest]
   [>cg-whyLeave< ask:
     {text: What is the reason for your intension to leave Israel?}
     {answers:
