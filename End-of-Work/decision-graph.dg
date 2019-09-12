@@ -113,7 +113,7 @@
               [call: benefitSet-severance]
             }
             {significant breaching of rights:
-              [set: Duties+=employeePriorNoticeForEmploymentChange; ReasonForLeaving=significantBreachingOfRights]
+              [set: Duties+=employeePriorNoticeForEmploymentChange; ReasonForLeaving=significantBreachingOfRights; Notices+=significantBreachingOfRightsNotice]
               [call: benefitSet-severance]
             }
             {severe abuse:

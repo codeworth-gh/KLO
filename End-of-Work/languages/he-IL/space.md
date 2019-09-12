@@ -264,6 +264,10 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 ---
 החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות
 
+# EndOfWork/Notices/significantBreachingOfRightsNotice
+הפרת זכויות משמעותית
+---
+תוצאה זו מתייחס רק לזכויות הנובעות מעצם סיום ההעסקה. חשוב לפנות לטיפול בכל התנאים האחרים שהופרו בהזדמנות הראשונה.
 
 # EndOfWork/Recommendations
 המלצות
@@ -403,6 +407,8 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/ReasonForLeaving/significantCompensationReduction
 הרעה מוחשית בתנאים
+---
+סיבות המצדיקות התפטרות בשל "הרעה מוחשית" כוללות: שינויים במקום העבודה, בסדרי העבודה או בתנאי העבודה (שינויים כלליים ושינויים החלים ומשפיעים על עובד בודד), אי-קיום הוראות של חוקים שנועדו להגן על העובדים, אי קיום תנאי משמעותי בחוזה, יחס משפיל. לפני התפטרות ודרישת פיצוי הכרחי לפנות למעסיק בכתב ובעל פה ולתת לו הזדמנות אמיתית לתקן את ההידרדרות בתנאים ולהחזיר המצב לקדמותו. עובד שלא ייתן התראה כזו עלול להפסיד זכאות לפיצויי פיטורים אם ייחליט להתפטר בגלל ההרעה בתנאים
 
 # EndOfWork/Assertions/ReasonForLeaving/significantBreachingOfRights
 הפרת זכויות חמורה

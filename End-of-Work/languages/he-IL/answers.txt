@@ -56,7 +56,7 @@ retirement: פרישה
 road accident: תאונת דרכים
 severe abuse: התעללות חמורה
 significant breaching of rights: הפרת זכויות חמורה
-significant deterioration of employment conditions: הדרדרות בתנאי העסקה
+significant deterioration of employment conditions:הרעה מוחשית בתנאי העסקה
 to a settlement outside the green line: ליישוב מחוץ לקו הירוק
 to an agricaltural settlement: לישוב חקלאי
 to an eligible settelment: לישוב זכאי

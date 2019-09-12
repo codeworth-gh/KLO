@@ -102,4 +102,6 @@ EffectiveTerminationType: one of resignation, severance.
 Gender: one of male, female.
 
 Notices[Things to note during the job termination process]: some of
-  jointEmploymentNotice["החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות"].
+  jointEmploymentNotice["החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות"],
+  significantBreachingOfRightsNotice
+  .
