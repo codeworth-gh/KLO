@@ -29,8 +29,8 @@
             {text: How old are you? }
             {answers:
               {under 62:    [set: AgeGroup=workForce]}
-              {62 to 67:    [set: AgeGroup=voluntaryPension; Pension=allowance; Recommendations+=checkElderyAllowance]}
-              {67 and over: [set: AgeGroup=pension; Pension=allowance; Recommendations+=checkElderyAllowance]}
+              {62 to 67:    [set: AgeGroup=voluntaryPension; Pension=allowance]}
+              {67 and over: [set: AgeGroup=pension; Pension=allowance]}
             }
           ]
         }
@@ -40,7 +40,10 @@
   [>status1< ask:
     {text: Are you an Israeli citizen?}
     {answers:
-      {yes: [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice] }
+      {yes:
+        [set: LegalStatus=israeliCitizenship; EmployerObligations+=pensionFundNotice]
+
+      }
       {no:
         [>status-foreign< ask:
           {text: What's your current status in Israel? }
@@ -205,9 +208,12 @@
     {text: How were you employed? }
     {answers:
       { direct:          [set: Employment/Type=direct] }
-      { freelance:       [set: Employment/Type=freelance; Recommendations+=consultLawyer] }
       { contractor:      [set: Employment/Type=contractor] }
       { jointEmployment: [set: Employment/Type=jointEmployment] }
+      { freelance:
+        [set: Employment/Type=freelance; Recommendations+=consultLawyer]
+        [>freelance-summary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
+      }
     }
   ]
   [>employmentScope< ask:
