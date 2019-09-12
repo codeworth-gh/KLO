@@ -74,3 +74,9 @@ worker death: worker death
 yes: yes
 yes, I don't want to stay: yes, I don't want to stay
 yes, employer refused: yes, employer refused
+62 to 67: 62 to 67
+67 and over: 67 and over
+I was sexually harrased: I was sexually harrased
+other non-citizen: other non-citizen
+under 62: under 62
+under 67: under 67

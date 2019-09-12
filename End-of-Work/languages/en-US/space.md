@@ -550,3 +550,171 @@ form161
 JobTerminationConfirmation
 "אישור פיטורין"
 
+# EndOfWork/Notices
+Notices
+Things to note during the job termination process
+
+# EndOfWork/Notices/jointEmploymentNotice
+jointEmploymentNotice
+"החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות"
+
+# EndOfWork/Duties/possibleGeographicRestrictions
+possibleGeographicRestrictions
+The worker may be subject to geographic restrictions
+
+# EndOfWork/Duties/issueDepositRequest
+issueDepositRequest
+Must issue deposit request two weeks or more
+
+# EndOfWork/Duties/provideEvidenceForCaringForFamily
+provideEvidenceForCaringForFamily
+When leaving Israel for caring for a family member, need to provide evidence to claim rights.
+
+# EndOfWork/Recommendations/canReportToThePolice
+canReportToThePolice
+This case involves a criminal activity by the employer.
+
+# EndOfWork/Recommendations/applyForWorkAccident
+applyForWorkAccident
+Apply to the Israeli National Insurane claiming work accident
+
+# EndOfWork/Recommendations/uniteEmployeesToDeclareBankrupcy
+uniteEmployeesToDeclareBankrupcy
+Emplyees need to unite and demand formal bankrupcy.
+
+# EndOfWork/Recommendations/checkElderyAllowance
+checkElderyAllowance
+Possibly eligible for elderly allowance from NI
+
+# EndOfWork/Benefits/Properties/bankruptcyAllowance
+bankruptcyAllowance
+Employee gets severence and other compensations from National Insurance instead of getting them from the employer
+
+# EndOfWork/Benefits/Properties/newJobAssistance
+newJobAssistance
+
+
+# EndOfWork/Benefits/Properties/eligibleForFlightExpenseNI
+eligibleForFlightExpenseNI
+Natioal insurance can pay for flight home.
+
+# EndOfWork/Benefits/Properties/eligibleForFlightExpensePI
+eligibleForFlightExpensePI
+Private insurance can pay for flight home.
+
+# EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByLaborMinstry
+severanceIllegalUnlessApprovedByLaborMinstry
+For pregnant women, or those that recently gave birth, employment termination requires special approval
+
+# EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByDefenseMinstry
+severanceIllegalUnlessApprovedByDefenseMinstry
+Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence. 
+
+# EndOfWork/Benefits/Properties/possible80KGrant
+possible80KGrant
+For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition
+
+# EndOfWork/Assertions/Flags/pregnant
+pregnant
+Pregnant while the severance happaened.
+
+# EndOfWork/Assertions/Flags/thisEmploymentOver11months
+thisEmploymentOver11months
+
+
+# EndOfWork/Assertions/Flags/possiblyIllegalSeverance
+possiblyIllegalSeverance
+
+
+# EndOfWork/Assertions/Flags/employmentSet
+employmentSet
+
+
+# EndOfWork/Assertions/EffectiveTerminationType
+EffectiveTerminationType
+
+
+# EndOfWork/Assertions/EffectiveTerminationType/resignation
+resignation
+
+
+# EndOfWork/Assertions/EffectiveTerminationType/severance
+severance
+
+
+# EndOfWork/Assertions/ReasonForLeaving/endOfContract
+endOfContract
+
+
+# EndOfWork/Assertions/ReasonForLeaving/severeAbuse
+severeAbuse
+
+
+# EndOfWork/Assertions/ReasonForLeaving/retirement
+retirement
+
+
+# EndOfWork/Assertions/ReasonForLeaving/employerCollapse
+employerCollapse
+Effective bankruptcy, might not be formal
+
+# EndOfWork/Assertions/ReasonForLeaving/employerChanged
+employerChanged
+e.g. company was bought by another
+
+# EndOfWork/Assertions/LegalStatus/other
+other
+
+
+# EndOfWork/Assertions/Gender
+Gender
+
+
+# EndOfWork/Assertions/Gender/male
+male
+
+
+# EndOfWork/Assertions/Gender/female
+female
+
+
+# EndOfWork/Assertions/TimeInIsrael
+TimeInIsrael
+
+
+# EndOfWork/Assertions/TimeInIsrael/lessThan51Months
+lessThan51Months
+
+
+# EndOfWork/Assertions/TimeInIsrael/overOr51Months
+overOr51Months
+
+
+# EndOfWork/Assertions/TimeInIsrael/over63Months
+over63Months
+
+
+# EndOfWork/Assertions/TimeInIsrael/over8Years
+over8Years
+
+
+# EndOfWork/Assertions/TimeInIsrael/over10Years
+over10Years
+
+
+# EndOfWork/Assertions/TimeInIsrael/over13Years
+over13Years
+
+
+# EndOfWork/Assertions/AgeGroup/voluntaryPension
+voluntaryPension
+Workers may retire if they want
+
+# EndOfWork/EmployerObligations/jobTerminationConfirmation
+jobTerminationConfirmation
+"מכתב סיום העסקה"
+
+# EndOfWork/EmployerObligations/honorFormerContractorSeniority
+honorFormerContractorSeniority
+"הכרה בותק לצורך הזכויות הבראה, חופשה, פנסיה, תוספות ותק"
+

@@ -1,18 +1,18 @@
-<localized-model direction="ltr" ui-lang="en">
-  <title>End of Work</title>
-  <subtitle>Know your rights when you leave a workplace</subtitle>
+<localized-model direction="rtl" ui-lang="en">
+  <title>זכויות בסיום העסקה</title>
+  <subtitle></subtitle>
   <keywords></keywords>
   <authors>
     <group>
-      <name>Kav Laoved Israel</name>
+      <name>עמותת קו לעובד</name>
       <contact>www.klo.org.il</contact>
     </group>
     <person>
-      <name>Michal Tadjer</name>
-      <affiliation>Kav Laoved</affiliation>
+      <name>עו״ד מיכל תג׳ר</name>
+      <affiliation>קו לעובד</affiliation>
     </person>
     <person>
-      <name>Michael Bar-Sinai</name>
+      <name>מיכאל בר-סיני</name>
       <affiliation>CodeWorth.io</affiliation>
     </person>
   </authors>
