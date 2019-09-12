@@ -1,5 +1,5 @@
 EndOfWork: consists of EmployerObligations, Duties, Restrictions,
-                        Benefits,  Recommendations,  Assertions.
+                        Benefits,  Recommendations, Notices, Assertions.
 
 Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employment,
                         TimeInIsrael, ProcessFairness, Gender,
@@ -25,7 +25,6 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       employerCollapse[Effective bankruptcy, might not be formal],
                       employerChanged[e.g. company was bought by another].
 TimeInIsrael: one of lessThan51Months, overOr51Months, over63Months, over8Years, over10Years, over13Years.
-<* TODO: See what sectors get extended benefits *>
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
 Employment: consists of SalaryUnits, Type, Scope.
 SalaryUnits: one of monthly, daily, hourly.
@@ -63,7 +62,9 @@ UnemploymentBenefits: one of after90Days, immediate.
 
 EmployerObligations [Things the employer should do during the work termination process]: some of
   priorNotice, hearing, workPeriodLetter["אישור תקופת עבודה"], pensionFundNotice,
-  finalAccountSettlement["גמר חשבון"], form161, jobTerminationConfirmation["מכתב סיום העסקה"].
+  finalAccountSettlement["גמר חשבון"], form161, jobTerminationConfirmation["מכתב סיום העסקה"],
+  honorFormerContractorSeniority["הכרה בותק לצורך הזכויות הבראה, חופשה, פנסיה, תוספות ותק"]
+  .
 
 Duties: some of findNewEmployer, healthInsuranceExtension,
   employeePriorNoticeForEmploymentChange[Employee needs to give a chance to alter employment terms before resigning.],
@@ -99,3 +100,6 @@ Restrictions[Limitations on the worker]: some of
 EffectiveTerminationType: one of resignation, severance.
 
 Gender: one of male, female.
+
+Notices[Things to note during the job termination process]: some of
+  jointEmploymentNotice["החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות"].
