@@ -19,9 +19,8 @@
           [>AgeGroupMale< ask:
             {text: How old are you? }
             {answers:
-              {under 21: [set: AgeGroup=under21]}
-              {21-67:    [set: AgeGroup=workForce]}
-              {over 67:  [set: AgeGroup=pension; Pension=allowance]}
+              {under 67:    [set: AgeGroup=workForce]}
+              {67 and over:  [set: AgeGroup=pension; Pension=allowance]}
             }
           ]
         }
@@ -29,10 +28,9 @@
           [>AgeGroupFemale< ask:
             {text: How old are you? }
             {answers:
-              {under 21: [set: AgeGroup=under21]}
-              {21-62:    [set: AgeGroup=workForce]}
-              {62-67:    [set: AgeGroup=voluntaryPension; Pension=allowance; Recommendations+=checkElderyAllowance]}
-              {over 67:  [set: AgeGroup=pension; Pension=allowance; Recommendations+=checkElderyAllowance]}
+              {under 62:    [set: AgeGroup=workForce]}
+              {62 to 67:    [set: AgeGroup=voluntaryPension; Pension=allowance; Recommendations+=checkElderyAllowance]}
+              {67 and over: [set: AgeGroup=pension; Pension=allowance; Recommendations+=checkElderyAllowance]}
             }
           ]
         }

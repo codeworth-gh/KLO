@@ -7,8 +7,7 @@ Assertions: consists of LegalStatus, AgeGroup, ReasonForLeaving, Sector, Employm
 LegalStatus: one of israeliCitizenship, residencyProcess[Status procedures towards residency (B1 general)],
                     palestinianWorkPermit, b1Construction, _2a5, b1CareGiver,
                     b1Agriculture, b2, undocumented.
-AgeGroup: one of under21,
-                 workForce,
+AgeGroup: one of workForce,
                  voluntaryPension[Workers may retire if they want],
                  pension[Employer can force the worker to retire].
 ReasonForLeaving: one of resignation [התפטרות], visaTermination,
