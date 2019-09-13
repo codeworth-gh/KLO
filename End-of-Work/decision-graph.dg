@@ -276,6 +276,13 @@
           {no: [call: pPlanningToLeaveIsrael]}
 }]}]
 
+[when: <-- citizen-only benefits
+  { LegalStatus=israeliCitizenship:
+    [when:
+      {AgeGroup=pension: [set: Recommendations+=checkElderyAllowance] }
+      {Gender=female; AgeGroup=voluntaryPension: [set: Recommendations+=checkElderyAllowance] }
+]}]
+
 <*******************
  END OF CORE
 *******************>
