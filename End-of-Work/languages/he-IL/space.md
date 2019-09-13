@@ -269,7 +269,7 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 ---
 תוצאה זו מתייחס רק לזכויות הנובעות מעצם סיום ההעסקה. חשוב לפנות לטיפול בכל התנאים האחרים שהופרו בהזדמנות הראשונה.
 
-# EndOfWork/Notices/relativeSeverencePay
+# EndOfWork/Notices/relativeSeverancePay
 פיצויי פיטורין יחסיים
 ---
 השכר לצורך פיצויי פיטורים יחושב בהתאם לחלקיות המשרה הממוצעת בכל תקופת העבודה אבל לפי ערך השעה בשכר בחודש העבודה האחרון.

@@ -1,8 +1,8 @@
 <policy-model>
   <title>End of Work</title>
   <subtitle>Know your rights when you leave a workplace</subtitle>
-  <version>0.8.5</version>
-  <date>2019-08-08</date>
+  <version>0.9.5</version>
+  <date>2019-08-13</date>
   <keywords>worker rights, labor law</keywords>
   <authors>
     <group>
@@ -23,9 +23,6 @@
     <!-- pathes are relative to model directory -->
     <space root="EndOfWork">policy-space.pspace</space>
     <graph>decision-graph.dg</graph>
-    <!--
-    <valueInferrer>valueInference.vi</valueInferrer>
-    -->
   </model>
   <references>
     <reference url="https://www.nevo.co.il/law_html/Law01/p189_001.htm">
