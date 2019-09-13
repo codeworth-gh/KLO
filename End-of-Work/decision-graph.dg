@@ -208,9 +208,15 @@
       [>employmentUnits< ask:
         {text: How was your salary calculated?}
         {answers:
-          {monthly: [set: Employment/SalaryUnits=monthly] }
-          {daily:   [set: Employment/SalaryUnits=daily] }
-          {hourly:  [set: Employment/SalaryUnits=hourly] }
+          {monthly:
+            [set: Employment/SalaryUnits=monthly; Notices+=severancePayMethod_Monthly]
+            [when:
+              { Flags+=thisEmploymentOver11months: [set: Notices+=priorNoticePeriod_Monthly] }
+              { else: [set: Notices+=priorNoticePeriod_Varied] }
+            ]
+          }
+          {daily:   [set: Employment/SalaryUnits=daily; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
+          {hourly:  [set: Employment/SalaryUnits=hourly; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
         }
       ]
       [>employmentType< ask:
@@ -236,9 +242,9 @@
       [>employmentScope< ask:
         {text: What was the scope of your employment?}
         {answers:
-          {partial: [set: Employment/Scope=partial] }
           {full:    [set: Employment/Scope=full] }
-          {varied:  [set: Employment/Scope=varied] }
+          {partial: [set: Employment/Scope=partial; Notices+=relativeSeverancePay] }
+          {varied:  [set: Employment/Scope=varied; Notices+=relativeSeverancePay] }
         }
       ]
     }

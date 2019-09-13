@@ -103,5 +103,10 @@ Gender: one of male, female.
 
 Notices[Things to note during the job termination process]: some of
   jointEmploymentNotice["החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות"],
-  significantBreachingOfRightsNotice
+  significantBreachingOfRightsNotice,
+  relativeSeverancePay[Severance pay calculated according to employment scope, using the hourly rate of the last employment month.],
+  severancePayMethod_Monthly[Monthly salary for each employment year, minus pension],
+  severancePayMethod_Varied[Average salary for each employment year, minus pension (based on recent 12 months)],
+  priorNoticePeriod_Monthly,
+  priorNoticePeriod_Varied
   .
