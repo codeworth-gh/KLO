@@ -219,6 +219,7 @@
           {hourly:  [set: Employment/SalaryUnits=hourly; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
         }
       ]
+      [call: pPriorNoticeFormula]
       [>employmentType< ask:
         {text: How were you employed? }
         {answers:
@@ -615,4 +616,33 @@
     {no: [set: Recommendations+=uniteEmployeesToDeclareBankrupcy]}
   }
 ]
+--]
+
+[-->pPriorNoticeFormula<
+  [consider:
+    {slot: SalaryUnits}
+    {options:
+      {monthly:
+        [>pnf-monthly< ask:
+          {text: How long were you employed?}
+          {answers:
+            {0-6 months: [set: PriorNoticeCalculationFormula=dayPerMonth]}
+            {7-12 months:[set: PriorNoticeCalculationFormula=sixDaysPlus2_5]}
+            {13 and over:[set: PriorNoticeCalculationFormula=kOneMonth]}
+          }
+        ]
+      }
+    }
+    {else:  <-- hourly / daily
+      [>pnf-nonMonthly< ask:
+        {text: How long were you employed?}
+        {answers:
+          {12 months or less:[set:PriorNoticeCalculationFormula=dayPerMonth]}
+          {13-24 months: [set:PriorNoticeCalculationFormula=fourteenPlusEachTwo]}
+          {25-36 months: [set:PriorNoticeCalculationFormula=twentyonePlusEachTwo]}
+          {37 months and over: [set: PriorNoticeCalculationFormula=kOneMonth]}
+        }
+      ]
+    }
+  ]
 --]

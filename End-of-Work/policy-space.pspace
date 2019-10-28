@@ -39,7 +39,7 @@ Flags: some of visaExpired, residencyStatusChange,
   thisEmploymentOver11months,
   nonIsraeliWorker, possiblyIllegalSeverance, employmentSet.
 
-Benefits: consists of UnemploymentBenefits, Pension, Properties.
+Benefits: consists of UnemploymentBenefits, Pension, Properties, PriorNoticeCalculationFormula.
 Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפריש],
                 compensationForMissing[פיצוי על אי הפרשות לפנסיה],
                 allowance[זכאי לקצבה].
@@ -109,4 +109,12 @@ Notices[Things to note during the job termination process]: some of
   severancePayMethod_Varied[Average salary for each employment year, minus pension (based on recent 12 months)],
   priorNoticePeriod_Monthly,
   priorNoticePeriod_Varied
+.
+
+PriorNoticeCalculationFormula[Formula for calculating the prior notice period]: one of
+  dayPerMonth[One day for each month the worker was employed],
+  sixDaysPlus2_5[6 days plus 2.5 days for each month after the first 6],
+  fourteenPlusEachTwo[14 days plus a day for each 2 month in the second employemnt year],
+  twentyonePlusEachTwo[21 days plus a day for each 2 month in the third employemnt year],
+  kOneMonth[One month]
 .
