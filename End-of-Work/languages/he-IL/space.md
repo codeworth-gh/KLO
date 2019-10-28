@@ -624,3 +624,23 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/EffectiveTerminationType/severance
 פיטורים
+# EndOfWork/Assertions/Flags/possiblyIllegalSeverance
+possiblyIllegalSeverance
+
+
+# EndOfWork/Assertions/Flags/employmentSet
+employmentSet
+
+
+# EndOfWork/Assertions/ReasonForLeaving/severeAbuse
+severeAbuse
+
+
+# EndOfWork/Assertions/ReasonForLeaving/retirement
+retirement
+
+
+# EndOfWork/Assertions/LegalStatus/other
+other
+
+

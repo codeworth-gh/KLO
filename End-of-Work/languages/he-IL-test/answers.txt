@@ -1,0 +1,81 @@
+Divorce: גירושין
+Moved in with spouse: מעבר למגורים עם בן/בת הזוג
+My spouse moved because of work: בן/בת הזוג עברו בגלל עבודה
+Other: אחר
+Over 10 Years: מעל 10 שנים
+Over 11 Months: מעל 11 חודשים
+Over 13 Years: מעל 13 שנים
+Over 51 Months: מעל 51 חודשים
+Over 63 Months: מעל 63 חודשים
+Over 8 Years: מעל 8 שנים
+accident during my work: תאונה במהלך העבודה
+accident on my way to work: תאונה בדרך לעבודה
+after retirement: אחרי פרישה
+before retirement: לפני פרישה
+citizen: אזרח
+contractor: קבלן
+daily: יומי
+direct: ישיר
+employer changed: שינוי מעסיק
+employer choice: בחירת המעסיק
+employer collapse: התמוטטות מעסיק
+employer death: מוותו של המעסיק
+employer hospitalized: המעסיק אושפז
+employer moved to nursing home: המעסיק עבר לבית אבות
+end of contract: סוף חוזה
+enrolled to civil service: גיוס לשירות אזרחי
+freelance: פרילנסר
+full: מלאה
+health condition of a family member: מצב בריאותי של בן משפחה
+health issues: סיבות בריאותיות
+hourly: שעתי
+involuntary: לא מיוזמתי
+jointEmployment: תעסוקה משולבת
+me: אני
+monthly: חודשי
+moved: מעבר
+my child, parent, or spouse: ילד, הורה, או בן/בת הזוג שלי
+my employer: המעסיק שלי
+my grandchild, grandfather, or parent in law: נכד, סב, או גיס שלי
+my health condition: מצב בריאותי אחר
+my initiative: יוזמה שלי
+no: לא
+other: אחר
+other family member: בן משפחה אחר
+palestinian with work permit: פלסטיני עם רשיון עבודה
+parenting: הורות
+partial: חלקי
+pre 21: מתחת לגיל 21
+resignation (other): התפטרות (אחר)
+retirement: פרישה
+road accident: תאונת דרכים
+severe abuse: התעללות חמורה
+significant breaching of rights: הפרת זכויות משמעותית
+significant deterioration of employment conditions: התדרדרות מוחשית בתנאי העבודה
+to a settlement outside the green line: לישוב מחוץ לקו הירוק
+to an agricaltural settlement: לישוב חקלאי
+to an eligible settelment: ליישוב זכאי
+undocumented: לא מתועד
+varied: משתנה
+visa of type 2a5: ויזה מסוג 2 א׳5
+visa of type B1General or A5: ויזה מסוג ב׳1 (כללי) או א׳5
+visa of type b1Agriculture: ויזה מסוג ב׳1 (חקלאות)
+visa of type b1CareGiver: ויזה מסוג ב׳1 (סיעוד)
+visa of type b1Construction: ויזה מסוג ב׳1 (בניה)
+visa of type b2: ויזה מסוג ב׳2
+visa termination: ביטול ויזה
+worker death: מוות העובד
+yes: כן
+yes, I don't want to stay: כן, אני לא רוצה להשאר
+yes, employer refused: כן, המעסיק סרב
+51 Months or more: 51 Months or more
+62 to 67: 62 to 67
+67 and over: 67 and over
+I was sexually harrased: I was sexually harrased
+Less than 51 Months: Less than 51 Months
+caring for a family member: caring for a family member
+employer terminally hospitalized: employer terminally hospitalized
+my medical condition: my medical condition
+other non-citizen: other non-citizen
+under 62: under 62
+under 67: under 67

@@ -1,7 +1,7 @@
 <policy-model>
   <title>End of Work</title>
   <subtitle>Know your rights when you leave a workplace</subtitle>
-  <version>0.9.5</version>
+  <version>0.9.6</version>
   <date>2019-08-13</date>
   <keywords>worker rights, labor law</keywords>
   <authors>
@@ -18,7 +18,7 @@
       <affiliation>CodeWorth.io</affiliation>
     </person>
   </authors>
-  <model answers-order="yes-first">
+  <model answers-order="verbatim">
     <!-- other options: yes-last, verbatim. Default: yes-first -->
     <!-- pathes are relative to model directory -->
     <space root="EndOfWork">policy-space.pspace</space>

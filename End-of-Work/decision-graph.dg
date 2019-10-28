@@ -368,7 +368,7 @@
 [when:
   {Flags+=pregnant: }
   {else:
-    [>maternityLeave< ask: <-- TODO There's a comment about asking only women, but men can take maternaty leave too, right?
+    [>maternityLeave< ask:
       {text: Were you fired during maternity leave?}
       {terms:
         {maternity leave: including for fathers and adopting parents.}

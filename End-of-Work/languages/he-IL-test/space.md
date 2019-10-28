@@ -1,555 +1,506 @@
 # EndOfWork
-EndOfWork
-
+סיום העסקה
+מרחב הדין בסיום העסקה
 
 # EndOfWork/Duties
-Duties
-
+חובות העובד
+דברים שחובה על העובד לעשות על מנת לשמור את זכויותיו.
 
 # EndOfWork/Duties/findNewEmployer
-findNewEmployer
-
+מציאת מעסיק חדש
+על העובד למצוא מעסיק חדש.
 
 # EndOfWork/Duties/healthInsuranceExtension
-healthInsuranceExtension
-
+הרחבת ביטוח בריאות
 
 # EndOfWork/Duties/employeePriorNoticeForEmploymentChange
-employeePriorNoticeForEmploymentChange
-Employee needs to give a chance to alter employment terms before resigning.
+הזדמנות שיפור
+העובד חייב לתת למעסיק הזדמנות לשפר את תנאי ההעסקה
+---
+יש לתת למעסיק אפשרות לשפר את תנאי ההעסקה, מה שאולי יאפשר לעובד להשאר.
 
 # EndOfWork/Duties/employeePriorNotice
-employeePriorNotice
-Employee notices the emplyer in writing that they are about to leave, state the reason for leaving
+הודעה מוקדמת
+על העובד להודיע למעביד בכתב על כוונתו להתפטר, ולהצהיר על הסיבה לכך
 
 # EndOfWork/Duties/provideEvidenceForNewLocation
-provideEvidenceForNewLocation
-Worker need to provide evidence for living in a new place, such as rent contract
+הוכחת מעבר
+על העובד לספק הוכחה למעבר, למשל חוזה שכירות
+---
+כאשר העובד דורש זכויות על בסיס מעבר למקום חדש, על העובד *להוכיח* כי הוא אכן עבר למקום זה.
+לצורך כך, יש לספק הוכחת מגורים. למשל, חוזה שכירות במקום החדש.
 
 # EndOfWork/Duties/provideDetailedResoningQoL
-provideDetailedResoningQoL
-Worker has to proivde detalied reasonong for why their quality of life was affected.
+הוכחת השפעה
+על העובד לספק הסבר מפורט מדוע איכות חייו הושפעה
 
 # EndOfWork/Recommendations
-Recommendations
-Actions the worker should probably take, but does not have to
+המלצות
+פעולות שכדאי לעובד לעשות (אך אין חובה)
 
 # EndOfWork/Recommendations/consultLawyer
-consultLawyer
-In some cases, such as freelance work, a professional lawyer should be consulted.
+עו״ד
+התייעצות עם עורך דין
+
+# EndOfWork/Recommendations/canReportToThePolice
+ניתן לפנות למשטרה
+קיים סיכוי סביר כי במהלך ההעסקה המעסיק ביצע עבירות פליליות
+---
+ישנו סיכוי כי המעביד ביצע עבירות פליליות בעת ההעסקה או לאחר מכן. במקרים אלו ניתן לפנות למשטרה, אולם אין חובה לעשות כן. 
+
 
 # EndOfWork/Recommendations/sueFormerEmployerSoon
-sueFormerEmployerSoon
+תביעת מעסיק
+נראה כי קיימת עילה לתביעת המעסיק
+---
+לפי התשובות, המעסיק עבר על החוק בעת תהליך הפיטורין, או בזמן ההעסקה עצמה. עם זאת, על מנת לקבל פיצוי, יש לפנות לבית המשפט. ניתן לפנות לקו לעובד להכוונה [בלינק הזה](https://www.kavlaoved.org.il/צרו-קשר/שאל-אותנו/).
 
 
 # EndOfWork/Recommendations/eligibleForRetroactiveTaxBenefitsWithinAYear
-eligibleForRetroactiveTaxBenefitsWithinAYear
-Because of the new location you live in.
+הקלות מס עתידיות
+זכאות להקלות מס רטרואקטיביות תוך שנה
 
 # EndOfWork/Recommendations/payKeens
-payKeens
-Payment divided between closes keens. No need to wait for inheritance.
+תשלום שארים
+התשלום יחולק בין השארים הקרובים ביותר. אין צורך לחכות לצו ירושה.
 
 # EndOfWork/Recommendations/involveAidOrganizations
-involveAidOrganizations
-Call a relevant humanitarian aid NGOs, or call the police.
+סיוע
+יש לפנות לארגונים הומניטריים או למשטרה.
+---
+ניתן לפנות לקו לעובד להכוונה [בלינק הזה](https://www.kavlaoved.org.il/צרו-קשר/שאל-אותנו/).
 
 # EndOfWork/Recommendations/reducedBenefitsForOverstay2Month
-reducedBenefitsForOverstay2Month
-Staying in Israel for more than 2 months will reduce you compenstation pay.
+עזיבה
+השארות בישראל למשך יותר מחודשיים תגרור אובדן חלק מהתשלומים
 
 # EndOfWork/Recommendations/humanitarianVisaWarningCareGiver
-humanitarianVisaWarningCareGiver
-After the request is decided, you cannot request again.
+בקשת ויזה הומניטארית
+לאחד הדיון בבקשה, לא ניתן לבקש שוב ויזה כזו.
+---
+בבקשה לויזה הומניטארית ניתן לדון פעם אחת בלבד לכל אדם. לאחר הדיון, לא ניתן לבקש ויזה פעם נוספת (אבל כן ניתן כאשר הבקשה _ממתינה_ לדיון). לכן יש להתכונן לבקשה זו היטב.
 
 # EndOfWork/Restrictions
-Restrictions
-Limitations on the worker
+הגבלות
+הגבלות הקיימות על העובד
 
 # EndOfWork/Restrictions/canOnlyWorkAsReleaver
-canOnlyWorkAsReleaver
-With this restrictions, care giving workers can only work as relievers.
+מחליפה בלבד
+ניתן לעבוד רק כמחליפה - לא ניתן לעבוד כמטפלת ראשית
 
 # EndOfWork/Restrictions/requiresEmployerHumanitarianVisaApplication
-requiresEmployerHumanitarianVisaApplication
-New employer has to apply for humanitarian visa.
+בקשת ויזה הומאניטרית
+על המעסיק החדש לבקש ויזה הומאניטרית
 
 # EndOfWork/Restrictions/cannotWorkInIsrael
-cannotWorkInIsrael
-It seems to be impossible to obtain a working permit.
+לא בישראל
+לא ניתן להשיג רשיון עבודה בישראל
 
 # EndOfWork/Restrictions/nurseNonRetiredOnly
-nurseNonRetiredOnly
-Cannot nurse old people, only childs and disabled.
+נכים/ילדים
+ניתן לסעוד רק נכים וילדים. לא ניתן לסעוד אנשים אחרי גיל פרישה.
 
 # EndOfWork/Benefits
-Benefits
-
+זכויות
+זכויות להן העובד זכאי.
 
 # EndOfWork/Benefits/UnemploymentBenefits
-UnemploymentBenefits
-
+דמי אבטלה
 
 # EndOfWork/Benefits/UnemploymentBenefits/none
-none
-
+אין
 
 # EndOfWork/Benefits/UnemploymentBenefits/after90Days
-after90Days
-
+90
+העובד זכאי לדמי אבטלה לאחר 90 יום מיום סיום ההעסקה, ובלבד שלא מצא עבודה אחרת.
 
 # EndOfWork/Benefits/UnemploymentBenefits/immediate
-immediate
-
+מיידי
+העובד זכאי לדמי אבטלה באופן מיידי
 
 # EndOfWork/Benefits/Deposit
-Deposit
-
+פקדון
 
 # EndOfWork/Benefits/Deposit/none
-none
-
+אין
 
 # EndOfWork/Benefits/Deposit/regular
-regular
-
+רגיל
 
 # EndOfWork/Benefits/Deposit/completions
-completions
-
+מורחב
+בנוסף לפיקדון הרגיל, העובד זכאי גם להשלמות
 
 # EndOfWork/Benefits/Properties
-Properties
-
+זכויות נוספות
 
 # EndOfWork/Benefits/Properties/priorNotice
-priorNotice
-
+הודעה מוקדמת
 
 # EndOfWork/Benefits/Properties/priorNoticeSubstitute
-priorNoticeSubstitute
-
+חלף הודעה מוקדמת
+פיצוי כספי (למעסיק או לעובד) במקרה ולא ניתנה הודעה מוקדמת.
 
 # EndOfWork/Benefits/Properties/specialCompensations
-specialCompensations
-"פיצוי מיוחד"
+פיצוי מיוחד
 
 # EndOfWork/Benefits/Properties/disabilityAllowance
-disabilityAllowance
-Might be, need to look in National Insurance
+נכות?
+קיימת אפשרות לקצבת נכות (תלוי בביטוח לאומי)
+---
+עוד על קצבת נכות ב[אתר כל זכות](https://www.kolzchut.org.il/he/קצבת_נכות_כללית)
 
 # EndOfWork/Benefits/Properties/bankrupcyAllowance
-bankrupcyAllowance
-
+דמי פשיטת רגל
 
 # EndOfWork/Benefits/Properties/parentalLeave
-parentalLeave
-
+חופשת הורה
 
 # EndOfWork/Benefits/Properties/birthGrant
-birthGrant
-
+מענק לידה
 
 # EndOfWork/Benefits/Properties/severancePay
-severancePay
-also- "Separation"
+פיצויי פיטורין
 
-# EndOfWork/Benefits/Properties/newJobAssistence
-newJobAssistence
-
+# EndOfWork/Benefits/Properties/newJobAssistance
+סיוע תעסוקתי
+עזרה במציאת עבודה חדשה
 
 # EndOfWork/Benefits/Properties/severanceCancellation
-severanceCancellation
-"ביטול פיטורין"
+ביטול פיטורין
+
 
 # EndOfWork/Benefits/Pension
-Pension
-
+פנסיה
 
 # EndOfWork/Benefits/Pension/keep
-keep
+נשמרת
 נשאר מה שנצבר, מומלך להמשיך להפריש
 
 # EndOfWork/Benefits/Pension/compensationForMissing
-compensationForMissing
+פיצוי
 פיצוי על אי הפרשות לפנסיה
 
 # EndOfWork/Benefits/Pension/allowance
-allowance
-זכאי לקצבה
+זכאות
+העובד זכאי לקצבת פנסיה
 
 # EndOfWork/Benefits/Source
-Source
-
+מקור
 
 # EndOfWork/Benefits/Source/employer
-employer
-
+מעסיק
 
 # EndOfWork/Benefits/Source/bituachLeumi
-bituachLeumi
-
+ביטוח לאומי
 
 # EndOfWork/Benefits/Source/pensionFund
-pensionFund
-
+קרן פנסיה
 
 # EndOfWork/Benefits/Source/deposit
-deposit
-
+פקדון
 
 # EndOfWork/Assertions
-Assertions
-
+מידע תומך
 
 # EndOfWork/Assertions/EmploymentStatus
-EmploymentStatus
-
+מצב תעסוקתי
 
 # EndOfWork/Assertions/EmploymentStatus/preDecision
-preDecision
-
+ממתין
+ממתין להחלטה
 
 # EndOfWork/Assertions/EmploymentStatus/priorNoticePeriod
-priorNoticePeriod
-
+מוקדמת
+תקופת הודעה מוקדמת
 
 # EndOfWork/Assertions/EmploymentStatus/employmentEnded
-employmentEnded
-
+הסתיימה
+העסקה הסתיימה
 
 # EndOfWork/Assertions/EmploymentStatus/atNewEmployer
-atNewEmployer
-
+חדש
+העובד מועסק אצל מעסיק אחר
 
 # EndOfWork/Assertions/Employment
-Employment
-
+תעסוקה
 
 # EndOfWork/Assertions/Employment/Type
-Type
-
+סוג
 
 # EndOfWork/Assertions/Employment/Type/direct
-direct
-"תלוש ממעסיק יחיד קבוע, שמקבל את השירות"
+ישירה
+תלוש ממעסיק יחיד קבוע, שמקבל את השירות
 
 # EndOfWork/Assertions/Employment/Type/freelance
-freelance
-
+פרילנס
+פרילנסר (עבודה מול קבלות)
 
 # EndOfWork/Assertions/Employment/Type/contractor
-contractor
-"עובד קבלן"
+קבלן
+עובד קבלן
 
 # EndOfWork/Assertions/Employment/Type/jointEmployment
-jointEmployment
-"יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"
+משותפת
+יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה
 
 # EndOfWork/Assertions/Employment/SalaryUnits
-SalaryUnits
-
+יחידות משכורת
 
 # EndOfWork/Assertions/Employment/SalaryUnits/monthly
-monthly
-
+חודשי
 
 # EndOfWork/Assertions/Employment/SalaryUnits/daily
-daily
-
+יומי
 
 # EndOfWork/Assertions/Employment/SalaryUnits/hourly
-hourly
-
+שעתי
 
 # EndOfWork/Assertions/Employment/Scope
-Scope
-
+היקף
+היקף המשרה
 
 # EndOfWork/Assertions/Employment/Scope/partial
-partial
-
+חלקית
 
 # EndOfWork/Assertions/Employment/Scope/full
-full
-
+מלאה
 
 # EndOfWork/Assertions/Employment/Scope/varied
-varied
-
+משתנה
 
 # EndOfWork/Assertions/ProcessFairness
-ProcessFairness
-Was the severance process OK and legal
+הוגנות
+עד כמה תהליך הפיטורין היה הוגן
 
 # EndOfWork/Assertions/ProcessFairness/ok
-ok
-
+הוגן
 
 # EndOfWork/Assertions/ProcessFairness/flawed
-flawed
-
+פגום
 
 # EndOfWork/Assertions/ProcessFairness/illegal
-illegal
-
+לא חוקי
 
 # EndOfWork/Assertions/TimeConstraints
-TimeConstraints
-
+משך העסקה
 
 # EndOfWork/Assertions/TimeConstraints/over6Months
-over6Months
-
+6ח׳
+מעל 6 חודשים
 
 # EndOfWork/Assertions/TimeConstraints/over11Months
-over11Months
-
+11ח׳
+מעל 11 חודשים
 
 # EndOfWork/Assertions/TimeConstraints/over51Months
-over51Months
-
+51ח׳
+מעל 51 חודשים
 
 # EndOfWork/Assertions/TimeConstraints/over63Months
-over63Months
-
+63ח׳
+מעל 63 חודשים
 
 # EndOfWork/Assertions/TimeConstraints/over8Years
-over8Years
-
+8ש׳
+מעל 8 שנים
 
 # EndOfWork/Assertions/TimeConstraints/over10Years
-over10Years
-
+10ש׳
+מעל 10 שנים
 
 # EndOfWork/Assertions/TimeConstraints/over13Years
-over13Years
-
+13ש׳
+מעל 13 שנים
 
 # EndOfWork/Assertions/Flags
-Flags
-
+סימונים
+גורמים המשפיעים על זכויות העובד
 
 # EndOfWork/Assertions/Flags/visaExpired
-visaExpired
-
+ויזה פגת תוקף
 
 # EndOfWork/Assertions/Flags/residencyStatusChange
-residencyStatusChange
-
+שינוי מצב חוקי
 
 # EndOfWork/Assertions/Flags/female
-female
-
+אשה
 
 # EndOfWork/Assertions/Flags/nonIsraeliWorker
-nonIsraeliWorker
-
+עובד שאינו ישראלי
 
 # EndOfWork/Assertions/ReasonForLeaving
-ReasonForLeaving
-
+סיבת סיום ההעסקה
 
 # EndOfWork/Assertions/ReasonForLeaving/resignation
-resignation
 התפטרות
 
 # EndOfWork/Assertions/ReasonForLeaving/visaTermination
-visaTermination
-
+סיום ויזה
 
 # EndOfWork/Assertions/ReasonForLeaving/medicalCondition
-medicalCondition
-
+מצב רפואי
+המעסיק רשאי לבקש הוכחות למצב הרפואי
 
 # EndOfWork/Assertions/ReasonForLeaving/familyMemberDisease
-familyMemberDisease
-
+מחלה של בן משפחה
+המעסיק רשאי לבקש הוכחות למצב הרפואי
 
 # EndOfWork/Assertions/ReasonForLeaving/marriageAndMoving
-marriageAndMoving
-"חתונה ומעבר דירה"
+חתונה ומעבר דירה
 
-# EndOfWork/Assertions/ReasonForLeaving/endOfConstract
-endOfConstract
-
+# EndOfWork/Assertions/ReasonForLeaving/endOfContract
+סיום חוזה
 
 # EndOfWork/Assertions/ReasonForLeaving/workerDeath
-workerDeath
-
+מוות עובד
 
 # EndOfWork/Assertions/ReasonForLeaving/employerDeath
-employerDeath
-
+מוות מעסיק
 
 # EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
-employerHospitalized
-
+מעסיק אושפז
 
 # EndOfWork/Assertions/ReasonForLeaving/employerMovedToNursingHome
-employerMovedToNursingHome
-
+מעסיק בסיעוד
+מעסיק עבר לבית סיעודי
 
 # EndOfWork/Assertions/ReasonForLeaving/enrolledToCivilService
-enrolledToCivilService
-"גיוס לצבא או לשירות לאומי"
+גיוס
+גיוס לצבא או לשירות לאומי
 
 # EndOfWork/Assertions/ReasonForLeaving/significantCompensationReduction
-significantCompensationReduction
-"הרעה מוחשית בתנאים"
+הרעה
+הרעה מוחשית בתנאים
 
 # EndOfWork/Assertions/ReasonForLeaving/significantBreachingOfRights
-significantBreachingOfRights
-"הפרת זכויות חמורה"
+הפרה
+הפרת זכויות חמורה
 
 # EndOfWork/Assertions/ReasonForLeaving/forParenting
-forParenting
-"התפטרות הורה"
+התפטרות הורה
 
 # EndOfWork/Assertions/ReasonForLeaving/movedToEligibleLocation
-movedToEligibleLocation
-"מעבר ליישוב זכאי"
+מעבר
+מעבר ליישוב זכאי
 
 # EndOfWork/Assertions/ReasonForLeaving/workAccident
-workAccident
-
+תאונת עבודה
 
 # EndOfWork/Assertions/ReasonForLeaving/abuse
-abuse
-"התעמרות"
+התעמרות
 
 # EndOfWork/Assertions/ReasonForLeaving/sexualHarrasment
-sexualHarrasment
-
+הטרדה מינית
 
 # EndOfWork/Assertions/LegalStatus
-LegalStatus
-
+מצב חוקי
 
 # EndOfWork/Assertions/LegalStatus/israeliCitizenship
-israeliCitizenship
-
+אזרחות ישראלית
 
 # EndOfWork/Assertions/LegalStatus/residencyProcess
-residencyProcess
-Status procedures towards residency (B1 general, A5)
+אזרוח
+העובד נמצא בתהליכי אזרוח
 
 # EndOfWork/Assertions/LegalStatus/palestinianWorkPermit
-palestinianWorkPermit
-
+פלסטיני
+פלסטיני עם רשיון עבודה
 
 # EndOfWork/Assertions/LegalStatus/b1Construction
-b1Construction
-
-
-# EndOfWork/Assertions/LegalStatus/_2a5
-_2a5
-
+בניה
+ב׳1 (בניה)
 
 # EndOfWork/Assertions/LegalStatus/b1CareGiver
-b1CareGiver
-
+סעוד
+ויזת סעוד (ב׳1)
 
 # EndOfWork/Assertions/LegalStatus/b1Agriculture
-b1Agriculture
-
+חקלאות
+ויזת עובד זר בחקלאות
 
 # EndOfWork/Assertions/LegalStatus/a5
-a5
+א׳5
+ויזה לתושבי ישראל שאינם אזרחים
 
+# EndOfWork/Assertions/LegalStatus/_2a5<--_
+2-א׳5
+ויזה מסוג 2 א׳ 5
 
 # EndOfWork/Assertions/LegalStatus/b2
-b2
-
+ב׳2
+ויזה ב׳2
 
 # EndOfWork/Assertions/LegalStatus/undocumented
-undocumented
-
+ללא תעוד
 
 # EndOfWork/Assertions/AgeGroup
-AgeGroup
-
+קבוצת גיל
 
 # EndOfWork/Assertions/AgeGroup/under21
-under21
-
+מתחת ל-21
 
 # EndOfWork/Assertions/AgeGroup/workForce
-workForce
-
+גיל העבודה
 
 # EndOfWork/Assertions/AgeGroup/pension
-pension
-
+גיל פרישה
 
 # EndOfWork/Assertions/Sector
-Sector
-
+סקטור
 
 # EndOfWork/Assertions/Sector/other
-other
-
+אחר
 
 # EndOfWork/Assertions/Sector/agriculture
-agriculture
-
+חקלאות
 
 # EndOfWork/Assertions/Sector/construction
-construction
-
+בניה
 
 # EndOfWork/Assertions/Sector/careGiving
-careGiving
-
+סעוד
 
 # EndOfWork/Assertions/Sector/houseKeeping
-houseKeeping
-
+משק בית
 
 # EndOfWork/Assertions/Sector/manpower
-manpower
-
+כוח אדם
 
 # EndOfWork/Assertions/Sector/security
-security
-
+אבטחה
 
 # EndOfWork/EmployerObligations
-EmployerObligations
-Things the employer should do during the work termination process
+חובות מעסיק
+פעולות שחובה על המעסיק לבצע
 
 # EndOfWork/EmployerObligations/priorNotice
-priorNotice
-
+הודעה מוקדמת
 
 # EndOfWork/EmployerObligations/hearing
-hearing
-
+שימוע
+שיחה עם העובד, המוגדרת באופן רשמי כשיחה לפני פיטורין
 
 # EndOfWork/EmployerObligations/workPeriodLetter
-workPeriodLetter
-"אישור תקופת עבודה"
+אישור תקופת עבודה
 
 # EndOfWork/EmployerObligations/pensionFundNotice
-pensionFundNotice
-
+הודעה לקרן הפנסיה
 
 # EndOfWork/EmployerObligations/decentProcedure
-decentProcedure
-
+הליך הוגן
 
 # EndOfWork/EmployerObligations/finalAccountSettlement
-finalAccountSettlement
-"גמר חשבון"
+גמר חשבון
 
 # EndOfWork/EmployerObligations/form161
-form161
-
+ט׳161
+טופס 161 - טופס רשמי של רשות המיסים, בו מעביד מודיע על פרישה של עובד מעבודה.
+---
+טופס 161 הוא טופס בעזרתו המעביד מודיע לרשות המיסים כי עובד מסויים סיים את עבודתו. ניתן להוריד טופס זה [כאן](https://sfilev2.f-static.com/image/users/108008/ftp/my_files/161.pdf?id=18775098).
 
 # EndOfWork/EmployerObligations/JobTerminationConfirmation
-JobTerminationConfirmation
-"אישור פיטורין"
-
+אישור פיטורין
 # EndOfWork/Notices
 Notices
 Things to note during the job termination process
@@ -570,10 +521,6 @@ Must issue deposit request two weeks or more
 provideEvidenceForCaringForFamily
 When leaving Israel for caring for a family member, need to provide evidence to claim rights.
 
-# EndOfWork/Recommendations/canReportToThePolice
-canReportToThePolice
-This case involves a criminal activity by the employer.
-
 # EndOfWork/Recommendations/applyForWorkAccident
 applyForWorkAccident
 Apply to the Israeli National Insurane claiming work accident
@@ -589,10 +536,6 @@ Possibly eligible for elderly allowance from NI
 # EndOfWork/Benefits/Properties/bankruptcyAllowance
 bankruptcyAllowance
 Employee gets severence and other compensations from National Insurance instead of getting them from the employer
-
-# EndOfWork/Benefits/Properties/newJobAssistance
-newJobAssistance
-
 
 # EndOfWork/Benefits/Properties/eligibleForFlightExpenseNI
 eligibleForFlightExpenseNI
@@ -642,10 +585,6 @@ resignation
 severance
 
 
-# EndOfWork/Assertions/ReasonForLeaving/endOfContract
-endOfContract
-
-
 # EndOfWork/Assertions/ReasonForLeaving/severeAbuse
 severeAbuse
 
@@ -661,6 +600,10 @@ Effective bankruptcy, might not be formal
 # EndOfWork/Assertions/ReasonForLeaving/employerChanged
 employerChanged
 e.g. company was bought by another
+
+# EndOfWork/Assertions/LegalStatus/_2a5
+_2a5
+
 
 # EndOfWork/Assertions/LegalStatus/other
 other

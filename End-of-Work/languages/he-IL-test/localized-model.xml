@@ -1,0 +1,19 @@
+<localized-model direction="rtl">
+  <title>סיום העסקה</title>
+  <subtitle>דעו את זכויותיכם כאשר העסקתכם מסתיימת.</subtitle>
+  <keywords></keywords>
+  <authors>
+    <group>
+      <name>קו לעובד</name>
+      <contact>www.klo.org.il</contact>
+    </group>
+    <person>
+      <name>מיכל תג׳ר</name>
+      <affiliation>עמותת קו לעובד</affiliation>
+    </person>
+    <person>
+      <name>מיכאל בר-סיני</name>
+      <affiliation>CodeWorth.io</affiliation>
+    </person>
+  </authors>
+</localized-model>

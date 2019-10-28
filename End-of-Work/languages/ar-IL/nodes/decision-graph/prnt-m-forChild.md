@@ -1,0 +1,1 @@
+Are you single, or does your wife has a job? 
