@@ -1,10 +1,15 @@
-IllnessLaborRights: consists of Duties, Benefits, Recommendations, Properties.
+HealthRelatedRights: consists of Duties, Benefits, Recommendations, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
                                                           TimeInIsrael, Pregnancy, AccidentType,
-                                                          ParentingGroupSize, RelatedDisability.
+                                                          ParentingGroupSize, RelationToSickPerson.
 
-Duties[What the employee is required do]: some of supportingMedicalDocumentation, handleVisa.
+Duties[What the employee is required do]: some of
+  supportingMedicalDocumentation,
+  singleParentStatement,
+  guardianDocument[״צו אפוטרופוס חתום״],
+  declarationOfSpouseDidNotUseBenefit[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
+  handleVisa.
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
                       SpouseSickness, SeveranceProtection, SicknessDaysRedumption,
@@ -17,13 +22,15 @@ Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.]
   .
 
-LegalStatus: one of israeliCitizenship, b1Visa, other.
+LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
 
 ParentingGroupSize: one of couple, singleParent.
 
-RelatedDisability: some of parentOfDisabled,
-                           spouseOfDisabled,
-                           disabled.
+RelationToSickPerson[How is the worker related to the person whose health issues are desri]: one of
+                          parentOfSick,
+                          spouseOfSick,
+                          childOfSick,
+                          self.
 Pregnancy: one of regular, complicated.
 AccidentType: one of other, roadAccident.
 
@@ -44,7 +51,9 @@ Sector: one of other, civilService[State workers], manpower,
 TimeInIsrael: one of moreThan10Years, lessThan10Years.
 
 PaidSicknessDays: TODO.
-ChildSickness: TODO.
+ChildSickness: some of sickChildPay,
+  dialysisOrMaligantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
+   disabledChildPay.
 ParentSickness: TODO.
 SpouseSickness: TODO.
 SeveranceProtection: TODO.

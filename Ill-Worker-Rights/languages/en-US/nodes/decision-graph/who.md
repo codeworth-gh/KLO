@@ -1,0 +1,1 @@
+Who suffers from the health condition in question?

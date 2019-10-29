@@ -1,5 +1,5 @@
 <policy-model>
-  <title>Ill Worker Rights</title>
+  <title>Health Related Worker Rights</title>
   <subtitle></subtitle>
   <version>0.2</version>
   <date>2019-09-11</date>
@@ -23,7 +23,7 @@
   <model answers-order="yes-first">
     <!-- other options: yes-last, verbatim. Default: yes-first -->
     <!-- pathes are relative to model directory -->
-    <space root="IllnessLaborRights">policy-space.pspace</space>
+    <space root="HealthRelatedRights">policy-space.pspace</space>
     <graph>decision-graph.dg</graph>
     <!--
     <valueInferrer>valueInference.vi</valueInferrer>

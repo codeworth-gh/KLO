@@ -1,9 +1,24 @@
 [>who< ask:
   {text: Who suffers from the health condition in question?}
+  {terms:
+    {child: Including when the child is over 18.}
+  }
   {answers:
-    {me: [call: pSelfCondition]}
+    {me:
+      [set: RelationToSickPerson=self]
+      [call: pSelfCondition]
+    }
     {my spouse:
+      [set: RelationToSickPerson=spouseOfSick]
       [todo: Handle spouse illness issues]
+    }
+    {my parent:
+      [set: RelationToSickPerson=childOfSick]
+      [todo: Handle parent health issues]
+    }
+    {my child:
+      [set: RelationToSickPerson=parentOfSick]
+      [call: pChildHealthIssues]
     }
   }
 ]
@@ -109,7 +124,8 @@ Initial case data gatehring
   {answers:
     {citizen: [set: LegalStatus=israeliCitizenship]}
     {visa of type b1: [set: LegalStatus=b1Visa]}
-    {other: [set: LegalStatus=other] }
+    {no permit:       [set: LegalStatus=noPermit]}
+    {palestinian:     [set: LegalStatus=palestinian] }
   }
 ]
 [>gender< ask:
@@ -125,8 +141,14 @@ Initial case data gatehring
     {text: How is your salary calculated?}
     {answers:
       {monthly: [set: SalaryUnits=monthly] }
-      {daily:   [set: SalaryUnits=daily] }
-      {hourly:  [set: SalaryUnits=hourly] }
+      {daily:
+        [set: SalaryUnits=daily]
+        [call: pCheckIllnessOnRelevantDay]
+      }
+      {hourly:
+         [set: SalaryUnits=hourly]
+         [call: pCheckIllnessOnRelevantDay]
+      }
     }
   ]
   [>employmentType< ask:
@@ -159,4 +181,62 @@ Initial case data gatehring
     }
   ]
 ] <-- / employment form section
+--]
+
+
+[-->pChildHealthIssues<
+  [set: Duties+=declarationOfSpouseDidNotUseBenefit]
+  [>child-sicknessTypes< ask:
+    {text: Does the child suffers from any of the following: }
+    {answers:
+      {malignant condition:
+        [>child-over18-m< ask:
+          {text: Is the child at least 18 years old?}
+          {answers:
+            {no:
+              [set: ChildSickness+=dialysisOrMaligantChildPay]
+            }
+          }
+        ]
+      }
+      {disability:
+        [set: ChildSickness+=disabledChildPay]
+        [>child-over18-dis< ask:
+          {text: Is the child at least 18 years old?}
+          {answers:
+            {yes:
+              [set: Duties+=guardianDocument]
+            }
+          }
+        ]
+      }
+      {needs dialysis:
+        [>child-over18-dia< ask:
+          {text: Is the child at least 18 years old?}
+          {answers:
+            {no:
+              [set: ChildSickness+=dialysisOrMaligantChildPay]
+            }
+          }
+        ]
+      }
+      {none of the above:
+        [>child-over16< ask:
+          {text: Is the child at least 16 years old?}
+          {answers:
+            {no: [set:ChildSickness+=sickChildPay]}
+          }
+        ]
+      }
+    }
+  ]
+--]
+
+[-->pCheckIllnessOnRelevantDay<
+  [>partialWorkWhen< ask:
+    {text: Did the illness occur in one of your workign days?}
+    {answers:
+        {no: [>partialWorkReject-time< reject: You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway. ]}
+    }
+  ]
 --]

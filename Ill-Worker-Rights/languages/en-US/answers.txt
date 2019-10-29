@@ -1,0 +1,34 @@
+accident: accident
+citizen: citizen
+civil service: civil service
+contractor: contractor
+daily: daily
+direct: direct
+event facilities: event facilities
+fertility treatments: fertility treatments
+freelance: freelance
+full: full
+hotels: hotels
+hourly: hourly
+house keeping: house keeping
+jointEmployment: jointEmployment
+manpower: manpower
+me: me
+miscarrige: miscarrige
+monthly: monthly
+my spouse: my spouse
+no: no
+non-work related: non-work related
+none of the above: none of the above
+other: other
+partial: partial
+pregnancy: pregnancy
+road accident: road accident
+security: security
+serious illness or disability: serious illness or disability
+temporary illness (medium/light): temporary illness (medium/light)
+varied: varied
+visa of type b1: visa of type b1
+work related: work related
+work-related illness: work-related illness
+yes: yes
