@@ -21,7 +21,7 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       severeAbuse,
                       retirement,
                       movedToEligibleLocation["מעבר ליישוב זכאי"],
-                      workAccident, abuse["התעמרות"], sexualHarrasment,
+                      workAccident, abuse["התעמרות"], sexualHarassment,
                       employerCollapse[Effective bankruptcy, might not be formal],
                       employerChanged[e.g. company was bought by another].
 TimeInIsrael: one of lessThan51Months, overOr51Months, over63Months, over8Years, over10Years, over13Years.
@@ -35,7 +35,7 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
 Scope: one of partial, full, varied.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 Flags: some of visaExpired, residencyStatusChange,
-  pregnant[Pregnant while the severance happaened.],
+  pregnant[Pregnant while the severance happened.],
   thisEmploymentOver11months,
   nonIsraeliWorker, possiblyIllegalSeverance, employmentSet.
 
@@ -45,16 +45,16 @@ Pension: one of keep[נשאר מה שנצבר, מומלך להמשיך להפר�
                 allowance[זכאי לקצבה].
 Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations["פיצוי מיוחד"],
                 disabilityAllowance[Might be, need to look in National Insurance],
-                bankruptcyAllowance[Employee gets severence and other compensations from National Insurance instead of getting them from the employer],
+                bankruptcyAllowance[Employee gets severance and other compensations from National Insurance instead of getting them from the employer],
                 parentalLeave,
                 birthGrant,
-                severancePay[also- "Separation": The employer has to pay a monthly payment for each employemnt year, minus deposit],
+                severancePay[also- "Separation": The employer has to pay a monthly payment for each employment year, minus deposit],
                 newJobAssistance,
                 severanceCancellation["ביטול פיטורין"],
-                eligibleForFlightExpenseNI[Natioal insurance can pay for flight home.],
+                eligibleForFlightExpenseNI[National insurance can pay for flight home.],
                 eligibleForFlightExpensePI[Private insurance can pay for flight home.],
                 severanceIllegalUnlessApprovedByLaborMinstry[For pregnant women, or those that recently gave birth, employment termination requires special approval],
-                severanceIllegalUnlessApprovedByDefenseMinstry[Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence. ],
+                severanceIllegalUnlessApprovedByDefenseMinstry[Severance during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence. ],
                 possible80KGrant[For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition]
 .
 
@@ -68,9 +68,9 @@ EmployerObligations [Things the employer should do during the work termination p
 
 Duties: some of findNewEmployer, healthInsuranceExtension,
   employeePriorNoticeForEmploymentChange[Employee needs to give a chance to alter employment terms before resigning.],
-  employeePriorNotice[Employee notices the emplyer in writing that they are about to leave, state the reason for leaving],
+  employeePriorNotice[Employee notices the employer in writing that they are about to leave, state the reason for leaving],
   provideEvidenceForNewLocation[Worker need to provide evidence for living in a new place, such as rent contract],
-  provideDetailedResoningQoL[Worker has to proivde detalied reasonong for why their quality of life was affected.],
+  provideDetailedReasoningQoL[Worker has to provide detailed reasoning for why their quality of life was affected.],
   possibleGeographicRestrictions[The worker may be subject to geographic restrictions],
   issueDepositRequest[Must issue deposit request two weeks or more],
   provideEvidenceForCaringForFamily[When leaving Israel for caring for a family member, need to provide evidence to claim rights.]
@@ -82,19 +82,19 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   eligibleForRetroactiveTaxBenefitsWithinAYear[Because of the new location you live in.],
   payKeens[Payment divided between closes keens. No need to wait for inheritance.],
   involveAidOrganizations[Call a relevant humanitarian aid NGOs, or call the police.],
-  reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compenstation pay.],
+  reducedBenefitsForOverstay2Month[Staying in Israel for more than 2 months will reduce you compensation pay.],
   humanitarianVisaWarningCareGiver[After the request is decided, you cannot request again.],
   canReportToThePolice[This case involves a criminal activity by the employer.],
-  applyForWorkAccident[Apply to the Israeli National Insurane claiming work accident],
-  uniteEmployeesToDeclareBankrupcy[Emplyees need to unite and demand formal bankrupcy.],
-  checkElderyAllowance[Possibly eligible for elderly allowance from NI]
+  applyForWorkAccident[Apply to the Israeli National Insurance claiming work accident],
+  uniteEmployeesToDeclareBankruptcy[Employees need to unite and demand formal bankruptcy.],
+  checkElderlyAllowance[Possibly eligible for elderly allowance from NI]
 .
 
 Restrictions[Limitations on the worker]: some of
   canOnlyWorkAsReleaver[With this restrictions, care giving workers can only work as relievers.],
   requiresEmployerHumanitarianVisaApplication[New employer has to apply for humanitarian visa.],
   cannotWorkInIsrael[It seems to be impossible to obtain a working permit.],
-  nurseNonRetiredOnly[Cannot nurse old people, only childs and disabled.]
+  nurseNonRetiredOnly[Cannot nurse old people, only children and disabled.]
 .
 
 EffectiveTerminationType: one of resignation, severance.
@@ -114,7 +114,7 @@ Notices[Things to note during the job termination process]: some of
 PriorNoticeCalculationFormula[Formula for calculating the prior notice period]: one of
   dayPerMonth[One day for each month the worker was employed],
   sixDaysPlus2_5[6 days plus 2.5 days for each month after the first 6],
-  fourteenPlusEachTwo[14 days plus a day for each 2 month in the second employemnt year],
-  twentyonePlusEachTwo[21 days plus a day for each 2 month in the third employemnt year],
+  fourteenPlusEachTwo[14 days plus a day for each 2 month in the second employment year],
+  twentyonePlusEachTwo[21 days plus a day for each 2 month in the third employment year],
   kOneMonth[One month]
 .

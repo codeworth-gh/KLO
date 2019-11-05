@@ -1,3 +1,14 @@
+[set: Duties += supportingMedicalDocumentation]
+[>initialFilter< ask:
+  {text: Did you miss work beacuse of a medical condition?}
+  {terms:
+    {miss work: Days or hours}
+    {medical condition: Ephemeral or permanent health issues, either yours or of someone related to you. }
+  }
+  {answers:
+    {no: [>rej-initialFilter< reject: You may be eligible for benefits, but not from the legislation covered by this interview.]}
+  }
+]
 [>who< ask:
   {text: Who suffers from the health condition in question?}
   {terms:
@@ -28,6 +39,7 @@
 *>
 [-->pSelfCondition<
   [call: pCaseProperties]
+
   [consider: <-- TODO move to conditional answers when implemented.
     {slot: Gender}
     {options:
@@ -39,7 +51,7 @@
           }
           {answers:
             {accident: [call: pAccidents]}
-            {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
+            {temporary illness (medium/light): [call: pSickDaysCalcTemp][todo: temporary illness (medium/light)]}
             {serious illness or disability: [todo: serious illness or disability]}
             {work-related illness: [todo: work-related illness]}
           }
@@ -53,7 +65,7 @@
           }
           {answers:
             {accident: [call: pAccidents]}
-            {temporary illness (medium/light): [todo: temporary illness (medium/light)]}
+            {temporary illness (medium/light): [call: pSickDaysCalcTemp][todo: temporary illness (medium/light)]}
             {serious illness or disability: [todo: serious illness or disability]}
             {work-related illness: [todo: work-related illness]}
             {pregnancy:
@@ -98,7 +110,7 @@
       }
       {work related: [call: pWorkRelatedAcciedentBenefits]}
       {non-work related:
-        [set: SimpleBenefits += sicknessPay]
+        [set: SicknessPay = gradual]
         [consider:
           {slot: LegalStatus}
           {options:
@@ -149,15 +161,6 @@ Initial case data gatehring
          [set: SalaryUnits=hourly]
          [call: pCheckIllnessOnRelevantDay]
       }
-    }
-  ]
-  [>employmentType< ask:
-    {text: How are you employed? }
-    {answers:
-      { direct:          [set: EmploymentType=direct] }
-      { freelance:       [set: EmploymentType=freelance] }
-      { contractor:      [set: EmploymentType=contractor] }
-      { jointEmployment: [set: EmploymentType=jointEmployment] }
     }
   ]
   [>employmentScope< ask:
@@ -237,6 +240,17 @@ Initial case data gatehring
     {text: Did the illness occur in one of your workign days?}
     {answers:
         {no: [>partialWorkReject-time< reject: You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway. ]}
+    }
+  ]
+--]
+
+[-->pSickDaysCalcTemp<
+  [set: SicknessPay = gradual]
+  [consider:
+    {slot: Sector}
+    {options:
+      {houseKeeping: [set: SicknessPay = fullFromDayOne]}
+      {civilService: [set: SicknessPay = fullFromDayOne]}
     }
   ]
 --]

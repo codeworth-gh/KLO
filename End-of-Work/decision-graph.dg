@@ -125,12 +125,12 @@
               [set: ReasonForLeaving=retirement]
               [call: benefitSet-severance]
             }
-            {I was sexually harrased:
-              [set: ReasonForLeaving = sexualHarrasment;
+            {I was sexually harassed:
+              [set: ReasonForLeaving = sexualHarassment;
                     Properties       += specialCompensations;
                     Recommendations  += canReportToThePolice]
               [call: benefitSet-severance]
-              [>sexualHarrasmentSummary< reject: Sexual harrasment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed. ]
+              [>sexualHarassmentSummary< reject: Sexual harassment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed. ]
             }
             {resignation (other): [call: benefitSet-resignation]}
           }
@@ -145,7 +145,7 @@
               [>ReasonForLeaving-forced-citizens< ask:
                 {text: Why did you have to leave this job?}
                 {terms:
-                  {employer collapse: Chapter 11, bankrupcy }
+                  {employer collapse: Chapter 11, bankruptcy }
                   {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
                 }
                 {answers:
@@ -161,7 +161,7 @@
               [>ReasonForLeaving-forced-b1< ask:
                 {text: Why did you have to leave this job?}
                 {terms:
-                  {employer collapse: Chapter 11, bankrupcy }
+                  {employer collapse: Chapter 11, bankruptcy }
                   {employer change: Company takover, nursing a wife and then moving to nursing her husband.}
                 }
                 {answers:
@@ -181,7 +181,7 @@
             [>ReasonForLeaving-forced-others< ask:
               {text: Why did you have to leave this job?}
               {terms:
-                {employer collapse: E.g. chapter 11, bankrupcy (either formal or not) }
+                {employer collapse: E.g. chapter 11, bankruptcy (either formal or not) }
                 {employer change: E.g. company takover, nursing a wife and then moving to nursing her husband.}
               }
               {answers:
@@ -280,8 +280,8 @@
 [when: <-- citizen-only benefits
   { LegalStatus=israeliCitizenship:
     [when:
-      {AgeGroup=pension: [set: Recommendations+=checkElderyAllowance] }
-      {Gender=female; AgeGroup=voluntaryPension: [set: Recommendations+=checkElderyAllowance] }
+      {AgeGroup=pension: [set: Recommendations+=checkElderlyAllowance] }
+      {Gender=female; AgeGroup=voluntaryPension: [set: Recommendations+=checkElderlyAllowance] }
 ]}]
 
 <*******************
@@ -498,10 +498,10 @@
                   [>moved-no-spouse< ask:
                     {text: Did you move to any of the following}
                     {answers:
-                      {to an agricaltural settlement:
+                      {to an agricultural settlement:
                          [set: Recommendations+=eligibleForRetroactiveTaxBenefitsWithinAYear]
                          [call: benefitSet-severance] }
-                      {to an eligible settelment:
+                      {to an eligible settlement:
                         [set: Recommendations+=eligibleForRetroactiveTaxBenefitsWithinAYear]
                         [call: benefitSet-severance] }
                       {to a settlement outside the green line:
@@ -525,7 +525,7 @@
         }
         {answers:
           {yes:
-            [set: Duties += provideDetailedResoningQoL]
+            [set: Duties += provideDetailedReasoningQoL]
             [call: benefitSet-severance]
           }
           {no: [call:benefitSet-resignation]}
@@ -609,11 +609,11 @@
 
 [-->pEmployerCollapsed<
 [set: ReasonForLeaving=employerCollapse]
-[>employerCollapseFormalBankrupcy< ask:
+[>employerCollapseFormalBankruptcy< ask:
   {text: Is the employer formally declared as bankrupt?}
   {answers:
     {yes: [set: Properties+=bankruptcyAllowance]}
-    {no: [set: Recommendations+=uniteEmployeesToDeclareBankrupcy]}
+    {no: [set: Recommendations+=uniteEmployeesToDeclareBankruptcy]}
   }
 ]
 --]

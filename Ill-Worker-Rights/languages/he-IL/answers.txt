@@ -1,0 +1,40 @@
+accident: accident
+citizen: citizen
+civil service: civil service
+contractor: contractor
+daily: daily
+direct: direct
+disability: disability
+event facilities: event facilities
+fertility treatments: fertility treatments
+freelance: freelance
+full: full
+hotels: hotels
+hourly: hourly
+house keeping: house keeping
+jointEmployment: jointEmployment
+malignant condition: malignant condition
+manpower: manpower
+me: me
+miscarrige: miscarrige
+monthly: monthly
+my child: my child
+my parent: my parent
+my spouse: my spouse
+needs dialysis: needs dialysis
+no: no
+no permit: no permit
+non-work related: non-work related
+none of the above: none of the above
+palestinian: palestinian
+partial: partial
+pregnancy: pregnancy
+road accident: road accident
+security: security
+serious illness or disability: serious illness or disability
+temporary illness (medium/light): temporary illness (medium/light)
+varied: varied
+visa of type b1: visa of type b1
+work related: work related
+work-related illness: work-related illness
+yes: yes

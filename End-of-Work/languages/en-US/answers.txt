@@ -53,8 +53,8 @@ severe abuse: severe abuse
 significant breaching of rights: significant breaching of rights
 significant deterioration of employment conditions: significant deterioration of employment conditions
 to a settlement outside the green line: to a settlement outside the green line
-to an agricaltural settlement: to an agricaltural settlement
-to an eligible settelment: to an eligible settelment
+to an agricultural settlement: to an agricultural settlement
+to an eligible settlement: to an eligible settlement
 undocumented: undocumented
 varied: varied
 visa of type 2a5: visa of type 2a5
@@ -71,7 +71,7 @@ yes, employer refused: yes, employer refused
 51 Months or more: 51 Months or more
 62 to 67: 62 to 67
 67 and over: 67 and over
-I was sexually harrased: I was sexually harrased
+I was sexually harassed: I was sexually harassed
 Less than 51 Months: Less than 51 Months
 caring for a family member: caring for a family member
 employer terminally hospitalized: employer terminally hospitalized
