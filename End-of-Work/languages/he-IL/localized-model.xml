@@ -1,4 +1,4 @@
-<localized-model direction="rtl" ui-lang="en">
+<localized-model direction="rtl" ui-lang="he">
   <title>זכויות בסיום העסקה</title>
   <subtitle></subtitle>
   <keywords></keywords>
@@ -9,6 +9,10 @@
     </group>
     <person>
       <name>עו״ד מיכל תג׳ר</name>
+      <affiliation>קו לעובד</affiliation>
+    </person>
+    <person>
+      <name>עו״ד שאדי </name>
       <affiliation>קו לעובד</affiliation>
     </person>
     <person>
