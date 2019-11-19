@@ -1,9 +1,7 @@
 21-62: 21-62
 21-67: 21-67
 51 Months or more: 51 חודשים או יותר
-62-67: 62-67
 Divorce: גירושין
-I was sexually harraset: הוטרדתי מינית
 Less than 51 Months: פחות מ-51 חודשים
 Moved in with spouse: עברתי לגור עם בן/בת זוג
 My spouse moved because of work: בן/בת זוגי עבר לצורך עבודה
@@ -15,7 +13,6 @@ Over 8 Years: מעל 8 שנים
 accident during my work: תאונה במהלך העבודה
 accident on my way to work: תאונה בדרך לעבודה
 caring for a family member: טיפול בבן משפחה
-citizen: אזרח
 contractor: קבלן
 daily: יומי
 direct: ישירה
@@ -32,7 +29,6 @@ full: מלאה
 health condition of a family member: מצב בריאותי של בן משפחה
 health issues: בעיות בריאות
 hourly: שעתי
-in residency process: בתהליך אזרוח
 involuntary: לא ביוזמתי
 jointEmployment: העסקה משולבת
 me: אני
@@ -58,8 +54,6 @@ severe abuse: התעללות חמורה
 significant breaching of rights: הפרת זכויות חמורה
 significant deterioration of employment conditions:הרעה מוחשית בתנאי העסקה
 to a settlement outside the green line: ליישוב מחוץ לקו הירוק
-to an agricaltural settlement: לישוב חקלאי
-to an eligible settelment: לישוב זכאי
 under 21: מתחת ל-21
 undocumented: ללא רישום
 varied: משתנה
@@ -67,7 +61,6 @@ visa of type 2a5: ויזה 2 א׳ 5
 visa of type b1Agriculture: ויזה ב׳1 חקלאות
 visa of type b1CareGiver:ויזה ב׳1 סיעוד
 visa of type b1Construction:ויזה ב׳1 בניין
-visa of type b2: ויזה ב׳ 2
 visa termination: פקיעת ויזה
 worker death: מות העובד
 yes: כן
@@ -75,7 +68,16 @@ yes, I don't want to stay: כן, אני לא רוצה להשאר
 yes, employer refused: כן, המעסיק סרב
 62 to 67: 62 עד 67
 67 and over: 67 ומעלה
-I was sexually harrased:הוטרדתי מינית
 other non-citizen: אחר (לא אזרח)
 under 62: פחות מ-62
 under 67: פחות מ-67
+0-6 months: 0-6 חודשים
+12 months or less: 12 חודשים או פחות
+13 and over: 13 חודשים או יותר
+13-24 months: 13-24 חודשים
+25-36 months: 25-36 חודשים
+37 months and over: 37 חודשים או יותר
+7-12 months: 7-12 חודשים
+I was sexually harassed: הוטרדתי מינית
+to an agricultural settlement: לישוב חקלאי
+to an eligible settlement: לישוב זכאי

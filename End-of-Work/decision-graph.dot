@@ -1,0 +1,462 @@
+digraph decisionGraph {
+graph [fontname="Courier" concentrate=true compound=true]
+edge [fontname="Helvetica" fontsize="10"]
+node [fillcolor="lightgray" style="filled" fontname="Helvetica" fontsize="10"]
+NODE___________START_[ fillcolor="transparent" shape="none" fontcolor="#008800" fontsize="16" label="start" ]
+{rank=source; NODE___________START_}
+subgraph cluster_DecisionGraph_2d1 {
+label="DecisionGraph-1"
+_5bdecision_2dgraph_2edg_5dleaveForMedicalConditions_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dleaveForMedicalConditions{ 
+label="Part [decision-graph.dg]leaveForMedicalConditions\nLeaving a workplace for medical conditions"
+_5bdecision_2dgraph_2edg_5dlfmm_2d1[ shape="oval" label="decision-graph.dg/lfmm-1\nask\nDid you inform your employer the reason\nfor leaving, and give them a chance to\nadjust your employment conditions?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2383_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{severancePay\} UnemploymentBenefits:immediate]\n" ]
+_5bdecision_2dgraph_2edg_5dlfmm_2d1 -> _5bdecision_2dgraph_2edg_5d_5b_2383_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2384_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dlfmm_2d1 -> _5bdecision_2dgraph_2edg_5d_5b_2384_5d[ taillabel="no" ]
+}
+_5bdecision_2dgraph_2edg_5dleaveForMedicalConditions_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dlfmm_2d1
+_5btrailings_2edg_5dpDeposit_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5btrailings_2edg_5dpDeposit{ 
+label="Part [trailings.dg]pDeposit"
+_5btrailings_2edg_5d_5b_2311_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{issueDepositRequest\}\n" ]
+}
+_5btrailings_2edg_5dpDeposit_5f_5f_5bpstart_5d -> _5btrailings_2edg_5d_5b_2311_5d
+_5bdecision_2dgraph_2edg_5dbenefitSet_2dseverance_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dbenefitSet_2dseverance{ 
+label="Part [decision-graph.dg]benefitSet-severance\nBenefits for Severance"
+_5bdecision_2dgraph_2edg_5d_5b_23113_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[EffectiveTerminationType:severance]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23114_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23115_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23116_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[UnemploymentBenefits:immediate]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23118_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23119_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{severancePay\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23120_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nbenefitSet-severance make more accurate" ]
+_5bdecision_2dgraph_2edg_5d_5b_23119_5d -> _5bdecision_2dgraph_2edg_5d_5b_23120_5d
+_5bdecision_2dgraph_2edg_5d_5b_23118_5d -> _5bdecision_2dgraph_2edg_5d_5b_23119_5d[ taillabel="Assertions=[Flags:\{thisEmplotmentOver11months\}]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23118_5d -> _5bdecision_2dgraph_2edg_5d_5b_23120_5d[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5d_5b_23116_5d -> _5bdecision_2dgraph_2edg_5d_5b_23118_5d
+_5bdecision_2dgraph_2edg_5d_5b_23115_5d -> _5bdecision_2dgraph_2edg_5d_5b_23116_5d[ taillabel="Assertions=[AgeGroup:workForce]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23115_5d -> _5bdecision_2dgraph_2edg_5d_5b_23118_5d[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5d_5b_23114_5d -> _5bdecision_2dgraph_2edg_5d_5b_23115_5d[ taillabel="Assertions=[LegalStatus:israeliCitizenship]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23117_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nnon-israeli severance benefits" ]
+_5bdecision_2dgraph_2edg_5d_5b_23117_5d -> _5bdecision_2dgraph_2edg_5d_5b_23118_5d
+_5bdecision_2dgraph_2edg_5d_5b_23114_5d -> _5bdecision_2dgraph_2edg_5d_5b_23117_5d[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5d_5b_23113_5d -> _5bdecision_2dgraph_2edg_5d_5b_23114_5d
+}
+_5bdecision_2dgraph_2edg_5dbenefitSet_2dseverance_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5d_5b_23113_5d
+_5btrailings_2edg_5dconstructionWorkers_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5btrailings_2edg_5dconstructionWorkers{ 
+label="Part [trailings.dg]constructionWorkers"
+_5btrailings_2edg_5d_5b_2310_5d[ fillcolor="#BBBBFF" shape="cds" label="trailings.dg/pDeposit" ]
+}
+_5btrailings_2edg_5dconstructionWorkers_5f_5f_5bpstart_5d -> _5btrailings_2edg_5d_5b_2310_5d
+_5bdecision_2dgraph_2edg_5dpart_2dmoved_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dpart_2dmoved{ 
+label="Part [decision-graph.dg]part-moved"
+_5bdecision_2dgraph_2edg_5dmoved_2dwho[ shape="oval" label="decision-graph.dg/moved-who\nask\nWho moved?" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dme_2dfilter[ shape="oval" label="decision-graph.dg/moved-me-filter\nask\nIs you new place in Israel? " ]
+_5bdecision_2dgraph_2edg_5d_5b_2396_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{employeePriorNoticeForEmploymentChange,provideEvidenceForNewLocation\}\n" ]
+_5bdecision_2dgraph_2edg_5dmoved_2ddispatch_2dreason[ shape="oval" label="decision-graph.dg/moved-dispatch-reason\nask\nDid you move because of status change\nregarding your spouse?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2397_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:marriageAndMoving]\n" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dspouse_2d40km[ shape="oval" label="decision-graph.dg/moved-spouse-40km\nask\nIs your new home at least 40 km from\nyour old home?" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse[ shape="oval" label="decision-graph.dg/moved-following-spouse\nask\nWhich of the following apply" ]
+_5bdecision_2dgraph_2edg_5d_5b_2399_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_2399_5d[ taillabel="Moved in with spouse" ]
+_5bdecision_2dgraph_2edg_5d_5b_23100_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23100_5d[ taillabel="My spouse moved because of work" ]
+_5bdecision_2dgraph_2edg_5d_5b_23101_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23101_5d[ taillabel="Divorce" ]
+_5bdecision_2dgraph_2edg_5d_5b_23102_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23102_5d[ taillabel="Other" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dspouse_2d40km -> _5bdecision_2dgraph_2edg_5dmoved_2dfollowing_2dspouse[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2398_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dspouse_2d40km -> _5bdecision_2dgraph_2edg_5d_5b_2398_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_2397_5d -> _5bdecision_2dgraph_2edg_5dmoved_2dspouse_2d40km
+_5bdecision_2dgraph_2edg_5dmoved_2ddispatch_2dreason -> _5bdecision_2dgraph_2edg_5d_5b_2397_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse[ shape="oval" label="decision-graph.dg/moved-no-spouse\nask\nDid you move to any of the following" ]
+_5bdecision_2dgraph_2edg_5d_5b_23103_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{eligibleForRetroactiveTaxBenefitsWithinAYear\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23104_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_23103_5d -> _5bdecision_2dgraph_2edg_5d_5b_23104_5d
+_5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23103_5d[ taillabel="to an agricaltural settlement" ]
+_5bdecision_2dgraph_2edg_5d_5b_23105_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{eligibleForRetroactiveTaxBenefitsWithinAYear\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23106_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_23105_5d -> _5bdecision_2dgraph_2edg_5d_5b_23106_5d
+_5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23105_5d[ taillabel="to an eligible settelment" ]
+_5bdecision_2dgraph_2edg_5d_5b_23107_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{eligibleForRetroactiveTaxBenefitsWithinAYear\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23108_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_23107_5d -> _5bdecision_2dgraph_2edg_5d_5b_23108_5d
+_5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23107_5d[ taillabel="to a settlement outside the green line" ]
+_5bdecision_2dgraph_2edg_5d_5b_23109_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse -> _5bdecision_2dgraph_2edg_5d_5b_23109_5d[ taillabel="other" ]
+_5bdecision_2dgraph_2edg_5dmoved_2ddispatch_2dreason -> _5bdecision_2dgraph_2edg_5dmoved_2dno_2dspouse[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_2396_5d -> _5bdecision_2dgraph_2edg_5dmoved_2ddispatch_2dreason
+_5bdecision_2dgraph_2edg_5dmoved_2dme_2dfilter -> _5bdecision_2dgraph_2edg_5d_5b_2396_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2395_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dme_2dfilter -> _5bdecision_2dgraph_2edg_5d_5b_2395_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dwho -> _5bdecision_2dgraph_2edg_5dmoved_2dme_2dfilter[ taillabel="me" ]
+_5bdecision_2dgraph_2edg_5dmoved_2demployer[ shape="oval" label="decision-graph.dg/moved-employer\nask\nWill working in the new location will\nsignificantly affect your quality of\nlife?" ]
+_5bdecision_2dgraph_2edg_5d_5b_23110_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{provideDetailedResoningQoL\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23111_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_23110_5d -> _5bdecision_2dgraph_2edg_5d_5b_23111_5d
+_5bdecision_2dgraph_2edg_5dmoved_2demployer -> _5bdecision_2dgraph_2edg_5d_5b_23110_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_23112_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dmoved_2demployer -> _5bdecision_2dgraph_2edg_5d_5b_23112_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dmoved_2dwho -> _5bdecision_2dgraph_2edg_5dmoved_2demployer[ taillabel="my employer" ]
+}
+_5bdecision_2dgraph_2edg_5dpart_2dmoved_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dmoved_2dwho
+_5bdecision_2dgraph_2edg_5dpart_2dparenting_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dpart_2dparenting{ 
+label="Part [decision-graph.dg]part-parenting"
+_5bdecision_2dgraph_2edg_5dprnt_2dtime[ shape="oval" label="decision-graph.dg/prnt-time\nask\nDid more than 9 month pass since the day\nyou've recevied the child" ]
+_5bdecision_2dgraph_2edg_5d_5b_2394_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dprnt_2dtime -> _5bdecision_2dgraph_2edg_5d_5b_2394_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dprnt_2df_2dforChild[ shape="oval" label="decision-graph.dg/prnt-f-forChild\nask\nDid you resign for the sake of the\nchild?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2389_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2390_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{severancePay\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2389_5d -> _5bdecision_2dgraph_2edg_5d_5b_2390_5d[ taillabel="Assertions=[Flags:\{female\}]
+" ]
+_5bdecision_2dgraph_2edg_5dprnt_2dm_2dforChild[ shape="oval" label="decision-graph.dg/prnt-m-forChild\nask\nAre you single, or does your wife has a\njob? " ]
+_5bdecision_2dgraph_2edg_5d_5b_2392_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{severancePay\}]\n" ]
+_5bdecision_2dgraph_2edg_5dprnt_2dm_2dforChild -> _5bdecision_2dgraph_2edg_5d_5b_2392_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dprnt_2dm_2dforChild -> _5bdecision_2dgraph_2edg_5d_5b_2394_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_2389_5d -> _5bdecision_2dgraph_2edg_5dprnt_2dm_2dforChild[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5dprnt_2df_2dforChild -> _5bdecision_2dgraph_2edg_5d_5b_2389_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dprnt_2df_2dforChild -> _5bdecision_2dgraph_2edg_5d_5b_2394_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dprnt_2dtime -> _5bdecision_2dgraph_2edg_5dprnt_2df_2dforChild[ taillabel="no" ]
+}
+_5bdecision_2dgraph_2edg_5dpart_2dparenting_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dprnt_2dtime
+_5bdecision_2dgraph_2edg_5d_5b_231_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nEmployerObligations=\{workPeriodLetter,finalAccountSettlement,form161,jobTerminationConfirmation\}\n" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dsInitialFiltering{ 
+label="Section Initial Questionnaire"
+_5bdecision_2dgraph_2edg_5dgender[ shape="oval" label="decision-graph.dg/gender\nask\nAre you a woman?" ]
+_5bdecision_2dgraph_2edg_5d_5b_232_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Flags:\{female\}]\n" ]
+_5bdecision_2dgraph_2edg_5disPregnant[ shape="oval" label="decision-graph.dg/isPregnant\nask\nWere you pregnant when your employment\nended?" ]
+_5bdecision_2dgraph_2edg_5d_5b_233_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Flags:\{pregnant\}]\n" ]
+_5bdecision_2dgraph_2edg_5dAgeGroup[ shape="oval" label="decision-graph.dg/AgeGroup\nask\nWhat's your age group?" ]
+_5bdecision_2dgraph_2edg_5d_5b_234_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[AgeGroup:under21]\n" ]
+_5bdecision_2dgraph_2edg_5dstatus[ shape="oval" label="decision-graph.dg/status\nask\nWhat's your current status in Israel? " ]
+_5bdecision_2dgraph_2edg_5d_5b_237_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:israeliCitizenship]\nEmployerObligations=\{pensionFundNotice\}\n" ]
+_5bdecision_2dgraph_2edg_5demployment_2dduration[ shape="oval" label="decision-graph.dg/employment-duration\nask\nWere you employed for more than 11\nmonths?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2317_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Flags:\{thisEmplotmentOver11months\}]\n" ]
+_5bdecision_2dgraph_2edg_5dduration_2ddispatch[ shape="egg" label="decision-graph.dg/duration-dispatch\nconsider\n" ]
+_5bdecision_2dgraph_2edg_5dduration[ shape="oval" label="decision-graph.dg/duration\nask\nHow long have you been in Israel?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2318_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:lessThan51Months]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2318_5d[ taillabel="Less than 51 Months" ]
+_5bdecision_2dgraph_2edg_5d_5b_2319_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:overOr51Months]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2319_5d[ taillabel="51 Months or more" ]
+_5bdecision_2dgraph_2edg_5d_5b_2320_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:over63Months]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2320_5d[ taillabel="Over 63 Months" ]
+_5bdecision_2dgraph_2edg_5d_5b_2321_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:over8Years]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2321_5d[ taillabel="Over 8 Years" ]
+_5bdecision_2dgraph_2edg_5d_5b_2322_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:over10Years]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2322_5d[ taillabel="Over 10 Years" ]
+_5bdecision_2dgraph_2edg_5d_5b_2323_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[TimeInIsrael:over13Years]\n" ]
+_5bdecision_2dgraph_2edg_5dduration -> _5bdecision_2dgraph_2edg_5d_5b_2323_5d[ taillabel="Over 13 Years" ]
+_5bdecision_2dgraph_2edg_5dduration_2ddispatch -> _5bdecision_2dgraph_2edg_5dduration[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5d_5b_2317_5d -> _5bdecision_2dgraph_2edg_5dduration_2ddispatch
+_5bdecision_2dgraph_2edg_5demployment_2dduration -> _5bdecision_2dgraph_2edg_5d_5b_2317_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5demployment_2dduration -> _5bdecision_2dgraph_2edg_5dduration_2ddispatch[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_237_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_237_5d[ taillabel="citizen" ]
+_5bdecision_2dgraph_2edg_5d_5b_238_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:residencyProcess]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_238_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_238_5d[ taillabel="in residency process" ]
+_5bdecision_2dgraph_2edg_5d_5b_239_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:palestinianWorkPermit]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_239_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_239_5d[ taillabel="palestinian with work permit" ]
+_5bdecision_2dgraph_2edg_5d_5b_2310_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:b1Construction Flags:\{nonIsraeliWorker\} Sector:construction]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2310_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2310_5d[ taillabel="visa of type b1Construction" ]
+_5bdecision_2dgraph_2edg_5d_5b_2311_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:_2a5 Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2311_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2311_5d[ taillabel="visa of type 2a5" ]
+_5bdecision_2dgraph_2edg_5d_5b_2312_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:b1CareGiver Sector:careGiving Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2312_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2312_5d[ taillabel="visa of type b1CareGiver" ]
+_5bdecision_2dgraph_2edg_5d_5b_2313_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:residencyProcess Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2313_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2313_5d[ taillabel="visa of type B1General or A5" ]
+_5bdecision_2dgraph_2edg_5d_5b_2314_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:b1Agriculture Sector:agriculture Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2314_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2314_5d[ taillabel="visa of type b1Agriculture" ]
+_5bdecision_2dgraph_2edg_5d_5b_2315_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:b2 Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2315_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2315_5d[ taillabel="visa of type b2" ]
+_5bdecision_2dgraph_2edg_5d_5b_2316_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[LegalStatus:undocumented Flags:\{nonIsraeliWorker\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2316_5d -> _5bdecision_2dgraph_2edg_5demployment_2dduration
+_5bdecision_2dgraph_2edg_5dstatus -> _5bdecision_2dgraph_2edg_5d_5b_2316_5d[ taillabel="undocumented" ]
+_5bdecision_2dgraph_2edg_5d_5b_234_5d -> _5bdecision_2dgraph_2edg_5dstatus
+_5bdecision_2dgraph_2edg_5dAgeGroup -> _5bdecision_2dgraph_2edg_5d_5b_234_5d[ taillabel="pre 21" ]
+_5bdecision_2dgraph_2edg_5d_5b_235_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[AgeGroup:workForce]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_235_5d -> _5bdecision_2dgraph_2edg_5dstatus
+_5bdecision_2dgraph_2edg_5dAgeGroup -> _5bdecision_2dgraph_2edg_5d_5b_235_5d[ taillabel="before retirement" ]
+_5bdecision_2dgraph_2edg_5d_5b_236_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[AgeGroup:pension]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_236_5d -> _5bdecision_2dgraph_2edg_5dstatus
+_5bdecision_2dgraph_2edg_5dAgeGroup -> _5bdecision_2dgraph_2edg_5d_5b_236_5d[ taillabel="after retirement" ]
+_5bdecision_2dgraph_2edg_5d_5b_233_5d -> _5bdecision_2dgraph_2edg_5dAgeGroup
+_5bdecision_2dgraph_2edg_5disPregnant -> _5bdecision_2dgraph_2edg_5d_5b_233_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5disPregnant -> _5bdecision_2dgraph_2edg_5dAgeGroup[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_232_5d -> _5bdecision_2dgraph_2edg_5disPregnant
+_5bdecision_2dgraph_2edg_5dgender -> _5bdecision_2dgraph_2edg_5d_5b_232_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dgender -> _5bdecision_2dgraph_2edg_5dAgeGroup[ taillabel="no" ]
+}
+subgraph cluster__5bdecision_2dgraph_2edg_5dsReasonForLeaving{ 
+label="Section Reason for leaving"
+_5bdecision_2dgraph_2edg_5drflHowEnd[ shape="oval" label="decision-graph.dg/rflHowEnd\nask\nHow did the employent end?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2324_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{employeePriorNotice\}\n" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself[ shape="oval" label="decision-graph.dg/ReasonForLeaving-self\nask\nWhat is the reason for your decision to\nleave this job?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2325_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/part-health" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2325_5d[ taillabel="health issues" ]
+_5bdecision_2dgraph_2edg_5d_5b_2326_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:enrolledToCivilService]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2327_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2326_5d -> _5bdecision_2dgraph_2edg_5d_5b_2327_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2326_5d[ taillabel="enrolled to civil service" ]
+_5bdecision_2dgraph_2edg_5d_5b_2328_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:forParenting]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2329_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/part-parenting" ]
+_5bdecision_2dgraph_2edg_5d_5b_2328_5d -> _5bdecision_2dgraph_2edg_5d_5b_2329_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2328_5d[ taillabel="parenting" ]
+_5bdecision_2dgraph_2edg_5d_5b_2330_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/part-moved" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2330_5d[ taillabel="moved" ]
+_5bdecision_2dgraph_2edg_5d_5b_2331_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{payKeens\}\nAssertions=[ReasonForLeaving:workerDeath]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2332_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2331_5d -> _5bdecision_2dgraph_2edg_5d_5b_2332_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2331_5d[ taillabel="worker death" ]
+_5bdecision_2dgraph_2edg_5d_5b_2333_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{employeePriorNoticeForEmploymentChange\}\nAssertions=[ReasonForLeaving:significantCompensationReduction]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2334_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2333_5d -> _5bdecision_2dgraph_2edg_5d_5b_2334_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2333_5d[ taillabel="significant deterioration of employment conditions" ]
+_5bdecision_2dgraph_2edg_5d_5b_2335_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{employeePriorNoticeForEmploymentChange\}\nAssertions=[ReasonForLeaving:significantBreachingOfRights]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2336_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2335_5d -> _5bdecision_2dgraph_2edg_5d_5b_2336_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2335_5d[ taillabel="significant breaching of rights" ]
+_5bdecision_2dgraph_2edg_5d_5b_2337_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{involveAidOrganizations\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2338_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2337_5d -> _5bdecision_2dgraph_2edg_5d_5b_2338_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2337_5d[ taillabel="severe abuse" ]
+_5bdecision_2dgraph_2edg_5d_5b_2339_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2339_5d[ taillabel="retirement" ]
+_5bdecision_2dgraph_2edg_5d_5b_2340_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:sexualHarrasment]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2341_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2342_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{specialCompensations\}]\nRecommendations=\{canReportToThePolice\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2341_5d -> _5bdecision_2dgraph_2edg_5d_5b_2342_5d
+_5bdecision_2dgraph_2edg_5d_5b_2340_5d -> _5bdecision_2dgraph_2edg_5d_5b_2341_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2340_5d[ taillabel="I was sexually harraset" ]
+_5bdecision_2dgraph_2edg_5d_5b_2343_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself -> _5bdecision_2dgraph_2edg_5d_5b_2343_5d[ taillabel="resignation (other)" ]
+_5bdecision_2dgraph_2edg_5d_5b_2324_5d -> _5bdecision_2dgraph_2edg_5dReasonForLeaving_2dself
+_5bdecision_2dgraph_2edg_5drflHowEnd -> _5bdecision_2dgraph_2edg_5d_5b_2324_5d[ taillabel="my initiative" ]
+_5bdecision_2dgraph_2edg_5d_5b_2344_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nEmployerObligations=\{priorNotice,hearing\}\n" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced[ shape="oval" label="decision-graph.dg/ReasonForLeaving-forced\nask\nWhy did you have to leave this job?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2345_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement end of contract" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2345_5d[ taillabel="end of contract" ]
+_5bdecision_2dgraph_2edg_5d_5b_2346_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement visa termination" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2346_5d[ taillabel="visa termination" ]
+_5bdecision_2dgraph_2edg_5d_5b_2347_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:employerDeath]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2348_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement employer death" ]
+_5bdecision_2dgraph_2edg_5d_5b_2347_5d -> _5bdecision_2dgraph_2edg_5d_5b_2348_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2347_5d[ taillabel="employer death" ]
+_5bdecision_2dgraph_2edg_5d_5b_2349_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:employerHospitalized]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2350_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement employer hospitalized" ]
+_5bdecision_2dgraph_2edg_5d_5b_2349_5d -> _5bdecision_2dgraph_2edg_5d_5b_2350_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2349_5d[ taillabel="employer hospitalized" ]
+_5bdecision_2dgraph_2edg_5d_5b_2351_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:employerMovedToNursingHome]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2352_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement employer at nursing home" ]
+_5bdecision_2dgraph_2edg_5d_5b_2351_5d -> _5bdecision_2dgraph_2edg_5d_5b_2352_5d
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2351_5d[ taillabel="employer moved to nursing home" ]
+_5bdecision_2dgraph_2edg_5d_5b_2353_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/gradeProcess" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2353_5d[ taillabel="employer choice" ]
+_5bdecision_2dgraph_2edg_5d_5b_2354_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement collapse" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2354_5d[ taillabel="employer collapse" ]
+_5bdecision_2dgraph_2edg_5d_5b_2355_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nimplement employer changed" ]
+_5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced -> _5bdecision_2dgraph_2edg_5d_5b_2355_5d[ taillabel="employer changed" ]
+_5bdecision_2dgraph_2edg_5d_5b_2344_5d -> _5bdecision_2dgraph_2edg_5dReasonForLeaving_2dforced
+_5bdecision_2dgraph_2edg_5drflHowEnd -> _5bdecision_2dgraph_2edg_5d_5b_2344_5d[ taillabel="involuntary" ]
+}
+subgraph cluster__5bdecision_2dgraph_2edg_5dsEmploymentForm{ 
+label="Section Form of employment"
+_5bdecision_2dgraph_2edg_5demploymentUnits[ shape="oval" label="decision-graph.dg/employmentUnits\nask\nHow was your salary claculated?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2356_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[SalaryUnits:monthly]]\n" ]
+_5bdecision_2dgraph_2edg_5demploymentType[ shape="oval" label="decision-graph.dg/employmentType\nask\nHow were you employed? " ]
+_5bdecision_2dgraph_2edg_5d_5b_2359_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Type:direct]]\n" ]
+_5bdecision_2dgraph_2edg_5demploymentScope[ shape="oval" label="decision-graph.dg/employmentScope\nask\nWhat was the scope of your employment?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2363_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Scope:partial]]\n" ]
+_5bdecision_2dgraph_2edg_5demploymentScope -> _5bdecision_2dgraph_2edg_5d_5b_2363_5d[ taillabel="partial" ]
+_5bdecision_2dgraph_2edg_5d_5b_2364_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Scope:full]]\n" ]
+_5bdecision_2dgraph_2edg_5demploymentScope -> _5bdecision_2dgraph_2edg_5d_5b_2364_5d[ taillabel="full" ]
+_5bdecision_2dgraph_2edg_5d_5b_2365_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Scope:varied]]\n" ]
+_5bdecision_2dgraph_2edg_5demploymentScope -> _5bdecision_2dgraph_2edg_5d_5b_2365_5d[ taillabel="varied" ]
+_5bdecision_2dgraph_2edg_5d_5b_2359_5d -> _5bdecision_2dgraph_2edg_5demploymentScope
+_5bdecision_2dgraph_2edg_5demploymentType -> _5bdecision_2dgraph_2edg_5d_5b_2359_5d[ taillabel="direct" ]
+_5bdecision_2dgraph_2edg_5d_5b_2360_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Type:freelance]]\nRecommendations=\{consultLawyer\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2360_5d -> _5bdecision_2dgraph_2edg_5demploymentScope
+_5bdecision_2dgraph_2edg_5demploymentType -> _5bdecision_2dgraph_2edg_5d_5b_2360_5d[ taillabel="freelance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2361_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Type:contractor]]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2361_5d -> _5bdecision_2dgraph_2edg_5demploymentScope
+_5bdecision_2dgraph_2edg_5demploymentType -> _5bdecision_2dgraph_2edg_5d_5b_2361_5d[ taillabel="contractor" ]
+_5bdecision_2dgraph_2edg_5d_5b_2362_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[Type:jointEmployment]]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2362_5d -> _5bdecision_2dgraph_2edg_5demploymentScope
+_5bdecision_2dgraph_2edg_5demploymentType -> _5bdecision_2dgraph_2edg_5d_5b_2362_5d[ taillabel="jointEmployment" ]
+_5bdecision_2dgraph_2edg_5d_5b_2356_5d -> _5bdecision_2dgraph_2edg_5demploymentType
+_5bdecision_2dgraph_2edg_5demploymentUnits -> _5bdecision_2dgraph_2edg_5d_5b_2356_5d[ taillabel="monthly" ]
+_5bdecision_2dgraph_2edg_5d_5b_2357_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[SalaryUnits:daily]]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2357_5d -> _5bdecision_2dgraph_2edg_5demploymentType
+_5bdecision_2dgraph_2edg_5demploymentUnits -> _5bdecision_2dgraph_2edg_5d_5b_2357_5d[ taillabel="daily" ]
+_5bdecision_2dgraph_2edg_5d_5b_2358_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[Employment:[SalaryUnits:hourly]]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2358_5d -> _5bdecision_2dgraph_2edg_5demploymentType
+_5bdecision_2dgraph_2edg_5demploymentUnits -> _5bdecision_2dgraph_2edg_5d_5b_2358_5d[ taillabel="hourly" ]
+}
+_5bdecision_2dgraph_2edg_5dplanToLeaveOrStay[ shape="oval" label="decision-graph.dg/planToLeaveOrStay\nask\nDo you plan to stay in Israel?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2366_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{reducedBenefitsForOverstay2Month\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2367_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2368_5d[ fillcolor="#BBBBFF" shape="cds" label="trailings.dg/careGivers" ]
+_5bdecision_2dgraph_2edg_5d_5b_2367_5d -> _5bdecision_2dgraph_2edg_5d_5b_2368_5d[ taillabel="Assertions=[Sector:careGiving]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_2369_5d[ fillcolor="#BBBBFF" shape="cds" label="trailings.dg/constructionWorkers" ]
+_5bdecision_2dgraph_2edg_5d_5b_2367_5d -> _5bdecision_2dgraph_2edg_5d_5b_2369_5d[ taillabel="Assertions=[Sector:construction]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_2366_5d -> _5bdecision_2dgraph_2edg_5d_5b_2367_5d
+_5bdecision_2dgraph_2edg_5dplanToLeaveOrStay -> _5bdecision_2dgraph_2edg_5d_5b_2366_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2370_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/pPlanningToLeaveIsrael" ]
+_5bdecision_2dgraph_2edg_5dplanToLeaveOrStay -> _5bdecision_2dgraph_2edg_5d_5b_2370_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5demploymentUnits -> _5bdecision_2dgraph_2edg_5dplanToLeaveOrStay[ ltail="cluster__5bdecision_2dgraph_2edg_5dsEmploymentForm" ]
+_5bdecision_2dgraph_2edg_5drflHowEnd -> _5bdecision_2dgraph_2edg_5demploymentUnits[ ltail="cluster__5bdecision_2dgraph_2edg_5dsReasonForLeaving" lhead="cluster__5bdecision_2dgraph_2edg_5demploymentUnits" ]
+_5bdecision_2dgraph_2edg_5dgender -> _5bdecision_2dgraph_2edg_5drflHowEnd[ ltail="cluster__5bdecision_2dgraph_2edg_5dsInitialFiltering" lhead="cluster__5bdecision_2dgraph_2edg_5drflHowEnd" ]
+_5bdecision_2dgraph_2edg_5d_5b_231_5d -> _5bdecision_2dgraph_2edg_5dgender[ lhead="cluster__5bdecision_2dgraph_2edg_5dgender" ]
+_5btrailings_2edg_5dcareGivers_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5btrailings_2edg_5dcareGivers{ 
+label="Part [trailings.dg]careGivers"
+_5btrailings_2edg_5d_5b_231_5d[ fillcolor="#BBBBFF" shape="cds" label="trailings.dg/pDeposit" ]
+_5btrailings_2edg_5d_5b_232_5d[ shape="egg" label="consider\n" ]
+_5btrailings_2edg_5d_5b_233_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{canOnlyWorkAsReleaver\}\nDuties=\{possibleGeographicRestrictions\}\n" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5d_5b_233_5d[ taillabel="Assertions=[TimeInIsrael:overOr51Months]
+" ]
+_5btrailings_2edg_5dcgtHumanitarianVisa[ shape="oval" label="trailings.dg/cgtHumanitarianVisa\nask\nDid you already work for an employer\nthat requested a humanitarian visa for\nyou?" ]
+_5btrailings_2edg_5d_5b_234_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{cannotWorkInIsrael\}\n" ]
+_5btrailings_2edg_5dcgtHumanitarianVisa -> _5btrailings_2edg_5d_5b_234_5d[ taillabel="yes" ]
+_5btrailings_2edg_5d_5b_235_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{requiresEmployerHumanitarianVisaApplication\}\nDuties=\{findNewEmployer\}\n" ]
+_5btrailings_2edg_5dcgtHumanitarianVisa -> _5btrailings_2edg_5d_5b_235_5d[ taillabel="no" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5dcgtHumanitarianVisa[ taillabel="Assertions=[TimeInIsrael:over63Months]
+" ]
+_5btrailings_2edg_5d_5b_236_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly\}\nDuties=\{findNewEmployer\}\nRecommendations=\{humanitarianVisaWarningCareGiver\}\n" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5d_5b_236_5d[ taillabel="Assertions=[TimeInIsrael:over8Years]
+" ]
+_5btrailings_2edg_5d_5b_237_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{requiresEmployerHumanitarianVisaApplication,nurseNonRetiredOnly\}\nDuties=\{findNewEmployer\}\nRecommendations=\{humanitarianVisaWarningCareGiver\}\n" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5d_5b_237_5d[ taillabel="Assertions=[TimeInIsrael:over10Years]
+" ]
+_5btrailings_2edg_5d_5b_238_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRestrictions=\{cannotWorkInIsrael\}\n" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5d_5b_238_5d[ taillabel="Assertions=[TimeInIsrael:over13Years]
+" ]
+_5btrailings_2edg_5d_5b_239_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{findNewEmployer\}\n" ]
+_5btrailings_2edg_5d_5b_232_5d -> _5btrailings_2edg_5d_5b_239_5d[ taillabel="else" ]
+_5btrailings_2edg_5d_5b_231_5d -> _5btrailings_2edg_5d_5b_232_5d
+}
+_5btrailings_2edg_5dcareGivers_5f_5f_5bpstart_5d -> _5btrailings_2edg_5d_5b_231_5d
+_5bdecision_2dgraph_2edg_5dbenefitSet_2dresignation_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dbenefitSet_2dresignation{ 
+label="Part [decision-graph.dg]benefitSet-resignation\nBenefits for Resignation"
+_5bdecision_2dgraph_2edg_5d_5b_23121_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[EffectiveTerminationType:resignation]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23122_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23123_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[UnemploymentBenefits:after90Days]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23124_5d[ fillcolor="#AAFFAA" shape="note" label="todo\nbenefitSet-resignation make more\naccurate" ]
+_5bdecision_2dgraph_2edg_5d_5b_23123_5d -> _5bdecision_2dgraph_2edg_5d_5b_23124_5d
+_5bdecision_2dgraph_2edg_5d_5b_23122_5d -> _5bdecision_2dgraph_2edg_5d_5b_23123_5d[ taillabel="Assertions=[LegalStatus:israeliCitizenship]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23122_5d -> _5bdecision_2dgraph_2edg_5d_5b_23124_5d[ taillabel="else" ]
+_5bdecision_2dgraph_2edg_5d_5b_23121_5d -> _5bdecision_2dgraph_2edg_5d_5b_23122_5d
+}
+_5bdecision_2dgraph_2edg_5dbenefitSet_2dresignation_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5d_5b_23121_5d
+_5bdecision_2dgraph_2edg_5dgradeProcess_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dgradeProcess{ 
+label="Part [decision-graph.dg]gradeProcess"
+_5bdecision_2dgraph_2edg_5dgp_2dhearing[ shape="oval" label="decision-graph.dg/gp-hearing\nask\nDid you get a hearing prior to being\nfired?" ]
+_5bdecision_2dgraph_2edg_5dgp_2dhearing_2ddetails[ shape="oval" label="decision-graph.dg/gp-hearing-details\nask\nWas one of the following reasons\ninsinuated as the reason for your job\ntermination? (list goes here)" ]
+_5bdecision_2dgraph_2edg_5d_5b_2386_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ProcessFairness:illegal]\nRecommendations=\{sueFormerEmployerSoon\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2388_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ProcessFairness:ok]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2386_5d -> _5bdecision_2dgraph_2edg_5d_5b_2388_5d
+_5bdecision_2dgraph_2edg_5dgp_2dhearing_2ddetails -> _5bdecision_2dgraph_2edg_5d_5b_2386_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dgp_2dcomplaint[ shape="oval" label="decision-graph.dg/gp-complaint\nask\nWere you fired after filing a complaint\nor getting advice from a lawyer?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2387_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ProcessFairness:illegal]\nRecommendations=\{sueFormerEmployerSoon\}\nBenefits=[Properties:\{severanceCancellation\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2387_5d -> _5bdecision_2dgraph_2edg_5d_5b_2388_5d
+_5bdecision_2dgraph_2edg_5dgp_2dcomplaint -> _5bdecision_2dgraph_2edg_5d_5b_2387_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5dgp_2dcomplaint -> _5bdecision_2dgraph_2edg_5d_5b_2388_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dgp_2dhearing_2ddetails -> _5bdecision_2dgraph_2edg_5dgp_2dcomplaint[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dgp_2dhearing -> _5bdecision_2dgraph_2edg_5dgp_2dhearing_2ddetails[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2385_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ProcessFairness:flawed]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2385_5d -> _5bdecision_2dgraph_2edg_5dgp_2dhearing_2ddetails
+_5bdecision_2dgraph_2edg_5dgp_2dhearing -> _5bdecision_2dgraph_2edg_5d_5b_2385_5d[ taillabel="no" ]
+}
+_5bdecision_2dgraph_2edg_5dgradeProcess_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dgp_2dhearing
+_5bdecision_2dgraph_2edg_5dpart_2dhealth_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dpart_2dhealth{ 
+label="Part [decision-graph.dg]part-health\nHealth issues"
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dcause[ shape="oval" label="decision-graph.dg/hc-acc-cause\nask\nThe health issue that made me leave is:" ]
+_5bdecision_2dgraph_2edg_5d_5b_2371_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:familyMemberDisease]\n" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm[ shape="oval" label="decision-graph.dg/hc-acc-fm\nask\nIs the sick family member? " ]
+_5bdecision_2dgraph_2edg_5d_5b_2372_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/leaveForMedicalConditions" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm -> _5bdecision_2dgraph_2edg_5d_5b_2372_5d[ taillabel="my child, parent, or spouse" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm_2d1[ shape="oval" label="decision-graph.dg/hc-acc-fm-1\nask\nAre you living with your sick relative,\nand providing for him?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2373_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/leaveForMedicalConditions" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm_2d1 -> _5bdecision_2dgraph_2edg_5d_5b_2373_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_2374_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm_2d1 -> _5bdecision_2dgraph_2edg_5d_5b_2374_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm -> _5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm_2d1[ taillabel="my grandchild, grandfather, or parent in law" ]
+_5bdecision_2dgraph_2edg_5d_5b_2375_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm -> _5bdecision_2dgraph_2edg_5d_5b_2375_5d[ taillabel="other family member" ]
+_5bdecision_2dgraph_2edg_5d_5b_2371_5d -> _5bdecision_2dgraph_2edg_5dhc_2dacc_2dfm
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dcause -> _5bdecision_2dgraph_2edg_5d_5b_2371_5d[ taillabel="health condition of a family member" ]
+_5bdecision_2dgraph_2edg_5d_5b_2376_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nAssertions=[ReasonForLeaving:medicalCondition]\n" ]
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dadj[ shape="oval" label="decision-graph.dg/hc-acc-adj\nask\ncan your workplace be adjusted to your\nmedical condition?" ]
+_5bdecision_2dgraph_2edg_5d_5b_2377_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_2378_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{specialCompensations\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2382_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/leaveForMedicalConditions" ]
+_5bdecision_2dgraph_2edg_5d_5b_2378_5d -> _5bdecision_2dgraph_2edg_5d_5b_2382_5d
+_5bdecision_2dgraph_2edg_5d_5b_2377_5d -> _5bdecision_2dgraph_2edg_5d_5b_2378_5d
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dadj -> _5bdecision_2dgraph_2edg_5d_5b_2377_5d[ taillabel="yes, employer refused" ]
+_5bdecision_2dgraph_2edg_5d_5b_2379_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5d_5b_2379_5d -> _5bdecision_2dgraph_2edg_5d_5b_2382_5d
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dadj -> _5bdecision_2dgraph_2edg_5d_5b_2379_5d[ taillabel="yes, I don't want to stay" ]
+_5bdecision_2dgraph_2edg_5d_5b_2380_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/leaveForMedicalConditions" ]
+_5bdecision_2dgraph_2edg_5d_5b_2381_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{disabilityAllowance\} Pension:allowance]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_2381_5d -> _5bdecision_2dgraph_2edg_5d_5b_2382_5d
+_5bdecision_2dgraph_2edg_5d_5b_2380_5d -> _5bdecision_2dgraph_2edg_5d_5b_2381_5d
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dadj -> _5bdecision_2dgraph_2edg_5d_5b_2380_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5d_5b_2376_5d -> _5bdecision_2dgraph_2edg_5dhc_2dacc_2dadj
+_5bdecision_2dgraph_2edg_5dhc_2dacc_2dcause -> _5bdecision_2dgraph_2edg_5d_5b_2376_5d[ taillabel="my health condition" ]
+}
+_5bdecision_2dgraph_2edg_5dpart_2dhealth_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dhc_2dacc_2dcause
+_5bdecision_2dgraph_2edg_5dpPlanningToLeaveIsrael_5f_5f_5bpstart_5d[ fillcolor="transparent" shape="none" width="0.0" label="" height="0.0" ]
+subgraph cluster__5bdecision_2dgraph_2edg_5dpPlanningToLeaveIsrael{ 
+label="Part [decision-graph.dg]pPlanningToLeaveIsrael"
+_5bdecision_2dgraph_2edg_5dcg_2dwhyLeave[ shape="oval" label="decision-graph.dg/cg-whyLeave\nask\nWhat is the reason for your intension to\nleave Israel?" ]
+_5bdecision_2dgraph_2edg_5d_5b_23125_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5dcg_2dwhyLeave -> _5bdecision_2dgraph_2edg_5d_5b_23125_5d[ taillabel="visa termination" ]
+_5bdecision_2dgraph_2edg_5dcg_2dmedicalConditionWorkRelated[ shape="oval" label="decision-graph.dg/cg-medicalConditionWorkRelated\nask\nDo you think your medical condition is\nrelated to your work?" ]
+_5bdecision_2dgraph_2edg_5d_5b_23126_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nRecommendations=\{applyForWorkAccident\}\nBenefits=[Properties:\{eligibleForFlightExpensePI\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23128_5d[ shape="egg" label="consider\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23129_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{possible80KGrant\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23128_5d -> _5bdecision_2dgraph_2edg_5d_5b_23129_5d[ taillabel="Assertions=[TimeInIsrael:over10Years]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23130_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{possible80KGrant\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23128_5d -> _5bdecision_2dgraph_2edg_5d_5b_23130_5d[ taillabel="Assertions=[TimeInIsrael:over13Years]
+" ]
+_5bdecision_2dgraph_2edg_5d_5b_23126_5d -> _5bdecision_2dgraph_2edg_5d_5b_23128_5d
+_5bdecision_2dgraph_2edg_5dcg_2dmedicalConditionWorkRelated -> _5bdecision_2dgraph_2edg_5d_5b_23126_5d[ taillabel="yes" ]
+_5bdecision_2dgraph_2edg_5d_5b_23127_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nBenefits=[Properties:\{eligibleForFlightExpenseNI\}]\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23127_5d -> _5bdecision_2dgraph_2edg_5d_5b_23128_5d
+_5bdecision_2dgraph_2edg_5dcg_2dmedicalConditionWorkRelated -> _5bdecision_2dgraph_2edg_5d_5b_23127_5d[ taillabel="no" ]
+_5bdecision_2dgraph_2edg_5dcg_2dwhyLeave -> _5bdecision_2dgraph_2edg_5dcg_2dmedicalConditionWorkRelated[ taillabel="my medical condition" ]
+_5bdecision_2dgraph_2edg_5d_5b_23131_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-severance" ]
+_5bdecision_2dgraph_2edg_5d_5b_23132_5d[ fillcolor="#AADDAA" shape="rect" label="Set\nDuties=\{provideEvidenceForCaringForFamily\}\n" ]
+_5bdecision_2dgraph_2edg_5d_5b_23131_5d -> _5bdecision_2dgraph_2edg_5d_5b_23132_5d
+_5bdecision_2dgraph_2edg_5dcg_2dwhyLeave -> _5bdecision_2dgraph_2edg_5d_5b_23131_5d[ taillabel="caring for a family member" ]
+_5bdecision_2dgraph_2edg_5d_5b_23133_5d[ fillcolor="#BBBBFF" shape="cds" label="decision-graph.dg/benefitSet-resignation" ]
+_5bdecision_2dgraph_2edg_5dcg_2dwhyLeave -> _5bdecision_2dgraph_2edg_5d_5b_23133_5d[ taillabel="other" ]
+}
+_5bdecision_2dgraph_2edg_5dpPlanningToLeaveIsrael_5f_5f_5bpstart_5d -> _5bdecision_2dgraph_2edg_5dcg_2dwhyLeave
+}
+NODE___________START_ -> _5bdecision_2dgraph_2edg_5d_5b_231_5d[ penwidth="4.0" color="#008800" ]
+}

@@ -606,3 +606,43 @@ jobTerminationConfirmation
 honorFormerContractorSeniority
 "הכרה בותק לצורך הזכויות הבראה, חופשה, פנסיה, תוספות ותק"
 
+# EndOfWork/Duties/provideDetailedReasoningQoL
+provideDetailedReasoningQoL
+Worker has to provide detailed reasoning for why their quality of life was affected.
+
+# EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
+uniteEmployeesToDeclareBankruptcy
+Employees need to unite and demand formal bankruptcy.
+
+# EndOfWork/Recommendations/checkElderlyAllowance
+checkElderlyAllowance
+Possibly eligible for elderly allowance from NI
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula
+PriorNoticeCalculationFormula
+Formula for calculating the prior notice period
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/dayPerMonth
+dayPerMonth
+One day for each month the worker was employed
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/sixDaysPlus2_5
+sixDaysPlus2_5
+6 days plus 2.5 days for each month after the first 6
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/fourteenPlusEachTwo
+fourteenPlusEachTwo
+14 days plus a day for each 2 month in the second employment year
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/twentyonePlusEachTwo
+twentyonePlusEachTwo
+21 days plus a day for each 2 month in the third employment year
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
+kOneMonth
+One month
+
+# EndOfWork/Assertions/ReasonForLeaving/sexualHarassment
+sexualHarassment
+
+

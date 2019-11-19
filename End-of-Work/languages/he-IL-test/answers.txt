@@ -79,3 +79,13 @@ my medical condition: my medical condition
 other non-citizen: other non-citizen
 under 62: under 62
 under 67: under 67
+0-6 months: 0-6 months
+12 months or less: 12 months or less
+13 and over: 13 and over
+13-24 months: 13-24 months
+25-36 months: 25-36 months
+37 months and over: 37 months and over
+7-12 months: 7-12 months
+I was sexually harassed: I was sexually harassed
+to an agricultural settlement: to an agricultural settlement
+to an eligible settlement: to an eligible settlement

@@ -95,14 +95,6 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 [פרטים נוספים](https://www.nevo.co.il/law_html/Law01/p189_004.htm#Seif8).
 
 
-# EndOfWork/Duties/provideDetailedResoningQoL
-הנמקת התפטרות בשל העתקת מקום עבודה
-בתנאים מסויימים, התפטרות עקב העתקת מקום עבודה מזכה את העובד בפיצויי פיטורים.
-
----
-הזכות לפיצויי פיטורים מלאים במקרה של מעסיק שהעביר את מקום העבודה של העובד, אינה אוטומטית: על העובד לנמק מדוע תיפגע משמעותית איכות חייו אם יעבור למקום החדש ולתת למעסיק הזדמנות להציע חלופות שיאזנו את הפגיעה באיכות החיים.
-
-
 # EndOfWork/Duties/possibleGeographicRestrictions
 מגבלות גאוגרפיות
 עובד זר בתחום הסיעוד מוגבל ביכולתו להחליף מקום עבודה בישראל. ההגבלות הן גאוגרפיות - לפי חלוקה לאזורים בארץ, וכמותיות - הגבלה על מספר ההחלפות שניתן לבצע.
@@ -344,15 +336,6 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Recommendations/applyForWorkAccident
 הגשת תאונת עבודה
 מומלץ לבקש מביטוח לאומי להכיר בתאונה כתאונת עבודה.
-
-# EndOfWork/Recommendations/uniteEmployeesToDeclareBankrupcy
-ארגון העובדים לבקשת פשיטת רגל
----
-הכרזת המעסיק כפושט רגל יכולה לעזור לעובדים לממש את זכויתיהם. העובדים יכולים להתאגר ולבקש שהמעסיק שלהם יוכרז ככזה.
-
-# EndOfWork/Recommendations/checkElderyAllowance
-קצבת זקנה
-יתכן כי העובד זכאי לקצבת זקנה מביטוח לאומי
 
 # EndOfWork/Assertions
 פרטי המקרה
@@ -633,6 +616,7 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/EffectiveTerminationType/severance
 פיטורים
+
 # EndOfWork/Assertions/Flags/possiblyIllegalSeverance
 חוקיות הפיטורין לא ברורה
 יכול להיות כי הפיטורין היו לא חוקיים
@@ -653,3 +637,44 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/LegalStatus/other
 אחר
+
+# EndOfWork/Duties/provideDetailedReasoningQoL
+הנמקת התפטרות בשל העתקת מקום עבודה
+בתנאים מסויימים, התפטרות עקב העתקת מקום עבודה מזכה את העובד בפיצויי פיטורים.
+---
+הזכות לפיצויי פיטורים מלאים במקרה של מעסיק שהעביר את מקום העבודה של העובד, אינה אוטומטית: על העובד לנמק מדוע תיפגע משמעותית איכות חייו אם יעבור למקום החדש ולתת למעסיק הזדמנות להציע חלופות שיאזנו את הפגיעה באיכות החיים.
+
+# EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
+ארגון העובדים לבקשת פשיטת רגל
+---
+הכרזת המעסיק כפושט רגל יכולה לעזור לעובדים לממש את זכויתיהם. העובדים יכולים להתאגר ולבקש שהמעסיק שלהם יוכרז ככזה.
+
+# EndOfWork/Recommendations/checkElderlyAllowance
+קצבת זקנה
+יתכן כי העובד זכאי לקצבת זקנה מביטוח לאומי
+---
+לפרטים נוספים: [עמוד קצבת זקנה בביטוח לאומי](https://www.btl.gov.il/benefits/old_age/Pages/default.aspx).
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula
+חישוב הודעה מוקדמת
+נוסחת חישוב לתקופת ההודעה המוקדמת
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/dayPerMonth
+יום לכל חודש
+יום לכל חודש העסקה של העובד
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/sixDaysPlus2_5
+6+2.5
+6 ימים, ועוד 2.5 ימים לכל חודש תעסוקה, מעבר ל-6 חודשים הראשונים
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/fourteenPlusEachTwo
+14+2
+14 יום ועוד יום לכל חודשיים תעסוקה בשנת התעסוקה השניה
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/twentyonePlusEachTwo
+21+2
+21 יום ועוד יום לכל חודשיים תעסוקה בשנת התעסוקה השלישית
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
+חודש
+הודעה מוקדמת של חודש אחד
