@@ -1,1 +1,1 @@
-Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?
+ האם הבהרת למעסיקך את הסיבה להתפטרותך ונתת לו הזדמנות לערוך התאמות נדרשות בעבודה בהתאם למצבך הרפואי?

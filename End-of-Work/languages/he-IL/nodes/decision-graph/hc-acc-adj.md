@@ -1,1 +1,1 @@
-can your workplace be adjusted to your medical condition?
+האם ניתן לבצע התאמות במקום העבודה לצרכיך הרפואיים?

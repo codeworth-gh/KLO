@@ -1,1 +1,1 @@
-Were you employed for more than 11 months?
+האם הועסקת במקום העבודה או אצל אותו מעסיק יותר מ-11 חודשים

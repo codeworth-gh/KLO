@@ -1,1 +1,1 @@
-Were you pregnant when your employment ended?
+האם היית בהריון כשהעסקתך הסתיימה?

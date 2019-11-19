@@ -1,1 +1,1 @@
-The health issue that made me leave is:
+הסוגיה הבריאותית שגרמ לך לעזוב את העבודה היא:

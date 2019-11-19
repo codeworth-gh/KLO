@@ -1,1 +1,1 @@
-Leaving a workplace for medical conditions
+עזיבת מקום עבודה מסיבות רפואיות

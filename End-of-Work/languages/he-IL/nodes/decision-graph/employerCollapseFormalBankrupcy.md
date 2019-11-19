@@ -1,1 +1,1 @@
-Is the employer formally declared as bankrupt?
+האם מעסיקך לשעבר הוכרז פושט רגל או הוצא למקום העבודה צו פירוק?

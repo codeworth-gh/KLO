@@ -1,1 +1,1 @@
-Severe abuse at during employment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed.
+התעמרות חמורה במקום העבודה מצריכה בירור משפטי. מומלץ לפנות לבירור או לקבלת קהל בארגוני הסיוע

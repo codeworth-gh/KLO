@@ -1,4 +1,4 @@
-Were you fired during maternity leave?
+האם פוטרת במהלך חופשת לידה
 
-### Terms
-* *maternity leave*: including for fathers and adopting parents.
+### מונחים
+* חופשת לידה - לרבות לאבות ולהורים מאמצים

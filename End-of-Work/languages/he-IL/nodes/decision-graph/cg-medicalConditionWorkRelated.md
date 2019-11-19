@@ -1,1 +1,1 @@
-Do you think your medical condition is related to your work?
+האם מצבך הרפואי הנכחי נובע מהעסקתך?

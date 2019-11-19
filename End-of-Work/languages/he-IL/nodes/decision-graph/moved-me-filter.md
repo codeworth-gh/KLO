@@ -1,1 +1,1 @@
-Is you new place in Israel? 
+ האם מקום המגורים החדש שלך בישראל?

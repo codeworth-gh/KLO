@@ -1,1 +1,1 @@
-Do you plan to stay in Israel?
+האם בכוונתך להישאר בישראל?

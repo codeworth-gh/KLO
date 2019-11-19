@@ -1,1 +1,3 @@
-Are you single, or does your wife has a job? 
+האם אתה אחד מאלה:
+* רווק
+* נשוי ואשתי עובדת 

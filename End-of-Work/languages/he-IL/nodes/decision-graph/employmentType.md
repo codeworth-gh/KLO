@@ -1,1 +1,1 @@
-How were you employed? 
+מה היתה מתכונת ההעסקה?

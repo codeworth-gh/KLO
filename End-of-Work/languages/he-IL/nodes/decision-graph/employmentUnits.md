@@ -1,1 +1,1 @@
-How was your salary claculated?
+איך חושב שכרך?

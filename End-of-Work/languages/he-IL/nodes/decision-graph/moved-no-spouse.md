@@ -1,1 +1,1 @@
-Did you move to any of the following
+האם מעבר המגורים הוא אחד מאלה:

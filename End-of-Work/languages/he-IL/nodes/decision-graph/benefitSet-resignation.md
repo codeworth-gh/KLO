@@ -1,1 +1,1 @@
-Benefits for Resignation
+זכויות בהתפטרות

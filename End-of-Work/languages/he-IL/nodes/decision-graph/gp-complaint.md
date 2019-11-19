@@ -1,1 +1,1 @@
-Were you fired after filing a complaint or getting advice from a lawyer?
+האם פיטוריך אירוע לאחר שהתלוננת על המעסיק לגוף רשמי או באמצעות עו"ד?

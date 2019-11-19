@@ -1,4 +1,3 @@
-Did you get a hearing prior to being fired?
-
-### Terms
-* *hearing*: A meeting with the employer to declared as "before job termination" talk.
+האם נערך לך שימוע לפני הפיטורים?
+### מונחים
+שימוע הינו הליך שאליו נקראת על מנת להבהיר כי יש כוונה לפטרך ובו ניתנה לך הזדמנות מלאה להשמיע תשובותיך לטענות

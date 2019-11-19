@@ -1,1 +1,1 @@
-Benefits for Severance
+זכויות בפיטורים

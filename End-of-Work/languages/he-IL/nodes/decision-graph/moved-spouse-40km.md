@@ -1,1 +1,1 @@
-Is your new home at least 40 km from your old home?
+האם מקום המגורים החדש מרוחק בלפחות 40 קמ ממקום המגורים הקודם?

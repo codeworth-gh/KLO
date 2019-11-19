@@ -1,4 +1,5 @@
-Which of the following apply
+איזו מבין התשובות הבאות נכונה?
 
-### Terms
-* *Moved in with spouse*: The spouse has to live there before, not just you two guys moving in together.
+### מונחים
+*
+מעבר למגורים בבית בן/בת הזו: מעבר למקום בו בן/בת הזוג התגוררו בתקופה שלפני המעבר לחיים משותפים

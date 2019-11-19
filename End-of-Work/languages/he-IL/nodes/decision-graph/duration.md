@@ -1,1 +1,1 @@
-How long have you been in Israel?
+מה היה משך השהייה בישראל?

@@ -1,1 +1,1 @@
-Was one of the following reasons insinuated as the reason for your job termination? (list goes here)
+האם אחת מהסיבות המצוינות ברשימה זו היתה להערכתך המניע לפיטוריך?

@@ -1,4 +1,3 @@
-Are you living with your sick relative, and providing for him?
-
+האם בן המשפחה החולה מתגורר עמך ומסתייע בך כלכלית?
 ### Terms
-* *providing*: Taking active part in financing his/her needs.
+* סיוע כלכלי משמעותי במסגרתו בן המשחה החולה סמוך על שולחנך
