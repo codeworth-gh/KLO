@@ -205,7 +205,10 @@
               [call: benefitSet-severance]
               [>sexualHarassmentSummary< reject: Sexual harassment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed. ]
             }
-            {resignation (other): [call: benefitSet-resignation]}
+            {resignation (other):
+              [set: ReasonForLeaving=resignation]
+              [call: benefitSet-resignation]
+            }
           }
         ]
       }
@@ -239,7 +242,7 @@
                 {answers:
                   {end of contract:   [set: ReasonForLeaving=endOfContract]}
                   {employer death:    [set: ReasonForLeaving=employerDeath; Properties+=priorNoticeSubstitute]}
-                  {visa termination:  [set: ReasonForLeaving=visaTermination]}
+                  {visa termination:  [set: ReasonForLeaving=visaTermination; Flags+=visaExpired]}
                   {employer terminally hospitalized: [set: ReasonForLeaving=employerHospitalized]}
                   {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]}
                   {employer choice:   [call: pEmployerChoice]}
@@ -259,7 +262,7 @@
               {answers:
                 {end of contract:   [set: ReasonForLeaving=endOfContract]}
                 {employer death:    [set: ReasonForLeaving=employerDeath; Properties+=priorNoticeSubstitute]}
-                {visa termination:  [set: ReasonForLeaving=visaTermination]}
+                {visa termination:  [set: ReasonForLeaving=visaTermination; Flags+=visaExpired]}
                 {employer choice:   [call: pEmployerChoice]}
                 {employer collapse: [call: pEmployerCollapsed]}
                 {employer changed:  [set: ReasonForLeaving=employerChanged]}

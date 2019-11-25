@@ -20,7 +20,6 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       forParenting["התפטרות הורה"],
                       severeAbuse,
                       retirement,
-                      movedToEligibleLocation["מעבר ליישוב זכאי"],
                       workAccident, abuse["התעמרות"], sexualHarassment,
                       employerCollapse[Effective bankruptcy, might not be formal],
                       employerChanged[e.g. company was bought by another].
@@ -33,7 +32,7 @@ Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את �
              contractor ["עובד קבלן"],
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
-Duration: one of _0_6, _6_11, _12_24, above11, above24. 
+Duration: one of _0_6, _6_11, _12_24, above11, above24.
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 Flags: some of visaExpired, residencyStatusChange,
   pregnant[Pregnant while the severance happened.],
