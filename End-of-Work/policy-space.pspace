@@ -26,13 +26,14 @@ ReasonForLeaving: one of resignation [התפטרות], visaTermination,
                       employerChanged[e.g. company was bought by another].
 TimeInIsrael: one of lessThan51Months, overOr51Months, over63Months, over8Years, over10Years, over13Years.
 Sector: one of other, agriculture, construction, careGiving, houseKeeping, manpower, security.
-Employment: consists of SalaryUnits, Type, Scope.
+Employment: consists of SalaryUnits, Type, Scope, Duration.
 SalaryUnits: one of monthly, daily, hourly.
 Type: one of direct ["תלוש ממעסיק יחיד קבוע, שמקבל את השירות"],
              freelance,
              contractor ["עובד קבלן"],
              jointEmployment ["יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"].
 Scope: one of partial, full, varied.
+Duration: one of _0_6, _6_11, _12_24, above11, above24. 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 Flags: some of visaExpired, residencyStatusChange,
   pregnant[Pregnant while the severance happened.],

@@ -64,12 +64,85 @@
       }
     }
   ]
-  [>duration-employment< ask:
-    {text: Were you employed for more than 11 months?}
-    {answers:
-      {yes: [set: Flags+=thisEmploymentOver11months] }
+  [>sEmploymentForm< section:
+    {title: Form of employment}
+    [when:
+      {Flags+=employmentSet: }
+      {else:
+        [>employmentUnits< ask:
+          {text: How was your salary calculated?}
+          {answers:
+            {monthly:
+              [set: Employment/SalaryUnits=monthly; Notices+=severancePayMethod_Monthly]
+              [when:
+                { Flags+=thisEmploymentOver11months: [set: Notices+=priorNoticePeriod_Monthly] }
+                { else: [set: Notices+=priorNoticePeriod_Varied] }
+              ]
+            }
+            {daily:   [set: Employment/SalaryUnits=daily; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
+            {hourly:  [set: Employment/SalaryUnits=hourly; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
+          }
+        ]
+        [call: pPriorNoticeFormula]
+        [>employmentType< ask:
+          {text: How were you employed? }
+          {answers:
+            { direct:          [set: Employment/Type=direct] }
+            { contractor:
+              [set: Employment/Type=contractor]
+              [>contractorChange< ask:
+                {text: Was the contractor employing you replaced by another contractor, and you stayed, in effect, at the same work place?}
+                {answers:
+                  {yes: [set: EmployerObligations += honorFormerContractorSeniority]}
+                }
+              ]
+            }
+            { jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
+            { freelance:
+              [set: Employment/Type=freelance; Recommendations+=consultLawyer]
+              [>freelanceSummary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
+            }
+          }
+        ]
+        [>employmentScope< ask:
+          {text: What was the scope of your employment?}
+          {answers:
+            {full:    [set: Employment/Scope=full] }
+            {partial: [set: Employment/Scope=partial; Notices+=relativeSeverancePay] }
+            {varied:  [set: Employment/Scope=varied; Notices+=relativeSeverancePay] }
+          }
+        ]
+      }
+    ]
+  ]
+
+  [consider:
+    {slot:SalaryUnits }
+    {options:
+      { monthly:
+        [>duration-employment-monthly< ask:
+          {text: How long were you employed?}
+          {answers:
+            {11 months or more: [set: Duration=above11; Flags+=thisEmploymentOver11months] }
+            {6-11 months: [set: Duration = _6_11]}
+            {less than 6 months:[set: Duration = _0_6]}
+          }
+        ]
+      }
+    }
+    {else:
+        [>duration-employment-other< ask:
+          {text: How long were you employed?}
+          {answers:
+            {less than 6 months: [set: Duration = _0_6]}
+            {6-11 months: [set: Duration = _6_11]}
+            {12-24 months: [set: Duration= _12_24; Flags+=thisEmploymentOver11months]}
+            {24 months or more: [set:  Duration= above24; Flags+=thisEmploymentOver11months]}
+          }
+        ]
     }
   ]
+
   [consider:
     {slot: LegalStatus}
     {options:
@@ -93,7 +166,7 @@
 [>sReasonForLeaving< section:
   {title: Reason for leaving}
   [>rflHowEnd< ask:
-    {text: How did the employent end?}
+    {text: How did the employment end?}
     {answers:
       {my initiative:
         [set: Duties += employeePriorNotice]
@@ -119,7 +192,7 @@
             {severe abuse:
               [set: Recommendations+=involveAidOrganizations; ReasonForLeaving=severeAbuse]
               [call: benefitSet-severance]
-              [>abuseSummary< reject: Severe abuse at during employment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed. ]
+              [>abuseSummary< reject: Severe abuse during employment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you as needed. ]
             }
             {retirement:
               [set: ReasonForLeaving=retirement]
@@ -198,59 +271,6 @@
       }
     }
   ]
-]
-
-[>sEmploymentForm< section:
-  {title: Form of employment}
-  [when:
-    {Flags+=employmentSet: }
-    {else:
-      [>employmentUnits< ask:
-        {text: How was your salary calculated?}
-        {answers:
-          {monthly:
-            [set: Employment/SalaryUnits=monthly; Notices+=severancePayMethod_Monthly]
-            [when:
-              { Flags+=thisEmploymentOver11months: [set: Notices+=priorNoticePeriod_Monthly] }
-              { else: [set: Notices+=priorNoticePeriod_Varied] }
-            ]
-          }
-          {daily:   [set: Employment/SalaryUnits=daily; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
-          {hourly:  [set: Employment/SalaryUnits=hourly; Notices+=severancePayMethod_Varied, priorNoticePeriod_Varied] }
-        }
-      ]
-      [call: pPriorNoticeFormula]
-      [>employmentType< ask:
-        {text: How were you employed? }
-        {answers:
-          { direct:          [set: Employment/Type=direct] }
-          { contractor:
-            [set: Employment/Type=contractor]
-            [>contractorChange< ask:
-              {text: Was the contractor employing you replaced by another contractor, and you stayed, in effect, at the same work place?}
-              {answers:
-                {yes: [set: EmployerObligations += honorFormerContractorSeniority]}
-              }
-            ]
-          }
-          { jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
-          { freelance:
-            [set: Employment/Type=freelance; Recommendations+=consultLawyer]
-            [>freelanceSummary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
-          }
-        }
-      ]
-      [>employmentScope< ask:
-        {text: What was the scope of your employment?}
-        {answers:
-          {full:    [set: Employment/Scope=full] }
-          {partial: [set: Employment/Scope=partial; Notices+=relativeSeverancePay] }
-          {varied:  [set: Employment/Scope=varied; Notices+=relativeSeverancePay] }
-        }
-      ]
-    }
-  ]
-
 ]
 
 [consider:
@@ -623,24 +643,27 @@
     {slot: SalaryUnits}
     {options:
       {monthly:
-        [>pnf-monthly< ask:
-          {text: How long were you employed?}
-          {answers:
-            {0-6 months: [set: PriorNoticeCalculationFormula=dayPerMonth]}
-            {7-12 months:[set: PriorNoticeCalculationFormula=sixDaysPlus2_5]}
-            {13 and over:[set: PriorNoticeCalculationFormula=kOneMonth]}
+        [consider:
+          {slot: Duration}
+          {options:
+            {_0_6 : [set: PriorNoticeCalculationFormula=dayPerMonth] }
+            {_6_11: [set: PriorNoticeCalculationFormula=sixDaysPlus2_5]}
+            {above11: [set: PriorNoticeCalculationFormula=kOneMonth]}
           }
         ]
       }
     }
     {else:  <-- hourly / daily
-      [>pnf-nonMonthly< ask:
-        {text: How long were you employed?}
-        {answers:
-          {12 months or less:[set:PriorNoticeCalculationFormula=dayPerMonth]}
-          {13-24 months: [set:PriorNoticeCalculationFormula=fourteenPlusEachTwo]}
-          {25-36 months: [set:PriorNoticeCalculationFormula=twentyonePlusEachTwo]}
-          {37 months and over: [set: PriorNoticeCalculationFormula=kOneMonth]}
+      [consider:
+        {slot: Duration}
+        {options:
+          { _0_6:  [set:PriorNoticeCalculationFormula=dayPerMonth] }
+          { _6_11: [set:PriorNoticeCalculationFormula=dayPerMonth] }
+          { _12_24:[set:PriorNoticeCalculationFormula=fourteenPlusEachTwo] }
+          { above24: [set: PriorNoticeCalculationFormula=kOneMonth] }
+          <*
+          From Shadi: 25-36:  [set:PriorNoticeCalculationFormula=twentyonePlusEachTwo]
+          *>
         }
       ]
     }
