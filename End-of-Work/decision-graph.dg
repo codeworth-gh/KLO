@@ -120,7 +120,7 @@
     {slot:SalaryUnits }
     {options:
       { monthly:
-        [>duration-employment-monthly< ask:
+        [>hly< ask:
           {text: How long were you employed?}
           {answers:
             {11 months or more: [set: Duration=above11; Flags+=thisEmploymentOver11months] }

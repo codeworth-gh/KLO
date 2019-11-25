@@ -608,7 +608,7 @@ For pregnant women, or those that recently gave birth, employment termination re
 
 # EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByDefenseMinstry
 possibly illegal severance
-Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence. 
+Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence.
 
 # EndOfWork/Benefits/Properties/possible80KGrant
 possible 80K grant
@@ -742,38 +742,60 @@ varied
 
 
 # EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
-uniteEmployeesToDeclareBankruptcy
+organize employees
 Employees need to unite and demand formal bankruptcy.
 
 # EndOfWork/Recommendations/checkElderlyAllowance
-checkElderlyAllowance
+check elderly allowance
 Possibly eligible for elderly allowance from NI
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula
-PriorNoticeCalculationFormula
+Prior Notice Calculation Formula
 Formula for calculating the prior notice period
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/dayPerMonth
-dayPerMonth
+1 day per month
 One day for each month the worker was employed
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/sixDaysPlus2_5
-sixDaysPlus2_5
-6 days plus 2.5 days for each month after the first 6
+6+2.5ea.
+6 days plus 2.5 days for each month after the first 6 months
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/fourteenPlusEachTwo
-fourteenPlusEachTwo
+14+2ea.
 14 days plus a day for each 2 month in the second employment year
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/twentyonePlusEachTwo
-twentyonePlusEachTwo
+21+1ea.
 21 days plus a day for each 2 month in the third employment year
 
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
-kOneMonth
+1 month
 One month
 
 # EndOfWork/Assertions/ReasonForLeaving/sexualHarassment
-sexualHarassment
+Sexual Harassment
 
 
+# EndOfWork/Assertions/Employment/Duration
+Duration
+
+
+# EndOfWork/Assertions/Employment/Duration/_0_6
+Less than 6 months
+
+
+# EndOfWork/Assertions/Employment/Duration/_6_11
+6-11 months
+
+
+# EndOfWork/Assertions/Employment/Duration/_12_24
+12-24 months
+
+
+# EndOfWork/Assertions/Employment/Duration/above11
+above 11 months
+
+
+# EndOfWork/Assertions/Employment/Duration/above24
+above 24 months

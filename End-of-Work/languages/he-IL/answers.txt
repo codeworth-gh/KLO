@@ -1,5 +1,3 @@
-21-62: 21-62
-21-67: 21-67
 51 Months or more: 51 חודשים או יותר
 Divorce: גירושין
 Less than 51 Months: פחות מ-51 חודשים
@@ -43,7 +41,6 @@ my medical condition: מצבי הרפואי
 no: לא
 other: אחר
 other family member: בן משפחה אחר
-over 67: 67 ומעלה
 palestinian with work permit: פלסטיני עם רשיון עבודה
 parenting: הורות
 partial: חלקית
@@ -54,7 +51,6 @@ severe abuse: התעללות חמורה
 significant breaching of rights: הפרת זכויות חמורה
 significant deterioration of employment conditions:הרעה מוחשית בתנאי העסקה
 to a settlement outside the green line: ליישוב מחוץ לקו הירוק
-under 21: מתחת ל-21
 undocumented: ללא רישום
 varied: משתנה
 visa of type 2a5: ויזה 2 א׳ 5
@@ -71,13 +67,11 @@ yes, employer refused: כן, המעסיק סרב
 other non-citizen: אחר (לא אזרח)
 under 62: פחות מ-62
 under 67: פחות מ-67
-0-6 months: 0-6 חודשים
-12 months or less: 12 חודשים או פחות
-13 and over: 13 חודשים או יותר
-13-24 months: 13-24 חודשים
-25-36 months: 25-36 חודשים
-37 months and over: 37 חודשים או יותר
-7-12 months: 7-12 חודשים
 I was sexually harassed: הוטרדתי מינית
 to an agricultural settlement: לישוב חקלאי
 to an eligible settlement: לישוב זכאי
+11 months or more: 11 חודשים או יותר
+12-24 months: 12-24 חודשים
+24 months or more: 24 חודשים או יותר
+6-11 months: 6-11 חודשים
+less than 6 months: פחות מ-6 חודשים

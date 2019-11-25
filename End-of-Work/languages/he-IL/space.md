@@ -421,6 +421,30 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 פנסיה
 המעסיק יכול לדרוש מהעובד לפרוש
 
+# EndOfWork/Assertions/Employment/Duration
+משך העסקה
+
+
+# EndOfWork/Assertions/Employment/Duration/_0_6
+עד 6 חודשים
+
+
+# EndOfWork/Assertions/Employment/Duration/_6_11
+6-12 חודשים
+
+
+# EndOfWork/Assertions/Employment/Duration/_12_24
+12-24 חודשים
+
+
+# EndOfWork/Assertions/Employment/Duration/above11
+11 חודשים ומעלה
+
+
+# EndOfWork/Assertions/Employment/Duration/above24
+24 חודשים ומעלה
+
+
 # EndOfWork/Assertions/ReasonForLeaving
 סיבת סיום ההעסקה
 
@@ -637,8 +661,9 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 פיטורים
 
 # EndOfWork/Assertions/Flags/possiblyIllegalSeverance
-חוקיות הפיטורין לא ברורה
+בעיה בחוקיות הפיטורין
 יכול להיות כי הפיטורין היו לא חוקיים
+
 
 # EndOfWork/Assertions/Flags/employmentSet
 סוג תעסוקה נקבע

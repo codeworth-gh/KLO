@@ -1,1 +1,0 @@
-can your workplace be adjusted to your medical condition?

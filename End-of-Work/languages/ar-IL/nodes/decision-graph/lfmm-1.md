@@ -1,1 +1,0 @@
-Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?

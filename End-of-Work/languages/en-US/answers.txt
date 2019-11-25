@@ -86,3 +86,8 @@ under 67: under 67
 25-36 months: 25-36 months
 37 months and over: 37 months and over
 7-12 months: 7-12 months
+11 months or more: 11 months or more
+12-24 months: 12-24 months
+24 months or more: 24 months or more
+6-11 months: 6-11 months
+less than 6 months: less than 6 months

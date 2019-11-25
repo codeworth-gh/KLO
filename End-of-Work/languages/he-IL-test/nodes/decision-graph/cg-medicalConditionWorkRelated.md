@@ -1,1 +1,0 @@
-Do you think your medical condition is related to your work?

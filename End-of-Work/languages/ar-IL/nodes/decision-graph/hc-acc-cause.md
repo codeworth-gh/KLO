@@ -1,1 +1,0 @@
-The health issue that made me leave is:

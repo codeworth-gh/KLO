@@ -1,1 +1,0 @@
-Is the employer formally declared as bankrupt?
