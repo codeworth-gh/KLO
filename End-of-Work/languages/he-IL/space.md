@@ -24,7 +24,7 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 
 # EndOfWork/EmployerObligations/workPeriodLetter
 אישור תקופת עבודה
-מכתב שנועד לכל שימוש של העובד וכולל תאריך תחילת עבודה ותאריך סיום עבודה. יש לתיתו עם סיום העבודה. 
+מכתב שנועד לכל שימוש של העובד וכולל תאריך תחילת עבודה ותאריך סיום עבודה. יש לתיתו עם סיום העבודה.
 
 # EndOfWork/EmployerObligations/pensionFundNotice
 הודעה לקרן הפנסיה על הפסקת עבודה
@@ -32,9 +32,11 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 
 # EndOfWork/EmployerObligations/finalAccountSettlement
 גמר חשבון
-עם תשלום השכר האחרון על המעסיק לחשב את יתרת הזכויות שנצברו בתקופת העבודה, לרבות יתרת דמי הבראה, פידיון ימי חופשה שלא נוצלו, השלמת פיצויי פיטורים או עמלות - ככל שיש זכאות. 
+עם תשלום השכר האחרון על המעסיק לחשב את יתרת הזכויות שנצברו בתקופת העבודה, לרבות יתרת דמי הבראה, פידיון ימי חופשה שלא נוצלו, השלמת פיצויי פיטורים או עמלות - ככל שיש זכאות.
 ---
 במסגרת גמר חשבון נכללים דמי פדיון חופשה, דמי הבראה, פיצויי פיטורים, דמי מחלה, שחרור כספים שנצברו בקופות הגמל, אישור לעובד על תקופת עבודתו, מכתב העברת בעלות, טפסי 161 ו-161א וכתב ויתור תביעות לחתימת העובד.
+
+כדאי לבדוק ללא דיחוי שחישוב הזכויות שביצע המעסיק מדוייק. הזכות לפדיון חופשה מתיישנת לאחר 4 שנים מיום הפסקת העבודה. יתר הזכויות מתיישנות לאחר 7 שנים מיום הפסקת העבודה.
 
 # EndOfWork/EmployerObligations/honorFormerContractorSeniority
 הכרה בותק קודם
@@ -49,7 +51,7 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 
 # EndOfWork/EmployerObligations/jobTerminationConfirmation
 מכתב פיטורים
-מכתב פיטורים מהווה בסיס לקבלת זכויות שונות לרבות דמי אבטלה, והוא חובה מכוח סעיף 2(א) לחוק הודעה מוקדמת. יש לכלול בו את תקופת העבודה, 
+מכתב פיטורים מהווה בסיס לקבלת זכויות שונות לרבות דמי אבטלה, והוא חובה מכוח סעיף 2(א) לחוק הודעה מוקדמת. יש לכלול בו את תקופת העבודה,
 ---
 את ההודעה הזו המעסיק צריך למסור לעובד בתוך שבועיים מהיום האחרון לעבודה, או בתוך שבוע ממועד דרישת העובד, לפי המוקדם.
 המכתב צריך לכלול את תקופת ההעסקה של העובד.
@@ -73,7 +75,7 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 הודעה על התפטרות מותנית
 הודעת עובד כי יתפטר מהעבודה לולא ישתנו תנאיו או תתוקן ההרעה בתנאים
 ---
-עובד שתנאי העבודה שלו השתנו לרעה או זכויותיו הופרו באופן חמור, ייחשב כאילו פוטר רק אם ייתן מראש הזדמנות למעסיק לתקן את דרכיו, להפסיק את הפגיעה בזכויות או לבטל את ההרעה בתנאים. 
+עובד שתנאי העבודה שלו השתנו לרעה או זכויותיו הופרו באופן חמור, ייחשב כאילו פוטר רק אם ייתן מראש הזדמנות למעסיק לתקן את דרכיו, להפסיק את הפגיעה בזכויות או לבטל את ההרעה בתנאים.
 
 # EndOfWork/Duties/employeePriorNotice
 מכתב הודעה מוקדמת של עובד על התפטרות
@@ -103,7 +105,7 @@ https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?cha
 
 # EndOfWork/Duties/possibleGeographicRestrictions
 מגבלות גאוגרפיות
-על עובד זר בסיעוד עשויות לחול מגבלות גאוגרפיות במציאת מעסיק חדש. 
+על עובד זר בסיעוד עשויות לחול מגבלות גאוגרפיות במציאת מעסיק חדש.
 ---
 לתקנות ראו:
 https://www.nevo.co.il/law_html/law01/501_031.htm
@@ -113,7 +115,7 @@ https://www.nevo.co.il/law_html/law01/501_031.htm
 שחרור כספי פיקדון עובדים זרים
 לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון
 ---
-לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון, בטופס: 
+לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון, בטופס:
 https://www.gov.il/he/service/request_for_deposit_withdrawal
 
 עובדים שנשארו בישראל מעבר ל-60 יום לאחר תום האשרה שלהם, עלולים להיות כפופים לניכויים מהפיקדון. במידה ויש נסיבות מיוחדות להשתהות בעזיבת ישראל בתום האשרה יש לפנות בתום האשרה למחלקת הפיקדונות, לנמק את הסיבה להתעכבות, לציין תאריך עזיבה בצירוף כרטיס טיסה, ולבקש שלא לנכות מהפיקדון בגין העיכוב, על דחיית בקשה כזו אפשר להגיש ערעור.
@@ -165,6 +167,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 דמי אבטלה, הזכאות מותנית בגיל, בתקופת עבודה רצופה מינימלית (לאו דווקא אצל אותו מעסיק) ובמעמד תושב בישראל. לפירוט ראו:
 https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
+הזכות מתיישנת לאחר שנה מיום הפסקת העבודה.
 
 # EndOfWork/Benefits/UnemploymentBenefits/after90Days
 זכאות לדמי אבטלה לעובד שהתפטר ביוזמתו
@@ -199,18 +202,20 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 ---
 כל העובדים שמעסיקם לא הפריש לקרן הפנסיה את הסכומים המינימליים לפי חוק, מכל סיבה שהיא, זכאים לפיצוי בגובה הסכום שלא הופרש לקרן פנסיה או לקרן הפיקדון לעובדים זרים, בעת סיום ההעסקה.
 
+הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
+
 # EndOfWork/Benefits/Pension/allowance
 זכאות לקצבה
 ---
 עובדים שהגיעו לגיל פרישה ו/או עובדים שאיבדו כושר עבודה, זכאים לקצבה מאת קרן הפנסיה.
-
 
 # EndOfWork/Benefits/Properties
 זכויות כן/לא
 
 # EndOfWork/Benefits/Properties/priorNoticeSubstitute
 חלף הודעה מוקדמת
-
+---
+הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
 
 # EndOfWork/Benefits/Properties/specialCompensations
 פיצוי מיוחד
@@ -231,17 +236,21 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Benefits/Properties/bankruptcyAllowance
 קצבת פשיטת רגל
 העובד מקבל פייצויי פיטורין מביטוח לאומי, במקום מהמעסיק שפשט רגל.
+---
+הזכות מתיישנת אחרי שנה מיום הפסקת העבודה.
 
 # EndOfWork/Benefits/Properties/parentalLeave
 חופשת הורה
 
 # EndOfWork/Benefits/Properties/birthGrant
 מענק לידה
+---
+הזכות מתיישנת אחרי שנה מיום הלידה.
 
 # EndOfWork/Benefits/Properties/severancePay
 פיצויי פיטורין
 ---
-פיצויים אלו מחושבים לפי משך ההעסקה. הפקדון, אם יש כזה, אינו נכלל בחישוב זה.
+פיצויים אלו מחושבים לפי משך ההעסקה. הפקדון, אם יש כזה, אינו נכלל בחישוב זה. הזכות מתיישנת 7 שנים מיום הפיטורין.
 
 # EndOfWork/Benefits/Properties/newJobAssistance
 סיוע במציאת עבודה חדשה
@@ -249,19 +258,28 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Benefits/Properties/severanceCancellation
 ביטול פיטורין
+---
+פניה לביטול פיטורין חייבת להעשות ללא שיהוי.
 
 # EndOfWork/Benefits/Properties/eligibleForFlightExpenseNI
 מימון טיסה (בט״ל)
-זכאות למימון הטיסה לארץ המוצא מהביטוח הלאומי
+זכאות למימון הטיסה לארץ המוצא מהביטוח
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
 
 # EndOfWork/Benefits/Properties/eligibleForFlightExpensePI
 זכאות לטיסה למדינת המקור
 זכאות לטיסה למדינת המקור, משולמת זכאות להטסה רפואית מחברת הביטוח הרפואי
  ידי ביטוח פרטי.
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
+
 
 # EndOfWork/Benefits/Properties/possible80KGrant
 אפשרות למענק 80 אלף ש״ח
 תיתכן זכאות לפיצוי מיוחד בגובה 80 אלף שח בגין אובדן כושר עבודה מחברת הביטוח הרפואי
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
 
 # EndOfWork/Notices
 הודעות
@@ -312,12 +330,12 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 במקרים בהם היחסים בין העובד למעסיק אינם חד משמעיים מומלץ להיוועץ בעו"ד
 
 # EndOfWork/Recommendations/sueFormerEmployerSoon
-לפנות בהקדם לבית המשפט 
+לפנות בהקדם לבית המשפט
 במקרים בהם נראה כי המעסיק עבר על החוק, מומלץ לתבוע על מנת לקבל את הזכויות.
 
 # EndOfWork/Recommendations/eligibleForRetroactiveTaxBenefitsWithinAYear
 הקלת מיסוי
-תיתכן הקלה במיסוי מאז מעבר לאזור החדש
+תיתכן הקלה במיסוי מאז המעבר לאזור החדש
 
 # EndOfWork/Recommendations/payKeens
 תשלום שארים
@@ -344,6 +362,8 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Recommendations/applyForWorkAccident
 הגשת תאונת עבודה
 הגש תביעה לדמי פגיעה בעבודה למוסד לביטוח לאומי
+---
+הזכות מתיישנת לאחר שנה מיום הפגיעה.
 
 # EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
 ארגון העובדים לבקשת פשיטת רגל
@@ -410,10 +430,8 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/ReasonForLeaving/visaTermination
 סיום ויזה
 
-
 # EndOfWork/Assertions/ReasonForLeaving/medicalCondition
 מצב רפואי
-
 
 # EndOfWork/Assertions/ReasonForLeaving/familyMemberDisease
 מחלה של בן משפחה
@@ -424,17 +442,14 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/ReasonForLeaving/endOfContract
 סיום חוזה
 
-
 # EndOfWork/Assertions/ReasonForLeaving/workerDeath
 מות העובד
-
 
 # EndOfWork/Assertions/ReasonForLeaving/employerDeath
 מות המעביד
 
 # EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
 אשפוז מעביד
-
 
 # EndOfWork/Assertions/ReasonForLeaving/employerMovedToNursingHome
 מעבר מעביד לבית אבות
@@ -459,13 +474,11 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/ReasonForLeaving/workAccident
 תאונת עבודה
 
-
 # EndOfWork/Assertions/ReasonForLeaving/abuse
 התעמרות
 
 # EndOfWork/Assertions/ReasonForLeaving/sexualHarassment
 הטרדה מינית
-
 
 # EndOfWork/Assertions/ReasonForLeaving/employerCollapse
 התמוטטות מעסיק
@@ -478,57 +491,44 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 # EndOfWork/Assertions/Sector
 תחום תעסוקה
 
-
 # EndOfWork/Assertions/Sector/other
 אחר
 
 # EndOfWork/Assertions/Sector/agriculture
 חקלאות
 
-
 # EndOfWork/Assertions/Sector/construction
 בניין
-
 
 # EndOfWork/Assertions/Sector/careGiving
 סיעוד
 
-
 # EndOfWork/Assertions/Sector/houseKeeping
 משק בית
-
 
 # EndOfWork/Assertions/Sector/manpower
 כוח אדם
 
-
 # EndOfWork/Assertions/Sector/security
 אבטחה
-
 
 # EndOfWork/Assertions/Employment
 תעסוקה
 
-
 # EndOfWork/Assertions/Employment/SalaryUnits
 חישוב משכורת
-
 
 # EndOfWork/Assertions/Employment/SalaryUnits/monthly
 חודשי
 
-
 # EndOfWork/Assertions/Employment/SalaryUnits/daily
 יומי
-
 
 # EndOfWork/Assertions/Employment/SalaryUnits/hourly
 שעתי
 
-
 # EndOfWork/Assertions/Employment/Type
 סוג העסקה
-
 
 # EndOfWork/Assertions/Employment/Type/direct
 ישירה
@@ -536,7 +536,6 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/Employment/Type/freelance
 פרילנס
-
 
 # EndOfWork/Assertions/Employment/Type/contractor
 עובד קבלן
@@ -639,19 +638,15 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 חוקיות הפיטורין לא ברורה
 יכול להיות כי הפיטורין היו לא חוקיים
 
-
 # EndOfWork/Assertions/Flags/employmentSet
 סוג תעסוקה נקבע
-
 
 # EndOfWork/Assertions/ReasonForLeaving/severeAbuse
 התעמרות
 התעללות חמורה בעובד
 
-
 # EndOfWork/Assertions/ReasonForLeaving/retirement
 פרישה
-
 
 # EndOfWork/Assertions/LegalStatus/other
 אחר
