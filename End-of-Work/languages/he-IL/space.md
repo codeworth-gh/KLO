@@ -447,6 +447,8 @@ https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Assertions/ReasonForLeaving/employerDeath
 מות המעביד
+---
+הזכויות של העובד במקרה זה ישולמו על ידי המשפחה במקרה והייתה אחראית על ההעסקה, או דרך תביעה של עזבון המעסיק.
 
 # EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
 אשפוז מעביד

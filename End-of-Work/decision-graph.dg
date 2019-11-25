@@ -210,7 +210,6 @@
         ]
       }
       {involuntary:
-        [set: EmployerObligations+=priorNotice, hearing]<-- TODO: do these apply to care givers?
         [call: benefitSet-severance]
         [consider: {slot: LegalStatus}
           {options:
@@ -223,7 +222,7 @@
                 }
                 {answers:
                   {end of contract:   [set: ReasonForLeaving=endOfContract]}
-                  {employer death:    [set: ReasonForLeaving=employerDeath]}
+                  {employer death:    [set: ReasonForLeaving=employerDeath; Properties+=priorNoticeSubstitute]}
                   {employer choice:   [call: pEmployerChoice]}
                   {employer collapse: [call: pEmployerCollapsed]}
                   {employer changed:  [set: ReasonForLeaving=employerChanged]}
@@ -239,7 +238,7 @@
                 }
                 {answers:
                   {end of contract:   [set: ReasonForLeaving=endOfContract]}
-                  {employer death:    [set: ReasonForLeaving=employerDeath]}
+                  {employer death:    [set: ReasonForLeaving=employerDeath; Properties+=priorNoticeSubstitute]}
                   {visa termination:  [set: ReasonForLeaving=visaTermination]}
                   {employer terminally hospitalized: [set: ReasonForLeaving=employerHospitalized]}
                   {employer moved to nursing home: [set: ReasonForLeaving=employerMovedToNursingHome]}
@@ -259,13 +258,22 @@
               }
               {answers:
                 {end of contract:   [set: ReasonForLeaving=endOfContract]}
-                {employer death:    [set: ReasonForLeaving=employerDeath]}
+                {employer death:    [set: ReasonForLeaving=employerDeath; Properties+=priorNoticeSubstitute]}
                 {visa termination:  [set: ReasonForLeaving=visaTermination]}
                 {employer choice:   [call: pEmployerChoice]}
                 {employer collapse: [call: pEmployerCollapsed]}
                 {employer changed:  [set: ReasonForLeaving=employerChanged]}
               }
             ]
+          }
+        ]
+        [consider:
+          {slot: ReasonForLeaving}
+          {options:
+            {employerDeath:}
+          }
+          {else:
+            [set: EmployerObligations+=priorNotice, hearing]
           }
         ]
       }
@@ -433,14 +441,22 @@
     }
   }
 ]
-[>gp-hearing< ask:
-  {text: Did you get a hearing prior to being fired?}
-  {terms:
-    {hearing: A meeting with the employer to declared as "before job termination" talk.}
+[consider:
+  {slot: ReasonForLeaving}
+  {options:
+    { employerDeath: }
   }
-  {answers:
-    {no:  [set: ProcessFairness=flawed]}
-    {yes: [set: ProcessFairness=ok]}
+  {else:
+    [>gp-hearing< ask:
+      {text: Did you get a hearing prior to being fired?}
+      {terms:
+        {hearing: A meeting with the employer to declared as "before job termination" talk.}
+      }
+      {answers:
+        {no:  [set: ProcessFairness=flawed]}
+        {yes: [set: ProcessFairness=ok]}
+      }
+    ]
   }
 ]
 --]
