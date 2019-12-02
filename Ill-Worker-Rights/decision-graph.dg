@@ -169,12 +169,26 @@ Initial case data gatehring
       }
     }
   ]
+  [>employemntType< ask:
+    {text: How are you employed?}
+    {terms: }
+    {answers:
+      {self employed/freelance: [set: EmploymentType=selfEmployed]}
+      {direct: [set: EmploymentType=employee]}
+    }
+  ]
   [>employmentScope< ask:
     {text: What is the scope of your employment?}
     {answers:
       {partial: [set: EmploymentScope=partial] }
       {full:    [set: EmploymentScope=full] }
       {varied:  [set: EmploymentScope=varied] }
+    }
+  ]
+  [>employmentDuration< ask:
+    {text: Are you employed more than one year at your current employer?}
+    {answers:
+      {yes: [set: EmploymentFlags+=employed1YearAndAbove]}
     }
   ]
   [>employmentSector< ask:
@@ -194,7 +208,16 @@ Initial case data gatehring
 
 
 [-->pChildHealthIssues<
-  [set: Duties+=declarationOfSpouseDidNotUseBenefit]
+  [call: pCaseProperties]
+  [>child-otherAdults< ask:
+    {text: Are there any other adults that have legal custody over the sick child?}
+    {terms:
+      {other adults: Including spouses. In foster families, this also includes the biological parents of the child.}
+    }
+    {answers:
+      {yes: [set: Duties+=declaration_OnlyAdultToUseBenefits] }
+    }
+  ]
   [>child-sicknessTypes< ask:
     {text: Does the child suffers from any of the following: }
     {answers:
@@ -209,7 +232,13 @@ Initial case data gatehring
         ]
       }
       {disability:
-        [set: ChildSickness+=disabledChildPay]
+        [>child-disabilityScope< ask:
+          {text: Is the disability your child suffers from permanent?}
+          {answers:
+            {no: [set: ChildSickness+=sickChildDays][end] }
+            {yes: [set: ChildSickness+=disabledChildPay] }
+          }
+        ]
         [>child-over18-dis< ask:
           {text: Is the child at least 18 years old?}
           {answers:

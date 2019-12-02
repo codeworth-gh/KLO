@@ -2,13 +2,13 @@ HealthRelatedRights: consists of Duties, Benefits, Recommendations, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
                                                           TimeInIsrael, Pregnancy, AccidentType,
-                                                          ParentingGroupSize, RelationToSickPerson.
+                                                          Parenting, RelationToSickPerson.
 
 Duties[What the employee is required do]: some of
   supportingMedicalDocumentation,
   singleParentStatement,
   guardianDocument[״צו אפוטרופוס חתום״],
-  declarationOfSpouseDidNotUseBenefit[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
+  declaration_OnlyAdultToUseBenefits[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
   handleVisa.
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -27,7 +27,11 @@ LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
 
 Gender[ This is the legal gender of the sick person]: one of male, female.
 
-ParentingGroupSize: one of couple, singleParent.
+Parenting: consists of FamilySize, ParentingFlags.
+
+FamilySize: one of couple, singleParent.
+
+ParentingFlags: some of fosterFamily[משפחת אומנה].
 
 RelationToSickPerson[How is the worker related to the person whose health issues are desri]: one of
                           parentOfSick,
@@ -37,10 +41,14 @@ RelationToSickPerson[How is the worker related to the person whose health issues
 Pregnancy: one of regular, complicated.
 AccidentType: one of other, roadAccident.
 
-EmploymentDescription: consists of SalaryUnits, EmploymentScope, Sector.
+EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector, EmploymentFlags.
 SalaryUnits: one of monthly, daily, hourly.
 
 EmploymentScope: one of partial, full, varied.
+
+EmploymentFlags: some of employed1YearAndAbove.
+
+EmploymentType: one of selfEmployed, employee[שכיר].
 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 
@@ -51,8 +59,9 @@ Sector: one of other, civilService[State workers], manpower,
 TimeInIsrael: one of moreThan10Years, lessThan10Years.
 
 ChildSickness: some of sickChildPay,
-  dialysisOrMaligantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
-   disabledChildPay.
+   dialysisOrMaligantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
+   disabledChildPay,
+   sickChildDays[Parents can use up to 8 sick days from their allowance for aiding their sick children.].
 SimpleBenefits: some of
   freeMedicalCare,
   roadAccidentPayment[Paid by the insurance company of the car].
