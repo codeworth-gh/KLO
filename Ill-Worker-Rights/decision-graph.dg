@@ -1,5 +1,11 @@
+[>initialFilter-fired< ask:
+  {text: Did you lose your job while realising your health-related benefits?}
+  {answers:
+    {yes: [>rej-endOfWork< reject: Please use our End of Employment interview, at: https://klo-rights.codeworth.io/models/end-of-employment/latest]}
+  }
+]
 [set: Duties += supportingMedicalDocumentation]
-[>initialFilter< ask:
+[>initialFilter-missWork< ask:
   {text: Did you miss work beacuse of a medical condition?}
   {terms:
     {miss work: Days or hours}
