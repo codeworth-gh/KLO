@@ -1,3 +1,4 @@
+[set: Duties+=kupatHolimNotice]
 [>initialFilter-fired< ask:
   {text: Did you lose your job while realising your health-related benefits?}
   {answers:
@@ -5,45 +6,65 @@
   }
 ]
 [set: Duties += supportingMedicalDocumentation]
-[>initialFilter-missWork< ask:
-  {text: Did you miss work beacuse of a medical condition?}
-  {terms:
-    {miss work: Days or hours}
-    {medical condition: Ephemeral or permanent health issues, either yours or of someone related to you. }
-  }
-  {answers:
-    {no: [>rej-initialFilter< reject: You may be eligible for benefits, but not from the legislation covered by this interview.]}
-  }
-]
-[>who< ask:
-  {text: Who suffers from the health condition in question?}
-  {terms:
-    {child: Including when the child is over 18.}
-  }
-  {answers:
-    {me:
-      [set: RelationToSickPerson=self]
-      [call: pSelfCondition]
+[>sIntro< section:
+  {title: Introduction}
+  [>initialFilter-missWork< ask:
+    {text: Did you miss work beacuse of a medical condition?}
+    {terms:
+      {miss work: Days or hours}
+      {medical condition: Ephemeral or permanent health issues, either yours or of someone related to you. }
     }
-    {my spouse:
-      [set: RelationToSickPerson=spouseOfSick]
-      [todo: Handle spouse illness issues]
+    {answers:
+      {no: [>rej-initialFilter< reject: You may be eligible for benefits, but not from the legislation covered by this interview.]}
     }
-    {my parent:
-      [set: RelationToSickPerson=childOfSick]
-      [todo: Handle parent health issues]
+  ]
+  [>who< ask:
+    {text: Who suffers from the health condition in question?}
+    {terms:
+      {child: Including when the child is over 18.}
     }
-    {my child:
-      [set: RelationToSickPerson=parentOfSick]
-      [call: pChildHealthIssues]
+    {answers:
+      {me:
+        [set: RelationToSickPerson=self]
+        [call: pSelfCondition]
+      }
+      {my spouse:
+        [set: RelationToSickPerson=spouseOfSick]
+        [call: pSpouseCondition]
+      }
+      {my/my partner's parent:
+        [set: RelationToSickPerson=childOfSick; SickParentFlags+=sickParentDays]
+        [call: pParentCondition]
+      }
+      {my child:
+        [set: RelationToSickPerson=parentOfSick]
+        [call: pChildHealthIssues]
+      }
     }
-  }
+  ]
+  [todo: decide which PaidSicknessDays formula to use ]
 ]
 
 <**
  Handling with medical condition of the interwiewee.
 *>
 [-->pSelfCondition<
+  [>status< ask:
+    {text: What is your current status in Israel? }
+    {answers:
+      {citizen: [set: LegalStatus=israeliCitizenship]}
+      {visa of type b1: [set: LegalStatus=b1Visa]}
+      {no permit:       [set: LegalStatus=noPermit]}
+      {palestinian:     [set: LegalStatus=palestinian] }
+    }
+  ]
+  [>gender< ask:
+    {text: Are you a woman?}
+    {answers:
+      {yes: [set: Gender=female]}
+      {no: [set: Gender=male]}
+    }
+  ]
   [call: pCaseProperties]
 
   [consider: <-- TODO move to conditional answers when implemented.
@@ -92,6 +113,231 @@
   ]
 --]
 
+[-->pWorkRelatedAcciedentBenefits<
+[todo: Implement work related acciedent benefits.]
+--]
+
+[-->pParentCondition<
+  [>sParentCondition< section:
+    {title: Sick Parent}
+    [set: Duties+=sickParentStatement]
+    [>parentCondition< ask:
+      {text: What is your parent medical condition?}
+      {answers:
+        {hospitalized:
+          [>hospitalizedParent< ask:
+            {text: Is your parent hospitalized in a mental or nursing institute?}
+            {terms:
+              {nursing home: for temporary treatment; not a nursing home for the elderly.}
+            }
+            {answers:
+              {yes:
+                [set: TaxExemptions+=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals;
+                      SickParentFlags+=niiParentNursingAllowance, fundingForNursingHospitalization;
+                      Recommendations+=noEligibilityForSickDays]}
+            }
+          ]
+        }
+
+        {donating an organ:
+          [>parent-organDonor< ask:
+            {text: Is your parent's medical condition related to them donating an organ?}
+            {answers:
+              {yes: [set: SickParentFlags+=aidingOrganDonor]}
+            }
+          ]
+        }
+
+        {dependent on others:
+          [>parent-status< ask:
+            {text: Is your parent depends on others for basic actions, and is not hospitalized in a nursing institute?}
+            {terms:
+              {basic actions: Eating, drinking, bathroom, cleaning, unaided moving in the house.}
+            }
+            {answers:
+              {yes:
+                [set: SickParentFlags+=sickParentDays;
+                      Duties+=medicalStatementForDependency,declaration_OnlyAdultToUseBenefits
+                ]
+              }
+            }
+          ]
+        }
+
+      }
+    ]
+  ]
+--]
+
+[-->pSpouseCondition<
+  [>sSpouseCondition< section:
+    {title: Sick Spouse}
+    [set: Duties += sickSpouseStatement]
+    [>spouseoCndition< ask:
+      {text: What causes youe spouse's medical condition?}
+      {answers:
+        {malignant condition:
+          [set: SickSpouseFlags+=sickSpouseMalignant ]
+        }
+        {organ donation:
+          [set: SickSpouseFlags+=aidingOrganDonor]
+        }
+        {other:
+          [set: SickSpouseFlags+=sickSpouseDays;
+                Duties+=medicalStatementForDependency]
+          [>spouseNursing< ask:
+            {text: Does your spouse depend on others for basic actions?}
+            {terms:
+              {basic actions: Eating, drinking, bathroom, cleaning, unaided moving in the house.}
+            }
+            {answers:
+              {yes:
+                [todo: Fill in the eligibilites for nursing a spouse]
+                [>hospitalizedSpouse< ask:
+                  {text: Is your spouse hospitalized in a nursing institute?}
+                  {answers:
+                    {yes: [set: TaxExemptions+=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals]}
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  ]
+--]
+
+[-->pChildHealthIssues<
+  [>sChildCondition< section:
+    {title: Child Health Condition}
+    [call: pCaseProperties]
+    [>child-otherAdults< ask:
+      {text: Are there any other adults that have legal custody over the sick child?}
+      {terms:
+        {other adults: Including spouses. In foster families, this also includes the biological parents of the child.}
+      }
+      {answers:
+        {yes: [set: Duties+=declaration_OnlyAdultToUseBenefits] }
+      }
+    ]
+    [>child-sicknessTypes< ask:
+      {text: Does the child suffers from any of the following: }
+      {answers:
+        {malignant condition:
+          [>child-over18-m< ask:
+            {text: Is the child at least 18 years old?}
+            {answers:
+              {no:
+                [set: ChildSickness+=dialysisOrMalignantChildPay]
+              }
+            }
+          ]
+        }
+        {disability:
+          [>child-disabilityScope< ask:
+            {text: Is the disability your child suffers from permanent?}
+            {answers:
+              {no: [set: ChildSickness+=sickChildDays][end] }
+              {yes: [set: ChildSickness+=disabledChildPay] }
+            }
+          ]
+          [>child-over18-dis< ask:
+            {text: Is the child at least 18 years old?}
+            {answers:
+              {yes:
+                [set: Duties+=guardianDocument]
+              }
+            }
+          ]
+        }
+        {needs dialysis:
+          [>child-over18-dia< ask:
+            {text: Is the child at least 18 years old?}
+            {answers:
+              {no:
+                [set: ChildSickness+=dialysisOrMalignantChildPay]
+              }
+            }
+          ]
+        }
+        {none of the above:
+          [>child-over16< ask:
+            {text: Is the child at least 16 years old?}
+            {answers:
+              {no: [set:ChildSickness+=sickChildPay]}
+            }
+          ]
+        }
+      }
+    ]
+  ]
+--]
+
+<**
+Initial case data gatehring
+*>
+[-->pCaseProperties<
+  [>sCaseProperties< section:
+    {title: Case Details}
+    [>sEmploymentForm< section:
+      {title: Form of employment}
+      [>employmentUnits< ask:
+        {text: How is your salary calculated?}
+        {answers:
+          {monthly: [set: SalaryUnits=monthly] }
+          {daily:
+            [set: SalaryUnits=daily]
+            [call: pCheckIllnessOnRelevantDay]
+          }
+          {hourly:
+            [set: SalaryUnits=hourly]
+            [call: pCheckIllnessOnRelevantDay]
+          }
+        }
+      ]
+      [>employemntType< ask:
+        {text: How are you employed?}
+        {answers:
+          {self employed/freelance:
+            [set: EmploymentType=selfEmployed; Recommendations+=freelanceConsultLawyer]
+            [end] <-- Freelancers are a bit on their own here.
+          }
+          {direct: [set: EmploymentType=employee]}
+        }
+      ]
+      [>employmentScope< ask:
+        {text: What is the scope of your employment?}
+        {answers:
+          {multiple employers: [set: EmploymentScope=multiple]}
+          {full time, single employer: [set: EmploymentScope=singleFullTime]}
+          {part time, single employer: [set: EmploymentScope=singlePartTime]}
+
+        }
+      ]
+      [>employmentDuration< ask:
+        {text: Are you employed more than one year at your current employer?}
+        {answers:
+          {yes: [set: EmploymentFlags+=employed1YearAndAbove]}
+        }
+      ]
+      [>employmentSector< ask:
+        {text: Select the sector you are employed in:}
+        {answers:
+          {civil service: [set: Sector=civilService]}
+          {manpower: [set: Sector=manpower]}
+          {house keeping: [set: Sector=houseKeeping]}
+          {security: [set: Sector=security]}
+          {event facilities: [set: Sector=eventFacilities]}
+          {hotels: [set: Sector=hotels]}
+          {none of the above: [set: Sector=other]}
+        }
+      ]
+    ] <-- / employment form section
+  ]
+--]
+
+
 [-->pAccidents<
   [>accident-type< ask:
     {text: Describe the accident}
@@ -121,148 +367,6 @@
           {slot: LegalStatus}
           {options:
             { israeliCitizenship: [set: Recommendations+=niiAccidentPayment] }
-          }
-        ]
-      }
-    }
-  ]
---]
-
-[-->pWorkRelatedAcciedentBenefits<
-[todo: Implement work related acciedent benefits.]
---]
-
-
-<**
-Initial case data gatehring
-*>
-[-->pCaseProperties<
-[>status< ask:
-  {text: What is your current status in Israel? }
-  {answers:
-    {citizen: [set: LegalStatus=israeliCitizenship]}
-    {visa of type b1: [set: LegalStatus=b1Visa]}
-    {no permit:       [set: LegalStatus=noPermit]}
-    {palestinian:     [set: LegalStatus=palestinian] }
-  }
-]
-[>gender< ask:
-  {text: Are you a woman?}
-  {answers:
-    {yes: [set: Gender=female]}
-    {no: [set: Gender=male]}
-  }
-]
-[>sEmploymentForm< section:
-  {title: Form of employment}
-  [>employmentUnits< ask:
-    {text: How is your salary calculated?}
-    {answers:
-      {monthly: [set: SalaryUnits=monthly] }
-      {daily:
-        [set: SalaryUnits=daily]
-        [call: pCheckIllnessOnRelevantDay]
-      }
-      {hourly:
-         [set: SalaryUnits=hourly]
-         [call: pCheckIllnessOnRelevantDay]
-      }
-    }
-  ]
-  [>employemntType< ask:
-    {text: How are you employed?}
-    {terms: }
-    {answers:
-      {self employed/freelance: [set: EmploymentType=selfEmployed]}
-      {direct: [set: EmploymentType=employee]}
-    }
-  ]
-  [>employmentScope< ask:
-    {text: What is the scope of your employment?}
-    {answers:
-      {partial: [set: EmploymentScope=partial] }
-      {full:    [set: EmploymentScope=full] }
-      {varied:  [set: EmploymentScope=varied] }
-    }
-  ]
-  [>employmentDuration< ask:
-    {text: Are you employed more than one year at your current employer?}
-    {answers:
-      {yes: [set: EmploymentFlags+=employed1YearAndAbove]}
-    }
-  ]
-  [>employmentSector< ask:
-    {text: Select the sector you are employed in:}
-    {answers:
-      {civil service: [set: Sector=civilService]}
-      {manpower: [set: Sector=manpower]}
-      {house keeping: [set: Sector=houseKeeping]}
-      {security: [set: Sector=security]}
-      {event facilities: [set: Sector=eventFacilities]}
-      {hotels: [set: Sector=hotels]}
-      {none of the above: [set: Sector=other]}
-    }
-  ]
-] <-- / employment form section
---]
-
-
-[-->pChildHealthIssues<
-  [call: pCaseProperties]
-  [>child-otherAdults< ask:
-    {text: Are there any other adults that have legal custody over the sick child?}
-    {terms:
-      {other adults: Including spouses. In foster families, this also includes the biological parents of the child.}
-    }
-    {answers:
-      {yes: [set: Duties+=declaration_OnlyAdultToUseBenefits] }
-    }
-  ]
-  [>child-sicknessTypes< ask:
-    {text: Does the child suffers from any of the following: }
-    {answers:
-      {malignant condition:
-        [>child-over18-m< ask:
-          {text: Is the child at least 18 years old?}
-          {answers:
-            {no:
-              [set: ChildSickness+=dialysisOrMaligantChildPay]
-            }
-          }
-        ]
-      }
-      {disability:
-        [>child-disabilityScope< ask:
-          {text: Is the disability your child suffers from permanent?}
-          {answers:
-            {no: [set: ChildSickness+=sickChildDays][end] }
-            {yes: [set: ChildSickness+=disabledChildPay] }
-          }
-        ]
-        [>child-over18-dis< ask:
-          {text: Is the child at least 18 years old?}
-          {answers:
-            {yes:
-              [set: Duties+=guardianDocument]
-            }
-          }
-        ]
-      }
-      {needs dialysis:
-        [>child-over18-dia< ask:
-          {text: Is the child at least 18 years old?}
-          {answers:
-            {no:
-              [set: ChildSickness+=dialysisOrMaligantChildPay]
-            }
-          }
-        ]
-      }
-      {none of the above:
-        [>child-over16< ask:
-          {text: Is the child at least 16 years old?}
-          {answers:
-            {no: [set:ChildSickness+=sickChildPay]}
           }
         ]
       }

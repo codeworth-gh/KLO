@@ -1,0 +1,1 @@
+What causes youe spouse's medical condition?

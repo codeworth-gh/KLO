@@ -1,0 +1,1 @@
+Is the disability your child suffers from permanent?

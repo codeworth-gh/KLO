@@ -1,0 +1,1 @@
+Is your spouse hospitalized in a nursing institute?

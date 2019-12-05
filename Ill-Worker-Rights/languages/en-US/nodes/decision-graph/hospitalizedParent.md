@@ -1,0 +1,1 @@
+Is your parent hospitalized in a nursing institute?

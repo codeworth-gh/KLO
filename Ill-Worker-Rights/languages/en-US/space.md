@@ -135,11 +135,11 @@ LegalStatus
 
 
 # HealthRelatedRights/Properties/LegalStatus/israeliCitizenship
-israeliCitizenship
+Israeli Citizenship
 
 
 # HealthRelatedRights/Properties/LegalStatus/b1Visa
-b1Visa
+B1 Visa
 
 
 # HealthRelatedRights/Properties/LegalStatus/other
@@ -159,7 +159,7 @@ female
 
 
 # HealthRelatedRights/Properties/TimeInIsrael
-TimeInIsrael
+Time in Israel
 
 
 # HealthRelatedRights/Properties/TimeInIsrael/moreThan10Years
@@ -225,4 +225,239 @@ Recommendations
 # HealthRelatedRights/Recommendations/niiAccidentPayment
 niiAccidentPayment
 Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.
+
+# HealthRelatedRights/Duties/singleParentStatement
+singleParentStatement
+
+
+# HealthRelatedRights/Duties/guardianDocument
+guardianDocument
+״צו אפוטרופוס חתום״
+
+# HealthRelatedRights/Duties/declaration_OnlyAdultToUseBenefits
+declaration_OnlyAdultToUseBenefits
+employer may ask a statment declaring the spouse did not claim this benefit for the same child
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/selfEmployed
+selfEmployed
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/employee
+employee
+שכיר
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags
+EmploymentFlags
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags/employed1YearAndAbove
+employed1YearAndAbove
+
+
+# HealthRelatedRights/Properties/Parenting
+Parenting
+
+
+# HealthRelatedRights/Properties/Parenting/FamilySize
+FamilySize
+
+
+# HealthRelatedRights/Properties/Parenting/FamilySize/couple
+couple
+
+
+# HealthRelatedRights/Properties/Parenting/FamilySize/singleParent
+singleParent
+
+
+# HealthRelatedRights/Properties/Parenting/ParentingFlags
+ParentingFlags
+
+
+# HealthRelatedRights/Properties/Parenting/ParentingFlags/fosterFamily
+fosterFamily
+משפחת אומנה
+
+# HealthRelatedRights/Properties/RelationToSickPerson
+Relation to Sick Person
+How is the worker related to the person whose health issues are desri
+
+# HealthRelatedRights/Properties/RelationToSickPerson/parentOfSick
+parent
+
+
+# HealthRelatedRights/Properties/RelationToSickPerson/spouseOfSick
+spouse
+
+
+# HealthRelatedRights/Properties/RelationToSickPerson/childOfSick
+child
+
+
+# HealthRelatedRights/Properties/RelationToSickPerson/self
+self
+
+
+# HealthRelatedRights/Properties/LegalStatus/palestinian
+Palestinian
+
+
+# HealthRelatedRights/Properties/LegalStatus/noPermit
+no permit
+
+
+# HealthRelatedRights/Benefits/SpouseSickness
+Spouse Sickness
+
+
+# HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags
+Sick Spouse Flags
+
+
+# HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseDays
+sick Spouse Days
+Can use up to 6 days a year from your allowance to aid your sick parent.
+
+# HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/aidingOrganDonor
+aidingOrganDonor
+Eligible for 7 days each year for nursing a spouse that donated an organ.
+
+# HealthRelatedRights/Benefits/ParentSickness
+ParentSickness
+
+
+# HealthRelatedRights/Benefits/ParentSickness/SickParentFlags
+SickParentFlags
+
+
+# HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/sickParentDays
+sickParentDays
+Can use up to 8 days a year from your allowance to aid your sick parent.
+
+# HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/aidingOrganDonor
+aidingOrganDonor
+Eligible for 7 days each year for nursing a parent that donated an organ.
+
+# HealthRelatedRights/Benefits/SicknessPay
+SicknessPay
+
+
+# HealthRelatedRights/Benefits/SicknessPay/gradual
+gradual
+None for the first day, 1/2 salary for days 2 and 3, full after
+
+# HealthRelatedRights/Benefits/SicknessPay/fullFromDayOne
+fullFromDayOne
+Full salary from sick day 1
+
+# HealthRelatedRights/Benefits/ChildSickness
+ChildSickness
+
+
+# HealthRelatedRights/Benefits/ChildSickness/sickChildPay
+sickChildPay
+
+
+# HealthRelatedRights/Benefits/ChildSickness/dialysisOrMaligantChildPay
+dialysisOrMaligantChildPay
+Can use up to 90 days/year, based on sick days or vacation days
+
+# HealthRelatedRights/Benefits/ChildSickness/disabledChildPay
+disabledChildPay
+
+
+# HealthRelatedRights/Benefits/ChildSickness/sickChildDays
+sickChildDays
+Parents can use up to 8 sick days from their allowance for aiding their sick children.
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singleFullTime
+single (full time)
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singlePartTime
+single (part time)
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/multiple
+multiple
+Employed at more than a single employer, weekly
+---
+
+This is a common case for, e.g, house cleaners.
+
+
+# HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseMalignant
+malignant condition
+Can use up to 60 days from your sick/vacation days for treating your spouse.
+
+# HealthRelatedRights/Benefits/IncomeTaxExemption
+Income Tax Exemption
+
+# HealthRelatedRights/Benefits/IncomeTaxExemption/hospitalizedParentOrSpouse
+hospitalized relative
+Can have up to 35% tax exemption.
+---
+Worker is eligible for up to 35% income tax exemption, when a parent or spouse need nursing and are hospitalized at a nursing institute. See forms:
+
+* [116a](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
+* [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
+# HealthRelatedRights/Duties/medicalStatementForDependency
+medicalStatementForDependency
+Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions
+
+# HealthRelatedRights/Duties/sickSpouseStatement
+sickSpouseStatement
+Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3
+
+# HealthRelatedRights/Duties/sickParentStatement
+sickParentStatement
+https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
+
+# HealthRelatedRights/Duties/kupatHolimNotice
+kupatHolimNotice
+Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
+
+# HealthRelatedRights/Benefits/PaidSicknessDays
+PaidSicknessDays
+How are paid sickness days calculated
+
+# HealthRelatedRights/Benefits/PaidSicknessDays/psdFormula1
+psdFormula1
+
+
+# HealthRelatedRights/Benefits/PaidSicknessDays/psdFormula2
+psdFormula2
+
+
+# HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/fundingForNursingHospitalization
+fundingForNursingHospitalization
+Financial aid for hospitalization: https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation
+
+# HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/niiParentNursingAllowance
+niiParentNursingAllowance
+May claim parent nursing allowance from national insurance (http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx).
+
+# HealthRelatedRights/Benefits/TaxExemptions
+TaxExemptions
+
+
+# HealthRelatedRights/Benefits/TaxExemptions/hospitalizedParentOrSpouse
+hospitalizedParentOrSpouse
+Can have up to 35% income tax exemption.
+
+# HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdorwals
+taxFreeFundsWithdorwals
+Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf
+
+# HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
+dialysisOrMalignantChildPay
+Can use up to 90 days/year, based on sick days or vacation days
+
+# HealthRelatedRights/Recommendations/noEligibilityForSickDays
+noEligibilityForSickDays
+Worker is not eligible for sick days from the employer because of this condition.
+
+# HealthRelatedRights/Recommendations/freelanceConsultLawyer
+freelanceConsultLawyer
+Freelance workers should consult a lawyer regardign benefits from their employers.
 

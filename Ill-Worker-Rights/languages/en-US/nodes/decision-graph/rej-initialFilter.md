@@ -1,0 +1,1 @@
+You may be eligible for benefits, but not from the legislation covered by this interview.

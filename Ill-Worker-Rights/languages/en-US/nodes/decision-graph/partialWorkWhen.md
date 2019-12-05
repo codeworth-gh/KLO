@@ -1,0 +1,1 @@
+Did the illness occur in one of your workign days?

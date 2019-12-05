@@ -1,801 +1,703 @@
 # EndOfWork
-End of Employment
-
-
-# EndOfWork/Duties
-Duties
-
-
-# EndOfWork/Duties/findNewEmployer
-find new employer
-
-
-# EndOfWork/Duties/healthInsuranceExtension
-health insurance extension
-
-
-# EndOfWork/Duties/employeePriorNoticeForEmploymentChange
-employee prior notice for employment change
-Employee needs to give a chance to alter employment terms before resigning.
-
-# EndOfWork/Duties/employeePriorNotice
-employee prior notice
-Employee notices the emplyer in writing that they are about to leave, state the reason for leaving
-
-# EndOfWork/Duties/provideEvidenceForNewLocation
-provide evidence for new location
-Worker need to provide evidence for living in a new place, such as rent contract
-
-# EndOfWork/Duties/provideDetailedReasoningQoL
-provide detailed reasoning QoL
-Worker has to provide detailed reasoning for why their quality of life was affected.
-
-# EndOfWork/Recommendations
-Recommendations
-Actions the worker should probably take, but does not have to
-
-# EndOfWork/Recommendations/consultLawyer
-consult a lawyer
-In some cases, such as freelance work, a professional lawyer should be consulted.
-
-# EndOfWork/Recommendations/sueFormerEmployerSoon
-sue former employer soon
-The former employer may have violated the law, and some compensations might be received if legal action is taken be the employee.
----
-The former employer may have violated the law, and some compensations might be received if legal action is taken be the employee. However, the chances of getting the court to order such compensation decline with time.
-
-
-# EndOfWork/Recommendations/eligibleForRetroactiveTaxBenefitsWithinAYear
-eligible for retroactive tax benefits
-Because of the new location you live in, you're eligible for retroactive tax benefits, a year after the move was made.
-
-# EndOfWork/Recommendations/payKeens
-pay keens
-Payment divided between closes keens. No need to wait for inheritance.
-
-# EndOfWork/Recommendations/involveAidOrganizations
-involve aid organizations
-Call a relevant humanitarian aid NGOs, or call the police.
-
-# EndOfWork/Recommendations/reducedBenefitsForOverstay2Month
-reduced benefits for overstay
-Staying in Israel for more than 2 months will reduce you compensation pay.
-
-# EndOfWork/Recommendations/humanitarianVisaWarningCareGiver
-humanitarian visa warning
-After the request is decided, you cannot request again.
-
-# EndOfWork/Restrictions
-Restrictions
-Limitations on the worker
-
-# EndOfWork/Restrictions/canOnlyWorkAsReleaver
-releaver only
-With this restrictions, care giving workers can only work as relievers.
-
-# EndOfWork/Restrictions/requiresEmployerHumanitarianVisaApplication
-requires employer humanitarian visa application
-New employer has to apply for humanitarian visa.
-
-# EndOfWork/Restrictions/cannotWorkInIsrael
-cannot work in Israel
-It seems to be impossible to obtain a working permit i Israel.
-
-# EndOfWork/Restrictions/nurseNonRetiredOnly
-nurse non retired only
-Cannot nurse old people, only children and disabled.
-
-# EndOfWork/Benefits
-Benefits
-
-
-# EndOfWork/Benefits/UnemploymentBenefits
-unemployment benefits
-
-
-# EndOfWork/Benefits/UnemploymentBenefits/none
-none
-
-
-# EndOfWork/Benefits/UnemploymentBenefits/after90Days
-afterc90cDays
-
-
-# EndOfWork/Benefits/UnemploymentBenefits/immediate
-immediate
-
-
-# EndOfWork/Benefits/Deposit
-Deposit
-
-
-# EndOfWork/Benefits/Deposit/none
-none
-
-
-# EndOfWork/Benefits/Deposit/regular
-regular
-
-
-# EndOfWork/Benefits/Deposit/completions
-completions
-
-
-# EndOfWork/Benefits/Properties
-Properties
-
-
-# EndOfWork/Benefits/Properties/priorNotice
-prior notice
-
-
-# EndOfWork/Benefits/Properties/priorNoticeSubstitute
-prior notice substitute
-Payment instead of prior notice.
-
-# EndOfWork/Benefits/Properties/specialCompensations
-special compensations
-
-# EndOfWork/Benefits/Properties/disabilityAllowance
-disabilityAllowance
-Might be, need to look in National Insurance
-
-# EndOfWork/Benefits/Properties/bankruptcyAllowance
-bankruptcy allowance
-
-
-# EndOfWork/Benefits/Properties/parentalLeave
-parental leave
-
-
-# EndOfWork/Benefits/Properties/birthGrant
-birth grant
-
-
-# EndOfWork/Benefits/Properties/severancePay
-severance pay
-Also known as "separation"
-
-# EndOfWork/Benefits/Properties/newJobAssistence
-new job assistence
-
-
-# EndOfWork/Benefits/Properties/severanceCancellation
-severance cancellation
-The termination of the employment can be reversed
-
-# EndOfWork/Benefits/Pension
-Pension
-
-
-# EndOfWork/Benefits/Pension/keep
-keep
-Keep pension fund, continue deposits to it
-
-# EndOfWork/Benefits/Pension/compensationForMissing
-compensation for missing
-Compensation for the employer missing pension fund payments.
-
-# EndOfWork/Benefits/Pension/allowance
-allowance
-
-
-# EndOfWork/Benefits/Source
-Source
-
-
-# EndOfWork/Benefits/Source/employer
-employer
-
-
-# EndOfWork/Benefits/Source/bituachLeumi
-Bituach Leumi
-Israel's national insurance
-
-
-# EndOfWork/Benefits/Source/pensionFund
-pension fund
-
-
-# EndOfWork/Benefits/Source/deposit
-deposit
-
-
-# EndOfWork/Assertions
-Assertions
-
-
-# EndOfWork/Assertions/EmploymentStatus
-Employment Status
-
-
-# EndOfWork/Assertions/EmploymentStatus/preDecision
-pre decision
-
-
-# EndOfWork/Assertions/EmploymentStatus/priorNoticePeriod
-prior notice period
-
-
-# EndOfWork/Assertions/EmploymentStatus/employmentEnded
-employment ended
-
-
-# EndOfWork/Assertions/EmploymentStatus/atNewEmployer
-at new employer
-
-
-# EndOfWork/Assertions/Employment
-Employment
-
-
-# EndOfWork/Assertions/Employment/Type
-Type
-
-
-# EndOfWork/Assertions/Employment/Type/direct
-direct
-Salary is received from a single entity, which is the one receiving the services from the employee.
-
-# EndOfWork/Assertions/Employment/Type/freelance
-freelance
-
-
-# EndOfWork/Assertions/Employment/Type/contractor
-contractor
-
-# EndOfWork/Assertions/Employment/Type/jointEmployment
-joint employment
-More than a single entity pays the salary, for the same job.
-
-# EndOfWork/Assertions/Employment/SalaryUnits
-Salary Units
-
-
-# EndOfWork/Assertions/Employment/SalaryUnits/monthly
-monthly
-
-
-# EndOfWork/Assertions/Employment/SalaryUnits/daily
-daily
-
-
-# EndOfWork/Assertions/Employment/SalaryUnits/hourly
-hourly
-
-
-# EndOfWork/Assertions/Employment/Scope
-Scope
-
-
-# EndOfWork/Assertions/Employment/Scope/partial
-partial
-
-
-# EndOfWork/Assertions/Employment/Scope/full
-full
-
-
-# EndOfWork/Assertions/Employment/Scope/varied
-varied
-
-
-# EndOfWork/Assertions/ProcessFairness
-Process Fairness
-Was the severance process OK and legal
-
-# EndOfWork/Assertions/ProcessFairness/ok
-fair
-
-
-# EndOfWork/Assertions/ProcessFairness/flawed
-flawed
-
-
-# EndOfWork/Assertions/ProcessFairness/illegal
-illegal
-
-
-# EndOfWork/Assertions/TimeConstraints
-Time Constraints
-
-
-# EndOfWork/Assertions/TimeConstraints/over6Months
-over 6 months
-
-
-# EndOfWork/Assertions/TimeConstraints/over11Months
-over 11 months
-
-
-# EndOfWork/Assertions/TimeConstraints/over51Months
-over 51 months
-
-
-# EndOfWork/Assertions/TimeConstraints/over63Months
-over 63 months
-
-
-# EndOfWork/Assertions/TimeConstraints/over8Years
-over 8 years
-
-
-# EndOfWork/Assertions/TimeConstraints/over10Years
-over 10 years
-
-
-# EndOfWork/Assertions/TimeConstraints/over13Years
-over 13 years
-
-
-# EndOfWork/Assertions/Flags
-Flags
-
-
-# EndOfWork/Assertions/Flags/visaExpired
-visa expired
-
-
-# EndOfWork/Assertions/Flags/residencyStatusChange
-residency status change
-
-
-# EndOfWork/Assertions/Flags/female
-female
-
-
-# EndOfWork/Assertions/Flags/nonIsraeliWorker
-non israeli worker
-
-
-# EndOfWork/Assertions/ReasonForLeaving
-Reason for leaving
-
-
-# EndOfWork/Assertions/ReasonForLeaving/resignation
-resignation
-
-
-# EndOfWork/Assertions/ReasonForLeaving/visaTermination
-visa termination
-
-
-# EndOfWork/Assertions/ReasonForLeaving/medicalCondition
-medical condition
-
-
-# EndOfWork/Assertions/ReasonForLeaving/familyMemberDisease
-family member disease
-
-
-# EndOfWork/Assertions/ReasonForLeaving/marriageAndMoving
-marriage and moving
-Moving to a new location because of marriage
-
-# EndOfWork/Assertions/ReasonForLeaving/endOfConstract
-end of constract
-
-
-# EndOfWork/Assertions/ReasonForLeaving/workerDeath
-worker death
-
-
-# EndOfWork/Assertions/ReasonForLeaving/employerDeath
-employer death
-
-
-# EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
-employer hospitalized
-
-
-# EndOfWork/Assertions/ReasonForLeaving/employerMovedToNursingHome
-employer moved to nursing home
-
-
-# EndOfWork/Assertions/ReasonForLeaving/enrolledToCivilService
-enrolled to civil service
-The employee had enrolled to the army or to civil service.
-
-# EndOfWork/Assertions/ReasonForLeaving/significantCompensationReduction
-significant compensation reduction
-
-# EndOfWork/Assertions/ReasonForLeaving/significantBreachingOfRights
-significant breaching of rights
-
-# EndOfWork/Assertions/ReasonForLeaving/forParenting
-for parental reasons
-Leaving a workplace to take care of children
-
-# EndOfWork/Assertions/ReasonForLeaving/movedToEligibleLocation
-moved to eligible location
-
-
-# EndOfWork/Assertions/ReasonForLeaving/workAccident
-work accident
-
-
-# EndOfWork/Assertions/ReasonForLeaving/abuse
-abuse
-
-# EndOfWork/Assertions/ReasonForLeaving/sexualHarrasment
-sexual harassment
-
-
-# EndOfWork/Assertions/LegalStatus
-Legal Status
-
-
-# EndOfWork/Assertions/LegalStatus/israeliCitizenship
-israeli citizenship
-
-
-# EndOfWork/Assertions/LegalStatus/residencyProcess
-residency process
-Status procedures towards residency (B1 general, A5)
-
-# EndOfWork/Assertions/LegalStatus/palestinianWorkPermit
-palestinian w/ work permit
-A palestinian with a valid work permit.
-
-# EndOfWork/Assertions/LegalStatus/b1Construction
-b1/construction
-
-
-# EndOfWork/Assertions/LegalStatus/_2a5
-2 Alef 5
-
-
-# EndOfWork/Assertions/LegalStatus/b1CareGiver
-b1/care giver
-
-
-# EndOfWork/Assertions/LegalStatus/b1Agriculture
-b1/agriculture
-
-
-# EndOfWork/Assertions/LegalStatus/a5
-Alef 5
-
-
-# EndOfWork/Assertions/LegalStatus/b2
-b2
-
-
-# EndOfWork/Assertions/LegalStatus/undocumented
-undocumented
-
-
-# EndOfWork/Assertions/AgeGroup
-Age Group
-
-
-# EndOfWork/Assertions/AgeGroup/under21
-under 21
-
-
-# EndOfWork/Assertions/AgeGroup/workForce
-work force
-
-
-# EndOfWork/Assertions/AgeGroup/pension
-pension
-
-
-# EndOfWork/Assertions/Sector
-Sector
-
-
-# EndOfWork/Assertions/Sector/other
-other
-
-
-# EndOfWork/Assertions/Sector/agriculture
-agriculture
-
-
-# EndOfWork/Assertions/Sector/construction
-construction
-
-
-# EndOfWork/Assertions/Sector/careGiving
-care giving
-
-
-# EndOfWork/Assertions/Sector/houseKeeping
-house keeping
-
-
-# EndOfWork/Assertions/Sector/manpower
-manpower
-
-
-# EndOfWork/Assertions/Sector/security
-security
-
+end of work
 
 # EndOfWork/EmployerObligations
-Employer Obligations
-Things the employer should do during the work termination process
+employer's debts
+steps that the employer must perform during the termination of employment
+---
+compulsory steps in the process of termination- if one of them is not completed as a termination of work law is not valid and may be eligibility for special compensation
+
 
 # EndOfWork/EmployerObligations/priorNotice
 prior notice
+written notice of the employer who informs the employee of the intention to terminate his employment
+---
+prior notice of termination of employment in a letter given before termination of employment at the time that corresponds to the employee's employment period
+https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2
 
 
 # EndOfWork/EmployerObligations/hearing
 hearing
-
+a call on the employer to do with the employee before the termination
+---
+before making a decision about layoffs, the employer is obliged to invite the worker in writing to the hearing and include the reasons why weighed a step of termination. The employer should give the employee a chance to be represented in the hearing and listen to his answers to the claim against him. It is forbidden to make a decision on layoffs before all these measures were made, and before the employer listened to the answers of the employee.
 
 # EndOfWork/EmployerObligations/workPeriodLetter
-work period letter
-A formal letter stating the period in which the employee was employed.
+approving a working period
+a letter for each employee's use and includes a work start date and a finish date. It has to be given when the job is done. 
 
 # EndOfWork/EmployerObligations/pensionFundNotice
-pension fund notice
-
-
-# EndOfWork/EmployerObligations/decentProcedure
-decent procedure
-
+notice to pension fund for termination of work
+notice to the pension fund that includes the full employment period and the employer's report on the termination of employment and nature of employment (termination or resignation)
 
 # EndOfWork/EmployerObligations/finalAccountSettlement
-final account settlement
-Paying any remaining benefits, such as vacation days.
+final account
+with the last payment, on the employer to calculate the balance of the rights incurred in the labor period, including the balance of convalescence pay, redemption of days off that have not been used, completing severance pay or commissions- as long as there is eligibility. 
+
+as part of an account final included redemption of days off, convalescence pay, severance pay, disease pay, release of funds earned in provident funds, approval for the employee on his period of his work, letter of transfer of ownership, forms 161 and 161a and disclaimer of employee's signature.
+
+it is worthwhile to check without delay that the calaulation of the rights carried out by the employer is accurate. The right to redemption of days off is being filed after 4 years from the date termination. The remaining rights are being after 7 years from the date of termination. 
+
+# EndOfWork/EmployerObligations/honorFormerContractorSeniority
+הכרה בותק קודם
+הכרת המעסיק החדש בתקופה בה הועסק העובד ע"י המעסיק הקודם במקרה של חילופי מעסיקים באותו מקום עבודה, לצורך תשלום דמי הבראה, חופשה, פנסיה, ותוספות ותק
+
 
 # EndOfWork/EmployerObligations/form161
-form 161
+טופס 161
+הודעת המעסיק לרשויות המס על תשלום כספים ששילם לעובד במועד העזיבה, כגון: פיצויים
+---
+טופס שממלא המעסיק לרשויות המס, ובו תאריכי העבודה, סיבת הפסקת העבודה, ושווי כספי של הזכויות עם סיום העבודה.לפי טופס זה נקבע גובה המס על משיכת פיצויי פיטורים מקרן הפנסיה.
+
+# EndOfWork/EmployerObligations/jobTerminationConfirmation
+מכתב פיטורים
+מכתב פיטורים מהווה בסיס לקבלת זכויות שונות לרבות דמי אבטלה, והוא חובה מכוח סעיף 2(א) לחוק הודעה מוקדמת. יש לכלול בו את תקופת העבודה,
+---
+את ההודעה הזו המעסיק צריך למסור לעובד בתוך שבועיים מהיום האחרון לעבודה, או בתוך שבוע ממועד דרישת העובד, לפי המוקדם.
+המכתב צריך לכלול את תקופת ההעסקה של העובד.
+המכתב הזה נדרש בין היתר, כדי שהעובד יוכל לממש את זכויותיו (לדמי אבטלה) בשירות התעסוקה.
+אם המעסיק לא נותן לעובד מכתב פיטורים, הוא עובר על החוק ויכול להיענש.
+
+# EndOfWork/Duties
+חובות העובד עם סיום ההעסקה
 
 
-# EndOfWork/EmployerObligations/JobTerminationConfirmation
-job termination confirmation
-A formal letter form the employer stating that the employment has ended.
+# EndOfWork/Duties/findNewEmployer
+מעסיק חדש בתוך 90 יום
+מהגרי עבודה בהיתר אינם רשאים לשהות בישראל למעלה מ-90 ימים בלא מעסיק, ומסתכנים באובדן אשרה ובהרחקה מישראל אם לא ימצאו מעסיק חדש 90 ימים לכל היותר מרגע סיום העסקתם אצל מעסיקם הקודם.
 
-# EndOfWork/Notices
-Notices
-Things to note during the job termination process
+# EndOfWork/Duties/healthInsuranceExtension
+הארכת ביטוח רפואי
+---
+מעסיק עובד זר רשאי להפסיק לעובד הזר את דמי הביטוח הרפואי לאחר שהסתיימה ההעסקה. חשוב שהעובד ימשיך את תשלומי הביטוח הרפואי באופן עצמאי בתקופה שעד למציאת מעסיק חדש שייקח על עצמו את התשלום, כדי לא לאבד זכויות בריאותיות.
 
-# EndOfWork/Notices/jointEmploymentNotice
-joint employment notice
-The employers should split the payments between them, at the same ratio at which they split the salary payments.
+# EndOfWork/Duties/employeePriorNoticeForEmploymentChange
+הודעה על התפטרות מותנית
+הודעת עובד כי יתפטר מהעבודה לולא ישתנו תנאיו או תתוקן ההרעה בתנאים
+---
+עובד שתנאי העבודה שלו השתנו לרעה או זכויותיו הופרו באופן חמור, ייחשב כאילו פוטר רק אם ייתן מראש הזדמנות למעסיק לתקן את דרכיו, להפסיק את הפגיעה בזכויות או לבטל את ההרעה בתנאים.
+
+# EndOfWork/Duties/employeePriorNotice
+מכתב הודעה מוקדמת של עובד על התפטרות
+עובדים המעוניינים להתפטר מעבודתם, מחויבים לתת למעסיק הודעה מוקדמת בכתב.
+---
+עובד שמבקשת להתפטר מעבודתו חייב לתת למעסיק הודעה מוקדמת מראש בכתב, במועדים הנובעים מתקופת עבודתו:
+[לקריאה נוספת](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
+במהלך התקופה שמרגע מתן הודעת ההתפטרות ועד סיום העבודה, המעסיק חייב להעניק לעובד את כל תנאי העבודה שהיה זכאי להם לפני כן.
+העובד מחויב במהלך אותה תקופה להעמיד את עצמו לרשות העבודה ולהמשיך לעבוד באותו היקף ובאותה רצינות, כפי שנדרשו ממנו לפני כן.
+
+# EndOfWork/Duties/provideDetailedReasoningQoL
+הנמקת התפטרות בשל מעבר מעסיק
+בתנאים מסויימים, התפטרות עקב העתקת מקום עבודה מזכה את העובד בפיצויי פיטורים.
+---
+הזכות לפיצויי פיטורים מלאים במקרה של מעסיק שהעביר את מקום העבודה של העובד, אינה אוטומטית: על העובד לנמק מדוע תיפגע משמעותית איכות חייו אם יעבור למקום החדש ולתת למעסיק הזדמנות להציע חלופות שיאזנו את הפגיעה באיכות החיים.
+
+
+# EndOfWork/Duties/provideEvidenceForNewLocation
+חובת ההוכחה להעתקת מקום מגורים המזכה בפיצויים
+בתנאים מסויימים, התפטרות עקב מעבר דירה מזכה את העובד בפיצויי פיטורים. על העובד להוכיח שכתוצאה מהמעבר ליישוב החדש נוצר לו קושי להמשיך ולעבוד אצל המעסיק הקודם ושההתפטרות נעשתה בשל מעבר הדירה.
+
+---
+על העובד להציג למעסיק ראיות לכך שהמעבר שלו למקום מגורים חדש מזכה אותו בפיצויי פיטורים: נישואין, גירושין, מעבר ליישוב חקלאי, מעבר ליישוב באזור פיתוח, מעבר להתנחלות, מעבר עם בן זוג בשליחות מדינה, הצטרפות לבן זוג (בלי נישואין).
+לכל אחת מהאפשרויות יש תנאים מיוחדים שיש לוודא בטרם פנייה למעסיק:
+[פרטים נוספים](https://www.nevo.co.il/law_html/Law01/p189_004.htm#Seif8).
 
 
 # EndOfWork/Duties/possibleGeographicRestrictions
-possible geographic restrictions
-The worker may be subject to geographic restrictions
+מגבלות גאוגרפיות
+על עובד זר בסיעוד עשויות לחול מגבלות גאוגרפיות במציאת מעסיק חדש.
+---
+לתקנות ראו:
+https://www.nevo.co.il/law_html/law01/501_031.htm
+
 
 # EndOfWork/Duties/issueDepositRequest
-issue deposit request
-Must issue deposit request two weeks or more
+שחרור כספי פיקדון עובדים זרים
+לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון
+---
+לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון, בטופס:
+https://www.gov.il/he/service/request_for_deposit_withdrawal
+
+עובדים שנשארו בישראל מעבר ל-60 יום לאחר תום האשרה שלהם, עלולים להיות כפופים לניכויים מהפיקדון. במידה ויש נסיבות מיוחדות להשתהות בעזיבת ישראל בתום האשרה יש לפנות בתום האשרה למחלקת הפיקדונות, לנמק את הסיבה להתעכבות, לציין תאריך עזיבה בצירוף כרטיס טיסה, ולבקש שלא לנכות מהפיקדון בגין העיכוב, על דחיית בקשה כזו אפשר להגיש ערעור.
 
 # EndOfWork/Duties/provideEvidenceForCaringForFamily
-provide evidence for caring
-When leaving Israel for caring for a family member, the employee has to provide evidence to claim rights.
+הוכחת טיפול בבן משפחה חולה
+התפטרות לצורך טיפול בבן משפחה חולה או סיעודי מחייבת מתן הודעה למעסיק על הצורך לטפל בבן משפחה חולה, וצירוף אסמכתאות רפואיות למחלת בן המשפחה.
 
-# EndOfWork/Recommendations/canReportToThePolice
-can report to the police
-This case involves a criminal activity by the employer.
+# EndOfWork/Restrictions
+מגבלות בסיום העסקה
 
-# EndOfWork/Recommendations/applyForWorkAccident
-apply for work accident
-Apply to the Israeli National Insurance claiming work accident
-
-# EndOfWork/Recommendations/uniteEmployeesToDeclareBankrupcy
-unite employees to declare bankruptcy
-Emplyees need to unite and demand formal bankruptcy.
-
-# EndOfWork/Recommendations/checkElderyAllowance
-check elderly allowance
-Possibly eligible for elderly allowance from national insurance
-
-# EndOfWork/Benefits/Properties/bankruptcyAllowance
-bankruptcy allowance
-Employee gets severance and other compensations from National Insurance instead of getting them from the employer
-
-# EndOfWork/Benefits/Properties/newJobAssistance
-new job assistance
+# EndOfWork/Restrictions/canOnlyWorkAsReleaver
+רק כמחליף זמני
+העובד רשאי לעבוד רק כמחליף זמני
+---
+עובד שהעסקתו הסתיימו לאחר בין 51 ל-63 חודשים בישראל, יוכל בתקופה שעד ל-63 חודשי העסקה לעבוד בעבודות של החלפה זמנית בלבד
 
 
-# EndOfWork/Benefits/Properties/eligibleForFlightExpenseNI
-eligible for flight expense
-National insurance can pay for flight home.
+# EndOfWork/Restrictions/requiresEmployerHumanitarianVisaApplication
+דרישות להעסקה באשרה הומניטרית
+---
+עובד שהעסקתו הסתיימה לאחר 63 חודשי שהייה בישראל יוכל לעבוד רק אצל מעסיק בעל אשרה הומניטרית מיוחדת. על המעסיק להגיש בקשה רק עבור עובדים שעומדים בתנאים לקבלת אשרה כזו. יש לוודא שהמעסיק הגיש בקשה כאמור ושהעובד עומד בתנאים לקבל את האישור, שאם לא כן המשך שהייתו והעסקתו בישראל יהיו שלא כדין והרשות עלולה לנכות סכומים מהפיקדון על שמו.
+לרשימת התנאים לקבלת עובד באשרה הומניטרית ראו:
+https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_reasons
 
-# EndOfWork/Benefits/Properties/eligibleForFlightExpensePI
-eligible for flight expense
-Private insurance can pay for flight home.
+
+
+# EndOfWork/Restrictions/cannotWorkInIsrael
+לא ניתן להמשיך לעבוד בהיתר בישראל
+---
+עובדים זרים שלא בענף הסיעוד לא יורשו לעבוד בישראל אם חלפו 63 חודשים מכניסתם לישראל באשרה.
+עובדים בענף הסיעוד שכבר הועסקו באשרה הומניטרית לא יורשו להמשיך לעבוד בישראל באשרה המוניטרית אצל מעסיק נוסף.
+עובדי סיעוד שחלפו 13 שנה מיום כניסתם לישראל בהיתר לא יוכלו לקבל היתר להעסקה אצל מעסיק חדש, בכל אשרה שהיא לרבות אשרה הומניטרית עבור נכים.
+
+
+# EndOfWork/Restrictions/nurseNonRetiredOnly
+העסקה אצל מטופלים לפני גיל פרישה
+---
+עובד סיעוד זר שחלפו 8 שנים מיום כניסתו בהיתר לישראל, יוכל לקבל אשרה הומניטרית רק למעסיקים לפני גיל פרישה ובתנאי שלא נמצא בישראל למעלה מ-13 שנים.
+
+
+# EndOfWork/Benefits
+זכויות בתום ההעסקה
+
+# EndOfWork/Benefits/UnemploymentBenefits
+דמי אבטלה
+זכאות המותנית בגיל, תקופת עבודה, ומעמד חוקי בישראל
+---
+דמי אבטלה, הזכאות מותנית בגיל, בתקופת עבודה רצופה מינימלית (לאו דווקא אצל אותו מעסיק) ובמעמד תושב בישראל. לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
+
+הזכות מתיישנת לאחר שנה מיום הפסקת העבודה.
+
+# EndOfWork/Benefits/UnemploymentBenefits/after90Days
+זכאות לדמי אבטלה לעובד שהתפטר ביוזמתו
+---
+לאחר 90 ימי אבטלה יש זכאות לקבל דמי אבטלה גם אם ההתפטרות היתה ביוזמת העובד, גובה דמי האבטלה והזכאות נקבעים בהתאם לגיל, לתקופת עבודה רצופה (לאו דווקא אצל אותו מעסיק) ובהינתן מעמד תושב בישראל.
+לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
+
+
+# EndOfWork/Benefits/UnemploymentBenefits/immediate
+זכאות מיידית
+---
+מי שפוטר מהעבודה או התפטר בנסיבות של פיטורים זכאי לדמי אבטלה באופן מיידי, גובה דמי האבטלה והזכאות נקבעים בהתאם לגיל, לתקופת עבודה רצופה (לאו דווקא אצל אותו מעסיק) ובהינתן מעמד תושב בישראל.
+לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
+
+# EndOfWork/Benefits/Pension
+פנסיה
+---
+עובדים ישראלים שהגיעו לגיל פרישה זכאים לקצבה מקרן הפנסיה.
+עובדים זרים שהעסקתם הסתיימה מכל סיבה שהיא, זכאים לשווי הזכאות להפרשות לפנסיה בתום תקופת העבודה, בניכוי הסכומים שהופקדו בידי המעסיק לקרן הפיקדון לעובדים זרים.
+[מחשבון קו לעובד](https://www.kavlaoved.org.il/Kav-LaOved-Calculator-master/calculator_nologo.html)
+
+
+# EndOfWork/Benefits/Pension/keep
+המשך הפרשות לפנסיה בתקופת אבטלה
+---
+יש משמעות רבה לרצף בהפרשות לקרן הפנסיה, ולפיכך לעתים קרובות מומלץ להמשיך את ההפרשות לקרן גם בתקופה בה אין מעסיק שמחובתו לבצע את ההפרשה. לקבלת הסבר והמלצה אישית יש לפנות לקרן בה מתנהל חשבון הפנסיה שלך או ליועץ פנסיוני.
+
+# EndOfWork/Benefits/Pension/compensationForMissing
+פיצוי על אי הפרשות לפנסיה
+---
+כל העובדים שמעסיקם לא הפריש לקרן הפנסיה את הסכומים המינימליים לפי חוק, מכל סיבה שהיא, זכאים לפיצוי בגובה הסכום שלא הופרש לקרן פנסיה או לקרן הפיקדון לעובדים זרים, בעת סיום ההעסקה.
+
+הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
+
+# EndOfWork/Benefits/Pension/allowance
+זכאות לקצבה
+---
+עובדים שהגיעו לגיל פרישה ו/או עובדים שאיבדו כושר עבודה, זכאים לקצבה מאת קרן הפנסיה.
+
+# EndOfWork/Benefits/Properties
+זכויות כן/לא
+
+# EndOfWork/Benefits/Properties/priorNoticeSubstitute
+חלף הודעה מוקדמת
+---
+הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
+
+# EndOfWork/Benefits/Properties/specialCompensations
+פיצוי מיוחד
+
+# EndOfWork/Benefits/Properties/disabilityAllowance
+קצבת נכות
+יש לבדוק עם ביטוח לאומי האם העובד זכאי לקצבת נכות.
 
 # EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByLaborMinstry
-possibly illegal severance
-For pregnant women, or those that recently gave birth, employment termination requires special approval
+אישור פיטורין במשרד העבודה
+פיטורי אישה בהריון דורש אישור מיוחד ממשרד העבודה
 
 # EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByDefenseMinstry
-possibly illegal severance
-Severence during, or within 30 days of reserve duty is illegal, unless approved by ministry of defence.
+אישור פיטורין במשרד הבטחון
+פיטורין במהלך שירות מילואים, או במשך 30 יום אחריו, דורש אישור מיוחד ממשרד הבטחון
+
+
+# EndOfWork/Benefits/Properties/bankruptcyAllowance
+קצבת פשיטת רגל
+העובד מקבל פייצויי פיטורין מביטוח לאומי, במקום מהמעסיק שפשט רגל.
+---
+הזכות מתיישנת אחרי שנה מיום הפסקת העבודה.
+
+# EndOfWork/Benefits/Properties/parentalLeave
+חופשת הורה
+
+# EndOfWork/Benefits/Properties/birthGrant
+מענק לידה
+---
+הזכות מתיישנת אחרי שנה מיום הלידה.
+
+# EndOfWork/Benefits/Properties/severancePay
+פיצויי פיטורין
+---
+פיצויים אלו מחושבים לפי משך ההעסקה. הפקדון, אם יש כזה, אינו נכלל בחישוב זה. הזכות מתיישנת 7 שנים מיום הפיטורין.
+
+# EndOfWork/Benefits/Properties/newJobAssistance
+סיוע במציאת עבודה חדשה
+
+
+# EndOfWork/Benefits/Properties/severanceCancellation
+ביטול פיטורין
+---
+פניה לביטול פיטורין חייבת להעשות ללא שיהוי.
+
+# EndOfWork/Benefits/Properties/eligibleForFlightExpenseNI
+מימון טיסה (בט״ל)
+זכאות למימון הטיסה לארץ המוצא מהביטוח
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
+
+# EndOfWork/Benefits/Properties/eligibleForFlightExpensePI
+זכאות לטיסה למדינת המקור
+זכאות לטיסה למדינת המקור, משולמת זכאות להטסה רפואית מחברת הביטוח הרפואי
+ ידי ביטוח פרטי.
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
+
 
 # EndOfWork/Benefits/Properties/possible80KGrant
-possible 80K grant
-For documented care givers/construction workers who stayed in Israel for more than 10 years and leave b/c medical condition
+אפשרות למענק 80 אלף ש״ח
+תיתכן זכאות לפיצוי מיוחד בגובה 80 אלף שח בגין אובדן כושר עבודה מחברת הביטוח הרפואי
+---
+יש לממש את הזכות בסמוך לקביעה רפואית על אובדן כושר עבודה.
 
-# EndOfWork/Assertions/Flags/pregnant
-pregnant
-The employee was pregnant while the severance took place.
+# EndOfWork/Notices
+הודעות
 
-# EndOfWork/Assertions/Flags/thisEmploymentOver11months
-over 11 months
+# EndOfWork/Notices/jointEmploymentNotice
+העסקה משולבת
+---
+החלוקה בין שני מעסיקים במשותף שהעבודה עמם נפסקה תהיה יחסית לחלקם בתשלום השכר, עד לגובה מלא של כל הזכויות
+
+# EndOfWork/Notices/significantBreachingOfRightsNotice
+הפרת זכויות משמעותית
+---
+תוצאה זו מתייחס רק לזכויות הנובעות מעצם סיום ההעסקה. חשוב לפנות לטיפול בכל התנאים האחרים שהופרו בהזדמנות הראשונה.
+
+# EndOfWork/Notices/relativeSeverancePay
+פיצויי פיטורין יחסיים
+---
+השכר לצורך פיצויי פיטורים יחושב בהתאם לחלקיות המשרה הממוצעת בכל תקופת העבודה אבל לפי ערך השעה בשכר בחודש העבודה האחרון.
+
+# EndOfWork/Notices/severancePayMethod_Monthly
+חישוב פיצויי פיטורין לפי חודש
+---
+חודש משכורת (לפי השכר האחרון) על כל שנת עבודה, בניכוי מה שהופרש לפיצויי פיטורין לקרן הפנסיה.
+
+# EndOfWork/Notices/severancePayMethod_Varied
+חישוב פיצויי פיטורין לפי ממוצע
+---
+שכר חודש אחרון לכל שנת עבודה. שכר חודש יחושב על בסיס ממוצע השעות ב-12 חודשי העבודה האחרונים. למשל, אם ב-12 החודשים האחרונים עבדת 20 שעות בממוצע, והשכר בחודש האחרון היה 100 שקלים לשעה, ומשך התעסוקה היה 3 שנים, פיצויי הפיטורין ייהיו:
+
+`20 x 100 x 3 = 6000₪`
+
+# EndOfWork/Notices/priorNoticePeriod_Monthly
+תקופת הודעה מוקדמת - חודשית
+---
+אחרי שנה במקום העבודה נדרשת הודעה מוקדמת של חודש
+
+# EndOfWork/Notices/priorNoticePeriod_Varied
+תקופת הודעה מוקדמת - משתנה
+---
+תקופת ההודעה המוקדמת תלויה בוותק במקום העבודה. לאחר שנה - שבועיים הודעה מוקדמת. לאחר שנתיים - חודש הודעה מוקדמת.
+
+# EndOfWork/Recommendations
+המלצות
+פעולות שמומלץ לעובד לנקוט אך אין חובה לנקוט בהן
+
+# EndOfWork/Recommendations/consultLawyer
+ייעוץ משפטי מעורך דין
+במקרים בהם היחסים בין העובד למעסיק אינם חד משמעיים מומלץ להיוועץ בעו"ד
+
+# EndOfWork/Recommendations/sueFormerEmployerSoon
+לפנות בהקדם לבית המשפט
+במקרים בהם נראה כי המעסיק עבר על החוק, מומלץ לתבוע על מנת לקבל את הזכויות.
+
+# EndOfWork/Recommendations/eligibleForRetroactiveTaxBenefitsWithinAYear
+הקלת מיסוי
+תיתכן הקלה במיסוי מאז המעבר לאזור החדש
+
+# EndOfWork/Recommendations/payKeens
+תשלום שארים
+תשלום זכויות לשארים על פי חוק - אין צורך בהמתנה לצו ירושה
+
+# EndOfWork/Recommendations/involveAidOrganizations
+פניה לארגוני סיוע/משטרה
+מומלץ לבקש עזרה מעמותות סיוע, או אפילו מהמשטרה
+
+# EndOfWork/Recommendations/reducedBenefitsForOverstay2Month
+פגיעה בזכויות עקב שהות בישראל
+שהייה בישראל למעלה מחודשיים לאחר תום היתר העבודה עלולה להפחית את הסכום שישולם בגין הזכוות הסוציאליות בנתב"ג
+
+# EndOfWork/Recommendations/humanitarianVisaWarningCareGiver
+אזהרת ויזה הומניטרית
+לאחר שאושרה העסקה אחת באשרה הומניטרית בקשה נוספת תידחה על הסף
+---
+לאחר שמחליטים על בקשת ויזה הומניטרית, לא ניתן לבקש שנית. לכן יש לשקול היטב עבור איזה מעסיק מבקשים ויזה זו.
+
+# EndOfWork/Recommendations/canReportToThePolice
+דיווח למשטרה
+עניינך עלול ללמד על עבירות פליליות מצד המעסיק
+
+# EndOfWork/Recommendations/applyForWorkAccident
+הגשת תאונת עבודה
+הגש תביעה לדמי פגיעה בעבודה למוסד לביטוח לאומי
+---
+הזכות מתיישנת לאחר שנה מיום הפגיעה.
+
+# EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
+ארגון העובדים לבקשת פשיטת רגל
+ניתן להגיש בשם העובדים צו פשיטת רגל או צו פירוק לטובת אפשרות למימוש הזכויות שנפגעו
+
+# EndOfWork/Recommendations/checkElderlyAllowance
+קצבת זקנה
+העובד עשוי להיות זכאי לקצבת זקנה מהמוסד לביטוח לאומי
+---
+לפרטים נוספים: [עמוד קצבת זקנה בביטוח לאומי](https://www.btl.gov.il/benefits/old_age/Pages/default.aspx).
+
+# EndOfWork/Assertions
+פרטי המקרה
 
 
-# EndOfWork/Assertions/Flags/possiblyIllegalSeverance
-possibly illegal severance
+# EndOfWork/Assertions/LegalStatus
+מצב משפטי
 
 
-# EndOfWork/Assertions/Flags/employmentSet
-employment set
+# EndOfWork/Assertions/LegalStatus/israeliCitizenship
+אזרחות ישראלית
+
+# EndOfWork/Assertions/LegalStatus/palestinianWorkPermit
+פלסטיני עם רשיון עבודה
 
 
-# EndOfWork/Assertions/EffectiveTerminationType
-Effective Termination Type
+# EndOfWork/Assertions/LegalStatus/b1Construction
+ב׳1 בניין
+
+# EndOfWork/Assertions/LegalStatus/_2a5
+2 א׳ 5
+
+# EndOfWork/Assertions/LegalStatus/b1CareGiver
+ב׳1 סיעוד
+
+# EndOfWork/Assertions/LegalStatus/b1Agriculture
+ב׳1 חקלאות
+
+# EndOfWork/Assertions/LegalStatus/undocumented
+ללא רישום
 
 
-# EndOfWork/Assertions/EffectiveTerminationType/resignation
-resignation
+# EndOfWork/Assertions/AgeGroup
+קבוצת גיל
 
-
-# EndOfWork/Assertions/EffectiveTerminationType/severance
-severance
-
-
-# EndOfWork/Assertions/ReasonForLeaving/endOfContract
-end of contract
-
-
-# EndOfWork/Assertions/ReasonForLeaving/severeAbuse
-severe abuse
-
-
-# EndOfWork/Assertions/ReasonForLeaving/retirement
-retirement
-
-
-# EndOfWork/Assertions/ReasonForLeaving/employerCollapse
-employer collapse
-Effective bankruptcy of the employer. This is different from a formal bankruptcy.
-
-# EndOfWork/Assertions/ReasonForLeaving/employerChanged
-employer changed
-E.g. when one company is bought by another.
-
-# EndOfWork/Assertions/LegalStatus/other
-other
-
-
-# EndOfWork/Assertions/Gender
-Gender
-
-
-# EndOfWork/Assertions/Gender/male
-male
-
-
-# EndOfWork/Assertions/Gender/female
-female
-
-
-# EndOfWork/Assertions/TimeInIsrael
-Time In Israel
-
-
-# EndOfWork/Assertions/TimeInIsrael/lessThan51Months
-less than 51 Month
-
-
-# EndOfWork/Assertions/TimeInIsrael/overOr51Months
-51 months and over
-
-
-# EndOfWork/Assertions/TimeInIsrael/over63Months
-63 months and over
-
-
-# EndOfWork/Assertions/TimeInIsrael/over8Years
-8 years and over
-
-
-# EndOfWork/Assertions/TimeInIsrael/over10Years
-10 years and over
-
-
-# EndOfWork/Assertions/TimeInIsrael/over13Years
-13 years and over
+# EndOfWork/Assertions/AgeGroup/workForce
+גיל העבודה
 
 
 # EndOfWork/Assertions/AgeGroup/voluntaryPension
-voluntary pension
-Workers may retire if they want
+פנסיה וולונטרית
+העובדת יכולה לבחור לפרוש
 
-# EndOfWork/EmployerObligations/jobTerminationConfirmation
-job termination confirmation
-
-# EndOfWork/EmployerObligations/honorFormerContractorSeniority
-honor former contractor seniority
-New employer has to honor seniority benefits gained at the last employment.
-
-# EndOfWork/Notices/significantBreachingOfRightsNotice
-significant breaching of rights notice
-
-
-# EndOfWork/Notices/relativeSeverancePay
-relative severance pay
-Severance pay calculated according to employment scope, using the hourly rate of the last employment month.
-
-# EndOfWork/Notices/severancePayMethod_Monthly
-monthly
-Monthly salary for each employment year, minus pension
-
-# EndOfWork/Notices/severancePayMethod_Varied
-varied
-Average salary for each employment year, minus pension (based on recent 12 months)
-
-# EndOfWork/Notices/priorNoticePeriod_Monthly
-monthly
-
-
-# EndOfWork/Notices/priorNoticePeriod_Varied
-varied
-
-
-# EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
-organize employees
-Employees need to unite and demand formal bankruptcy.
-
-# EndOfWork/Recommendations/checkElderlyAllowance
-check elderly allowance
-Possibly eligible for elderly allowance from NI
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula
-Prior Notice Calculation Formula
-Formula for calculating the prior notice period
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula/dayPerMonth
-1 day per month
-One day for each month the worker was employed
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula/sixDaysPlus2_5
-6+2.5ea.
-6 days plus 2.5 days for each month after the first 6 months
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula/fourteenPlusEachTwo
-14+2ea.
-14 days plus a day for each 2 month in the second employment year
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula/twentyonePlusEachTwo
-21+1ea.
-21 days plus a day for each 2 month in the third employment year
-
-# EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
-1 month
-One month
-
-# EndOfWork/Assertions/ReasonForLeaving/sexualHarassment
-Sexual Harassment
-
+# EndOfWork/Assertions/AgeGroup/pension
+פנסיה
+המעסיק יכול לדרוש מהעובד לפרוש
 
 # EndOfWork/Assertions/Employment/Duration
-Duration
+משך העסקה
 
 
 # EndOfWork/Assertions/Employment/Duration/_0_6
-Less than 6 months
+עד 6 חודשים
 
 
 # EndOfWork/Assertions/Employment/Duration/_6_11
-6-11 months
+6-12 חודשים
 
 
 # EndOfWork/Assertions/Employment/Duration/_12_24
-12-24 months
+12-24 חודשים
 
 
 # EndOfWork/Assertions/Employment/Duration/above11
-above 11 months
+11 חודשים ומעלה
 
 
 # EndOfWork/Assertions/Employment/Duration/above24
-above 24 months
+24 חודשים ומעלה
+
+
+# EndOfWork/Assertions/ReasonForLeaving
+סיבת סיום ההעסקה
+
+# EndOfWork/Assertions/ReasonForLeaving/resignation
+התפטרות
+
+# EndOfWork/Assertions/ReasonForLeaving/visaTermination
+סיום ויזה
+
+# EndOfWork/Assertions/ReasonForLeaving/medicalCondition
+מצב רפואי
+
+# EndOfWork/Assertions/ReasonForLeaving/familyMemberDisease
+מחלה של בן משפחה
+
+# EndOfWork/Assertions/ReasonForLeaving/marriageAndMoving
+חתונה ומעבר דירה
+
+# EndOfWork/Assertions/ReasonForLeaving/endOfContract
+סיום חוזה
+
+# EndOfWork/Assertions/ReasonForLeaving/workerDeath
+מות העובד
+
+# EndOfWork/Assertions/ReasonForLeaving/employerDeath
+מות המעביד
+---
+הזכויות של העובד במקרה זה ישולמו על ידי המשפחה במקרה והייתה אחראית על ההעסקה, או דרך תביעה של עזבון המעסיק.
+
+# EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
+אשפוז מעביד
+
+# EndOfWork/Assertions/ReasonForLeaving/employerMovedToNursingHome
+מעבר מעביד לבית אבות
+
+# EndOfWork/Assertions/ReasonForLeaving/enrolledToCivilService
+גיוס לצבא או לשירות לאומי
+
+# EndOfWork/Assertions/ReasonForLeaving/significantCompensationReduction
+הרעה מוחשית בתנאים
+---
+סיבות המצדיקות התפטרות בשל "הרעה מוחשית" כוללות: שינויים במקום העבודה, בסדרי העבודה או בתנאי העבודה (שינויים כלליים ושינויים החלים ומשפיעים על עובד בודד), אי-קיום הוראות של חוקים שנועדו להגן על העובדים, אי קיום תנאי משמעותי בחוזה, יחס משפיל. לפני התפטרות ודרישת פיצוי הכרחי לפנות למעסיק בכתב ובעל פה ולתת לו הזדמנות אמיתית לתקן את ההידרדרות בתנאים ולהחזיר המצב לקדמותו. עובד שלא ייתן התראה כזו עלול להפסיד זכאות לפיצויי פיטורים אם ייחליט להתפטר בגלל ההרעה בתנאים
+
+# EndOfWork/Assertions/ReasonForLeaving/significantBreachingOfRights
+הפרת זכויות חמורה
+
+# EndOfWork/Assertions/ReasonForLeaving/forParenting
+התפטרות הורה
+
+# EndOfWork/Assertions/ReasonForLeaving/movedToEligibleLocation
+מעבר ליישוב זכאי
+
+# EndOfWork/Assertions/ReasonForLeaving/workAccident
+תאונת עבודה
+
+# EndOfWork/Assertions/ReasonForLeaving/abuse
+התעמרות
+
+# EndOfWork/Assertions/ReasonForLeaving/sexualHarassment
+הטרדה מינית
+
+# EndOfWork/Assertions/ReasonForLeaving/employerCollapse
+התמוטטות מעסיק
+התמוטטות כלכלית של המעסיק. יכולה להיות מוכרת באופן רשמי כפשיטת רגל, אבל לא בהכרח.
+
+# EndOfWork/Assertions/ReasonForLeaving/employerChanged
+שינוי מעסיק
+למשל כאשר חברה אחת קונה חברה אחרת.
+
+# EndOfWork/Assertions/Sector
+תחום תעסוקה
+
+# EndOfWork/Assertions/Sector/other
+אחר
+
+# EndOfWork/Assertions/Sector/agriculture
+חקלאות
+
+# EndOfWork/Assertions/Sector/construction
+בניין
+
+# EndOfWork/Assertions/Sector/careGiving
+סיעוד
+
+# EndOfWork/Assertions/Sector/houseKeeping
+משק בית
+
+# EndOfWork/Assertions/Sector/manpower
+כוח אדם
+
+# EndOfWork/Assertions/Sector/security
+אבטחה
+
+# EndOfWork/Assertions/Employment
+תעסוקה
+
+# EndOfWork/Assertions/Employment/SalaryUnits
+חישוב משכורת
+
+# EndOfWork/Assertions/Employment/SalaryUnits/monthly
+חודשי
+
+# EndOfWork/Assertions/Employment/SalaryUnits/daily
+יומי
+
+# EndOfWork/Assertions/Employment/SalaryUnits/hourly
+שעתי
+
+# EndOfWork/Assertions/Employment/Type
+סוג העסקה
+
+# EndOfWork/Assertions/Employment/Type/direct
+ישירה
+תלוש ממעסיק יחיד קבוע, שמקבל את השירות
+
+# EndOfWork/Assertions/Employment/Type/freelance
+פרילנס
+
+# EndOfWork/Assertions/Employment/Type/contractor
+עובד קבלן
+
+# EndOfWork/Assertions/Employment/Type/jointEmployment
+משולבת
+יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה
+
+# EndOfWork/Assertions/Employment/Scope
+מתכונת ההעסקה
+
+# EndOfWork/Assertions/Employment/Scope/partial
+משרה חלקית
+
+# EndOfWork/Assertions/Employment/Scope/full
+משרה מלאה
+
+# EndOfWork/Assertions/Employment/Scope/varied
+משתנה
+
+# EndOfWork/Assertions/TimeInIsrael
+תקופת שהייה בישראל
+
+# EndOfWork/Assertions/TimeInIsrael/lessThan51Months
+פחות מ-51 חודש
+פחות מ-51 חודשים חלפו מאז כניסה ראשונה לישראל
+
+# EndOfWork/Assertions/TimeInIsrael/overOr51Months
+51 חודשים ומעלה
+חלפו 51 חודשי שהייה בישראל מאז כניסה ראשונה לישראל
+
+# EndOfWork/Assertions/TimeInIsrael/over63Months
+63 חודשים ומעלה
+חלפו 63 חודשים בישראל מאז כניסה ראשונה לישראל
+
+# EndOfWork/Assertions/TimeInIsrael/over8Years
+מעל 8 שנים
+
+# EndOfWork/Assertions/TimeInIsrael/over10Years
+מעל 10 שנים
+
+# EndOfWork/Assertions/TimeInIsrael/over13Years
+מעל 13 שנה
+
+# EndOfWork/Assertions/ProcessFairness
+הוגנות התהליך
+האם התנהל הליך תקין וחוקי
+
+# EndOfWork/Assertions/ProcessFairness/ok
+הליך תקין
+
+# EndOfWork/Assertions/ProcessFairness/flawed
+הליך פגום
+
+# EndOfWork/Assertions/ProcessFairness/illegal
+הליך לא חוקי
+
+# EndOfWork/Assertions/Gender
+מין
+
+# EndOfWork/Assertions/Gender/male
+גבר
+
+# EndOfWork/Assertions/Gender/female
+אשה
+
+# EndOfWork/Assertions/Flags
+מסקנות ביניים
+תובניות פנימיות של המערכת לגבי התהליך. אפשר להתעלם.
+---
+בשביל להעריך את התהליך, המערכת צריכה לזכור כל מיני דברים. אנחנו זוכרים אותם פה. אם עלינו על משהו חשוב בעזרת הדברים פה, המשהו החשוב הזה מופיע במקום אחר.
+
+# EndOfWork/Assertions/Flags/visaExpired
+סיום אשרת עבודה
+
+# EndOfWork/Assertions/Flags/pregnant
+הריון
+בהריון בזמן הפסקת העבודה
+
+# EndOfWork/Assertions/Flags/residencyStatusChange
+שינוי מצב חוקי
+
+# EndOfWork/Assertions/Flags/thisEmploymentOver11months
+העסקה מעל 11 חודשים
+
+# EndOfWork/Assertions/Flags/nonIsraeliWorker
+לא אזרח ישראלי
+
+# EndOfWork/Assertions/EffectiveTerminationType
+סוג מעשי של סיום העסקה
+
+
+# EndOfWork/Assertions/EffectiveTerminationType/resignation
+התפטרות
+
+# EndOfWork/Assertions/EffectiveTerminationType/severance
+פיטורים
+
+# EndOfWork/Assertions/Flags/possiblyIllegalSeverance
+בעיה בחוקיות הפיטורין
+יכול להיות כי הפיטורין היו לא חוקיים
+
+
+# EndOfWork/Assertions/Flags/employmentSet
+סוג תעסוקה נקבע
+
+# EndOfWork/Assertions/ReasonForLeaving/severeAbuse
+התעמרות
+התעללות חמורה בעובד
+
+# EndOfWork/Assertions/ReasonForLeaving/retirement
+פרישה
+
+# EndOfWork/Assertions/LegalStatus/other
+אחר
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula
+חישוב הודעה מוקדמת
+נוסחת חישוב לתקופת ההודעה המוקדמת
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/dayPerMonth
+יום לכל חודש
+יום לכל חודש העסקה של העובד
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/sixDaysPlus2_5
+6+2.5
+6 ימים, ועוד 2.5 ימים לכל חודש תעסוקה, מעבר ל-6 חודשים הראשונים
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/fourteenPlusEachTwo
+14+2
+14 יום ועוד יום לכל חודשיים תעסוקה בשנת התעסוקה השניה
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/twentyonePlusEachTwo
+21+2
+21 יום ועוד יום לכל חודשיים תעסוקה בשנת התעסוקה השלישית
+
+# EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
+חודש
+הודעה מוקדמת של חודש אחד

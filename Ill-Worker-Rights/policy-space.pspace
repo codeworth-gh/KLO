@@ -7,20 +7,26 @@ Properties[Factual description of the case]: consists of LegalStatus, Gender, Em
 Duties[What the employee is required do]: some of
   supportingMedicalDocumentation,
   singleParentStatement,
+  medicalStatementForDependency[Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions],
+  sickSpouseStatement[Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3],
+  sickParentStatement[https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf],
   guardianDocument[״צו אפוטרופוס חתום״],
   declaration_OnlyAdultToUseBenefits[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
-  handleVisa.
+  handleVisa,
+  kupatHolimNotice[Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.].
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
                       SpouseSickness, SeveranceProtection, SicknessDaysRedumption,
                       RoadAccidentCompensation, PersonalAccidentCompensation, UnpaidLeave,
-                      CompensationAccumulation, SeverenceBenefits, IncomeTaxExemption, IncomeSecurity,
+                      CompensationAccumulation, SeverenceBenefits, TaxExemptions, IncomeSecurity,
                       ProlongedMaternatyLeave, UnpaidVacation, PrivateInsuranceCompensation, MedicalCare,
                       SicknessPay, MaxSickDays
                       .
 
 Recommendations: some of
-  niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.]
+  niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
+  noEligibilityForSickDays[Worker is not eligible for sick days from the employer because of this condition.],
+  freelanceConsultLawyer[Freelance workers should consult a lawyer regardign benefits from their employers.]
   .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
@@ -44,7 +50,7 @@ AccidentType: one of other, roadAccident.
 EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector, EmploymentFlags.
 SalaryUnits: one of monthly, daily, hourly.
 
-EmploymentScope: one of partial, full, varied.
+EmploymentScope: one of singleFullTime, singlePartTime, multiple.
 
 EmploymentFlags: some of employed1YearAndAbove.
 
@@ -59,7 +65,7 @@ Sector: one of other, civilService[State workers], manpower,
 TimeInIsrael: one of moreThan10Years, lessThan10Years.
 
 ChildSickness: some of sickChildPay,
-   dialysisOrMaligantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
+   dialysisOrMalignantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
    disabledChildPay,
    sickChildDays[Parents can use up to 8 sick days from their allowance for aiding their sick children.].
 SimpleBenefits: some of
@@ -69,9 +75,29 @@ SimpleBenefits: some of
 SicknessPay: one of
   gradual[None for the first day, 1/2 salary for days 2 and 3, full after],
   fullFromDayOne[Full salary from sick day 1].
-PaidSicknessDays: TODO.
-ParentSickness: TODO.
-SpouseSickness: TODO.
+
+ParentSickness: consists of SickParentFlags.
+
+SickParentFlags: some of
+  sickParentDays[Can use up to 6 days a year from your allowance to aid your sick parent.],
+  aidingOrganDonor[Eligible for 7 days each year for nursing a relative donating an organ. This is an addition to your regular sick days allowance.],
+  fundingForNursingHospitalization[Financial aid for hospitalization: https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation],
+  niiParentNursingAllowance[May claim parent nursing allowance from national insurance (http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx).].
+
+SpouseSickness: consists of SickSpouseFlags.
+
+SickSpouseFlags: some of
+  sickSpouseDays[Can use up to 6 days a year from your allowance to aid your sick spouse.],
+  aidingOrganDonor[Eligible for 7 days each year for nursing a spouse that donated an organ.],
+  sickSpouseMalignant[Can use up to 60 days from your sick/vacation days for treating your spouse.].
+
+PaidSicknessDays[How are paid sickness days calculated]: one of psdFormula1, psdFormula2.
+
+TaxExemptions: some of
+  hospitalizedParentOrSpouse[Can have up to 35% income tax exemption.],
+  taxFreeFundsWithdorwals[Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf]
+.
+
 SeveranceProtection: TODO.
 SicknessDaysRedumption: TODO.
 RoadAccidentCompensation: TODO.
@@ -79,7 +105,6 @@ PersonalAccidentCompensation: TODO.
 UnpaidLeave: TODO.
 CompensationAccumulation: TODO.
 SeverenceBenefits: TODO.
-IncomeTaxExemption: TODO.
 IncomeSecurity["אבטחת הכנסה"]: TODO.
 ProlongedMaternatyLeave: TODO.
 UnpaidVacation: TODO.

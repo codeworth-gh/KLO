@@ -320,7 +320,6 @@
 *******************>
 
 [-->part-health<
-  {title: Health issues}
   [>hc-acc-cause< ask:
     {text: The health issue that made me leave is:}
     {answers:
@@ -375,13 +374,15 @@
   <* This part works on leaving a workplace for medical conditions,
    * when the worker may be eligible for benefits.
   *>
-  {title: Leaving a workplace for medical conditions}
-  [>lfmm-1< ask:
-    {text: Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?}
-    {answers:
-      {yes: [set: Benefits/Properties+=severancePay; UnemploymentBenefits=immediate]}
-      {no:  [call: benefitSet-resignation]}
-    }
+  [>sLeaveForMedical< section:
+    {title: Leaving a workplace for medical conditions}
+    [>lfmm-1< ask:
+      {text: Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?}
+      {answers:
+        {yes: [set: Benefits/Properties+=severancePay; UnemploymentBenefits=immediate]}
+        {no:  [call: benefitSet-resignation]}
+      }
+    ]
   ]
 --]
 
@@ -579,7 +580,6 @@
   Benefit sets
 *********************>
 [-->benefitSet-severance<
-  {title: Benefits for Severance}
   [set: EffectiveTerminationType=severance]
   [consider:
     {slot: LegalStatus}
@@ -604,7 +604,6 @@
 --]
 
 [-->benefitSet-resignation<
-  {title: Benefits for Resignation}
   [set: EffectiveTerminationType=resignation]
   [consider:
     {slot: LegalStatus}

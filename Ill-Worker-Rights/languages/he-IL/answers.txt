@@ -38,3 +38,13 @@ visa of type b1: visa of type b1
 work related: work related
 work-related illness: work-related illness
 yes: yes
+self employed/freelance: self employed/freelance
+full time, single employer: full time, single employer
+multiple employers: multiple employers
+organ donation: organ donation
+other: other
+part time, single employer: part time, single employer
+dependent on others: dependent on others
+donating an organ: donating an organ
+hospitalized: hospitalized
+my/my partner's parent: my/my partner's parent
