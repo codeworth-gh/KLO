@@ -1,4 +1,4 @@
-[set: Duties+=kupatHolimNotice]
+[set: Duties+=kupatHolimNotice; SalaryUnits=unset; Sector=unset]
 [>initialFilter-fired< ask:
   {text: Did you lose your job while realising your health-related benefits?}
   {answers:
@@ -53,9 +53,9 @@
     {text: What is your current status in Israel? }
     {answers:
       {citizen: [set: LegalStatus=israeliCitizenship]}
-      {visa of type b1: [set: LegalStatus=b1Visa]}
-      {no permit:       [set: LegalStatus=noPermit]}
-      {palestinian:     [set: LegalStatus=palestinian] }
+      {visa of type b1: [set: LegalStatus=b1Visa; EmploymentType=employee; SalaryUnits=hourly]}
+      {no permit:       [set: LegalStatus=noPermit; EmploymentType=employee]}
+      {palestinian:     [set: LegalStatus=palestinian; EmploymentType=employee; SalaryUnits=hourly] }
     }
   ]
   [>gender< ask:
@@ -282,28 +282,42 @@ Initial case data gatehring
     {title: Case Details}
     [>sEmploymentForm< section:
       {title: Form of employment}
-      [>employmentUnits< ask:
-        {text: How is your salary calculated?}
-        {answers:
-          {monthly: [set: SalaryUnits=monthly] }
-          {daily:
-            [set: SalaryUnits=daily]
-            [call: pCheckIllnessOnRelevantDay]
-          }
-          {hourly:
-            [set: SalaryUnits=hourly]
-            [call: pCheckIllnessOnRelevantDay]
+      [consider:
+        {slot: SalaryUnits}
+        {options:
+          {unset:
+            [>employmentUnits< ask:
+              {text: How is your salary calculated?}
+              {answers:
+                {monthly: [set: SalaryUnits=monthly] }
+                {daily:
+                  [set: SalaryUnits=daily]
+                  [call: pCheckIllnessOnRelevantDay]
+                }
+                {hourly:
+                  [set: SalaryUnits=hourly]
+                  [call: pCheckIllnessOnRelevantDay]
+                }
+              }
+            ]
           }
         }
       ]
-      [>employemntType< ask:
-        {text: How are you employed?}
-        {answers:
-          {self employed/freelance:
-            [set: EmploymentType=selfEmployed; Recommendations+=freelanceConsultLawyer]
-            [end] <-- Freelancers are a bit on their own here.
+      [consider:
+        {slot: LegalStatus}
+        {options:
+          {israeliCitizenship:
+            [>employemntType< ask:
+              {text: How are you employed?}
+              {answers:
+                {self employed/freelance:
+                  [set: EmploymentType=selfEmployed; Recommendations+=freelanceConsultLawyer]
+                  [end] <-- Freelancers are a bit on their own here.
+                }
+                {direct: [set: EmploymentType=employee]}
+              }
+            ]
           }
-          {direct: [set: EmploymentType=employee]}
         }
       ]
       [>employmentScope< ask:
@@ -315,22 +329,39 @@ Initial case data gatehring
 
         }
       ]
-      [>employmentDuration< ask:
-        {text: Are you employed more than one year at your current employer?}
-        {answers:
-          {yes: [set: EmploymentFlags+=employed1YearAndAbove]}
+      [consider:
+        {slot: LegalStatus}
+        {options:
+          { b1Visa: }
+          { palestinian: }
         }
-      ]
-      [>employmentSector< ask:
-        {text: Select the sector you are employed in:}
-        {answers:
-          {civil service: [set: Sector=civilService]}
-          {manpower: [set: Sector=manpower]}
-          {house keeping: [set: Sector=houseKeeping]}
-          {security: [set: Sector=security]}
-          {event facilities: [set: Sector=eventFacilities]}
-          {hotels: [set: Sector=hotels]}
-          {none of the above: [set: Sector=other]}
+        {else:
+          [when:
+            { RelationToSickPerson=self:
+              [>employmentSector< ask:
+                {text: Select the sector you are employed in:}
+                {answers:
+                  {civil service: [set: Sector=civilService]}
+                  {manpower: [set: Sector=manpower]}
+                  {house keeping: [set: Sector=houseKeeping]}
+                  {security: [set: Sector=security]}
+                  {event facilities: [set: Sector=eventFacilities]}
+                  {hotels: [set: Sector=hotels]}
+                  {none of the above:}
+                }
+              ]
+            }
+            {else:
+              [>employmentSector-nonSelf< ask:
+                {text: Select the sector you are employed in:}
+                {answers:
+                  {civil service: [set: Sector=civilService]}
+                  {house keeping: [set: Sector=houseKeeping]}
+                  {none of the above:}
+                }
+              ]
+            }
+          ]
         }
       ]
     ] <-- / employment form section

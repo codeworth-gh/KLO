@@ -47,18 +47,16 @@ RelationToSickPerson[How is the worker related to the person whose health issues
 Pregnancy: one of regular, complicated.
 AccidentType: one of other, roadAccident.
 
-EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector, EmploymentFlags.
-SalaryUnits: one of monthly, daily, hourly.
+EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector.
+SalaryUnits: one of unset, monthly, daily, hourly.
 
 EmploymentScope: one of singleFullTime, singlePartTime, multiple.
-
-EmploymentFlags: some of employed1YearAndAbove.
 
 EmploymentType: one of selfEmployed, employee[שכיר].
 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 
-Sector: one of other, civilService[State workers], manpower,
+Sector: one of unset, civilService[State workers], manpower,
                 houseKeeping, security, eventFacilities[e.g. wedding gardens],
                 hotels.
 

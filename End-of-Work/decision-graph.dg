@@ -229,6 +229,7 @@
                   {employer choice:   [call: pEmployerChoice]}
                   {employer collapse: [call: pEmployerCollapsed]}
                   {employer changed:  [set: ReasonForLeaving=employerChanged]}
+                  {health issues:     [call: part-health]}
                 }
               ]
             }
@@ -248,6 +249,7 @@
                   {employer choice:   [call: pEmployerChoice]}
                   {employer collapse: [call: pEmployerCollapsed]}
                   {employer changed:  [set: ReasonForLeaving=employerChanged]}
+                  {health issues:     [call: part-health]}
                 }
               ]
             }
@@ -266,6 +268,7 @@
                 {employer choice:   [call: pEmployerChoice]}
                 {employer collapse: [call: pEmployerCollapsed]}
                 {employer changed:  [set: ReasonForLeaving=employerChanged]}
+                {health issues:     [call: part-health]}
               }
             ]
           }
@@ -320,6 +323,7 @@
 *******************>
 
 [-->part-health<
+  [set: Benefits/Properties += possiblePersonalAccidentsInsurance]
   [>hc-acc-cause< ask:
     {text: The health issue that made me leave is:}
     {answers:
@@ -360,7 +364,12 @@
             {yes, I don't want to stay: [call: benefitSet-resignation]}
             {no:
               [call: leaveForMedicalConditions]
-              [set: Benefits/Properties+=disabilityAllowance; Pension=allowance]
+              [consider:
+                {slot: LegalStatus}
+                {options:
+                  {israeliCitizenship: [set: Benefits/Properties+=disabilityAllowance; Pension=allowance]}
+                }
+              ]
             }
           }
         ]
@@ -374,15 +383,12 @@
   <* This part works on leaving a workplace for medical conditions,
    * when the worker may be eligible for benefits.
   *>
-  [>sLeaveForMedical< section:
-    {title: Leaving a workplace for medical conditions}
-    [>lfmm-1< ask:
-      {text: Did you inform your employer the reason for leaving, and give them a chance to adjust your employment conditions?}
-      {answers:
-        {yes: [set: Benefits/Properties+=severancePay; UnemploymentBenefits=immediate]}
-        {no:  [call: benefitSet-resignation]}
-      }
-    ]
+  [set: Recommendations += allowEmployerToAdjustForHealth;
+        Benefits/Properties+=severancePay]
+  [when:
+    {LegalStatus=israeliCitizenship:
+      [set:UnemploymentBenefits=immediate]
+    }
   ]
 --]
 
@@ -588,7 +594,11 @@
         [consider:
           {slot: AgeGroup }
           {options:
-            { workForce: [set: UnemploymentBenefits=immediate] }
+            { workForce:
+              [when:
+                {LegalStatus=israeliCitizenship: [set: UnemploymentBenefits=immediate]}
+              ]
+            }
         }]
       }
     }

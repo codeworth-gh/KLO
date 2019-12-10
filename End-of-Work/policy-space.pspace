@@ -50,6 +50,7 @@ Properties[Yes/No benefits]: some of priorNoticeSubstitute, specialCompensations
                 birthGrant,
                 severancePay[also- "Separation": The employer has to pay a monthly payment for each employment year, minus deposit],
                 newJobAssistance,
+                possiblePersonalAccidentsInsurance[If you have personal accident insurace, you may be able tio claim it],
                 severanceCancellation["ביטול פיטורין"],
                 eligibleForFlightExpenseNI[National insurance can pay for flight home.],
                 eligibleForFlightExpensePI[Private insurance can pay for flight home.],
@@ -87,7 +88,8 @@ Recommendations[Actions the worker should probably take, but does not have to]: 
   canReportToThePolice[This case involves a criminal activity by the employer.],
   applyForWorkAccident[Apply to the Israeli National Insurance claiming work accident],
   uniteEmployeesToDeclareBankruptcy[Employees need to unite and demand formal bankruptcy.],
-  checkElderlyAllowance[Possibly eligible for elderly allowance from NI]
+  checkElderlyAllowance[Possibly eligible for elderly allowance from NI],
+  allowEmployerToAdjustForHealth[When possible, allow the employer to adjust your workplace to your medical condition]
 .
 
 Restrictions[Limitations on the worker]: some of
