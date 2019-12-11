@@ -39,52 +39,52 @@ as part of an account final included redemption of days off, convalescence pay, 
 it is worthwhile to check without delay that the calaulation of the rights carried out by the employer is accurate. The right to redemption of days off is being filed after 4 years from the date termination. The remaining rights are being after 7 years from the date of termination. 
 
 # EndOfWork/EmployerObligations/honorFormerContractorSeniority
-הכרה בותק קודם
-הכרת המעסיק החדש בתקופה בה הועסק העובד ע"י המעסיק הקודם במקרה של חילופי מעסיקים באותו מקום עבודה, לצורך תשלום דמי הבראה, חופשה, פנסיה, ותוספות ותק
+recognition of seniority at work
+understanding the new employer at the time employed by the former employer in an exchange of employers in the same workplace for the purpose of paying a convalescent, vacation, pension and seniority addition. 
 
 
 # EndOfWork/EmployerObligations/form161
-טופס 161
-הודעת המעסיק לרשויות המס על תשלום כספים ששילם לעובד במועד העזיבה, כגון: פיצויים
+form 161
+the employer's message to the tax authorities about paying money paid to the employee at the time of departure, such as compensation.
 ---
-טופס שממלא המעסיק לרשויות המס, ובו תאריכי העבודה, סיבת הפסקת העבודה, ושווי כספי של הזכויות עם סיום העבודה.לפי טופס זה נקבע גובה המס על משיכת פיצויי פיטורים מקרן הפנסיה.
+a form that the employer fills into the tax authorities has the work dates, the reason for the termination of the work ant the monetary value of the rights upon termination. According to this form, the tax charge is set on the withdrawal of severance pay from the pension fund. 
 
 # EndOfWork/EmployerObligations/jobTerminationConfirmation
-מכתב פיטורים
-מכתב פיטורים מהווה בסיס לקבלת זכויות שונות לרבות דמי אבטלה, והוא חובה מכוח סעיף 2(א) לחוק הודעה מוקדמת. יש לכלול בו את תקופת העבודה,
+letter of termination 
+a letter of termination is a basis for obtaining various rights, including unemployment fees and is mandatory according to section 2a of the prior notice law. It must be included in the working period. 
 ---
-את ההודעה הזו המעסיק צריך למסור לעובד בתוך שבועיים מהיום האחרון לעבודה, או בתוך שבוע ממועד דרישת העובד, לפי המוקדם.
-המכתב צריך לכלול את תקופת ההעסקה של העובד.
-המכתב הזה נדרש בין היתר, כדי שהעובד יוכל לממש את זכויותיו (לדמי אבטלה) בשירות התעסוקה.
-אם המעסיק לא נותן לעובד מכתב פיטורים, הוא עובר על החוק ויכול להיענש.
+this message should be delivered to the employee within two weeks from the last day of work or within a week from the time of the employee's requirement, by the earliest. 
+the letter should include the employee's employment period. 
+this letter is required, among other things, that the worker can exercise his rights (unemployment fees) in the employment service.
 
+if the employer does'nt give the employee a letter of termination, he breaking the law and can be punished.
 # EndOfWork/Duties
-חובות העובד עם סיום ההעסקה
-
+employee's duties with the termination of employment.
 
 # EndOfWork/Duties/findNewEmployer
-מעסיק חדש בתוך 90 יום
-מהגרי עבודה בהיתר אינם רשאים לשהות בישראל למעלה מ-90 ימים בלא מעסיק, ומסתכנים באובדן אשרה ובהרחקה מישראל אם לא ימצאו מעסיק חדש 90 ימים לכל היותר מרגע סיום העסקתם אצל מעסיקם הקודם.
+a new employer within 90 days 
+migrant workers are'nt permitted to stay in Israel for more than 90 days without an employer and take a risk loss of visa and restraining order from Israel if a new employer doesn't find 90 days at most from the moment of the termination of their former employer. 
 
 # EndOfWork/Duties/healthInsuranceExtension
-הארכת ביטוח רפואי
+extension of medical insurance.
 ---
-מעסיק עובד זר רשאי להפסיק לעובד הזר את דמי הביטוח הרפואי לאחר שהסתיימה ההעסקה. חשוב שהעובד ימשיך את תשלומי הביטוח הרפואי באופן עצמאי בתקופה שעד למציאת מעסיק חדש שייקח על עצמו את התשלום, כדי לא לאבד זכויות בריאותיות.
+an employee who employs a foreign worker may stop the foreign worker's medical insurance after the employment has ended. 
+ it is important that the employee continue the medical insurance payments independently in a period of time to find a new employer who will take the payment so as not to lose health rigts.  
 
 # EndOfWork/Duties/employeePriorNoticeForEmploymentChange
-הודעה על התפטרות מותנית
-הודעת עובד כי יתפטר מהעבודה לולא ישתנו תנאיו או תתוקן ההרעה בתנאים
+conditional resignation notification
+an employee's message that quit from work without being changed or will be corrected in conditions.
 ---
-עובד שתנאי העבודה שלו השתנו לרעה או זכויותיו הופרו באופן חמור, ייחשב כאילו פוטר רק אם ייתן מראש הזדמנות למעסיק לתקן את דרכיו, להפסיק את הפגיעה בזכויות או לבטל את ההרעה בתנאים.
+an employee whose work condition has been misused or his rights have been severely violated, it will be deemed to be fired only if he gives a chance for an employer to correct it way, to stop infringement of rights or revoke the conditions.  
 
 # EndOfWork/Duties/employeePriorNotice
-מכתב הודעה מוקדמת של עובד על התפטרות
-עובדים המעוניינים להתפטר מעבודתם, מחויבים לתת למעסיק הודעה מוקדמת בכתב.
+early notice letter of employee on resignation.
+employees who wish to resign from their work are obliged to give the employer a prior written notice.
 ---
-עובד שמבקשת להתפטר מעבודתו חייב לתת למעסיק הודעה מוקדמת מראש בכתב, במועדים הנובעים מתקופת עבודתו:
-[לקריאה נוספת](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
-במהלך התקופה שמרגע מתן הודעת ההתפטרות ועד סיום העבודה, המעסיק חייב להעניק לעובד את כל תנאי העבודה שהיה זכאי להם לפני כן.
-העובד מחויב במהלך אותה תקופה להעמיד את עצמו לרשות העבודה ולהמשיך לעבוד באותו היקף ובאותה רצינות, כפי שנדרשו ממנו לפני כן.
+an employee who seeks to resign from his work must give the employer a pre-written notice at times arising from his work period. 
+[to read more](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
+during the period that once the granting of resignation to the end of the job, the employer must give the employee all the conditions of the work they had before.
+the employee is committed during the same period to put himself in the labor authority and continue to work in the same scope and seriousness as it was needed before. 
 
 # EndOfWork/Duties/provideDetailedReasoningQoL
 הנמקת התפטרות בשל מעבר מעסיק

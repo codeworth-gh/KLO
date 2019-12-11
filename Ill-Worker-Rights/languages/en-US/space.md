@@ -461,3 +461,11 @@ Worker is not eligible for sick days from the employer because of this condition
 freelanceConsultLawyer
 Freelance workers should consult a lawyer regardign benefits from their employers.
 
+# HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
+unset
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/Sector/unset
+unset
+
+

@@ -18,10 +18,6 @@ singleParentStatement
 guardianDocument
 ״צו אפוטרופוס חתום״
 
-# HealthRelatedRights/Duties/declarationOfSpouseDidNotUseBenefit
-declarationOfSpouseDidNotUseBenefit
-employer may ask a statment declaring the spouse did not claim this benefit for the same child
-
 # HealthRelatedRights/Duties/handleVisa
 handleVisa
 
@@ -29,17 +25,6 @@ handleVisa
 # HealthRelatedRights/Properties
 Properties
 Factual description of the case
-
-# HealthRelatedRights/Properties/ParentingGroupSize
-ParentingGroupSize
-
-
-# HealthRelatedRights/Properties/ParentingGroupSize/couple
-couple
-
-
-# HealthRelatedRights/Properties/ParentingGroupSize/singleParent
-singleParent
 
 
 # HealthRelatedRights/Properties/Pregnancy
@@ -78,45 +63,12 @@ hourly
 EmploymentType
 
 
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/direct
-direct
-"תלוש ממעסיק יחיד קבוע, שמקבל את השירות"
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/freelance
-freelance
-
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/contractor
-contractor
-"עובד קבלן"
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/jointEmployment
-jointEmployment
-"יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"
-
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope
 EmploymentScope
 
 
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/partial
-partial
-
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/full
-full
-
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/varied
-varied
-
-
 # HealthRelatedRights/Properties/EmploymentDescription/Sector
 Sector
-
-
-# HealthRelatedRights/Properties/EmploymentDescription/Sector/other
-other
-
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/civilService
 civilService
@@ -228,11 +180,6 @@ Benefits
 # HealthRelatedRights/Benefits/SimpleBenefits
 SimpleBenefits
 
-
-# HealthRelatedRights/Benefits/SimpleBenefits/sicknessPay
-sicknessPay
-Minimal by law: 1.5 day for each employment month, to a maximum of 90 days.
-
 # HealthRelatedRights/Benefits/SimpleBenefits/freeMedicalCare
 freeMedicalCare
 
@@ -276,14 +223,6 @@ selfEmployed
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/employee
 employee
 שכיר
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags
-EmploymentFlags
-
-
-# HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags/employed1YearAndAbove
-employed1YearAndAbove
-
 
 # HealthRelatedRights/Properties/Parenting
 Parenting
@@ -373,9 +312,6 @@ multiple
 sickSpouseMalignant
 Can use up to 60 days from your sick/vacation days for treating your spouse.
 
-# HealthRelatedRights/Benefits/IncomeTaxExemption
-הקלות במס הכנסה
-
 # HealthRelatedRights/Benefits/IncomeTaxExemption/hospitalizedParentOrSpouse
 hospitalizedParentOrSpouse
 עד 35%
@@ -384,6 +320,7 @@ hospitalizedParentOrSpouse
 
 * [116א](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
 * [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
+
 # HealthRelatedRights/Duties/medicalStatementForDependency
 medicalStatementForDependency
 Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions
@@ -440,3 +377,9 @@ Worker is not eligible for sick days from the employer because of this condition
 freelanceConsultLawyer
 Freelance workers should consult a lawyer regardign benefits from their employers.
 
+# HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
+unset
+
+
+# HealthRelatedRights/Properties/EmploymentDescription/Sector/unset
+unset

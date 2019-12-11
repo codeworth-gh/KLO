@@ -1,0 +1,77 @@
+11 months or more: 11 months or more
+12-24 months: 12-24 months
+24 months or more: 24 months or more
+51 Months or more: 51 Months or more
+6-11 months: 6-11 months
+62 to 67: 62 to 67
+67 and over: 67 and over
+Divorce: Divorce
+I was sexually harassed: I was sexually harassed
+Less than 51 Months: Less than 51 Months
+Moved in with spouse: Moved in with spouse
+My spouse moved because of work: My spouse moved because of work
+Other: Other
+Over 10 Years: Over 10 Years
+Over 13 Years: Over 13 Years
+Over 63 Months: Over 63 Months
+Over 8 Years: Over 8 Years
+accident during my work: accident during my work
+accident on my way to work: accident on my way to work
+caring for a family member: caring for a family member
+contractor: contractor
+daily: daily
+direct: direct
+employer changed: employer changed
+employer choice: employer choice
+employer collapse: employer collapse
+employer death: employer death
+employer moved to nursing home: employer moved to nursing home
+employer terminally hospitalized: employer terminally hospitalized
+end of contract: end of contract
+enrolled to civil service: enrolled to civil service
+freelance: freelance
+full: full
+health condition of a family member: health condition of a family member
+health issues: health issues
+hourly: hourly
+involuntary: involuntary
+jointEmployment: jointEmployment
+less than 6 months: less than 6 months
+me: me
+monthly: monthly
+moved: moved
+my child, parent, or spouse: my child, parent, or spouse
+my employer: my employer
+my grandchild, grandfather, or parent in law: my grandchild, grandfather, or parent in law
+my health condition: my health condition
+my initiative: my initiative
+my medical condition: my medical condition
+no: no
+other: other
+other family member: other family member
+other non-citizen: other non-citizen
+palestinian with work permit: palestinian with work permit
+parenting: parenting
+partial: partial
+resignation (other): resignation (other)
+retirement: retirement
+road accident: road accident
+severe abuse: severe abuse
+significant breaching of rights: significant breaching of rights
+significant deterioration of employment conditions: significant deterioration of employment conditions
+to a settlement outside the green line: to a settlement outside the green line
+to an agricultural settlement: to an agricultural settlement
+to an eligible settlement: to an eligible settlement
+under 62: under 62
+under 67: under 67
+undocumented: undocumented
+varied: varied
+visa of type 2a5: visa of type 2a5
+visa of type b1Agriculture: visa of type b1Agriculture
+visa of type b1CareGiver: visa of type b1CareGiver
+visa of type b1Construction: visa of type b1Construction
+visa termination: visa termination
+worker death: worker death
+yes: yes
+yes, I don't want to stay: yes, I don't want to stay
+yes, employer refused: yes, employer refused
