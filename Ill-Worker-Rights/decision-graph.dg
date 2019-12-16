@@ -1,11 +1,11 @@
-[set: Duties+=kupatHolimNotice; SalaryUnits=unset; Sector=unset]
 [>initialFilter-fired< ask:
   {text: Did you lose your job while realising your health-related benefits?}
   {answers:
     {yes: [>rej-endOfWork< reject: Please use our End of Employment interview, at: https://klo-rights.codeworth.io/models/end-of-employment/latest]}
   }
 ]
-[set: Duties += supportingMedicalDocumentation]
+[set: SalaryUnits=unset; Sector=unset]
+[set: Duties+=supportingMedicalDocumentation, kupatHolimNotice]
 [>sIntro< section:
   {title: Introduction}
   [>initialFilter-missWork< ask:
@@ -53,16 +53,22 @@
     {text: What is your current status in Israel? }
     {answers:
       {citizen: [set: LegalStatus=israeliCitizenship]}
-      {visa of type b1: [set: LegalStatus=b1Visa; EmploymentType=employee; SalaryUnits=hourly]}
-      {no permit:       [set: LegalStatus=noPermit; EmploymentType=employee]}
+      {visa of type b1: [set: LegalStatus=b1Visa;      EmploymentType=employee; SalaryUnits=hourly;
+                              InternalFlags+=b1LikeMedicalStatus,foreignWorker]}
+      {no permit:       [set: LegalStatus=noPermit;    EmploymentType=employee; InternalFlags+=foreignWorker]}
       {palestinian:     [set: LegalStatus=palestinian; EmploymentType=employee; SalaryUnits=hourly] }
     }
+  ]
+  [consider:
+    {slot: LegalStatus}
+    {options:{israeliCitizenship:}}
+    {else: [set: Recommendations+=emergencyMedicalTreatmentIsFree]}
   ]
   [>gender< ask:
     {text: Are you a woman?}
     {answers:
       {yes: [set: Gender=female]}
-      {no: [set: Gender=male]}
+      {no:  [set: Gender=male  ]}
     }
   ]
   [call: pCaseProperties]
@@ -78,8 +84,8 @@
           }
           {answers:
             {accident: [call: pAccidents]}
-            {temporary illness (medium/light): [call: pSickDaysCalcTemp][todo: temporary illness (medium/light)]}
-            {serious illness or disability: [todo: serious illness or disability]}
+            {temporary illness (medium/light): [call: pSickDaysCalcTemp][call: pLightIllness]}
+            {serious illness or disability: [call: pSeriousIllness]}
             {work-related illness: [todo: work-related illness]}
           }
         ]
@@ -92,10 +98,11 @@
           }
           {answers:
             {accident: [call: pAccidents]}
-            {temporary illness (medium/light): [call: pSickDaysCalcTemp][todo: temporary illness (medium/light)]}
-            {serious illness or disability: [todo: serious illness or disability]}
+            {temporary illness (medium/light): [call: pSickDaysCalcTemp][call: pLightIllness]}
+            {serious illness or disability: [call: pSeriousIllness]}
             {work-related illness: [todo: work-related illness]}
             {pregnancy:
+              [set: InternalFlags+=pregnancy]
               [>pregrnancy-complications< ask:
                 {text: Were you instructed by a doctor not to work during the pregrnancy?}
                 {answers:
@@ -103,6 +110,32 @@
                   {no:  [set: Pregnancy=regular]}
                 }
               ]
+              [when:
+                {InternalFlags+=foreignWorker:
+                    [>foreign-pregnancy-privateMedical< ask:
+                      {text: Do you have private medical insurance?}
+                      {answers:
+                        {yes: [set: InternalFlags += b1LikeMedicalStatus]}
+                        {no:  [set: Recommendations+=getPrivateMedicalInsurance; SimpleBenefits+=privateHealthInsuranceByEmployer]}
+                      }
+                    ]
+                  }
+              ]
+              [consider:
+                {slot: LegalStatus}
+                {options:
+                  { b1Visa:
+                    [>b1MoreThan9Month< ask:
+                      {text: Were you employed in Israel for 9 months or more?}
+                      {answers:
+                        {no: [set: Recommendations+=pregnancyRelatedIssuesNotCovered]}
+                        {yes: [set: SimpleBenefits+=pregnancyRelatedIssuesCovered]}
+                      }
+                    ]
+                  }
+                }
+              ]
+              [call: pAllIllness]
             }
             {miscarrige: [todo: miscarrige]}
             {fertility treatments: [todo: fertility treatments]}
@@ -132,7 +165,7 @@
             }
             {answers:
               {yes:
-                [set: TaxExemptions+=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals;
+                [set: TaxExemptions  +=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals;
                       SickParentFlags+=niiParentNursingAllowance, fundingForNursingHospitalization;
                       Recommendations+=noEligibilityForSickDays]}
             }
@@ -163,7 +196,6 @@
             }
           ]
         }
-
       }
     ]
   ]
@@ -272,6 +304,13 @@
       }
     ]
   ]
+  [consider:
+    {slot: LegalStatus}
+    {options:
+      { b1Visa: [set: SimpleBenefits+=canRegisterChildToKupatHolim] }
+      { noPermit: [set: SimpleBenefits+=canRegisterChildToKupatHolim] }
+    }
+  ]
 --]
 
 <**
@@ -375,9 +414,13 @@ Initial case data gatehring
     {terms:
       {work related: An accident that happend during work, or on the way to/from it.}
       {non work-related: An accident that did not happen at work, or on the way to/from work. }
+      {road accident: Any accident that involves a motorized vehicle. This also includes electric scooters, cars, mobile cranes}
     }
     {answers:
       {road accident:
+        [set: SimpleBenefits+=freeMedicalCare;
+              RoadAccidentCompensation+=lawyerFeesCapped,roadAccidentPayment;
+              Duties+=roadAccidentInvolvmentStatement]
         [>accident-road-filter< ask:
           {text: Was the travel related to your work?}
           {terms:
@@ -385,9 +428,12 @@ Initial case data gatehring
           }
           {answers:
             {yes: [call: pWorkRelatedAcciedentBenefits] }
-            {no:
-              [set: SimpleBenefits+=roadAccidentPayment, freeMedicalCare]
-            }
+          }
+        ]
+        [consider:
+          {slot: LegalStatus }
+          {options:
+            { israeliCitizenship: [set: RoadAccidentCompensation+=possibleNIAid] }
           }
         ]
       }
@@ -423,4 +469,22 @@ Initial case data gatehring
       {civilService: [set: SicknessPay = fullFromDayOne]}
     }
   ]
+--]
+
+[-->pAllIllness<
+  [when:
+    {InternalFlags+=b1LikeMedicalStatus:
+      [set: Recommendations += checkPrivateInsuranceCoverage, keepPayingPrivateInsurance, lossOfWorkAbilityWarning]
+    }
+  ]
+--]
+
+[-->pSeriousIllness<
+  [call: pAllIllness]
+  [todo: serious illness]
+--]
+
+[-->pLightIllness<
+  [call: pAllIllness]
+  [todo: light illness]
 --]

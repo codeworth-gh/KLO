@@ -2,7 +2,7 @@ HealthRelatedRights: consists of Duties, Benefits, Recommendations, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
                                                           TimeInIsrael, Pregnancy, AccidentType,
-                                                          Parenting, RelationToSickPerson.
+                                                          Parenting, RelationToSickPerson, InternalFlags.
 
 Duties[What the employee is required do]: some of
   supportingMedicalDocumentation,
@@ -13,6 +13,7 @@ Duties[What the employee is required do]: some of
   guardianDocument[״צו אפוטרופוס חתום״],
   declaration_OnlyAdultToUseBenefits[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
   handleVisa,
+  roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident],
   kupatHolimNotice[Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.].
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -26,7 +27,14 @@ Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSic
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
   noEligibilityForSickDays[Worker is not eligible for sick days from the employer because of this condition.],
-  freelanceConsultLawyer[Freelance workers should consult a lawyer regardign benefits from their employers.]
+  freelanceConsultLawyer[Freelance workers should consult a lawyer regardign benefits from their employers.],
+  checkPrivateInsuranceCoverage[Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.],
+  keepPayingPrivateInsurance[Must keep paying private insurance, even when not working.],
+  lossOfWorkAbilityWarning[If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.],
+  getPrivateMedicalInsurance[You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
+    Employer can take between 125 to 136 ILS for this from your monthly salary.],
+  emergencyMedicalTreatmentIsFree[All emergency medical treatment is free in Israel.],
+  pregnancyRelatedIssuesNotCovered[The medican insurance will not cover any pregrnancy-related issues.]
   .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
@@ -66,9 +74,13 @@ ChildSickness: some of sickChildPay,
    dialysisOrMalignantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
    disabledChildPay,
    sickChildDays[Parents can use up to 8 sick days from their allowance for aiding their sick children.].
+
 SimpleBenefits: some of
-  freeMedicalCare,
-  roadAccidentPayment[Paid by the insurance company of the car].
+  freeMedicalCare[Not paying medical bills, including self pay.],
+  canRegisterChildToKupatHolim[Child can be registered to Kupat Holim Meuhedet (https://www.meuhedet.co.il/en/)],
+  privateHealthInsuranceByEmployer[The employer has to provide private health insurance, even for non-registered workers.],
+  pregnancyRelatedIssuesCovered[Private insurance has to cover all preganancy-related treatments, including amniocentesis when recommended.]
+.
 
 SicknessPay: one of
   gradual[None for the first day, 1/2 salary for days 2 and 3, full after],
@@ -96,9 +108,14 @@ TaxExemptions: some of
   taxFreeFundsWithdorwals[Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf]
 .
 
+RoadAccidentCompensation: some of
+  possibleNIAid[May be eligile for stipend or other help from National Insurance.],
+  lawyerFeesCapped[A lawyer request more than a specified amount for handing this case.],
+  roadAccidentPayment[Paid by the insurance company of the vehicle. Needs to be claimed.]
+.
+
 SeveranceProtection: TODO.
 SicknessDaysRedumption: TODO.
-RoadAccidentCompensation: TODO.
 PersonalAccidentCompensation: TODO.
 UnpaidLeave: TODO.
 CompensationAccumulation: TODO.
@@ -109,3 +126,8 @@ UnpaidVacation: TODO.
 PrivateInsuranceCompensation: TODO.
 MedicalCare: TODO.
 MaxSickDays[Amount of sick days, varies by sector]: TODO.
+
+InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of
+  b1LikeMedicalStatus,
+  foreignWorker[Not Israeli or Palestinian],
+  pregnancy.
