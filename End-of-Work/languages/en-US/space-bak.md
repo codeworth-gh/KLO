@@ -1,92 +1,90 @@
 # EndOfWork
-סיום העסקה
+end of work
 
 # EndOfWork/EmployerObligations
-חובות מעסיק
-צעדים שהמעסיק חייב לבצע בתהליך סיום העסקה
+employer's debts
+steps that the employer must perform during the termination of employment
 ---
-צעדי חובה בתהליך סיום העבודה - במידה ולפחות אחד מהצעדים לא הושלם כחוק, סיום העבודה אינו תקין וייתכן זכאות לפיצוי מיוחד
+compulsory steps in the process of termination- if one of them is not completed as a termination of work law is not valid and may be eligibility for special compensation
 
 
 # EndOfWork/EmployerObligations/priorNotice
-הודעה מוקדמת
-הודעה בכתב מטעם המעסיק שמיידעת את העובד על הכוונה לסיים את העסקתו
+prior notice
+written notice of the employer who informs the employee of the intention to terminate his employment
 ---
-הודעה מוקדמת לפיטורים במכתב שניתן לפני הפסקת העבודה במועד התואם את תקופת ההעסקה של העובד
-[לקריאה נוספת](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
+prior notice of termination of employment in a letter given before termination of employment at the time that corresponds to the employee's employment period
+https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2
 
 
 # EndOfWork/EmployerObligations/hearing
-שימוע
-שיחה שעל המעסיק לקיים לעובד לפני הפיטורים
+hearing
+a call on the employer to do with the employee before the termination
 ---
-לפני שמתקבלת החלטה על פיטורים המעסיק מחויב להזמין את העובד בכתב לשימוע ולכלול בהזמנה את הסיבות לכך שנשקל צעד של פיטורים, על המעסיק לתת לעובד אפשרות להיות מיוצג בשימוע, ולהקשיב לתשובותיו לטענות נגדו. אסור לקבל החלטה על פיטורים לפני שנעשו כל הצעדים האלה ולפני שהמעסיק הקשיב לתשובות העובד לטענות נגדו.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%A9%D7%99%D7%9E%D7%95%D7%A2_%D7%9C%D7%A4%D7%A0%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D).
+before making a decision about layoffs, the employer is obliged to invite the worker in writing to the hearing and include the reasons why weighed a step of termination. The employer should give the employee a chance to be represented in the hearing and listen to his answers to the claim against him. It is forbidden to make a decision on layoffs before all these measures were made, and before the employer listened to the answers of the employee.
 
 # EndOfWork/EmployerObligations/workPeriodLetter
-אישור תקופת העבודה
-מכתב שנועד לכל שימוש של העובד וכולל בתוכו את תאריך תחילת עבודה ותאריך סיום העבודה. יש לספקו עם סיום העבודה.
+approving a working period
+a letter for each employee's use and includes a work start date and a finish date. It has to be given when the job is done. 
 
 # EndOfWork/EmployerObligations/pensionFundNotice
-הודעה לקרן הפנסיה על הפסקת העבודה
-הודעה לקרן הפנסיה הכוללת את תקופת ההעסקה המלאה ואת דיווח המעסיק על הפסקת הההעסקה ועל אופי ההפסקה (פיטורים או התפטרות).  
+notice to pension fund for termination of work
+notice to the pension fund that includes the full employment period and the employer's report on the termination of employment and nature of employment (termination or resignation)
 
 # EndOfWork/EmployerObligations/finalAccountSettlement
-גמר חשבון
-עם תשלום השכר האחרון על המעסיק לחשב את יתרת הזכויות שנצברו בתקופת העבודה, לרבות יתרת דמי הבראה, פידיון ימי חופשה שלא נוצלו, השלמת פיצויי פיטורים או עמלות - ככל שיש זכאות.
----
-במסגרת גמר חשבון נכללים דמי פדיון חופשה, דמי הבראה, פיצויי פיטורים, דמי מחלה, שחרור כספים שנצברו בקופות הגמל, אישור לעובד על תקופת עבודתו, מכתב העברת בעלות, טפסי 161 ו-161א וכתב ויתור תביעות לחתימת העובד.
+final account
+with the last payment, on the employer to calculate the balance of the rights incurred in the labor period, including the balance of convalescence pay, redemption of days off that have not been used, completing severance pay or commissions- as long as there is eligibility. 
 
-כדאי לבדוק ללא דיחוי שחישוב הזכויות שביצע המעסיק מדוייק. הזכות לפדיון ימי החופשה מתיישנת לאחר 4 שנים מיום הפסקת העבודה. יתר הזכויות מתיישנות לאחר 7 שנים מיום הפסקת העבודה.
+as part of an account final included redemption of days off, convalescence pay, severance pay, disease pay, release of funds earned in provident funds, approval for the employee on his period of his work, letter of transfer of ownership, forms 161 and 161a and disclaimer of employee's signature.
+
+it is worthwhile to check without delay that the calaulation of the rights carried out by the employer is accurate. The right to redemption of days off is being filed after 4 years from the date termination. The remaining rights are being after 7 years from the date of termination. 
 
 # EndOfWork/EmployerObligations/honorFormerContractorSeniority
-הכרה בותק קודם
-הכרת המעסיק החדש בתקופה בה הועסק העובד ע"י המעסיק הקודם במקרה של חילופי מעסיקים באותו מקום עבודה, לצורך תשלום דמי הבראה, חופשה, פנסיה, ותוספות ותק.
+recognition of seniority at work
+understanding the new employer at the time employed by the former employer in an exchange of employers in the same workplace for the purpose of paying a convalescent, vacation, pension and seniority addition. 
+
 
 # EndOfWork/EmployerObligations/form161
-טופס 161
-הודעת המעסיק לרשויות המס על תשלום כספים ששילם לעובד במועד העזיבה, כגון: פיצויים
+form 161
+the employer's message to the tax authorities about paying money paid to the employee at the time of departure, such as compensation.
 ---
-טופס שממלא המעסיק לרשויות המס, ובו תאריכי העבודה, סיבת הפסקת העבודה, ושווי כספי של הזכויות עם סיום העבודה. לפי טופס זה נקבע גובה המס אשא יחול על משיכת פיצויי פיטורים מקרן הפנסיה.
+a form that the employer fills into the tax authorities has the work dates, the reason for the termination of the work ant the monetary value of the rights upon termination. According to this form, the tax charge is set on the withdrawal of severance pay from the pension fund. 
 
 # EndOfWork/EmployerObligations/jobTerminationConfirmation
-מכתב פיטורים
-מכתב פיטורים מהווה בסיס לקבלת זכויות שונות לרבות דמי אבטלה, והוא חובה מכוח סעיף 2(א) לחוק הודעה מוקדמת. יש לכלול בו את תקופת העבודה,
+letter of termination 
+a letter of termination is a basis for obtaining various rights, including unemployment fees and is mandatory according to section 2a of the prior notice law. It must be included in the working period. 
 ---
-על המעסיק למסור הודעה זו לעובד בתוך שבועיים מהיום האחרון לעבודה, או בתוך שבוע ממועד דרישת העובד את המכתב, לפי המוקדם משניהם.
-המכתב צריך לכלול את תקופת ההעסקה של העובד.
-מכתב זה נדרש בין היתר, כדי שהעובד יוכל לממש את זכויותיו (לדמי אבטלה) בשירות התעסוקה.
-אם המעסיק לא נותן לעובד מכתב פיטורים, הוא עובר על החוק ועלול להיענש.
+this message should be delivered to the employee within two weeks from the last day of work or within a week from the time of the employee's requirement, by the earliest. 
+the letter should include the employee's employment period. 
+this letter is required, among other things, that the worker can exercise his rights (unemployment fees) in the employment service.
 
+if the employer does'nt give the employee a letter of termination, he breaking the law and can be punished.
 # EndOfWork/Duties
-חובות העובד עם סיום ההעסקה
-
+employee's duties with the termination of employment.
 
 # EndOfWork/Duties/findNewEmployer
-מעסיק חדש בתוך 90 יום
-מהגרי עבודה בהיתר אינם רשאים לשהות בישראל למעלה מ-90 ימים ללא מעסיק, ומסתכנים באובדן אשרה ובהרחקה מישראל אם לא ימצאו מעסיק חדש תוך 90 ימים לכל היותר מרגע סיום העסקתם אצל מעסיקם הקודם.
+a new employer within 90 days 
+migrant workers are'nt permitted to stay in Israel for more than 90 days without an employer and take a risk loss of visa and restraining order from Israel if a new employer doesn't find 90 days at most from the moment of the termination of their former employer. 
 
 # EndOfWork/Duties/healthInsuranceExtension
-הארכת ביטוח רפואי
-תשלום עצמאי של דמי הביטוח הרפואי
+extension of medical insurance.
 ---
-מעסיק עובד זר רשאי להפסיק לעובד הזר את דמי הביטוח הרפואי לאחר שהסתיימה ההעסקה. חשוב שהעובד ימשיך את תשלומי הביטוח הרפואי באופן עצמאי בתקופה שעד למציאת מעסיק חדש שייקח על עצמו את תשלום הביטוח, וזאת כדי לא לאבד זכויות בריאותיות.
+an employee who employs a foreign worker may stop the foreign worker's medical insurance after the employment has ended. 
+ it is important that the employee continue the medical insurance payments independently in a period of time to find a new employer who will take the payment so as not to lose health rigts.  
 
 # EndOfWork/Duties/employeePriorNoticeForEmploymentChange
-הודעה על התפטרות מותנית
-הודעת עובד כי יתפטר מהעבודה לולא ישתנו תנאיו או תתוקן ההרעה בתנאי עבודתו
+conditional resignation notification
+an employee's message that quit from work without being changed or will be corrected in conditions.
 ---
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A9%D7%94%D7%AA%D7%A4%D7%98%D7%A8_%D7%A2%D7%A7%D7%91_%D7%94%D7%A8%D7%A2%D7%94_%D7%9E%D7%95%D7%97%D7%A9%D7%99%D7%AA_%D7%91%D7%AA%D7%A0%D7%90%D7%99_%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94).
-עובד שתנאי העבודה שלו השתנו לרעה או זכויותיו הופרו באופן חמור, ייחשב כאילו פוטר רק אם ייתן מראש הזדמנות למעסיק לתקן את דרכיו, להפסיק את הפגיעה בזכויות או לבטל את ההרעה בתנאים.
+an employee whose work condition has been misused or his rights have been severely violated, it will be deemed to be fired only if he gives a chance for an employer to correct it way, to stop infringement of rights or revoke the conditions.  
 
 # EndOfWork/Duties/employeePriorNotice
-מכתב הודעה מוקדמת של עובד על התפטרות
-עובדים המעוניינים להתפטר מעבודתם, מחויבים לתת למעסיק הודעה מוקדמת בכתב.
+early notice letter of employee on resignation.
+employees who wish to resign from their work are obliged to give the employer a prior written notice.
 ---
-עובד שמבקש להתפטר מעבודתו חייב לתת למעסיק הודעה מוקדמת מראש ובכתב, במועדים הנובעים מתקופת עבודתו:
-[לקריאה נוספת](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
-במהלך התקופה שמרגע מתן הודעת ההתפטרות ועד סיום העבודה, המעסיק חייב להעניק לעובד את כל תנאי העבודה שהיה זכאי להם לפני כן.
-העובד מחויב במהלך אותה תקופה להעמיד את עצמו לרשות העבודה ולהמשיך לעבוד באותו היקף ובאותה רצינות, כפי שנדרשו ממנו לפני כן.
+an employee who seeks to resign from his work must give the employer a pre-written notice at times arising from his work period. 
+[to read more](https://www.gov.il/he/departments/guides/notice-of-dismissal-and-resignation?chapterIndex=2).
+during the period that once the granting of resignation to the end of the job, the employer must give the employee all the conditions of the work they had before.
+the employee is committed during the same period to put himself in the labor authority and continue to work in the same scope and seriousness as it was needed before. 
 
 # EndOfWork/Duties/provideDetailedReasoningQoL
 הנמקת התפטרות בשל מעבר מעסיק
@@ -98,10 +96,11 @@
 # EndOfWork/Duties/provideEvidenceForNewLocation
 חובת ההוכחה להעתקת מקום מגורים המזכה בפיצויים
 בתנאים מסויימים, התפטרות עקב מעבר דירה מזכה את העובד בפיצויי פיטורים. על העובד להוכיח שכתוצאה מהמעבר ליישוב החדש נוצר לו קושי להמשיך ולעבוד אצל המעסיק הקודם ושההתפטרות נעשתה בשל מעבר הדירה.
+
 ---
 על העובד להציג למעסיק ראיות לכך שהמעבר שלו למקום מגורים חדש מזכה אותו בפיצויי פיטורים: נישואין, גירושין, מעבר ליישוב חקלאי, מעבר ליישוב באזור פיתוח, מעבר להתנחלות, מעבר עם בן זוג בשליחות מדינה, הצטרפות לבן זוג (בלי נישואין).
 לכל אחת מהאפשרויות יש תנאים מיוחדים שיש לוודא בטרם פנייה למעסיק:
-[לקריאה נוספת](https://www.nevo.co.il/law_html/Law01/p189_004.htm#Seif8).
+[פרטים נוספים](https://www.nevo.co.il/law_html/Law01/p189_004.htm#Seif8).
 
 
 # EndOfWork/Duties/possibleGeographicRestrictions
@@ -113,15 +112,13 @@ https://www.nevo.co.il/law_html/law01/501_031.htm
 
 
 # EndOfWork/Duties/issueDepositRequest
-שחרור כספי פיקדון לעובדים זרים
-לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות, יש להגיש בקשה למשיכת הכספים שנצברו לזכות העובד בפיקדון.
+שחרור כספי פיקדון עובדים זרים
+לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון
 ---
-לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון.
-למילוי הטופס:
+לפחות שבועיים לפני מועד העזיבה מהארץ לצמיתות יש להגיש בקשה למשיכת כספים שנצברו לזכות העובד בפיקדון, בטופס:
 https://www.gov.il/he/service/request_for_deposit_withdrawal
-[לקריאה נוספת](https://www.gov.il/he/Departments/Guides/guide_for_infilitrators_regarding_monies_from_employers?chapterIndex=6).
 
-עובדים שנשארו בישראל מעבר ל-60 יום לאחר תום האשרה שלהם, עלולים להיות כפופים לניכויים מהפיקדון. במידה ויש נסיבות מיוחדות להשתהות בעזיבת ישראל בתום האשרה יש לפנות בתום האשרה למחלקת הפיקדונות, לנמק את הסיבה להתעכבות, לציין תאריך העזיבה בצירוף כרטיס טיסה, ולבקש שלא לנכות מהפיקדון בגין העיכוב, על דחיית בקשה זו ניתן להגיש ערעור.
+עובדים שנשארו בישראל מעבר ל-60 יום לאחר תום האשרה שלהם, עלולים להיות כפופים לניכויים מהפיקדון. במידה ויש נסיבות מיוחדות להשתהות בעזיבת ישראל בתום האשרה יש לפנות בתום האשרה למחלקת הפיקדונות, לנמק את הסיבה להתעכבות, לציין תאריך עזיבה בצירוף כרטיס טיסה, ולבקש שלא לנכות מהפיקדון בגין העיכוב, על דחיית בקשה כזו אפשר להגיש ערעור.
 
 # EndOfWork/Duties/provideEvidenceForCaringForFamily
 הוכחת טיפול בבן משפחה חולה
@@ -132,25 +129,24 @@ https://www.gov.il/he/service/request_for_deposit_withdrawal
 
 # EndOfWork/Restrictions/canOnlyWorkAsReleaver
 רק כמחליף זמני
-העובד רשאי לעבוד רק כמחליף זמני.
+העובד רשאי לעבוד רק כמחליף זמני
 ---
-עובד שהעסקתו הסתיימה לאחר 51 עד ל-63 חודשים בישראל, יוכל בתקופה שעד ל-63 חודשי העסקה לעבוד בעבודות של החלפה זמנית בלבד.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%94%D7%A2%D7%A1%D7%A7%D7%94_%D7%96%D7%9E%D7%A0%D7%99%D7%AA_%D7%A9%D7%9C_%D7%A2%D7%95%D7%91%D7%93_%D7%96%D7%A8_%D7%91%D7%A1%D7%99%D7%A2%D7%95%D7%93_%D7%9B%D7%A9%D7%94%D7%A2%D7%95%D7%91%D7%93_%D7%94%D7%A7%D7%91%D7%95%D7%A2_%D7%99%D7%A6%D7%90_%D7%9C%D7%97%D7%95%D7%A4%D7%A9%D7%94_%D7%91%D7%97%D7%95%22%D7%9C).
+עובד שהעסקתו הסתיימו לאחר בין 51 ל-63 חודשים בישראל, יוכל בתקופה שעד ל-63 חודשי העסקה לעבוד בעבודות של החלפה זמנית בלבד
 
 
 # EndOfWork/Restrictions/requiresEmployerHumanitarianVisaApplication
 דרישות להעסקה באשרה הומניטרית
-רשימת הדרישות אשר נחוצות לשם העסקה באשרה הומניטרית, לאחר 63 חודשי שהייה בישראל.
 ---
 עובד שהעסקתו הסתיימה לאחר 63 חודשי שהייה בישראל יוכל לעבוד רק אצל מעסיק בעל אשרה הומניטרית מיוחדת. על המעסיק להגיש בקשה רק עבור עובדים שעומדים בתנאים לקבלת אשרה כזו. יש לוודא שהמעסיק הגיש בקשה כאמור ושהעובד עומד בתנאים לקבל את האישור, שאם לא כן המשך שהייתו והעסקתו בישראל יהיו שלא כדין והרשות עלולה לנכות סכומים מהפיקדון על שמו.
 לרשימת התנאים לקבלת עובד באשרה הומניטרית ראו:
 https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_reasons
-[לקריאה נוספת](https://www.gov.il/he/Departments/Guides/guide_for_infilitrators_regarding_monies_from_employers?chapterIndex=6).
+
+
 
 # EndOfWork/Restrictions/cannotWorkInIsrael
 לא ניתן להמשיך לעבוד בהיתר בישראל
 ---
-עובדים זרים, שלא בענף הסיעוד, לא יורשו לעבוד בישראל אם חלפו 63 חודשים מכניסתם לישראל באשרה.
+עובדים זרים שלא בענף הסיעוד לא יורשו לעבוד בישראל אם חלפו 63 חודשים מכניסתם לישראל באשרה.
 עובדים בענף הסיעוד שכבר הועסקו באשרה הומניטרית לא יורשו להמשיך לעבוד בישראל באשרה המוניטרית אצל מעסיק נוסף.
 עובדי סיעוד שחלפו 13 שנה מיום כניסתם לישראל בהיתר לא יוכלו לקבל היתר להעסקה אצל מעסיק חדש, בכל אשרה שהיא לרבות אשרה הומניטרית עבור נכים.
 
@@ -166,47 +162,45 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 
 # EndOfWork/Benefits/UnemploymentBenefits
 דמי אבטלה
-זכאות המותנית בגיל, תקופת עבודה, ומעמד חוקי בישראל.
+זכאות המותנית בגיל, תקופת עבודה, ומעמד חוקי בישראל
 ---
- הזכאות לדמי אבטלה מותנית בגיל, בתקופת עבודה רצופה מינימלית (לאו דווקא אצל אותו מעסיק) ובמעמד תושב בישראל. 
- [לקריאה נוספת](https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx).
+דמי אבטלה, הזכאות מותנית בגיל, בתקופת עבודה רצופה מינימלית (לאו דווקא אצל אותו מעסיק) ובמעמד תושב בישראל. לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
-הזכות לדמי אבטלה מתיישנת לאחר 12 חודשים מיום הפסקת העבודה.
+הזכות מתיישנת לאחר שנה מיום הפסקת העבודה.
 
 # EndOfWork/Benefits/UnemploymentBenefits/after90Days
 זכאות לדמי אבטלה לעובד שהתפטר ביוזמתו
 ---
 לאחר 90 ימי אבטלה יש זכאות לקבל דמי אבטלה גם אם ההתפטרות היתה ביוזמת העובד, גובה דמי האבטלה והזכאות נקבעים בהתאם לגיל, לתקופת עבודה רצופה (לאו דווקא אצל אותו מעסיק) ובהינתן מעמד תושב בישראל.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx).
+לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 
 # EndOfWork/Benefits/UnemploymentBenefits/immediate
-זכאות מיידית לדמי אבטלה
+זכאות מיידית
 ---
 מי שפוטר מהעבודה או התפטר בנסיבות של פיטורים זכאי לדמי אבטלה באופן מיידי, גובה דמי האבטלה והזכאות נקבעים בהתאם לגיל, לתקופת עבודה רצופה (לאו דווקא אצל אותו מעסיק) ובהינתן מעמד תושב בישראל.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx).
-
+לפירוט ראו:
+https://www.btl.gov.il/benefits/Unemployment/Pages/default.aspx
 
 # EndOfWork/Benefits/Pension
 פנסיה
-קצבה הניתנת בהגעה לגיל הפרישה מהעבודה.
 ---
 עובדים ישראלים שהגיעו לגיל פרישה זכאים לקצבה מקרן הפנסיה.
 עובדים זרים שהעסקתם הסתיימה מכל סיבה שהיא, זכאים לשווי הזכאות להפרשות לפנסיה בתום תקופת העבודה, בניכוי הסכומים שהופקדו בידי המעסיק לקרן הפיקדון לעובדים זרים.
-[למחשבון קו לעובד](https://www.kavlaoved.org.il/Kav-LaOved-Calculator-master/calculator_nologo.html)
-[לקריאה נוספת](https://www.gov.il/he/Departments/Guides/guide_for_infilitrators_regarding_monies_from_employers?chapterIndex=6).
+[מחשבון קו לעובד](https://www.kavlaoved.org.il/Kav-LaOved-Calculator-master/calculator_nologo.html)
+
 
 # EndOfWork/Benefits/Pension/keep
 המשך הפרשות לפנסיה בתקופת אבטלה
 ---
-יש משמעות רבה לרצף בהפרשות לקרן הפנסיה, ולפיכך לעתים קרובות מומלץ להמשיך את ההפרשות לקרן הפנסיה גם בתקופה בה אין מעסיק שמחובתו לבצע את ההפרשה. לקבלת הסבר והמלצה אישית יש לפנות לקרן בה מתנהל חשבון הפנסיה שלך או ליועץ פנסיוני.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D).
+יש משמעות רבה לרצף בהפרשות לקרן הפנסיה, ולפיכך לעתים קרובות מומלץ להמשיך את ההפרשות לקרן גם בתקופה בה אין מעסיק שמחובתו לבצע את ההפרשה. לקבלת הסבר והמלצה אישית יש לפנות לקרן בה מתנהל חשבון הפנסיה שלך או ליועץ פנסיוני.
 
 # EndOfWork/Benefits/Pension/compensationForMissing
 פיצוי על אי הפרשות לפנסיה
 ---
 כל העובדים שמעסיקם לא הפריש לקרן הפנסיה את הסכומים המינימליים לפי חוק, מכל סיבה שהיא, זכאים לפיצוי בגובה הסכום שלא הופרש לקרן פנסיה או לקרן הפיקדון לעובדים זרים, בעת סיום ההעסקה.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D).
 
 הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
 
@@ -214,17 +208,13 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 זכאות לקצבה
 ---
 עובדים שהגיעו לגיל פרישה ו/או עובדים שאיבדו כושר עבודה, זכאים לקצבה מאת קרן הפנסיה.
-[למחשבון קו לעובד](https://www.kavlaoved.org.il/Kav-LaOved-Calculator-master/calculator_nologo.html)
 
 # EndOfWork/Benefits/Properties
 זכויות כן/לא
 
 # EndOfWork/Benefits/Properties/priorNoticeSubstitute
 חלף הודעה מוקדמת
-פיצוי על אי-הודעה מוקדמת על פיטורי עובד
 ---
-מעביד המעונין שהודעת פיטורים שנתן לעובד תיכנס לתוקף באופן מיידי חייב בתשלום פיצוי לעובד על שלילתה של תקופת ההודעה המוקדמת. 
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%93%D7%A2%D7%94_%D7%9E%D7%95%D7%A7%D7%93%D7%9E%D7%AA_%D7%9C%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D).
 הזכות מתיישנת לאחר 7 שנים מיום הפסקת העבודה
 
 # EndOfWork/Benefits/Properties/specialCompensations
@@ -233,7 +223,6 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Benefits/Properties/disabilityAllowance
 קצבת נכות
 יש לבדוק עם ביטוח לאומי האם העובד זכאי לקצבת נכות.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/Disability/Pages/%D7%94%D7%96%D7%9B%D7%90%D7%99%D7%9D%20%D7%9C%D7%A7%D7%A6%D7%91%D7%AA%20%D7%A0%D7%9B%D7%95%D7%AA%20%D7%97%D7%95%D7%93%D7%A9%D7%99%D7%AA.aspx).
 
 # EndOfWork/Benefits/Properties/severanceIllegalUnlessApprovedByLaborMinstry
 אישור פיטורין במשרד העבודה
@@ -243,31 +232,25 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 אישור פיטורין במשרד הבטחון
 פיטורין במהלך שירות מילואים, או במשך 30 יום אחריו, דורש אישור מיוחד ממשרד הבטחון
 
+
 # EndOfWork/Benefits/Properties/bankruptcyAllowance
 קצבת פשיטת רגל
-העובד מקבל פיצויי פיטורין מביטוח לאומי, במקום מהמעסיק שפשט רגל.
+העובד מקבל פייצויי פיטורין מביטוח לאומי, במקום מהמעסיק שפשט רגל.
 ---
-עובד שכיר שמעסיקו פשט את הרגל או שהחברה שעבד בה התפרקה, זכאי לתשלום מהביטוח הלאומי כפיצוי על שכר עבודה, פיצויי פיטורין ותשלום לקופת גמל שמעסיקו נותר חייב לו עד לסכום המקסימלי הקבוע בחוק.
 הזכות מתיישנת אחרי שנה מיום הפסקת העבודה.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/Bankruptcy_or_%20Corporate_Liquidation/Pages/default.aspx).
 
 # EndOfWork/Benefits/Properties/parentalLeave
 חופשת הורה
 
 # EndOfWork/Benefits/Properties/birthGrant
 מענק לידה
-תשלום מביטוח לאומי לאישה היוצאת לחופשת לידה.
 ---
-דמי לידה משולמים מביטוח לאומי לאישה עובדת שיצאה לחופשת לידה. דמי הלידה נועדו לפצות את היולדת על אובדן הכנסתה בתקופה שאינה עובדת לרגל ההיריון והלידה.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/maternity/Childbirth_Allowance/Pages/default.aspx).
 הזכות מתיישנת אחרי שנה מיום הלידה.
 
 # EndOfWork/Benefits/Properties/severancePay
 פיצויי פיטורין
-
 ---
 פיצויים אלו מחושבים לפי משך ההעסקה. הפקדון, אם יש כזה, אינו נכלל בחישוב זה. הזכות מתיישנת 7 שנים מיום הפיטורין.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%A8%D7%9B%D7%99%D7%91%D7%99_%D7%94%D7%A9%D7%9B%D7%A8_%D7%94%D7%91%D7%90%D7%99%D7%9D_%D7%91%D7%97%D7%A9%D7%91%D7%95%D7%9F_%D7%9C%D7%A6%D7%95%D7%A8%D7%9A_%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D_%D7%95%D7%94%D7%A4%D7%A8%D7%A9%D7%95%D7%AA_%D7%9C%D7%A4%D7%A0%D7%A1%D7%99%D7%94).
 
 # EndOfWork/Benefits/Properties/newJobAssistance
 סיוע במציאת עבודה חדשה
@@ -309,7 +292,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Notices/significantBreachingOfRightsNotice
 הפרת זכויות משמעותית
 ---
-תוצאה זו מתייחסת רק לזכויות הנובעות מעצם סיום ההעסקה. חשוב לפנות לטיפול בכל התנאים האחרים שהופרו בהזדמנות הראשונה.
+תוצאה זו מתייחס רק לזכויות הנובעות מעצם סיום ההעסקה. חשוב לפנות לטיפול בכל התנאים האחרים שהופרו בהזדמנות הראשונה.
 
 # EndOfWork/Notices/relativeSeverancePay
 פיצויי פיטורין יחסיים
@@ -324,15 +307,14 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Notices/severancePayMethod_Varied
 חישוב פיצויי פיטורין לפי ממוצע
 ---
-שכר חודש אחרון לכל שנת עבודה. שכר חודש יחושב על בסיס ממוצע השעות ב-12 חודשי העבודה האחרונים. 
-למשל, אם ב-12 החודשים האחרונים עבדת 20 שעות בממוצע, והשכר בחודש האחרון היה 100 שקלים לשעה, ומשך התעסוקה היה 3 שנים, פיצויי הפיטורין ייהיו:
+שכר חודש אחרון לכל שנת עבודה. שכר חודש יחושב על בסיס ממוצע השעות ב-12 חודשי העבודה האחרונים. למשל, אם ב-12 החודשים האחרונים עבדת 20 שעות בממוצע, והשכר בחודש האחרון היה 100 שקלים לשעה, ומשך התעסוקה היה 3 שנים, פיצויי הפיטורין ייהיו:
 
 `20 x 100 x 3 = 6000₪`
 
 # EndOfWork/Notices/priorNoticePeriod_Monthly
 תקופת הודעה מוקדמת - חודשית
 ---
-לאחר שנה במקום העבודה נדרשת הודעה מוקדמת של חודש
+אחרי שנה במקום העבודה נדרשת הודעה מוקדמת של חודש
 
 # EndOfWork/Notices/priorNoticePeriod_Varied
 תקופת הודעה מוקדמת - משתנה
@@ -345,7 +327,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 
 # EndOfWork/Recommendations/consultLawyer
 ייעוץ משפטי מעורך דין
-במקרים בהם היחסים בין העובד למעסיק אינם חד משמעיים מומלץ להיוועץ בעו"ד.
+במקרים בהם היחסים בין העובד למעסיק אינם חד משמעיים מומלץ להיוועץ בעו"ד
 
 # EndOfWork/Recommendations/sueFormerEmployerSoon
 לפנות בהקדם לבית המשפט
@@ -353,26 +335,25 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 
 # EndOfWork/Recommendations/eligibleForRetroactiveTaxBenefitsWithinAYear
 הקלת מיסוי
-תיתכן הקלה במיסוי מאז המעבר לאזור החדש.
+תיתכן הקלה במיסוי מאז המעבר לאזור החדש
 
 # EndOfWork/Recommendations/payKeens
 תשלום שארים
-תשלום זכויות לשארים על פי חוק - אין צורך בהמתנה לצו הירושה.
+תשלום זכויות לשארים על פי חוק - אין צורך בהמתנה לצו ירושה
 
 # EndOfWork/Recommendations/involveAidOrganizations
 פניה לארגוני סיוע/משטרה
-מומלץ לבקש עזרה מעמותות סיוע, או אפילו מהמשטרה.
+מומלץ לבקש עזרה מעמותות סיוע, או אפילו מהמשטרה
 
 # EndOfWork/Recommendations/reducedBenefitsForOverstay2Month
 פגיעה בזכויות עקב שהות בישראל
-שהייה בישראל למעלה מחודשיים לאחר תום היתר העבודה עלולה להפחית את הסכום שישולם בגין הזכוות הסוציאליות בנתב"ג.
+שהייה בישראל למעלה מחודשיים לאחר תום היתר העבודה עלולה להפחית את הסכום שישולם בגין הזכוות הסוציאליות בנתב"ג
 
 # EndOfWork/Recommendations/humanitarianVisaWarningCareGiver
 אזהרת ויזה הומניטרית
-לאחר שאושרה העסקה אחת באשרה הומניטרית בקשה נוספת תידחה על הסף.
+לאחר שאושרה העסקה אחת באשרה הומניטרית בקשה נוספת תידחה על הסף
 ---
 לאחר שמחליטים על בקשת ויזה הומניטרית, לא ניתן לבקש שנית. לכן יש לשקול היטב עבור איזה מעסיק מבקשים ויזה זו.
-[לקריאה נוספת][https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_reasons].
 
 # EndOfWork/Recommendations/canReportToThePolice
 דיווח למשטרה
@@ -383,11 +364,10 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 הגש תביעה לדמי פגיעה בעבודה למוסד לביטוח לאומי
 ---
 הזכות מתיישנת לאחר שנה מיום הפגיעה.
-[לקריאה נוספת](https://www.btl.gov.il/benefits/Work_Injury/%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94/Pages/default.aspx).
 
 # EndOfWork/Recommendations/uniteEmployeesToDeclareBankruptcy
 ארגון העובדים לבקשת פשיטת רגל
-ניתן להגיש בשם העובדים צו פשיטת רגל או צו פירוק לטובת אפשרות למימוש הזכויות שנפגעו.
+ניתן להגיש בשם העובדים צו פשיטת רגל או צו פירוק לטובת אפשרות למימוש הזכויות שנפגעו
 
 # EndOfWork/Recommendations/checkElderlyAllowance
 קצבת זקנה
@@ -493,7 +473,6 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 מות המעביד
 ---
 הזכויות של העובד במקרה זה ישולמו על ידי המשפחה במקרה והייתה אחראית על ההעסקה, או דרך תביעה של עזבון המעסיק.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A9%D7%9E%D7%A2%D7%A1%D7%99%D7%A7%D7%95_%D7%A0%D7%A4%D7%98%D7%A8).
 
 # EndOfWork/Assertions/ReasonForLeaving/employerHospitalized
 אשפוז מעביד
@@ -507,8 +486,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Assertions/ReasonForLeaving/significantCompensationReduction
 הרעה מוחשית בתנאים
 ---
-סיבות המצדיקות התפטרות בשל "הרעה מוחשית" כוללות: שינויים במקום העבודה, בסדרי העבודה או בתנאי העבודה (שינויים כלליים ושינויים החלים ומשפיעים על עובד בודד), אי-קיום הוראות של חוקים שנועדו להגן על העובדים, אי קיום תנאי משמעותי בחוזה, יחס משפיל. לפני התפטרות ודרישת פיצוי הכרחי לפנות למעסיק בכתב ובעל פה ולתת לו הזדמנות אמיתית לתקן את ההידרדרות בתנאים ולהחזיר המצב לקדמותו. עובד שלא ייתן התראה כזו עלול להפסיד זכאות לפיצויי פיטורים אם ייחליט להתפטר בגלל ההרעה בתנאים.
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A9%D7%94%D7%AA%D7%A4%D7%98%D7%A8_%D7%A2%D7%A7%D7%91_%D7%94%D7%A8%D7%A2%D7%94_%D7%9E%D7%95%D7%97%D7%A9%D7%99%D7%AA_%D7%91%D7%AA%D7%A0%D7%90%D7%99_%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94).
+סיבות המצדיקות התפטרות בשל "הרעה מוחשית" כוללות: שינויים במקום העבודה, בסדרי העבודה או בתנאי העבודה (שינויים כלליים ושינויים החלים ומשפיעים על עובד בודד), אי-קיום הוראות של חוקים שנועדו להגן על העובדים, אי קיום תנאי משמעותי בחוזה, יחס משפיל. לפני התפטרות ודרישת פיצוי הכרחי לפנות למעסיק בכתב ובעל פה ולתת לו הזדמנות אמיתית לתקן את ההידרדרות בתנאים ולהחזיר המצב לקדמותו. עובד שלא ייתן התראה כזו עלול להפסיד זכאות לפיצויי פיטורים אם ייחליט להתפטר בגלל ההרעה בתנאים
 
 # EndOfWork/Assertions/ReasonForLeaving/significantBreachingOfRights
 הפרת זכויות חמורה
@@ -580,7 +558,7 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 
 # EndOfWork/Assertions/Employment/Type/direct
 ישירה
-תלוש ממעסיק יחיד קבוע, שמקבל את השירות.
+תלוש ממעסיק יחיד קבוע, שמקבל את השירות
 
 # EndOfWork/Assertions/Employment/Type/freelance
 פרילנס
@@ -693,7 +671,6 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Assertions/ReasonForLeaving/severeAbuse
 התעמרות
 התעללות חמורה בעובד
-[לקריאה נוספת](https://www.kolzchut.org.il/he/%D7%90%D7%99%D7%A1%D7%95%D7%A8_%D7%94%D7%AA%D7%A2%D7%9E%D7%A8%D7%95%D7%AA_%D7%91%D7%A2%D7%91%D7%95%D7%93%D7%94).
 
 # EndOfWork/Assertions/ReasonForLeaving/retirement
 פרישה
