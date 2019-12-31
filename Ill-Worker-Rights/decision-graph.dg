@@ -5,7 +5,7 @@
   }
 ]
 [set: SalaryUnits=unset; Sector=unset]
-[set: Duties+=supportingMedicalDocumentation, kupatHolimNotice]
+[set: Duties+=supportingMedicalDocumentation, kupatHolimNotice; Recommendations+=checkWorkContractBenefits]
 [>sIntro< section:
   {title: Introduction}
   [>initialFilter-missWork< ask:
@@ -42,8 +42,20 @@
       }
     }
   ]
-  [todo: decide which PaidSicknessDays formula to use ]
 ]
+
+[todo: decide which PaidSicknessDays formula to use ]
+<* post-interview summary inferences *>
+[consider:
+  {slot: LegalStatus}
+  {options:
+    { b1Visa: [set: Recommendations += b1VisaDuringSickness] }
+  }
+]
+
+<********************>
+<* END OF MAIN PART *>
+<********************>
 
 <**
  Handling with medical condition of the interwiewee.
@@ -142,6 +154,56 @@
           }
         ]
       }
+    }
+  ]
+
+  [when:
+    {Sector=houseKeeping: [set: SicknessPay=fullFromDayOne]}
+    {else:
+      [consider:
+        {slot: EmploymentScope}
+        {options:
+          {multiple: [set: SicknessPay=fullFromDayOneProbably]}
+        }
+        {else:
+          [set: SicknessPay=gradual]
+        }
+      ]
+    }
+  ]
+
+  [when:
+    { EmploymentType=employee; EmploymentScope=singleFullTime; InternalFlags+=lightIllness:
+      [consider:
+        {slot: Sector}
+        {options:
+          {unset: [set: MaxSickDays=regular] }
+          {civilService: [todo: find civil service sick days accumulation scheme][set: MaxSickDays=regular]}
+          {manpower: [set: MaxSickDays=ext2_130]}
+          {houseKeeping: [set: MaxSickDays=regular]}
+          {security: [set: MaxSickDays=ext2_130]}
+          {eventFacilities:
+            [>employmentDuration-eventFacilities< ask:
+              {text: Are you employed in your current position for two years or more?}
+              {answers:
+                {no:  [set: MaxSickDays=regular]}
+                {yes: [set: MaxSickDays=ext2_130]}
+              }
+            ]
+          }
+          {hotels:
+            [>employmentDuration-hotels< ask:
+              {text: How long are you employed in your current position?}
+              {answers:
+                {less than a year:  [set: MaxSickDays=ext2_130]}
+                {1-4 years:         [set: MaxSickDays=ext66]   }
+                {5-7 years:         [set: MaxSickDays=ext110]  }
+                {8 years and above: [set: MaxSickDays=ext220]  }
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 --]
@@ -251,6 +313,7 @@
       }
       {answers:
         {yes: [set: Duties+=declaration_OnlyAdultToUseBenefits] }
+        {no:  [set: ChildSickness+=singleGuardianAdult]}
       }
     ]
     [>child-sicknessTypes< ask:
@@ -261,6 +324,8 @@
             {text: Is the child at least 18 years old?}
             {answers:
               {no:
+                [when:
+                  {ChildSickness+=singleGuardianAdult: [set: ChildSickness+=singleParentDialisisMalignantChildDays]}]
                 [set: ChildSickness+=dialysisOrMalignantChildPay]
               }
             }
@@ -270,24 +335,31 @@
           [>child-disabilityScope< ask:
             {text: Is the disability your child suffers from permanent?}
             {answers:
-              {no: [set: ChildSickness+=sickChildDays][end] }
-              {yes: [set: ChildSickness+=disabledChildPay] }
-            }
-          ]
+              {no:
+                [when:
+                  {ChildSickness+=singleGuardianAdult: [set: ChildSickness+=singleParentSickChildDays] }
+                  {else: [set: ChildSickness+=singleParentSickChildDays] }
+                ]
+                [end]
+              }
+              {yes:
+                [when:
+                  {ChildSickness+=singleGuardianAdult: [set: ChildSickness+=singleParentDisabledChildDays] }
+                  {else: [set: ChildSickness+=disabledChildDays] }
+          ]}}]
           [>child-over18-dis< ask:
             {text: Is the child at least 18 years old?}
             {answers:
               {yes:
                 [set: Duties+=guardianDocument]
-              }
-            }
-          ]
-        }
+        }}]}
         {needs dialysis:
           [>child-over18-dia< ask:
             {text: Is the child at least 18 years old?}
             {answers:
               {no:
+                [when:
+                  {ChildSickness+=singleGuardianAdult: [set: ChildSickness+=singleParentDialisisMalignantChildDays]}]
                 [set: ChildSickness+=dialysisOrMalignantChildPay]
               }
             }
@@ -297,7 +369,12 @@
           [>child-over16< ask:
             {text: Is the child at least 16 years old?}
             {answers:
-              {no: [set:ChildSickness+=sickChildPay]}
+              {no:
+                [when:
+                  {ChildSickness+=singleGuardianAdult: [set: ChildSickness+=sickChildDays] }
+                  {else: [set: ChildSickness+=singleParentSickChildDays] }
+                ]
+              }
             }
           ]
         }
@@ -346,7 +423,7 @@ Initial case data gatehring
         {slot: LegalStatus}
         {options:
           {israeliCitizenship:
-            [>employemntType< ask:
+            [>employmentType< ask:
               {text: How are you employed?}
               {answers:
                 {self employed/freelance:
@@ -486,5 +563,5 @@ Initial case data gatehring
 
 [-->pLightIllness<
   [call: pAllIllness]
-  [todo: light illness]
+  [set: InternalFlags+=lightIllness]
 --]

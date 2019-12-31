@@ -48,3 +48,7 @@ dependent on others: dependent on others
 donating an organ: donating an organ
 hospitalized: hospitalized
 my/my partner's parent: my/my partner's parent
+1-4 years: 1-4 years
+5-7 years: 5-7 years
+8 years and above: 8 years and above
+less than a year: less than a year

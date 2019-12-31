@@ -1,7 +1,7 @@
 HealthRelatedRights: consists of Duties, Benefits, Recommendations, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
-                                                          TimeInIsrael, Pregnancy, AccidentType,
+                                                          Pregnancy, AccidentType,
                                                           Parenting, RelationToSickPerson, InternalFlags.
 
 Duties[What the employee is required do]: some of
@@ -17,11 +17,10 @@ Duties[What the employee is required do]: some of
   kupatHolimNotice[Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.].
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
-                      SpouseSickness, SeveranceProtection, SicknessDaysRedumption,
-                      RoadAccidentCompensation, PersonalAccidentCompensation, UnpaidLeave,
-                      CompensationAccumulation, SeverenceBenefits, TaxExemptions, IncomeSecurity,
-                      ProlongedMaternatyLeave, UnpaidVacation, PrivateInsuranceCompensation, MedicalCare,
-                      SicknessPay, MaxSickDays
+                      SpouseSickness, SeveranceProtection, RoadAccidentCompensation,
+                      PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation, SeverenceBenefits,
+                      TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave, UnpaidVacation,
+                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays
                       .
 
 Recommendations: some of
@@ -34,16 +33,16 @@ Recommendations: some of
   getPrivateMedicalInsurance[You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
     Employer can take between 125 to 136 ILS for this from your monthly salary.],
   emergencyMedicalTreatmentIsFree[All emergency medical treatment is free in Israel.],
-  pregnancyRelatedIssuesNotCovered[The medican insurance will not cover any pregrnancy-related issues.]
+  pregnancyRelatedIssuesNotCovered[The medican insurance will not cover any pregrnancy-related issues.],
+  b1VisaDuringSickness[Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. ],
+  checkWorkContractBenefits[Check if your work contract gives you additional rights.]
   .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
 
 Gender[ This is the legal gender of the sick person]: one of male, female.
 
-Parenting: consists of FamilySize, ParentingFlags.
-
-FamilySize: one of couple, singleParent.
+Parenting: consists of ParentingFlags.
 
 ParentingFlags: some of fosterFamily[משפחת אומנה].
 
@@ -60,7 +59,7 @@ SalaryUnits: one of unset, monthly, daily, hourly.
 
 EmploymentScope: one of singleFullTime, singlePartTime, multiple.
 
-EmploymentType: one of selfEmployed, employee[שכיר].
+EmploymentType: one of selfEmployed, employee.
 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 
@@ -68,12 +67,14 @@ Sector: one of unset, civilService[State workers], manpower,
                 houseKeeping, security, eventFacilities[e.g. wedding gardens],
                 hotels.
 
-TimeInIsrael: one of moreThan10Years, lessThan10Years.
-
-ChildSickness: some of sickChildPay,
+ChildSickness: some of
    dialysisOrMalignantChildPay[Can use up to 90 days/year, based on sick days or vacation days],
-   disabledChildPay,
-   sickChildDays[Parents can use up to 8 sick days from their allowance for aiding their sick children.].
+   disabledChildDays[Can claim 18 days and 52 hours for treating disabled child.],
+   singleParentDisabledChildDays[Can claim 36 days and 104 hours for treating disabled child.],
+   singleGuardianAdult[Single adult taking care of child (e.g. single parent).],
+   sickChildDays[Parents can use up to 8 sick days from their allowance for aiding their sick children.],
+   singleParentSickChildDays[Can claim 16 child sickness days per year.],
+   singleParentDialisisMalignantChildDays[Can claim up to 110 sick days, when employed for more than a year.].
 
 SimpleBenefits: some of
   freeMedicalCare[Not paying medical bills, including self pay.],
@@ -84,7 +85,8 @@ SimpleBenefits: some of
 
 SicknessPay: one of
   gradual[None for the first day, 1/2 salary for days 2 and 3, full after],
-  fullFromDayOne[Full salary from sick day 1].
+  fullFromDayOneProbably[Probably eligible for full salary from sick day 1],
+  fullFromDayOne[Eligible for full salary from sick day 1 (by case law)].
 
 ParentSickness: consists of SickParentFlags.
 
@@ -115,7 +117,6 @@ RoadAccidentCompensation: some of
 .
 
 SeveranceProtection: TODO.
-SicknessDaysRedumption: TODO.
 PersonalAccidentCompensation: TODO.
 UnpaidLeave: TODO.
 CompensationAccumulation: TODO.
@@ -125,9 +126,14 @@ ProlongedMaternatyLeave: TODO.
 UnpaidVacation: TODO.
 PrivateInsuranceCompensation: TODO.
 MedicalCare: TODO.
-MaxSickDays[Amount of sick days, varies by sector]: TODO.
+MaxSickDays[Amount of sick days, varies by sector]: one of
+  regular[Can claim 1.5 days per employment month, up to 90 days. Work contract may enable more.],
+  ext2_130[Can claim 2 days per employment month, up to 130 days],
+  ext66[Can claim up to 66 days per year],
+  ext110[Can claim up to 110 days per year],
+  ext220[Can claim up to 220 days per year].
 
 InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of
   b1LikeMedicalStatus,
   foreignWorker[Not Israeli or Palestinian],
-  pregnancy.
+  pregnancy, lightIllness.

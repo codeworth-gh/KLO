@@ -1,0 +1,1 @@
+Were you employed in Israel for 9 months or more?

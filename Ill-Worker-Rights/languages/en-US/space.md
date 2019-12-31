@@ -469,3 +469,136 @@ unset
 unset
 
 
+# HealthRelatedRights/Duties/roadAccidentInvolvmentStatement
+roadAccidentInvolvmentStatement
+A statement from the police validating that you were involved in a road accident
+
+# HealthRelatedRights/Properties/InternalFlags
+InternalFlags
+Internal data sotred for the interview. Can be safely ignored.
+
+# HealthRelatedRights/Properties/InternalFlags/b1LikeMedicalStatus
+b1LikeMedicalStatus
+
+
+# HealthRelatedRights/Properties/InternalFlags/foreignWorker
+foreignWorker
+Not Israeli or Palestinian
+
+# HealthRelatedRights/Properties/InternalFlags/pregnancy
+pregnancy
+
+
+# HealthRelatedRights/Properties/InternalFlags/lightIllness
+lightIllness
+
+
+# HealthRelatedRights/Benefits/MaxSickDays
+MaxSickDays
+Amount of sick days, varies by sector
+
+# HealthRelatedRights/Benefits/MaxSickDays/regular
+regular
+Can claim 1.5 days per employment month, up to 90 days. Work contract may enable more.
+
+# HealthRelatedRights/Benefits/MaxSickDays/ext2_130
+ext2_130
+Can claim 2 days per employment month, up to 130 days
+
+# HealthRelatedRights/Benefits/MaxSickDays/ext66
+ext66
+Can claim up to 66 days per year
+
+# HealthRelatedRights/Benefits/MaxSickDays/ext110
+ext110
+Can claim up to 110 days per year
+
+# HealthRelatedRights/Benefits/MaxSickDays/ext220
+ext220
+Can claim up to 220 days per year
+
+# HealthRelatedRights/Benefits/SimpleBenefits/canRegisterChildToKupatHolim
+canRegisterChildToKupatHolim
+Child can be registered to Kupat Holim Meuhedet (https://www.meuhedet.co.il/en/)
+
+# HealthRelatedRights/Benefits/SimpleBenefits/privateHealthInsuranceByEmployer
+privateHealthInsuranceByEmployer
+The employer has to provide private health insurance, even for non-registered workers.
+
+# HealthRelatedRights/Benefits/SimpleBenefits/pregnancyRelatedIssuesCovered
+pregnancyRelatedIssuesCovered
+Private insurance has to cover all preganancy-related treatments, including amniocentesis when recommended.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation
+RoadAccidentCompensation
+
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/possibleNIAid
+possibleNIAid
+May be eligile for stipend or other help from National Insurance.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/lawyerFeesCapped
+lawyerFeesCapped
+A lawyer request more than a specified amount for handing this case.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPayment
+roadAccidentPayment
+Paid by the insurance company of the vehicle. Needs to be claimed.
+
+# HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
+fullFromDayOneProbably
+Probably eligible for full salary from sick day 1
+
+# HealthRelatedRights/Benefits/ChildSickness/disabledChildDays
+disabledChildDays
+Can claim 18 days and 52 hours for treating disabled child.
+
+# HealthRelatedRights/Benefits/ChildSickness/singleParentDisabledChildDays
+singleParentDisabledChildDays
+Can claim 36 days and 104 hours for treating disabled child.
+
+# HealthRelatedRights/Benefits/ChildSickness/singleGuardianAdult
+singleGuardianAdult
+Single adult taking care of child (e.g. single parent).
+
+# HealthRelatedRights/Benefits/ChildSickness/singleParentSickChildDays
+singleParentSickChildDays
+Can claim 16 child sickness days per year.
+
+# HealthRelatedRights/Benefits/ChildSickness/singleParentDialisisMalignantChildDays
+singleParentDialisisMalignantChildDays
+Can claim up to 110 sick days, when employed for more than a year.
+
+# HealthRelatedRights/Recommendations/checkPrivateInsuranceCoverage
+checkPrivateInsuranceCoverage
+Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.
+
+# HealthRelatedRights/Recommendations/keepPayingPrivateInsurance
+keepPayingPrivateInsurance
+Must keep paying private insurance, even when not working.
+
+# HealthRelatedRights/Recommendations/lossOfWorkAbilityWarning
+lossOfWorkAbilityWarning
+If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.
+
+# HealthRelatedRights/Recommendations/getPrivateMedicalInsurance
+getPrivateMedicalInsurance
+You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
+    Employer can take between 125 to 136 ILS for this from your monthly salary.
+
+# HealthRelatedRights/Recommendations/emergencyMedicalTreatmentIsFree
+emergencyMedicalTreatmentIsFree
+All emergency medical treatment is free in Israel.
+
+# HealthRelatedRights/Recommendations/pregnancyRelatedIssuesNotCovered
+pregnancyRelatedIssuesNotCovered
+The medican insurance will not cover any pregrnancy-related issues.
+
+# HealthRelatedRights/Recommendations/b1VisaDuringSickness
+b1VisaDuringSickness
+Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. 
+
+# HealthRelatedRights/Recommendations/checkWorkContractBenefits
+checkWorkContractBenefits
+Check if your work contract gives you additional rights.
+
