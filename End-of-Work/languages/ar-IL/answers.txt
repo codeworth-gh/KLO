@@ -1,0 +1,77 @@
+51 Months or more: 51 شهر او اكثر
+Divorce: طلاق
+Less than 51 Months: اقل من 51 شهر
+Moved in with spouse: انتقلت للعيش مع زوجي\زوجتي
+My spouse moved because of work: زوجي\زوجتي انتقلو لمكان اخر من اجل العمل
+Other: اخر
+Over 10 Years: اكثر من 10 سنوات
+Over 13 Years: اكثر من 13 سنة
+Over 63 Months: اكثر من 63 شهراً
+Over 8 Years: اكثر من 8 سنوات
+accident during my work: حادث خلال العمل
+accident on my way to work: حادث في الطريق الى العمل
+caring for a family member: الاهتمام بفرد من افراد العائلة
+contractor: متعهد
+daily: يومي
+direct: مباشرة
+employer changed: تغيير صاحب العمل
+employer choice: اختيار صاحب العمل
+employer collapse: افلاس صاحب العمل
+employer death: وفاة صاحب العمل
+employer moved to nursing home: صاحب العمل انتقل للعيش في بيت للمسنين
+employer terminally hospitalized: صاحب العمل نُقل لفترة علاج طويلة في المستشفى
+end of contract: انتهاء عقد العمل
+enrolled to civil service: تجند للخدمة العسركية\الخدمة المدنية
+freelance: عامل حر
+full: وظيفة بدوام كامل
+health condition of a family member: الوضع الصحي لفرد من افراد العائلة
+health issues: مشاكل صحية 
+hourly: اجر بالساعة
+involuntary: ليس بمبادرتي
+jointEmployment: تشغيل مشترك
+me: انا
+monthly: شهري
+moved: انتقال
+my child, parent, or spouse: ابني\ابنتي, اهلي, او زوجي/زوجتي 
+my employer: مشغلي
+my grandchild, grandfather, or parent in law: حفيد\ة, جد\ة, او اهل زوجي\زوجتي
+my health condition: وضعي الصحي
+my initiative: بمبادرة مني
+my medical condition: وضعي الصحي
+no: لا
+other: اخر
+other family member: فرد اخر من العائلة
+palestinian with work permit: فلسطيني مع تصريح عمل
+parenting: ابوة\اموموة
+partial: جزئية
+resignation (other): استقالة (اخر)
+retirement: تقاعد
+road accident: حادث طرق
+severe abuse: اساءة معاملة شديدة
+significant breaching of rights: انتهاك حاد للحقوق
+significant deterioration of employment conditions: تدهور ملحوظ في ظروف العمل
+to a settlement outside the green line: لمستوطنة خارج الخط الاخضر
+undocumented: غير مسجل
+varied: متنوع
+visa of type 2a5: تاشيرة (فيزا) من نوع 2أ'5
+visa of type b1Agriculture: تاشيرة(فيزا) من نوع ب'1 زراعة
+visa of type b1CareGiver:تاشيرة (فيزا) من نوع ب'1 تمريض
+visa of type b1Construction:تاشيرة (فيزا) من نوع ب'1 عامل بناء
+visa termination: انتهاء صلاحية التاشيرة (فيزا)
+worker death: وفاة العامل
+yes: نعم
+yes, I don't want to stay: نعم, انا لا اريد البقاء
+yes, employer refused: اجل, صاحب العمل رفض
+62 to 67: 62 حتى 67
+67 and over: 67 او اكثر
+other non-citizen: اخر (ليس مواطن)
+under 62: اصغر من -62
+under 67: اصغر من -67
+I was sexually harassed: تم التحرش بي جنسياً
+to an agricultural settlement: لمستوطنة زراعية
+to an eligible settlement:  لمستوطنة مستحقة
+11 months or more: 11 شهر او اكثر
+12-24 months: 12-24 شهر
+24 months or more: 24 شهر او اكثر
+6-11 months: 6-11 شهر
+less than 6 months: اقل من 6 اشهر

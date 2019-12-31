@@ -1,0 +1,23 @@
+<localized-model direction="rtl" ui-lang="he">
+  <title>حقوق خلال انهاء التشغيل </title>
+  <subtitle></subtitle>
+  <keywords></keywords>
+  <authors>
+    <group>
+      <name>جمعية عنوان العامل</name>
+      <contact>www.klo.org.il</contact>
+    </group>
+    <person>
+      <name>المحامية ميخال تاجر</name>
+      <affiliation>عنوان العامل</affiliation>
+    </person>
+    <person>
+      <name>المحامي شادي غريفات</name>
+      <affiliation>عنوان العامل</affiliation>
+    </person>
+    <person>
+      <name>ميخائيل بار-سيناي</name>
+      <affiliation>CodeWorth.io</affiliation>
+    </person>
+  </authors>
+</localized-model>
