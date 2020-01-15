@@ -149,7 +149,10 @@
               ]
               [call: pAllIllness]
             }
-            {miscarrige: [todo: miscarrige]}
+            {miscarriage:
+              [set: Pregnancy=miscarriage]
+              [call: pMiscarriage]
+            }
             {fertility treatments:
               [set: Pregnancy=fertilityTreatments]
               [call: pFertilityTreatments]
@@ -605,6 +608,26 @@ Initial case data gatehring
       ]
     }
   ]
+--]
 
-
+[-->pMiscarriage<
+  [set: SeveranceProtection += miscarriage]
+  [>mc-pregnancyLength< ask:
+    {text: Did the miscarriage occur after the 22nd week?}
+    {answers:
+      {yes: [set: MiscarriageSickDays=fullMaternityLeave] }
+      {no:
+        [when:
+          {Sector=civilService : [set: MiscarriageSickDays=weekCivilService] }
+          {else: [set: MiscarriageSickDays=week]}
+        ]
+        [>mc-medicalDeterioration< ask:
+          {text: Does your medical condition requires a leave longer than 7 days? }
+          {answers:
+            {yes: [set: Recommendations+=extendedMiscarriageLeave]}
+          }
+        ]
+      }
+    }
+  ]
 --]

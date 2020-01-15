@@ -674,3 +674,31 @@ Up to 4 series, 20 days each, max total of 80 days yearly, based on regular sick
 s4d22
 Up to 4 series, 22 days each, max total of 88 days yearly, based on regular sick days
 
+# HealthRelatedRights/Properties/Pregnancy/miscarriage
+miscarriage
+
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays
+MiscarriageSickDays
+
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/week
+week
+Up to 7 days based on sick day allowance
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/weekCivilService
+weekCivilService
+Up to 7 days based on sick day allowance, immediatly after the miscarriage
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/fullMaternityLeave
+fullMaternityLeave
+Full maternity leave, including other maternity benefits (same as non-silent birth)
+
+# HealthRelatedRights/Benefits/SeveranceProtection/miscarriage
+miscarriage
+Can't fire, downscale position, or otherwise hurt income.
+
+# HealthRelatedRights/Recommendations/extendedMiscarriageLeave
+extendedMiscarriageLeave
+eligible to up to 6 week leave, pending on medical doctor approval
+

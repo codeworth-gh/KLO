@@ -147,19 +147,6 @@ palestinian
 # HealthRelatedRights/Properties/LegalStatus/noPermit
 noPermit
 
-
-# HealthRelatedRights/Properties/TimeInIsrael
-TimeInIsrael
-
-
-# HealthRelatedRights/Properties/TimeInIsrael/moreThan10Years
-moreThan10Years
-
-
-# HealthRelatedRights/Properties/TimeInIsrael/lessThan10Years
-lessThan10Years
-
-
 # HealthRelatedRights/Properties/AccidentType
 AccidentType
 
@@ -182,26 +169,13 @@ SimpleBenefits
 # HealthRelatedRights/Benefits/SimpleBenefits/freeMedicalCare
 freeMedicalCare
 
-
-# HealthRelatedRights/Benefits/SimpleBenefits/roadAccidentPayment
-roadAccidentPayment
-Paid by the insurance company of the car
-
 # HealthRelatedRights/Benefits/ChildSickness
 ChildSickness
-
-
-# HealthRelatedRights/Benefits/ChildSickness/sickChildPay
-sickChildPay
 
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
 dialysisOrMaligantChildPay
 Can use up to 90 days/year, based on sick days or vacation days
-
-# HealthRelatedRights/Benefits/ChildSickness/disabledChildPay
-disabledChildPay
-
 
 # HealthRelatedRights/Recommendations
 Recommendations
@@ -224,18 +198,6 @@ selfEmployed
 
 # HealthRelatedRights/Properties/Parenting
 Parenting
-
-
-# HealthRelatedRights/Properties/Parenting/FamilySize
-FamilySize
-
-
-# HealthRelatedRights/Properties/Parenting/FamilySize/couple
-couple
-
-
-# HealthRelatedRights/Properties/Parenting/FamilySize/singleParent
-singleParent
 
 
 # HealthRelatedRights/Properties/Parenting/ParentingFlags
@@ -310,15 +272,6 @@ multiple
 sickSpouseMalignant
 Can use up to 60 days from your sick/vacation days for treating your spouse.
 
-# HealthRelatedRights/Benefits/IncomeTaxExemption/hospitalizedParentOrSpouse
-הורה או בת/בן זוג באשפוז
-עד 35% הקלה במס הכנסה
----
-העובד זכאי לעד 35% הקלה במס הכנסה, עבור קרוב נטול יכולה הנמצא במוסד. טפסים שיש למלא:
-
-* [116א](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
-* [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
-
 # HealthRelatedRights/Duties/medicalStatementForDependency
 medicalStatementForDependency
 Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions
@@ -360,8 +313,13 @@ TaxExemptions
 
 
 # HealthRelatedRights/Benefits/TaxExemptions/hospitalizedParentOrSpouse
-hospitalizedParentOrSpouse
-Can have up to 35% income tax exemption.
+הורה או בת/בן זוג באשפוז
+עד 35% הקלה במס הכנסה
+---
+העובד זכאי לעד 35% הקלה במס הכנסה, עבור קרוב נטול יכולה הנמצא במוסד. טפסים שיש למלא:
+
+* [116א](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
+* [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
 
 # HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdorwals
 taxFreeFundsWithdorwals
@@ -535,7 +493,7 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 העדרות - טיפולי פוריות
 ניתן להעדר מהעבודה לצורך טיפולי פוריות, בכפוף לתנאים
 ---
-היעדרות עובדים בגין טיפולי פוריות היא על חשבון ימי מחלה שצבורים לזכותם ומזכים אותם בתשלום דמי מחלה בהתאם לחוק דמי מחלה (ללא תשלום ביום ההיעדרות הראשון, תשלום של 50% מהשכר ביום השני והשלישי, ותשלום שכר מלא ביום הרביעי ואילך) או לפי חוזה העבודה אם הוא קובע תנאים טובים יותר לעובד. 
+היעדרות עובדים בגין טיפולי פוריות היא על חשבון ימי מחלה שצבורים לזכותם ומזכים אותם בתשלום דמי מחלה בהתאם לחוק דמי מחלה (ללא תשלום ביום ההיעדרות הראשון, תשלום של 50% מהשכר ביום השני והשלישי, ותשלום שכר מלא ביום הרביעי ואילך) או לפי חוזה העבודה אם הוא קובע תנאים טובים יותר לעובד.
 
 ניתן להיעדר גם שעות בודדות מתוך יום העבודה (עד ל-40 שעות בשנה למשרה מלאה), ובמקרה כזה ינוכה חלק יחסי מימי המחלה בהתאם למספר שעות ההיעדרות ביחס למספר שעות העבודה של יום עבודה מלא. היעדרות של שעות בודדות (במקום יום עבודה מלא) מזכות בתשלום דמי מחלה מרגע ההיעדרות הראשון
 
@@ -560,7 +518,7 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 
 # HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsence
 העדרות בשל טיפולי פוריות
-בזמן טיפולי פוריות / הפריה עובד/ת רשאי/ת להיעדר מעבודתו/ה (הן במסגרת אשפוז והן במסגרת של טיפול אמבולטורי). 
+בזמן טיפולי פוריות / הפריה עובד/ת רשאי/ת להיעדר מעבודתו/ה (הן במסגרת אשפוז והן במסגרת של טיפול אמבולטורי).
 
 <-- Same as above, but for civil servants.
 # HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsenceCivilService
@@ -602,3 +560,35 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 # HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d22
 4 סדרות, 22 יום לסדרה
 זכאות לעד 4 סדרות, עד 22 יום לסדרה. סה״כ 88 יום בשנה ע״ח ימי מחלה
+# HealthRelatedRights/Properties/Pregnancy/miscarriage
+הפלה
+
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays
+ימי מחלה בין הפלה
+
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/week
+שבוע
+---
+לפי סעיף 7(א) לחוק עבודת נשים- עובדת שעברה הפלה רשאית להיעדר מעבודתה 7 ימים על חשבון ימי המחלה שצברה.
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/weekCivilService
+שבוע
+עובדת שהפילה, רשאית להיעדר מעבודתה במשך שבוע מיד אחרי ההפלה.
+
+# HealthRelatedRights/Benefits/MiscarriageSickDays/fullMaternityLeave
+חופשת לידה
+---
+לפי חוק עבודת נשים, במקרה של הפלה לאחר 22 שבועות הריון (לידה שקטה), זכאית העובדת לחופשת לידה וכן לזכויות נוספות כמו יולדת של תינוק חי.
+
+# HealthRelatedRights/Benefits/SeveranceProtection/miscarriage
+איסור פיטורין (הפלה)
+---
+לפי סעיף 9(ו) לחוק עבודת נשים אסור למעסיק לפטר עובדת. בנוסף על כך, סעיף 9(א) לחוק עבודת נשים קובע כי אין להקטין את היקף משרתה או לפגוע בהכנסה של העובדת בתקופת היעדרותה מהעבודה בשל הפלה. במקרה שבו עובדת נעדרה מעבודתה עקב הפלה והמעסיק מעוניין לפטר אותה, תקופת היעדרותה לא תיחשב במניין ימי ההודעה המוקדמת.
+
+# HealthRelatedRights/Recommendations/extendedMiscarriageLeave
+ימי מחלה נוספים (הפלה)
+עד 6 שבועות באישור רופא
+---
+אם בעקבות ההפלה מצבה הבריאותי של העובדת מחייב היעדרות ארוכה יותר, העובדת יכולה להביא אישור רופא, ובכך תהא זכאית להיעדר עד 6 שבועות מהעבודה

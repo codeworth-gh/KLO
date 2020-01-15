@@ -21,15 +21,14 @@ Notices[Relevant information for case in point]: some of
   kupatHolimNotice[Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.],
   fertilityTreatmentsAbsence[Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.],
   fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.]
-
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
                       SpouseSickness, SeveranceProtection, RoadAccidentCompensation,
                       PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation, SeverenceBenefits,
                       TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave, UnpaidVacation,
-                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays, FerilityTreatmentSickDays
-                      .
+                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays,
+                      FerilityTreatmentSickDays, MiscarriageSickDays.
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
@@ -43,7 +42,8 @@ Recommendations: some of
   emergencyMedicalTreatmentIsFree[All emergency medical treatment is free in Israel.],
   pregnancyRelatedIssuesNotCovered[The medical insurance will not cover any pregrnancy-related issues.],
   b1VisaDuringSickness[Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. ],
-  checkWorkContractBenefits[Check if your work contract gives you additional rights.]
+  checkWorkContractBenefits[Check if your work contract gives you additional rights.],
+  extendedMiscarriageLeave[eligible to up to 6 week leave, pending on medical doctor approval]
   .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
@@ -59,7 +59,7 @@ RelationToSickPerson[How is the worker related to the person whose health issues
                           spouseOfSick,
                           childOfSick,
                           self.
-Pregnancy: one of regular, complicated, fertilityTreatments.
+Pregnancy: one of regular, complicated, fertilityTreatments, miscarriage.
 AccidentType: one of other, roadAccident.
 
 EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector.
@@ -129,7 +129,8 @@ RoadAccidentCompensation: some of
 
 SeveranceProtection: some of
   fertilityGeneral[Can't fire during treatment and 150 days after, unless approved by Ministry of Labour],
-  fertilityCivilService[Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.]
+  fertilityCivilService[Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.],
+  miscarriage[Can't fire, downscale position, or otherwise hurt income.]
 .
 
 PersonalAccidentCompensation: TODO.
@@ -155,6 +156,12 @@ MaxSickDays[Amount of sick days, varies by sector]: one of
   ext66[Can claim up to 66 days per year],
   ext110[Can claim up to 110 days per year],
   ext220[Can claim up to 220 days per year].
+
+MiscarriageSickDays: one of
+  week[Up to 7 days based on sick day allowance],
+  weekCivilService[Up to 7 days based on sick day allowance, immediatly after the miscarriage],
+  fullMaternityLeave[Full maternity leave, including other maternity benefits (same as non-silent birth)].
+
 
 InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of
   b1LikeMedicalStatus,

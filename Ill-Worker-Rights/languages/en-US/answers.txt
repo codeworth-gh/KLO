@@ -54,3 +54,4 @@ my/my partner's parent: my/my partner's parent
 less than a year: less than a year
 5: 5
 6: 6
+miscarriage: miscarriage

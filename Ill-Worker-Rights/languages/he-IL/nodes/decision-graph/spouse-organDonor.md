@@ -1,1 +1,0 @@
-Is your spouse's medical condition related to them donating an organ?
