@@ -15,8 +15,7 @@ singleParentStatement
 
 
 # HealthRelatedRights/Duties/guardianDocument
-guardianDocument
-״צו אפוטרופוס חתום״
+צו אפוטרופוס חתום
 
 # HealthRelatedRights/Duties/handleVisa
 handleVisa
@@ -221,7 +220,6 @@ selfEmployed
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/employee
-employee
 שכיר
 
 # HealthRelatedRights/Properties/Parenting
@@ -313,8 +311,8 @@ sickSpouseMalignant
 Can use up to 60 days from your sick/vacation days for treating your spouse.
 
 # HealthRelatedRights/Benefits/IncomeTaxExemption/hospitalizedParentOrSpouse
-hospitalizedParentOrSpouse
-עד 35%
+הורה או בת/בן זוג באשפוז
+עד 35% הקלה במס הכנסה
 ---
 העובד זכאי לעד 35% הקלה במס הכנסה, עבור קרוב נטול יכולה הנמצא במוסד. טפסים שיש למלא:
 
@@ -333,9 +331,9 @@ Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Sei
 sickParentStatement
 https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
 
-# HealthRelatedRights/Duties/kupatHolimNotice
-kupatHolimNotice
-Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
+# HealthRelatedRights/Notes/kupatHolimNotice
+אישורים מקופת חולים
+יש להמציא אישורים רפואיים מקופת החולים בה החולה חבר. מעסיקים אינם חייבים לכבד אישורים רפואיים מרופאים פרטיים
 
 # HealthRelatedRights/Benefits/PaidSicknessDays
 PaidSicknessDays
@@ -375,7 +373,7 @@ Worker is not eligible for sick days from the employer because of this condition
 
 # HealthRelatedRights/Recommendations/freelanceConsultLawyer
 freelanceConsultLawyer
-Freelance workers should consult a lawyer regardign benefits from their employers.
+Freelance workers should consult a lawyer regarding benefits from their employers.
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
 unset
@@ -388,8 +386,8 @@ roadAccidentInvolvmentStatement
 A statement from the police validating that you were involved in a road accident
 
 # HealthRelatedRights/Properties/InternalFlags
-InternalFlags
-Internal data sotred for the interview. Can be safely ignored.
+מידע טכני
+מידע שנשמר לצרכי חישובים פנימיים. אפשר להתעלם - אם עלינו על משהו חשוב, זה יופיע במקום אחר
 
 # HealthRelatedRights/Properties/InternalFlags/b1LikeMedicalStatus
 b1LikeMedicalStatus
@@ -506,13 +504,101 @@ All emergency medical treatment is free in Israel.
 
 # HealthRelatedRights/Recommendations/pregnancyRelatedIssuesNotCovered
 pregnancyRelatedIssuesNotCovered
-The medican insurance will not cover any pregrnancy-related issues.
+The medical insurance will not cover any pregrnancy-related issues.
 
 # HealthRelatedRights/Recommendations/b1VisaDuringSickness
 b1VisaDuringSickness
-Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. 
+Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa.
 
 # HealthRelatedRights/Recommendations/checkWorkContractBenefits
 checkWorkContractBenefits
 Check if your work contract gives you additional rights.
 
+# HealthRelatedRights/Duties/fertilityTreatments
+חובות טיפולי פוריות
+אישור רופא, הודעה מראש, ע״ח ימי מחלה
+---
+הזכויות ניתנות לעבוד בכפוף לתנאים הבאים:
+1.	הרופא המטפל בעובד/ת אישר בכתב שהטיפול מחייב היעדרות מהעבודה.
+1.	העובד/ת הודיע/ה על כך מראש למעסיק.
+1.	תקופת ההיעדרות לא תעלה על מכסת ימי המחלה הקיימים לרשות העובד/ת.
+
+
+# HealthRelatedRights/Notices
+הודעות
+
+# HealthRelatedRights/Notices/kupatHolimNotice
+kupatHolimNotice
+Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
+
+# HealthRelatedRights/Notices/fertilityTreatmentsAbsence
+העדרות - טיפולי פוריות
+ניתן להעדר מהעבודה לצורך טיפולי פוריות, בכפוף לתנאים
+---
+היעדרות עובדים בגין טיפולי פוריות היא על חשבון ימי מחלה שצבורים לזכותם ומזכים אותם בתשלום דמי מחלה בהתאם לחוק דמי מחלה (ללא תשלום ביום ההיעדרות הראשון, תשלום של 50% מהשכר ביום השני והשלישי, ותשלום שכר מלא ביום הרביעי ואילך) או לפי חוזה העבודה אם הוא קובע תנאים טובים יותר לעובד. 
+
+ניתן להיעדר גם שעות בודדות מתוך יום העבודה (עד ל-40 שעות בשנה למשרה מלאה), ובמקרה כזה ינוכה חלק יחסי מימי המחלה בהתאם למספר שעות ההיעדרות ביחס למספר שעות העבודה של יום עבודה מלא. היעדרות של שעות בודדות (במקום יום עבודה מלא) מזכות בתשלום דמי מחלה מרגע ההיעדרות הראשון
+
+
+# HealthRelatedRights/Notices/fertilityTreatmentsPartialWorkAbsence
+העדרות מעבודה - משרה חלקית
+ניתן להעדר מהעבודה לצורך טיפולי פוריות, בכפוף לתנאים
+---
+היחס שבין שעות העבודה של העובד/ת בחודש לבין מספר שעות העבודה במשרה מלאה, כנהוג במקום העבודה; במידה וסך שעות העבודה החודשיות למשרה מלאה במקום העבודה עולה על 182 שעות, תחושב חלקיות המשרה כיחס שבין שעות העבודה ל-182 שעות.
+
+# HealthRelatedRights/Properties/Pregnancy/fertilityTreatments
+טיפולי פוריות
+
+
+# HealthRelatedRights/Properties/InternalFlags/sixDayWorkweek
+שבוע עבודה 6 ימים
+
+
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentHireProtrection
+איסור אפליה טיפולי פוריות
+מעסיק אינו רשאי להפלות בין מועמדים עקב טיפולי פוריות / הפריה.
+
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsence
+העדרות בשל טיפולי פוריות
+בזמן טיפולי פוריות / הפריה עובד/ת רשאי/ת להיעדר מעבודתו/ה (הן במסגרת אשפוז והן במסגרת של טיפול אמבולטורי). 
+
+<-- Same as above, but for civil servants.
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsenceCivilService
+העדרות בשל טיפולי פוריות
+בתקופה שבה עובר עובד או עוברת עובדת טיפול לשם הפריה חוץ-גופית, דין ההיעדרות כדין היעדרות מפאת מחלה.
+
+# HealthRelatedRights/Benefits/SeveranceProtection
+הגנה בפני פיטורין
+
+
+# HealthRelatedRights/Benefits/SeveranceProtection/fertilityGeneral
+טיפולי פוריות
+הגנה מפיטורין בזמן ואחרי טיפולי פוריות
+---
+אין לפטר עובד/ת, במהלך תקופת הזכאות להיעדר מהעבודה עקב טיפולי הפריה חוץ גופית או טיפולי פוריות, וכן במשך תקופה של 150 ימים שלאחר מכן, אלא אם ניתן לכך היתר ממשרד העבודה, הרווחה והשירותים החברתיים.
+
+# HealthRelatedRights/Benefits/SeveranceProtection/fertilityCivilService
+טיפולי פוריות (ע״מ)
+הגנה מפיטורין בזמן ואחרי טיפולי פוריות לעובדי מדינה
+---
+אין לפטר עובד/ת, במהלך תקופת הזכאות להיעדר מהעבודה עקב טיפולי הפריה חוץ גופית או טיפולי פוריות, וכן במשך תקופה של 150 ימים שלאחר מכן, אלא אם ניתן לכך היתר ממשרד הכלכלה.
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays
+ימי מחלה עבור טיפולי פוריות
+
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d16
+4 סדרות, 16 יום לסדרה
+זכאות לעד 4 סדרות, עד 16 יום לסדרה. סה״כ 64 יום בשנה ע״ח ימי מחלה
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d18
+4 סדרות, 18 יום לסדרה
+זכאות לעד 4 סדרות, עד 18 יום לסדרה. סה״כ 72 יום בשנה ע״ח ימי מחלה
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d20
+4 סדרות, 20 יום לסדרה
+זכאות לעד 4 סדרות, עד 20 יום לסדרה. סה״כ 80 יום בשנה ע״ח ימי מחלה
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d22
+4 סדרות, 22 יום לסדרה
+זכאות לעד 4 סדרות, עד 22 יום לסדרה. סה״כ 88 יום בשנה ע״ח ימי מחלה

@@ -724,3 +724,11 @@ https://www.gov.il/he/service/extending_licenses_nursing_industry_humanitarian_r
 # EndOfWork/Benefits/PriorNoticeCalculationFormula/kOneMonth
 חודש
 הודעה מוקדמת של חודש אחד
+# EndOfWork/Recommendations/allowEmployerToAdjustForHealth
+allowEmployerToAdjustForHealth
+When possible, allow the employer to adjust your workplace to your medical condition
+
+# EndOfWork/Benefits/Properties/possiblePersonalAccidentsInsurance
+possiblePersonalAccidentsInsurance
+If you have personal accident insurace, you may be able tio claim it
+

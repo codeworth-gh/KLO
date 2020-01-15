@@ -1,4 +1,4 @@
-HealthRelatedRights: consists of Duties, Benefits, Recommendations, Properties.
+HealthRelatedRights: consists of Duties, Benefits, Recommendations, Notices, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
                                                           Pregnancy, AccidentType,
@@ -13,34 +13,42 @@ Duties[What the employee is required do]: some of
   guardianDocument[״צו אפוטרופוס חתום״],
   declaration_OnlyAdultToUseBenefits[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
   handleVisa,
-  roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident],
-  kupatHolimNotice[Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.].
+  fertilityTreatments[Provide doctor's approval, inform the employer beforehand, limited to available sickness days],
+  roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident]
+.
+
+Notices[Relevant information for case in point]: some of
+  kupatHolimNotice[Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.],
+  fertilityTreatmentsAbsence[Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.],
+  fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.]
+
+.
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
                       SpouseSickness, SeveranceProtection, RoadAccidentCompensation,
                       PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation, SeverenceBenefits,
                       TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave, UnpaidVacation,
-                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays
+                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays, FerilityTreatmentSickDays
                       .
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
   noEligibilityForSickDays[Worker is not eligible for sick days from the employer because of this condition.],
-  freelanceConsultLawyer[Freelance workers should consult a lawyer regardign benefits from their employers.],
+  freelanceConsultLawyer[Freelance workers should consult a lawyer regarding benefits from their employers.],
   checkPrivateInsuranceCoverage[Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.],
   keepPayingPrivateInsurance[Must keep paying private insurance, even when not working.],
   lossOfWorkAbilityWarning[If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.],
   getPrivateMedicalInsurance[You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
     Employer can take between 125 to 136 ILS for this from your monthly salary.],
   emergencyMedicalTreatmentIsFree[All emergency medical treatment is free in Israel.],
-  pregnancyRelatedIssuesNotCovered[The medican insurance will not cover any pregrnancy-related issues.],
+  pregnancyRelatedIssuesNotCovered[The medical insurance will not cover any pregrnancy-related issues.],
   b1VisaDuringSickness[Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. ],
   checkWorkContractBenefits[Check if your work contract gives you additional rights.]
   .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
 
-Gender[ This is the legal gender of the sick person]: one of male, female.
+Gender[This is the legal gender of the sick person]: one of male, female.
 
 Parenting: consists of ParentingFlags.
 
@@ -51,7 +59,7 @@ RelationToSickPerson[How is the worker related to the person whose health issues
                           spouseOfSick,
                           childOfSick,
                           self.
-Pregnancy: one of regular, complicated.
+Pregnancy: one of regular, complicated, fertilityTreatments.
 AccidentType: one of other, roadAccident.
 
 EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector.
@@ -78,6 +86,9 @@ ChildSickness: some of
 
 SimpleBenefits: some of
   freeMedicalCare[Not paying medical bills, including self pay.],
+  fertilityTreatmentHireProtrection[Employers can't discriminate candidates b/c fertility treatments],
+  fertilityTreatmentAbsence[Employees allowed to miss work b/c fertility treatments],
+  fertilityTreatmentAbsenceCivilService[Missed work counts as sick days],
   canRegisterChildToKupatHolim[Child can be registered to Kupat Holim Meuhedet (https://www.meuhedet.co.il/en/)],
   privateHealthInsuranceByEmployer[The employer has to provide private health insurance, even for non-registered workers.],
   pregnancyRelatedIssuesCovered[Private insurance has to cover all preganancy-related treatments, including amniocentesis when recommended.]
@@ -116,7 +127,11 @@ RoadAccidentCompensation: some of
   roadAccidentPayment[Paid by the insurance company of the vehicle. Needs to be claimed.]
 .
 
-SeveranceProtection: TODO.
+SeveranceProtection: some of
+  fertilityGeneral[Can't fire during treatment and 150 days after, unless approved by Ministry of Labour],
+  fertilityCivilService[Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.]
+.
+
 PersonalAccidentCompensation: TODO.
 UnpaidLeave: TODO.
 CompensationAccumulation: TODO.
@@ -126,6 +141,14 @@ ProlongedMaternatyLeave: TODO.
 UnpaidVacation: TODO.
 PrivateInsuranceCompensation: TODO.
 MedicalCare: TODO.
+
+FerilityTreatmentSickDays: one of
+  s4d16[Up to 4 series, 16 days each, max total of 64 days yearly, based on regular sick days],
+  s4d18[Up to 4 series, 18 days each, max total of 72 days yearly, based on regular sick days],
+  s4d20[Up to 4 series, 20 days each, max total of 80 days yearly, based on regular sick days],
+  s4d22[Up to 4 series, 22 days each, max total of 88 days yearly, based on regular sick days]
+.
+
 MaxSickDays[Amount of sick days, varies by sector]: one of
   regular[Can claim 1.5 days per employment month, up to 90 days. Work contract may enable more.],
   ext2_130[Can claim 2 days per employment month, up to 130 days],
@@ -136,4 +159,4 @@ MaxSickDays[Amount of sick days, varies by sector]: one of
 InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of
   b1LikeMedicalStatus,
   foreignWorker[Not Israeli or Palestinian],
-  pregnancy, lightIllness.
+  pregnancy, lightIllness, sixDayWorkweek.

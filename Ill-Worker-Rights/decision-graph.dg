@@ -5,7 +5,7 @@
   }
 ]
 [set: SalaryUnits=unset; Sector=unset]
-[set: Duties+=supportingMedicalDocumentation, kupatHolimNotice; Recommendations+=checkWorkContractBenefits]
+[set: Duties+=supportingMedicalDocumentation; Notices+=kupatHolimNotice; Recommendations+=checkWorkContractBenefits]
 [>sIntro< section:
   {title: Introduction}
   [>initialFilter-missWork< ask:
@@ -90,7 +90,7 @@
     {options:
       {male:
         [>cause-male< ask:
-          {text: What caused the health condision in question?}
+          {text: What caused the health condition in question?}
           {terms:
             {health condition: Could be, for example,  illness or injury.}
           }
@@ -104,7 +104,7 @@
       }
       {female:
         [>cause-female< ask:
-          {text: What caused the health condision in question?}
+          {text: What caused the health condition in question?}
           {terms:
             {health condition: Could be, for example,  illness or injury.}
           }
@@ -150,7 +150,10 @@
               [call: pAllIllness]
             }
             {miscarrige: [todo: miscarrige]}
-            {fertility treatments: [todo: fertility treatments]}
+            {fertility treatments:
+              [set: Pregnancy=fertilityTreatments]
+              [call: pFertilityTreatments]
+            }
           }
         ]
       }
@@ -564,4 +567,44 @@ Initial case data gatehring
 [-->pLightIllness<
   [call: pAllIllness]
   [set: InternalFlags+=lightIllness]
+--]
+
+[-->pFertilityTreatments<
+  [set: SimpleBenefits+=fertilityTreatmentHireProtrection;
+                Duties+=fertilityTreatments;
+                Notices+=fertilityTreatmentsAbsence]
+  [when:
+    {Sector=civilService: [set: SimpleBenefits += fertilityTreatmentAbsenceCivilService]}
+    {else: [set: SimpleBenefits += fertilityTreatmentAbsence]}
+  ]
+  [when:
+    {EmploymentScope=singlePartTime:
+      [set: Notices += fertilityTreatmentsPartialWorkAbsence]
+    }
+    {else:
+      [>ft-workweek< ask:
+        {text: How many workdays do you have each week? }
+        {answers:
+          {6: [set: InternalFlags+=sixDayWorkweek]}
+          {5:}
+        }
+      ]
+      [when:
+        {Sector=civilService:
+          [when:
+            {InternalFlags+=sixDayWorkweek: [set: FerilityTreatmentSickDays=s4d22] }
+            {else: [set: FerilityTreatmentSickDays=s4d18]}
+          ]
+        }
+        {else:
+          [when:
+            {InternalFlags+=sixDayWorkweek: [set: FerilityTreatmentSickDays=s4d20] }
+            {else: [set: FerilityTreatmentSickDays=s4d16]}
+          ]
+        }
+      ]
+    }
+  ]
+
+
 --]

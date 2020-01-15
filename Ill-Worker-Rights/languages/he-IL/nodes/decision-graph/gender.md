@@ -1,1 +1,1 @@
-Are you a woman?
+האם את אשה?

@@ -602,3 +602,75 @@ Arrange visa for the duration of the sickness. For illnesses 3 months or longer,
 checkWorkContractBenefits
 Check if your work contract gives you additional rights.
 
+# HealthRelatedRights/Duties/fertilityTreatments
+fertilityTreatments
+Provide doctor's approval, inform the employer beforehand, limited to available sickness days
+
+# HealthRelatedRights/Notices
+Notices
+Relevant information for case in point
+
+# HealthRelatedRights/Notices/kupatHolimNotice
+kupatHolimNotice
+Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
+
+# HealthRelatedRights/Notices/fertilityTreatmentsAbsence
+fertilityTreatmentsAbsence
+Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.
+
+# HealthRelatedRights/Notices/fertilityTreatmentsPartialWorkAbsence
+fertilityTreatmentsPartialWorkAbsence
+Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.
+
+# HealthRelatedRights/Properties/Pregnancy/fertilityTreatments
+fertilityTreatments
+
+
+# HealthRelatedRights/Properties/InternalFlags/sixDayWorkweek
+sixDayWorkweek
+
+
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentHireProtrection
+fertilityTreatmentHireProtrection
+Employers can't discriminate candidates b/c fertility treatments
+
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsence
+fertilityTreatmentAbsence
+Employees allowed to miss work b/c fertility treatments
+
+# HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsenceCivilService
+fertilityTreatmentAbsenceCivilService
+Missed work counts as sick days
+
+# HealthRelatedRights/Benefits/SeveranceProtection
+SeveranceProtection
+
+
+# HealthRelatedRights/Benefits/SeveranceProtection/fertilityGeneral
+fertilityGeneral
+Can't fire during treatment and 150 days after, unless approved by Ministry of Labour
+
+# HealthRelatedRights/Benefits/SeveranceProtection/fertilityCivilService
+fertilityCivilService
+Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays
+FerilityTreatmentSickDays
+
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d16
+s4d16
+Up to 4 series, 16 days each, max total of 64 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d18
+s4d18
+Up to 4 series, 18 days each, max total of 72 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d20
+s4d20
+Up to 4 series, 20 days each, max total of 80 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d22
+s4d22
+Up to 4 series, 22 days each, max total of 88 days yearly, based on regular sick days
+
