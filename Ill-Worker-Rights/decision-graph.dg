@@ -533,7 +533,7 @@ Initial case data gatehring
 
 [-->pCheckIllnessOnRelevantDay<
   [>partialWorkWhen< ask:
-    {text: Did the illness occur in one of your workign days?}
+    {text: Did the illness occur in one of your working days?}
     {answers:
         {no: [>partialWorkReject-time< reject: You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway. ]}
     }
