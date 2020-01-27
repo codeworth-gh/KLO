@@ -1,18 +1,18 @@
 <localized-model direction="rtl" ui-lang="he">
-  <title>Health Related Worker Rights</title>
-  <subtitle></subtitle>
+  <title>זכויות עובדים בענייני בריאות</title>
+  <subtitle>דעו את זכויותיכם כאשר אתם או הקרובים לכם חולים</subtitle>
   <keywords></keywords>
   <authors>
     <group>
-      <name>Kav Laoved Israel</name>
+      <name>קו לעובד</name>
       <contact>www.klo.org.il</contact>
     </group>
     <person>
-      <name>Michal Tadjer</name>
-      <affiliation>Kav Laoved</affiliation>
+      <name>עו״ד מיכל תג׳ר</name>
+      <affiliation>קו לעובד</affiliation>
     </person>
     <person>
-      <name>Michael Bar-Sinai</name>
+      <name>מיכאל בר-סיני</name>
       <affiliation>CodeWorth.io</affiliation>
     </person>
   </authors>

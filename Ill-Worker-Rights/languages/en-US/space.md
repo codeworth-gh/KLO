@@ -1,5 +1,5 @@
 # HealthRelatedRights
-HealthRelatedRights
+Health Related Rights
 
 
 # HealthRelatedRights/Duties
@@ -7,11 +7,11 @@ Duties
 What the employee is required do
 
 # HealthRelatedRights/Duties/supportingMedicalDocumentation
-supportingMedicalDocumentation
+supporting medical documentation
 
 
 # HealthRelatedRights/Duties/handleVisa
-handleVisa
+handle visa
 
 
 # HealthRelatedRights/Properties
@@ -19,7 +19,7 @@ Properties
 Factual description of the case
 
 # HealthRelatedRights/Properties/ParentingGroupSize
-ParentingGroupSize
+Parenting Group Size
 
 
 # HealthRelatedRights/Properties/ParentingGroupSize/couple
@@ -27,7 +27,7 @@ couple
 
 
 # HealthRelatedRights/Properties/ParentingGroupSize/singleParent
-singleParent
+single parent
 
 
 # HealthRelatedRights/Properties/Pregnancy
@@ -43,11 +43,11 @@ complicated
 
 
 # HealthRelatedRights/Properties/EmploymentDescription
-EmploymentDescription
+Employment Description
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits
-SalaryUnits
+Salary Units
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/monthly
@@ -63,12 +63,12 @@ hourly
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType
-EmploymentType
+Employment Type
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/direct
 direct
-"תלוש ממעסיק יחיד קבוע, שמקבל את השירות"
+Salary is paid by a single employer, which is also the one receiving the service from the worker's job.
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/freelance
 freelance
@@ -76,14 +76,13 @@ freelance
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/contractor
 contractor
-"עובד קבלן"
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/jointEmployment
-jointEmployment
-"יותר ממעסיק אחד אחראי לשכר, עבור אותה עבודה"
+joint employment
+More than a single employer is paying for the same job.
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope
-EmploymentScope
+Employment Scope
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/partial
@@ -107,7 +106,7 @@ other
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/civilService
-civilService
+civil service
 State workers
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/manpower
@@ -115,7 +114,7 @@ manpower
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/houseKeeping
-houseKeeping
+housekeeping
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/security
@@ -123,7 +122,7 @@ security
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/eventFacilities
-eventFacilities
+event facilities
 e.g. wedding gardens
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/hotels
@@ -163,15 +162,15 @@ Time in Israel
 
 
 # HealthRelatedRights/Properties/TimeInIsrael/moreThan10Years
-moreThan10Years
+more than 10 years
 
 
 # HealthRelatedRights/Properties/TimeInIsrael/lessThan10Years
-lessThan10Years
+less than 10 years
 
 
 # HealthRelatedRights/Properties/AccidentType
-AccidentType
+Accident Type
 
 
 # HealthRelatedRights/Properties/AccidentType/other
@@ -179,19 +178,19 @@ other
 
 
 # HealthRelatedRights/Properties/AccidentType/roadAccident
-roadAccident
+road accident
 
 
 # HealthRelatedRights/Properties/RelatedDisability
-RelatedDisability
+Related Disability
 
 
 # HealthRelatedRights/Properties/RelatedDisability/parentOfDisabled
-parentOfDisabled
+parent of disabled
 
 
 # HealthRelatedRights/Properties/RelatedDisability/spouseOfDisabled
-spouseOfDisabled
+spouse of disabled
 
 
 # HealthRelatedRights/Properties/RelatedDisability/disabled
@@ -203,19 +202,19 @@ Benefits
 
 
 # HealthRelatedRights/Benefits/SimpleBenefits
-SimpleBenefits
+Simple Benefits
 
 
 # HealthRelatedRights/Benefits/SimpleBenefits/sicknessPay
-sicknessPay
+sickness pay
 Minimal by law: 1.5 day for each employment month, to a maximum of 90 days.
 
 # HealthRelatedRights/Benefits/SimpleBenefits/freeMedicalCare
-freeMedicalCare
+free medical care
 
 
 # HealthRelatedRights/Benefits/SimpleBenefits/roadAccidentPayment
-roadAccidentPayment
+road accident payment
 Paid by the insurance company of the car
 
 # HealthRelatedRights/Recommendations
@@ -223,35 +222,34 @@ Recommendations
 
 
 # HealthRelatedRights/Recommendations/niiAccidentPayment
-niiAccidentPayment
+NII Accident Payment
 Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.
 
 # HealthRelatedRights/Duties/singleParentStatement
-singleParentStatement
+single parent statement
 
 
 # HealthRelatedRights/Duties/guardianDocument
-guardianDocument
-״צו אפוטרופוס חתום״
+guardian document
+
 
 # HealthRelatedRights/Duties/declaration_OnlyAdultToUseBenefits
-declaration_OnlyAdultToUseBenefits
-employer may ask a statment declaring the spouse did not claim this benefit for the same child
+only adult using benefits statement
+employer may ask a statement declaring the spouse did not claim this benefit for the same child
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/selfEmployed
-selfEmployed
+self employed
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/employee
 employee
-שכיר
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags
-EmploymentFlags
+Employment Flags
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentFlags/employed1YearAndAbove
-employed1YearAndAbove
+employed 1 Year +
 
 
 # HealthRelatedRights/Properties/Parenting
@@ -259,7 +257,7 @@ Parenting
 
 
 # HealthRelatedRights/Properties/Parenting/FamilySize
-FamilySize
+Family Size
 
 
 # HealthRelatedRights/Properties/Parenting/FamilySize/couple
@@ -267,15 +265,15 @@ couple
 
 
 # HealthRelatedRights/Properties/Parenting/FamilySize/singleParent
-singleParent
+single parent
 
 
 # HealthRelatedRights/Properties/Parenting/ParentingFlags
-ParentingFlags
+Parenting Flags
 
 
 # HealthRelatedRights/Properties/Parenting/ParentingFlags/fosterFamily
-fosterFamily
+foster family
 משפחת אומנה
 
 # HealthRelatedRights/Properties/RelationToSickPerson
@@ -319,27 +317,27 @@ sick Spouse Days
 Can use up to 6 days a year from your allowance to aid your sick parent.
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/aidingOrganDonor
-aidingOrganDonor
+aiding organ donor
 Eligible for 7 days each year for nursing a spouse that donated an organ.
 
 # HealthRelatedRights/Benefits/ParentSickness
-ParentSickness
+Parent Sickness
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags
-SickParentFlags
+Sick Parent Flags
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/sickParentDays
-sickParentDays
+sick parent days
 Can use up to 8 days a year from your allowance to aid your sick parent.
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/aidingOrganDonor
-aidingOrganDonor
+aiding organ donor
 Eligible for 7 days each year for nursing a parent that donated an organ.
 
 # HealthRelatedRights/Benefits/SicknessPay
-SicknessPay
+Sickness Pay
 
 
 # HealthRelatedRights/Benefits/SicknessPay/gradual
@@ -347,27 +345,27 @@ gradual
 None for the first day, 1/2 salary for days 2 and 3, full after
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOne
-fullFromDayOne
+full from day one
 Full salary from sick day 1
 
 # HealthRelatedRights/Benefits/ChildSickness
-ChildSickness
+Child Sickness
 
 
 # HealthRelatedRights/Benefits/ChildSickness/sickChildPay
-sickChildPay
+sick child pay
 
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMaligantChildPay
-dialysisOrMaligantChildPay
+dialysis or maligant child pay
 Can use up to 90 days/year, based on sick days or vacation days
 
 # HealthRelatedRights/Benefits/ChildSickness/disabledChildPay
-disabledChildPay
+disabled child pay
 
 
 # HealthRelatedRights/Benefits/ChildSickness/sickChildDays
-sickChildDays
+sick child days
 Parents can use up to 8 sick days from their allowance for aiding their sick children.
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singleFullTime
@@ -402,23 +400,23 @@ Worker is eligible for up to 35% income tax exemption, when a parent or spouse n
 * [116a](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
 * [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
 # HealthRelatedRights/Duties/medicalStatementForDependency
-medicalStatementForDependency
+dependency medical statement
 Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions
 
 # HealthRelatedRights/Duties/sickSpouseStatement
-sickSpouseStatement
+sick spouse statement
 Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3
 
 # HealthRelatedRights/Duties/sickParentStatement
-sickParentStatement
+sick parent statement
 https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
 
 # HealthRelatedRights/Duties/kupatHolimNotice
-kupatHolimNotice
+kupatHolim Notice
 Medical statements should be obtained form teh Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
 
 # HealthRelatedRights/Benefits/PaidSicknessDays
-PaidSicknessDays
+Paid Sickness Days
 How are paid sickness days calculated
 
 # HealthRelatedRights/Benefits/PaidSicknessDays/psdFormula1
@@ -430,35 +428,35 @@ psdFormula2
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/fundingForNursingHospitalization
-fundingForNursingHospitalization
+nursing hospitalization funding
 Financial aid for hospitalization: https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/niiParentNursingAllowance
-niiParentNursingAllowance
+NII parent nursing allowance
 May claim parent nursing allowance from national insurance (http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx).
 
 # HealthRelatedRights/Benefits/TaxExemptions
-TaxExemptions
+Tax Exemptions
 
 
 # HealthRelatedRights/Benefits/TaxExemptions/hospitalizedParentOrSpouse
-hospitalizedParentOrSpouse
+hospitalized parent or spouse
 Can have up to 35% income tax exemption.
 
 # HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdorwals
-taxFreeFundsWithdorwals
+tax-free funds withdrowals
 Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
-dialysisOrMalignantChildPay
+dialysis or malignant child pay
 Can use up to 90 days/year, based on sick days or vacation days
 
 # HealthRelatedRights/Recommendations/noEligibilityForSickDays
-noEligibilityForSickDays
+no eligibility for sick days
 Worker is not eligible for sick days from the employer because of this condition.
 
 # HealthRelatedRights/Recommendations/freelanceConsultLawyer
-freelanceConsultLawyer
+freelance consult lawyer
 Freelance workers should consult a lawyer regardign benefits from their employers.
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
@@ -470,19 +468,19 @@ unset
 
 
 # HealthRelatedRights/Duties/roadAccidentInvolvmentStatement
-roadAccidentInvolvmentStatement
+road accident involvment statement
 A statement from the police validating that you were involved in a road accident
 
 # HealthRelatedRights/Properties/InternalFlags
-InternalFlags
-Internal data sotred for the interview. Can be safely ignored.
+Internal Flags
+Internal data stored for the interview. Can be safely ignored.
 
 # HealthRelatedRights/Properties/InternalFlags/b1LikeMedicalStatus
-b1LikeMedicalStatus
+b1-like medical status
 
 
 # HealthRelatedRights/Properties/InternalFlags/foreignWorker
-foreignWorker
+foreign worker
 Not Israeli or Palestinian
 
 # HealthRelatedRights/Properties/InternalFlags/pregnancy
@@ -490,11 +488,11 @@ pregnancy
 
 
 # HealthRelatedRights/Properties/InternalFlags/lightIllness
-lightIllness
+light illness
 
 
 # HealthRelatedRights/Benefits/MaxSickDays
-MaxSickDays
+Max Sick Days
 Amount of sick days, varies by sector
 
 # HealthRelatedRights/Benefits/MaxSickDays/regular
@@ -518,92 +516,92 @@ ext220
 Can claim up to 220 days per year
 
 # HealthRelatedRights/Benefits/SimpleBenefits/canRegisterChildToKupatHolim
-canRegisterChildToKupatHolim
+can register child to kupat holim
 Child can be registered to Kupat Holim Meuhedet (https://www.meuhedet.co.il/en/)
 
 # HealthRelatedRights/Benefits/SimpleBenefits/privateHealthInsuranceByEmployer
-privateHealthInsuranceByEmployer
+private health insurance by employer
 The employer has to provide private health insurance, even for non-registered workers.
 
 # HealthRelatedRights/Benefits/SimpleBenefits/pregnancyRelatedIssuesCovered
-pregnancyRelatedIssuesCovered
+pregnancy related issues covered
 Private insurance has to cover all preganancy-related treatments, including amniocentesis when recommended.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation
-RoadAccidentCompensation
+Road Accident Compensation
 
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/possibleNIAid
-possibleNIAid
+possible NI aid
 May be eligile for stipend or other help from National Insurance.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/lawyerFeesCapped
-lawyerFeesCapped
+lawyer fees capped
 A lawyer request more than a specified amount for handing this case.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPayment
-roadAccidentPayment
+road accident payment
 Paid by the insurance company of the vehicle. Needs to be claimed.
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
-fullFromDayOneProbably
+full from day one probably
 Probably eligible for full salary from sick day 1
 
 # HealthRelatedRights/Benefits/ChildSickness/disabledChildDays
-disabledChildDays
+disabled child days
 Can claim 18 days and 52 hours for treating disabled child.
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentDisabledChildDays
-singleParentDisabledChildDays
+single parent disabled child days
 Can claim 36 days and 104 hours for treating disabled child.
 
 # HealthRelatedRights/Benefits/ChildSickness/singleGuardianAdult
-singleGuardianAdult
+single guardian adult
 Single adult taking care of child (e.g. single parent).
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentSickChildDays
-singleParentSickChildDays
+single parent sick child days
 Can claim 16 child sickness days per year.
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentDialisisMalignantChildDays
-singleParentDialisisMalignantChildDays
+single parent dialisis malignant child days
 Can claim up to 110 sick days, when employed for more than a year.
 
 # HealthRelatedRights/Recommendations/checkPrivateInsuranceCoverage
-checkPrivateInsuranceCoverage
+check private insurance coverage
 Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.
 
 # HealthRelatedRights/Recommendations/keepPayingPrivateInsurance
-keepPayingPrivateInsurance
+keep paying private insurance
 Must keep paying private insurance, even when not working.
 
 # HealthRelatedRights/Recommendations/lossOfWorkAbilityWarning
-lossOfWorkAbilityWarning
+loss of work ability warning
 If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.
 
 # HealthRelatedRights/Recommendations/getPrivateMedicalInsurance
-getPrivateMedicalInsurance
+get private medical insurance
 You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
     Employer can take between 125 to 136 ILS for this from your monthly salary.
 
 # HealthRelatedRights/Recommendations/emergencyMedicalTreatmentIsFree
-emergencyMedicalTreatmentIsFree
+Free emergency medical care
 All emergency medical treatment is free in Israel.
 
 # HealthRelatedRights/Recommendations/pregnancyRelatedIssuesNotCovered
-pregnancyRelatedIssuesNotCovered
-The medican insurance will not cover any pregrnancy-related issues.
+pregnancy related issues not covered
+The medical insurance will not cover any pregrnancy-related issues.
 
 # HealthRelatedRights/Recommendations/b1VisaDuringSickness
-b1VisaDuringSickness
-Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. 
+b1 visa during sickness
+Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa.
 
 # HealthRelatedRights/Recommendations/checkWorkContractBenefits
-checkWorkContractBenefits
+check work contract benefits
 Check if your work contract gives you additional rights.
 
 # HealthRelatedRights/Duties/fertilityTreatments
-fertilityTreatments
+fertility treatments
 Provide doctor's approval, inform the employer beforehand, limited to available sickness days
 
 # HealthRelatedRights/Notices
@@ -611,51 +609,51 @@ Notices
 Relevant information for case in point
 
 # HealthRelatedRights/Notices/kupatHolimNotice
-kupatHolimNotice
+kupat holim notice
 Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
 
 # HealthRelatedRights/Notices/fertilityTreatmentsAbsence
-fertilityTreatmentsAbsence
+fertility treatments absence
 Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.
 
 # HealthRelatedRights/Notices/fertilityTreatmentsPartialWorkAbsence
-fertilityTreatmentsPartialWorkAbsence
+fertility treatments partial work absence
 Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.
 
 # HealthRelatedRights/Properties/Pregnancy/fertilityTreatments
-fertilityTreatments
+fertility treatments
 
 
 # HealthRelatedRights/Properties/InternalFlags/sixDayWorkweek
-sixDayWorkweek
+6-Day Workweek
 
 
 # HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentHireProtrection
-fertilityTreatmentHireProtrection
+fertility treatment hire protrection
 Employers can't discriminate candidates b/c fertility treatments
 
 # HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsence
-fertilityTreatmentAbsence
+fertility treatment absence
 Employees allowed to miss work b/c fertility treatments
 
 # HealthRelatedRights/Benefits/SimpleBenefits/fertilityTreatmentAbsenceCivilService
-fertilityTreatmentAbsenceCivilService
+fertility treatment absence (civil service)
 Missed work counts as sick days
 
 # HealthRelatedRights/Benefits/SeveranceProtection
-SeveranceProtection
+Severance Protection
 
 
 # HealthRelatedRights/Benefits/SeveranceProtection/fertilityGeneral
-fertilityGeneral
+fertility
 Can't fire during treatment and 150 days after, unless approved by Ministry of Labour
 
 # HealthRelatedRights/Benefits/SeveranceProtection/fertilityCivilService
-fertilityCivilService
+fertility (civil service)
 Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.
 
 # HealthRelatedRights/Benefits/FerilityTreatmentSickDays
-FerilityTreatmentSickDays
+Ferility Treatment Sick Days
 
 
 # HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d16
@@ -679,7 +677,7 @@ miscarriage
 
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays
-MiscarriageSickDays
+Miscarriage Sick Days
 
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/week
@@ -687,11 +685,11 @@ week
 Up to 7 days based on sick day allowance
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/weekCivilService
-weekCivilService
-Up to 7 days based on sick day allowance, immediatly after the miscarriage
+week (civil service)
+Up to 7 days based on sick day allowance, immediately after the miscarriage
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/fullMaternityLeave
-fullMaternityLeave
+full maternity leave
 Full maternity leave, including other maternity benefits (same as non-silent birth)
 
 # HealthRelatedRights/Benefits/SeveranceProtection/miscarriage
@@ -699,6 +697,20 @@ miscarriage
 Can't fire, downscale position, or otherwise hurt income.
 
 # HealthRelatedRights/Recommendations/extendedMiscarriageLeave
-extendedMiscarriageLeave
+extended miscarriage leave
 eligible to up to 6 week leave, pending on medical doctor approval
 
+# HealthRelatedRights/Duties/workRelatedInjuryNisClaim
+injury allowance NIS
+A claim to national insurance for injury allowance.
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues
+Work Related Health Issues
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/reducedInjuryAllowance
+reduced injury allowance
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/injuryAllowance
+injury allowance

@@ -214,9 +214,6 @@
   ]
 --]
 
-[-->pWorkRelatedAcciedentBenefits<
-[todo: Implement work related acciedent benefits.]
---]
 
 [-->pParentCondition<
   [>sParentCondition< section:
@@ -233,7 +230,7 @@
             }
             {answers:
               {yes:
-                [set: TaxExemptions  +=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals;
+                [set: TaxExemptions  +=hospitalizedParentOrSpouse, taxFreeFundsWithdrowals;
                       SickParentFlags+=niiParentNursingAllowance, fundingForNursingHospitalization;
                       Recommendations+=noEligibilityForSickDays]}
             }
@@ -296,7 +293,7 @@
                 [>hospitalizedSpouse< ask:
                   {text: Is your spouse hospitalized in a nursing institute?}
                   {answers:
-                    {yes: [set: TaxExemptions+=hospitalizedParentOrSpouse, taxFreeFundsWithdorwals]}
+                    {yes: [set: TaxExemptions+=hospitalizedParentOrSpouse, taxFreeFundsWithdrowals]}
                   }
                 ]
               }
@@ -627,6 +624,25 @@ Initial case data gatehring
             {yes: [set: Recommendations+=extendedMiscarriageLeave]}
           }
         ]
+      }
+    }
+  ]
+--]
+
+[-->pWorkRelatedAcciedentBenefits<
+  [>wrab-IsFull< ask:
+    {text: Did you lose your ability to work because of the accident?}
+    {answers:
+      {yes, fully:
+        [set: Duties+=supportingMedicalDocumentation;
+           WorkRelatedHealthIssues=injuryAllowance]
+      }
+      {yes, partially:
+        [set: Duties+=supportingMedicalDocumentation;
+           WorkRelatedHealthIssues=reducedInjuryAllowance]
+      }
+      {no:
+        [todo: I'm assuming this is regular sick days?]
       }
     }
   ]

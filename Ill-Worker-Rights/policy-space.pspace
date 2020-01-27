@@ -14,7 +14,8 @@ Duties[What the employee is required do]: some of
   declaration_OnlyAdultToUseBenefits[employer may ask a statment declaring the spouse did not claim this benefit for the same child],
   handleVisa,
   fertilityTreatments[Provide doctor's approval, inform the employer beforehand, limited to available sickness days],
-  roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident]
+  roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident],
+  workRelatedInjuryNisClaim[A claim to national insurance for injury allowance]
 .
 
 Notices[Relevant information for case in point]: some of
@@ -28,7 +29,7 @@ Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSic
                       PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation, SeverenceBenefits,
                       TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave, UnpaidVacation,
                       PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays,
-                      FerilityTreatmentSickDays, MiscarriageSickDays.
+                      FerilityTreatmentSickDays, MiscarriageSickDays, WorkRelatedHealthIssues.
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
@@ -118,7 +119,7 @@ PaidSicknessDays[How are paid sickness days calculated]: one of psdFormula1, psd
 
 TaxExemptions: some of
   hospitalizedParentOrSpouse[Can have up to 35% income tax exemption.],
-  taxFreeFundsWithdorwals[Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf]
+  taxFreeFundsWithdrowals[Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf]
 .
 
 RoadAccidentCompensation: some of
@@ -167,3 +168,7 @@ InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: s
   b1LikeMedicalStatus,
   foreignWorker[Not Israeli or Palestinian],
   pregnancy, lightIllness, sixDayWorkweek.
+
+WorkRelatedHealthIssues: one of
+  reducedInjuryAllowance,
+  injuryAllowance.

@@ -1,176 +1,179 @@
 # HealthRelatedRights
-HealthRelatedRights
+זכויות עובדים במחלה
 
 
 # HealthRelatedRights/Duties
-Duties
-What the employee is required do
+חובות
+פעולות שיש לבצע על מנת לממש את זכויות העובד
 
 # HealthRelatedRights/Duties/supportingMedicalDocumentation
-supportingMedicalDocumentation
+אישורים רפואיים
+יש לספק אישורים רפואיים התומכים בפרטי המקרה.
 
 
 # HealthRelatedRights/Duties/singleParentStatement
-singleParentStatement
+הצהרת הורה יחיד
 
 
 # HealthRelatedRights/Duties/guardianDocument
 צו אפוטרופוס חתום
 
 # HealthRelatedRights/Duties/handleVisa
-handleVisa
+טיפול בויזה
 
 
 # HealthRelatedRights/Properties
-Properties
-Factual description of the case
+פרטי המקרה
+תאור מפורט של המקרה
 
 
 # HealthRelatedRights/Properties/Pregnancy
-Pregnancy
+סיווג הריון
 
 
 # HealthRelatedRights/Properties/Pregnancy/regular
-regular
+רגיל
 
 
 # HealthRelatedRights/Properties/Pregnancy/complicated
-complicated
+מורכב
 
 
 # HealthRelatedRights/Properties/EmploymentDescription
-EmploymentDescription
+תאור העסקה
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits
-SalaryUnits
+סוג תשלום
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/monthly
-monthly
+חודשי
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/daily
-daily
+יומי
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/hourly
-hourly
+שעתי
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType
-EmploymentType
+סוג
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope
-EmploymentScope
+היקף
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector
-Sector
+סקטור
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/civilService
-civilService
-State workers
+שירות ציבורי
+עובדי מדינה
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/manpower
-manpower
+כוח אדם
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/houseKeeping
-houseKeeping
+משק בית
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/security
-security
+אבטחה
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/eventFacilities
-eventFacilities
-e.g. wedding gardens
+אתרי אירועים
+למשל גני או אולמות אירועים.
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/hotels
-hotels
+מלונאות
 
 
 # HealthRelatedRights/Properties/RelationToSickPerson
-RelationToSickPerson
-How is the worker related to the person whose health issues are desri
+קשר לאדם החולה
+האופן בו העובד קשור לאדם החולה
+---
+״העובד״ הוא האדם שאת זכויותיו אנחנו מחשבים כאן. עובדים זכאים לזכויות גם כאשר הקרובים להם חולים.
 
 # HealthRelatedRights/Properties/RelationToSickPerson/parentOfSick
-parentOfSick
+הורה
 
 
 # HealthRelatedRights/Properties/RelationToSickPerson/spouseOfSick
-spouseOfSick
+בן/בת זוג
 
 
 # HealthRelatedRights/Properties/RelationToSickPerson/childOfSick
-childOfSick
+ילד
 
 
 # HealthRelatedRights/Properties/RelationToSickPerson/self
-self
+העובד עצמו
 
 
 # HealthRelatedRights/Properties/Gender
-Gender
- This is the legal
-        gender of the
-        sick person
+מגדר
+המגדר של האדם החולה
+---
+בפרט - לא של העובד. אם העובד הוא גבר המבקש להבין מהן זכויותיו על מנת לסעוד את אימו החולה, שדה זה צריך להיות `אשה`, לא `גבר`.
 
 
 # HealthRelatedRights/Properties/Gender/male
-male
+גבר
 
 
 # HealthRelatedRights/Properties/Gender/female
-female
+אשה
 
 
 # HealthRelatedRights/Properties/LegalStatus
-LegalStatus
+מעמד חוקי
 
 
 # HealthRelatedRights/Properties/LegalStatus/israeliCitizenship
-israeliCitizenship
+אזרחות ישראלית
 
 
 # HealthRelatedRights/Properties/LegalStatus/b1Visa
-b1Visa
+ויזה ב׳1
 
 
 # HealthRelatedRights/Properties/LegalStatus/palestinian
-palestinian
+פלשתינאי
 
 
 # HealthRelatedRights/Properties/LegalStatus/noPermit
-noPermit
+ללא היתר
 
 # HealthRelatedRights/Properties/AccidentType
-AccidentType
+סוג תאונה
 
 
 # HealthRelatedRights/Properties/AccidentType/other
-other
+אחר
 
 
 # HealthRelatedRights/Properties/AccidentType/roadAccident
-roadAccident
+תאונת דרכים
 
 
 # HealthRelatedRights/Benefits
-Benefits
+זכויות
 
 
 # HealthRelatedRights/Benefits/SimpleBenefits
-SimpleBenefits
+זכויות פשוטות
 
 # HealthRelatedRights/Benefits/SimpleBenefits/freeMedicalCare
-freeMedicalCare
+טיפול רפואי חינם
 
 # HealthRelatedRights/Benefits/ChildSickness
-ChildSickness
+מחלת ילד
 
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
@@ -178,58 +181,59 @@ dialysisOrMaligantChildPay
 Can use up to 90 days/year, based on sick days or vacation days
 
 # HealthRelatedRights/Recommendations
-Recommendations
+המלצות
 
 
 # HealthRelatedRights/Recommendations/niiAccidentPayment
-niiAccidentPayment
-Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.
+פיצויי תאונה מביטוח לאומי
+יש לבדוק זכאות לפיצויים מביטוח לאומי. על בסיס ביטוח תאונות אישיות.
 
 # HealthRelatedRights/Duties/declaration_OnlyAdultToUseBenefits
-declaration_OnlyAdultToUseBenefits
-employer may ask a statment declaring the spouse did not claim this benefit for the same child
+הצהרת בוגר נהנה יחיד
+המעסיק רשאי לדרוש הצהרה כי בן/בת הזוג של העובד לא ניצלו את הזכות המוקנית עקב מצב הילד
+---
+כאשר זכויות ניתנות עבור ילד חולה, המעסיק רשאי לדרוש הצהרה כי בת/בן הזוג של העובד לא ניצלה את הזכויות. זאת, על מנת למנוע ניצול כפול של זכות יחידה.
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/selfEmployed
-selfEmployed
+עצמאי
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentType/employee
 שכיר
 
 # HealthRelatedRights/Properties/Parenting
-Parenting
+הורות
 
 
 # HealthRelatedRights/Properties/Parenting/ParentingFlags
-ParentingFlags
+סימונים
 
 
 # HealthRelatedRights/Properties/Parenting/ParentingFlags/fosterFamily
-fosterFamily
 משפחת אומנה
 
 # HealthRelatedRights/Benefits/SpouseSickness
-SpouseSickness
+מחלת בן/בת זוג
 
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags
-SickSpouseFlags
+סימונים
 
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseDays
 sickSpouseDays
-Can use up to 6 days a year from your allowance to aid your sick parent.
+Can use up to 6 days a year from your allowance to aid your sick spouse.
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/aidingOrganDonor
 aidingOrganDonor
 Eligible for 7 days each year for nursing a spouse that donated an organ.
 
 # HealthRelatedRights/Benefits/ParentSickness
-ParentSickness
+מחלת הורה
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags
-SickParentFlags
+סימונים
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/sickParentDays
@@ -284,10 +288,6 @@ Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Sei
 sickParentStatement
 https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
 
-# HealthRelatedRights/Notes/kupatHolimNotice
-אישורים מקופת חולים
-יש להמציא אישורים רפואיים מקופת החולים בה החולה חבר. מעסיקים אינם חייבים לכבד אישורים רפואיים מרופאים פרטיים
-
 # HealthRelatedRights/Benefits/PaidSicknessDays
 PaidSicknessDays
 How are paid sickness days calculated
@@ -321,9 +321,11 @@ TaxExemptions
 * [116א](http://taxes.gov.il/TaxesFormsList/itc116a.pdf)
 * [127](http://taxes.gov.il/TaxesFormsList/itc127.pdf)
 
-# HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdorwals
-taxFreeFundsWithdorwals
-Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf
+# HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdrowals
+משיכת כספים ללא מס
+ניתן למשוך כספי פנסיה וחסכונות ללא מס
+---
+לפרטים ראו https://taxes.gov.il/TaxesFormsList/itc159.pdf
 
 # HealthRelatedRights/Recommendations/noEligibilityForSickDays
 noEligibilityForSickDays
@@ -486,8 +488,8 @@ Check if your work contract gives you additional rights.
 הודעות
 
 # HealthRelatedRights/Notices/kupatHolimNotice
-kupatHolimNotice
-Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.
+אישורים מקופת חולים
+יש להביא אישורים רפואיים מקופת החולים בה החולה חבר. מעסיקים רשאים להתעלם מאישורים רפואיים מרופאים פרטיים.
 
 # HealthRelatedRights/Notices/fertilityTreatmentsAbsence
 העדרות - טיפולי פוריות
@@ -565,7 +567,7 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays
-ימי מחלה בין הפלה
+ימי מחלה בגילן הפלה
 
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/week
@@ -574,7 +576,7 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 לפי סעיף 7(א) לחוק עבודת נשים- עובדת שעברה הפלה רשאית להיעדר מעבודתה 7 ימים על חשבון ימי המחלה שצברה.
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/weekCivilService
-שבוע
+שבוע (עובדות מדינה)
 עובדת שהפילה, רשאית להיעדר מעבודתה במשך שבוע מיד אחרי ההפלה.
 
 # HealthRelatedRights/Benefits/MiscarriageSickDays/fullMaternityLeave
@@ -592,3 +594,34 @@ Medical statements should be obtained from the Kupat Holim the sick person is re
 עד 6 שבועות באישור רופא
 ---
 אם בעקבות ההפלה מצבה הבריאותי של העובדת מחייב היעדרות ארוכה יותר, העובדת יכולה להביא אישור רופא, ובכך תהא זכאית להיעדר עד 6 שבועות מהעבודה
+# HealthRelatedRights/Duties/workRelatedInjuryNisClaim
+תביעת בט״ל לדמי פגיעה
+יש להגיש לביטוח לאומי תביעה לדמי פגיעה
+---
+– על העובד להגיש טופס תביעה לביטוח לאומי והודעה על פגיעה בעבודה בצירוף מסמכים רפואיים רלוונטיים.
+לנוהל הגשת תביעה לביטוח לאומי המלא ראו
+[כאן](https://www.btl.gov.il/benefits/Work_Injury/%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94/Pages/%D7%90%D7%95%D7%A4%D7%9F%20%D7%94%D7%92%D7%A9%D7%AA%20%D7%AA%D7%91%D7%99%D7%A2%D7%94%20%D7%9C%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94.aspx).
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues
+זכויות בתאונות עבודה
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/reducedInjuryAllowance
+דמי פגיעה
+מבוטח שעל פי אישור רפואי אינו מסוגל לעבוד, זכאי לתשלום דמי פגיעה כפיצוי על אובדן שכר או הכנסה.
+---
+שיעור דמי הפגיעה ליום מחושב על-פי 75% מהכנסת המבוטח החייבת בדמי ביטוח ב- 3 החודשים שקדמו ל-1 בחודש שבו הפסיק את עבודתו בשל הפגיעה, לחלק ב-90.
+אם העובד לא קיבל שכר מלא ב-3 החודשים שקדמו לפגיעה, תיבחן האפשרות לחשב את דמי הפגיעה כאילו קיבל שכר מלא. על העובד להמציא למוסד לביטוח לאומי אישורים המעידים על כך שלא קיבל שכר מלא בגלל סיבות מוצדקות (אישורי מחלה, חופשה וכיו"ב).
+לפירוט חישוב דמי הפגיעה ראו:
+[כאן](https://www.kolzchut.org.il/he/%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%93%D7%9E%D7%99_%D7%94%D7%A4%D7%92%D7%99%D7%A2%D7%94_%D7%9C%D7%A0%D7%A4%D7%92%D7%A2_%D7%AA%D7%90%D7%95%D7%A0%D7%AA_%D7%A2%D7%91%D7%95%D7%93%D7%94).
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/injuryAllowance
+דמי פגיעה מופחתים
+מבוטח שאיבד את כושר עבודתו באופן חלקי, זכאי לתשלום דמי פגיעה כפיצוי על אובדן שכר או הכנסה.
+---
+שיעור דמי הפגיעה ליום מחושב על-פי 75% מהכנסת המבוטח החייבת בדמי ביטוח ב- 3 החודשים שקדמו ל-1 בחודש שבו הפסיק את עבודתו בשל הפגיעה, לחלק ב-90.
+אם העובד לא קיבל שכר מלא ב-3 החודשים שקדמו לפגיעה, תיבחן האפשרות לחשב את דמי הפגיעה כאילו קיבל שכר מלא. על העובד להמציא למוסד לביטוח לאומי אישורים המעידים על כך שלא קיבל שכר מלא בגלל סיבות מוצדקות (אישורי מחלה, חופשה וכיו"ב).
+מבוטח שנגרם לו אי-כושר עבודה חלקי ושעות עבודתו צומצמו על פי אישור רופא קופת חולים, זכאי לדמי פגיעה מופחתים, בהתאם לשעות העבודה שנקבעו באישור הרפואי.
+לפירוט חישוב דמי הפגיעה ראו:
+[כאן](https://www.kolzchut.org.il/he/%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%93%D7%9E%D7%99_%D7%94%D7%A4%D7%92%D7%99%D7%A2%D7%94_%D7%9C%D7%A0%D7%A4%D7%92%D7%A2_%D7%AA%D7%90%D7%95%D7%A0%D7%AA_%D7%A2%D7%91%D7%95%D7%93%D7%94).

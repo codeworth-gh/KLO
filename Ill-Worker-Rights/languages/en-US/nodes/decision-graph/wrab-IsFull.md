@@ -1,0 +1,1 @@
+Did you lose your ability to work because of the accident?

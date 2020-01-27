@@ -1,51 +1,51 @@
-accident: accident
-citizen: citizen
-civil service: civil service
-daily: daily
-direct: direct
-disability: disability
-event facilities: event facilities
-fertility treatments: fertility treatments
-hotels: hotels
-hourly: hourly
-house keeping: house keeping
-malignant condition: malignant condition
-manpower: manpower
-me: me
-miscarrige: miscarrige
-monthly: monthly
-my child: my child
-my spouse: my spouse
-needs dialysis: needs dialysis
-no: no
-no permit: no permit
-non-work related: non-work related
-none of the above: none of the above
-palestinian: palestinian
-pregnancy: pregnancy
-road accident: road accident
-security: security
-serious illness or disability: serious illness or disability
-temporary illness (medium/light): temporary illness (medium/light)
-varied: varied
-visa of type b1: visa of type b1
-work related: work related
-work-related illness: work-related illness
-yes: yes
-self employed/freelance: self employed/freelance
-full time, single employer: full time, single employer
-multiple employers: multiple employers
-organ donation: organ donation
-other: other
-part time, single employer: part time, single employer
-dependent on others: dependent on others
-donating an organ: donating an organ
-hospitalized: hospitalized
-my/my partner's parent: my/my partner's parent
-1-4 years: 1-4 years
-5-7 years: 5-7 years
-8 years and above: 8 years and above
-less than a year: less than a year
+accident: תאונה
+citizen: אזרח
+civil service: השרות הציבורי
+daily: יומי
+direct: ישיר
+disability: נכות
+event facilities: אתרי אירועים
+fertility treatments: טיפולי הפריה
+hotels: מלונות
+hourly: שעתי
+house keeping: משק בית
+malignant condition: מחלה ממאירה
+manpower: כוח אדם
+me: אני
+monthly: חודשי
+my child: ילד שלי
+my spouse: בן/בת זוגי
+needs dialysis: צורך בדיאליזה
+no: לא
+no permit: ללא היתר עבודה
+non-work related: לא קשור לעבודה
+none of the above: אף אחת מהנ״ל
+palestinian: פלשתינאי
+pregnancy: הריון
+road accident: תאונת דרכים
+security: אבטחה
+serious illness or disability: מחלה או נכות קשה
+temporary illness (medium/light): מחלה זמנית (קלה/בינונית)
+visa of type b1: ויזה ב׳1
+work related: קשור לעבודה
+work-related illness: מחלה הקשורה לעבודה
+yes: כן
+self employed/freelance: עצמאי/פרילנסר
+full time, single employer: מלאה, מעסיק יחיד
+multiple employers: מספר מעסיקים
+organ donation: תרומת איברים
+other: אחר
+part time, single employer: משרה חלקית, מעסיק יחיד
+dependent on others: תלוי באחרים
+donating an organ: תרומת איברים
+hospitalized: מאושפז
+my/my partner's parent: הורה שלי או של בן/בת זוגי
+1-4 years: 1-4 שנים
+5-7 years: 5-7 שנים
+8 years and above: 8 שנים ומעלה
+less than a year: פחות משנה
 5: 5 ימים בשבוע
 6: 6 ימים בשבוע
-miscarriage: miscarriage
+miscarriage: הפלה
+yes, fully: כן, באופן מלא
+yes, partially: כן, באופן חלקי
