@@ -418,71 +418,68 @@ Initial case data gatehring
 [-->pCaseProperties<
   [>sCaseProperties< section:
     {title: Case Details}
-    [>sEmploymentForm< section:
-      {title: Form of employment}
-      [call: pEnsureSalaryUnits]
-      [consider:
-        {slot: LegalStatus}
-        {options:
-          {israeliCitizenship:
-            [>employmentType< ask:
-              {text: How are you employed?}
-              {answers:
-                {self employed/freelance:
-                  [set: EmploymentType=selfEmployed; Recommendations+=freelanceConsultLawyer]
-                  [end] <-- Freelancers are a bit on their own here.
-                }
-                {direct: [set: EmploymentType=employee]}
+    [call: pEnsureSalaryUnits]
+    [consider:
+      {slot: LegalStatus}
+      {options:
+        {israeliCitizenship:
+          [>employmentType< ask:
+            {text: How are you employed?}
+            {answers:
+              {self employed/freelance:
+                [set: EmploymentType=selfEmployed; Recommendations+=freelanceConsultLawyer]
+                [end] <-- Freelancers are a bit on their own here.
               }
-            ]
-          }
-        }
-      ]
-      [>employmentScope< ask:
-        {text: What is the scope of your employment?}
-        {answers:
-          {multiple employers: [set: EmploymentScope=multiple]}
-          {full time, single employer: [set: EmploymentScope=singleFullTime]}
-          {part time, single employer: [set: EmploymentScope=singlePartTime]}
-
-        }
-      ]
-      [consider:
-        {slot: LegalStatus}
-        {options:
-          { b1Visa: }
-          { palestinian: }
-        }
-        {else:
-          [when:
-            { RelationToSickPerson=self:
-              [>employmentSector< ask:
-                {text: Select the sector you are employed in:}
-                {answers:
-                  {civil service: [set: Sector=civilService]}
-                  {manpower: [set: Sector=manpower]}
-                  {house keeping: [set: Sector=houseKeeping]}
-                  {security: [set: Sector=security]}
-                  {event facilities: [set: Sector=eventFacilities]}
-                  {hotels: [set: Sector=hotels]}
-                  {none of the above:}
-                }
-              ]
-            }
-            {else:
-              [>employmentSector-nonSelf< ask:
-                {text: Select the sector you are employed in:}
-                {answers:
-                  {civil service: [set: Sector=civilService]}
-                  {house keeping: [set: Sector=houseKeeping]}
-                  {none of the above:}
-                }
-              ]
+              {direct: [set: EmploymentType=employee]}
             }
           ]
         }
-      ]
-    ] <-- / employment form section
+      }
+    ]
+    [>employmentScope< ask:
+      {text: What is the scope of your employment?}
+      {answers:
+        {multiple employers: [set: EmploymentScope=multiple]}
+        {full time, single employer: [set: EmploymentScope=singleFullTime]}
+        {part time, single employer: [set: EmploymentScope=singlePartTime]}
+
+      }
+    ]
+    [consider:
+      {slot: LegalStatus}
+      {options:
+        { b1Visa: }
+        { palestinian: }
+      }
+      {else:
+        [when:
+          { RelationToSickPerson=self:
+            [>employmentSector< ask:
+              {text: Select the sector you are employed in:}
+              {answers:
+                {civil service: [set: Sector=civilService]}
+                {manpower: [set: Sector=manpower]}
+                {house keeping: [set: Sector=houseKeeping]}
+                {security: [set: Sector=security]}
+                {event facilities: [set: Sector=eventFacilities]}
+                {hotels: [set: Sector=hotels]}
+                {none of the above:}
+              }
+            ]
+          }
+          {else:
+            [>employmentSector-nonSelf< ask:
+              {text: Select the sector you are employed in:}
+              {answers:
+                {civil service: [set: Sector=civilService]}
+                {house keeping: [set: Sector=houseKeeping]}
+                {none of the above:}
+              }
+            ]
+          }
+        ]
+      }
+    ]
   ]
 --]
 
