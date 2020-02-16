@@ -289,16 +289,30 @@ sickParentStatement
 https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
 
 # HealthRelatedRights/Benefits/PaidSicknessDays
-PaidSicknessDays
-How are paid sickness days calculated
+חישוב ימי מחלה
+נוסחת חישוב ימי המחלה לעובד
+---
+ימי מחלה הם הזכות הניתנת לעובד להיעדר מהעבודה בשל מחלה. מחלה מוגדרת בחוק כאי-כושר זמני או קבוע של העובד לבצע את עבודתו, הנובע על-פי ממצאים רפואיים ממצב רפואי לקוי.
+
+כל עובד זכאי לימי מחלה. כמות ימים אלו מחושבת באופן שונה לעובדים שונים. הנוסחה המופיעה כאן מסבירה איך תחושב זכאות ימי המחלה עבורך.
+
 
 # HealthRelatedRights/Benefits/PaidSicknessDays/psdFormula1
-psdFormula1
-
+חישוב ימי מחלה 1
+עדיין בפיתוח
 
 # HealthRelatedRights/Benefits/PaidSicknessDays/psdFormula2
-psdFormula2
+חישוב ימי מחלה 2
+עדיין בפיתוח
 
+
+# HealthRelatedRights/Benefits/PaidSicknessDays/psdFormulaHourly
+חישוב לעובדים שעתיים
+על בסיס היחס בין מספר הימים שעבדת למספר הימים בהם יכולת לעבוד
+---
+מספר ימי המחלה שיש לנכות ממכסת ימי המחלה הצבורים של עובד שעתי הם כל תקופת מחלתו, ללא ימי המנוחה השבועית והחגים, והם יחושבו בהתאם ליחס שבין מספר ימי העבודה שהעובד עבד בפועל ברבע השנה של העבודה המלאה ביותר בשנה שקדמה למחלתו, לבין מספר ימי העבודה האפשריים באותו רבע שנה (מספר ימי העבודה בפועל יחולק במספר ימי העבודה האפשריים).
+
+אם העובד נוהג לעבוד בימי המנוחה השבועית ובחגים – יובאו ימי המנוחה השבועית והחגים בחשבון תקופת המחלה.
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/fundingForNursingHospitalization
 fundingForNursingHospitalization
@@ -505,6 +519,10 @@ Check if your work contract gives you additional rights.
 ניתן להעדר מהעבודה לצורך טיפולי פוריות, בכפוף לתנאים
 ---
 היחס שבין שעות העבודה של העובד/ת בחודש לבין מספר שעות העבודה במשרה מלאה, כנהוג במקום העבודה; במידה וסך שעות העבודה החודשיות למשרה מלאה במקום העבודה עולה על 182 שעות, תחושב חלקיות המשרה כיחס שבין שעות העבודה ל-182 שעות.
+
+# HealthRelatedRights/Notices/hourlyWorkerCloseRelative
+שימוש בימי מחלה לעזרה לקרוב
+ניתן להשתמש בימי המחלה שצברת על מנת לעזור לקרובים
 
 # HealthRelatedRights/Properties/Pregnancy/fertilityTreatments
 טיפולי פוריות

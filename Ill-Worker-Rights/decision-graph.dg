@@ -1,5 +1,5 @@
 [>initialFilter-fired< ask:
-  {text: Did you lose your job while realising your health-related benefits?}
+  {text: Did you lose your job while fulfilling your health-related benefits?}
   {answers:
     {yes: [>rej-endOfWork< reject: Please use our End of Employment interview, at: https://klo-rights.codeworth.io/models/end-of-employment/latest]}
   }
@@ -50,6 +50,25 @@
   {slot: LegalStatus}
   {options:
     { b1Visa: [set: Recommendations += b1VisaDuringSickness] }
+  }
+]
+[call: pEnsureSalaryUnits]
+[consider:
+  {slot: SalaryUnits}
+  {options:
+    {hourly:
+      [set: PaidSicknessDays=psdFormulaHourly;
+            SeveranceProtection+=hourlySickDays]
+      [consider:
+        {slot: RelationToSickPerson}
+        {options:
+          {self: }
+        }
+        {else: <-- sick person is a close relative
+          [set: Notices += hourlyWorkerCloseRelative]
+        }
+      ]
+    }
   }
 ]
 
@@ -217,7 +236,7 @@
 
 [-->pParentCondition<
   [>sParentCondition< section:
-    {title: Sick Parent}
+    {title: Parent Condition}
     [set: Duties+=sickParentStatement]
     [>parentCondition< ask:
       {text: What is your parent medical condition?}
@@ -268,13 +287,13 @@
 
 [-->pSpouseCondition<
   [>sSpouseCondition< section:
-    {title: Sick Spouse}
+    {title: Spouse Condition}
     [set: Duties += sickSpouseStatement]
-    [>spouseoCndition< ask:
-      {text: What causes youe spouse's medical condition?}
+    [>spouseCndition< ask:
+      {text: What causes your spouse's medical condition?}
       {answers:
         {malignant condition:
-          [set: SickSpouseFlags+=sickSpouseMalignant ]
+          [set: SickSpouseFlags+=sickSpouseMalignant]
         }
         {organ donation:
           [set: SickSpouseFlags+=aidingOrganDonor]
@@ -401,27 +420,7 @@ Initial case data gatehring
     {title: Case Details}
     [>sEmploymentForm< section:
       {title: Form of employment}
-      [consider:
-        {slot: SalaryUnits}
-        {options:
-          {unset:
-            [>employmentUnits< ask:
-              {text: How is your salary calculated?}
-              {answers:
-                {monthly: [set: SalaryUnits=monthly] }
-                {daily:
-                  [set: SalaryUnits=daily]
-                  [call: pCheckIllnessOnRelevantDay]
-                }
-                {hourly:
-                  [set: SalaryUnits=hourly]
-                  [call: pCheckIllnessOnRelevantDay]
-                }
-              }
-            ]
-          }
-        }
-      ]
+      [call: pEnsureSalaryUnits]
       [consider:
         {slot: LegalStatus}
         {options:
@@ -487,6 +486,36 @@ Initial case data gatehring
   ]
 --]
 
+<**
+Make sure the salary units are set.
+**>
+[-->pEnsureSalaryUnits<
+  [consider:
+    {slot: SalaryUnits}
+    {options:
+      {unset:
+        [>employmentUnits< ask:
+          {text: How is your salary calculated?}
+          {answers:
+            {monthly: [set: SalaryUnits=monthly] }
+            {daily:
+              [set: SalaryUnits=daily]
+              [call: pCheckIllnessOnRelevantDay]
+            }
+            {hourly:
+              [set: SalaryUnits=hourly]
+              [call: pCheckIllnessOnRelevantDay]
+  }}]}}]
+--]
+
+[-->pCheckIllnessOnRelevantDay<
+  [>partialWorkWhen< ask:
+    {text: Did the illness occur in one of your working days?}
+    {answers:
+        {no: [>partialWorkReject-time< reject: You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway. ]}
+  }]
+--]
+
 
 [-->pAccidents<
   [>accident-type< ask:
@@ -527,15 +556,6 @@ Initial case data gatehring
           }
         ]
       }
-    }
-  ]
---]
-
-[-->pCheckIllnessOnRelevantDay<
-  [>partialWorkWhen< ask:
-    {text: Did the illness occur in one of your working days?}
-    {answers:
-        {no: [>partialWorkReject-time< reject: You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway. ]}
     }
   ]
 --]

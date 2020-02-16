@@ -21,7 +21,8 @@ Duties[What the employee is required do]: some of
 Notices[Relevant information for case in point]: some of
   kupatHolimNotice[Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.],
   fertilityTreatmentsAbsence[Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.],
-  fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.]
+  fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.],
+  hourlyWorkerCloseRelative[Can use sick days allowance to attend to a close sick relative.]
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -115,7 +116,8 @@ SickSpouseFlags: some of
   aidingOrganDonor[Eligible for 7 days each year for nursing a spouse that donated an organ.],
   sickSpouseMalignant[Can use up to 60 days from your sick/vacation days for treating your spouse.].
 
-PaidSicknessDays[How are paid sickness days calculated]: one of psdFormula1, psdFormula2.
+PaidSicknessDays[How are paid sickness days calculated]: one of psdFormula1, psdFormula2,
+      psdFormulaHourly[Based on the ratio of worker's working days to worker's possible working days (+more details).].
 
 TaxExemptions: some of
   hospitalizedParentOrSpouse[Can have up to 35% income tax exemption.],
@@ -131,7 +133,8 @@ RoadAccidentCompensation: some of
 SeveranceProtection: some of
   fertilityGeneral[Can't fire during treatment and 150 days after, unless approved by Ministry of Labour],
   fertilityCivilService[Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.],
-  miscarriage[Can't fire, downscale position, or otherwise hurt income.]
+  miscarriage[Can't fire, downscale position, or otherwise hurt income.],
+  hourlySickDays[Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.]
 .
 
 PersonalAccidentCompensation: TODO.
