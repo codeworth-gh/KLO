@@ -6,10 +6,6 @@
 מצב הילד/ה
 
 
-# [decision-graph.dg]sEmploymentForm
-צורת העסקה
-
-
 # [decision-graph.dg]sIntro
 מבוא
 
@@ -20,3 +16,5 @@
 
 # [decision-graph.dg]sSpouseCondition
 מצב בן/בת הזוג
+
+

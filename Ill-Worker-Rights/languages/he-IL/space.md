@@ -177,7 +177,7 @@
 
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
-dialysisOrMaligantChildPay
+דמי טיפול ילד
 Can use up to 90 days/year, based on sick days or vacation days
 
 # HealthRelatedRights/Recommendations
@@ -221,11 +221,11 @@ Can use up to 90 days/year, based on sick days or vacation days
 
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseDays
-sickSpouseDays
+ימי מחלה בן/בת זוג
 Can use up to 6 days a year from your allowance to aid your sick spouse.
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/aidingOrganDonor
-aidingOrganDonor
+סיוע לתרומת איברים
 Eligible for 7 days each year for nursing a spouse that donated an organ.
 
 # HealthRelatedRights/Benefits/ParentSickness
@@ -237,39 +237,39 @@ Eligible for 7 days each year for nursing a spouse that donated an organ.
 
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/sickParentDays
-sickParentDays
+ימי מחלה הורה
 Can use up to 8 days a year from your allowance to aid your sick parent.
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/aidingOrganDonor
-aidingOrganDonor
+סיוע לתרומת איברים
 Eligible for 7 days each year for nursing a parent that donated an organ.
 
 # HealthRelatedRights/Benefits/SicknessPay
-SicknessPay
+דמי מחלה
 
 
 # HealthRelatedRights/Benefits/SicknessPay/gradual
-gradual
+הדרגתיים
 None for the first day, 1/2 salary for days 2 and 3, full after
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOne
-fullFromDayOne
+מלאים
 Full salary from sick day 1
 
 # HealthRelatedRights/Benefits/ChildSickness/sickChildDays
-sickChildDays
+ימי מחלה ילדים
 Parents can use up to 8 sick days from their allowance for aiding their sick children.
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singleFullTime
-singleFullTime
+משרה מלאה
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singlePartTime
-singlePartTime
+משרה חלקית (מעסיק יחיד)
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/multiple
-multiple
+מעסיקים מרובים
 
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseMalignant
@@ -278,7 +278,7 @@ Can use up to 60 days from your sick/vacation days for treating your spouse.
 
 # HealthRelatedRights/Duties/medicalStatementForDependency
 medicalStatementForDependency
-Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions
+Employer may require a medical statement declaring that the ill is dependent on others for basic actions
 
 # HealthRelatedRights/Duties/sickSpouseStatement
 sickSpouseStatement
@@ -315,7 +315,7 @@ https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זק
 אם העובד נוהג לעבוד בימי המנוחה השבועית ובחגים – יובאו ימי המנוחה השבועית והחגים בחשבון תקופת המחלה.
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/fundingForNursingHospitalization
-fundingForNursingHospitalization
+מימון אישפוז
 Financial aid for hospitalization: https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/niiParentNursingAllowance
@@ -323,7 +323,7 @@ niiParentNursingAllowance
 May claim parent nursing allowance from national insurance (http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx).
 
 # HealthRelatedRights/Benefits/TaxExemptions
-TaxExemptions
+הטבות מס
 
 
 # HealthRelatedRights/Benefits/TaxExemptions/hospitalizedParentOrSpouse
@@ -350,14 +350,62 @@ freelanceConsultLawyer
 Freelance workers should consult a lawyer regarding benefits from their employers.
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
-unset
+לא מפורט
 
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/unset
-unset
+לא מפורט
+
 # HealthRelatedRights/Duties/roadAccidentInvolvmentStatement
-roadAccidentInvolvmentStatement
-A statement from the police validating that you were involved in a road accident
+אישור משטרתי על מעורבות בתאונה
+אישור מהמשטרה כי העובד היה מעורב בתאונת דרכים
+---
+לצורך כיסוי הטיפול בנפגעי תאונות הדרכים, מבקש בית-החולים אישור משטרתי על מעורבות בתאונה. את האישור מעביר בית-החולים לקופות החולים, הנושאות בעלות הטיפול. על האדם המעורב בתאונה להופיע אישית למסירת ההודעה עם תעודה מזהה, פרטי המעורבים בתאונה והמיקום המדויק שבו אירעה התאונה. בנוסף, עליו למלא "טופס הודעה על תאונת דרכים".
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_Driver
+מסמכי נהג
+מסמכים שנהג שהיה מעורב בתאונה צריך לספק למעביד
+---
+יש לספק למעביד את המסמכים הבאים:
+
+* רישיון נהיגה
+* רישיון רכב
+* תעודת ביטוח חובה
+* תעודה רפואית הנוגעת לתאונה כמו למשל; מכתב שחרור מחדר מיון
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_NonDriver
+מסמכי תאונה (לא נהג)
+מסמכים שעובד שהיה מעורב בתאונה לא כנהג רכב צריך לספק למעביד
+---
+יש לספק למעביד את המסמכים הבאים:
+
+* תעודה מזהה,
+* תעודה רפואית הנוגעת לתאונה או העתק שלה
+* פרטי הנהג והרכב המעורבים בתאונה (שם הנהג, מספר טלפון, פרטי הרכב הפוגע/ הרכב שבו נסע הנפגע)
+
+**הערה:** המסמכים שהוגשו יישארו במשטרה, לכן מומלץ להכין מהם העתקים
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_DamageEvidence
+הוכחת נזק תאונה
+מסמכים המוכיחים כי נגרם נזק בתאונת דרכים
+---
+במקרה בו בתאונה לא נכחה המשטרה, יש לצרף ראיות המוכיחות את הנזק שנגרם לרכב, כגון; דו"ח שמאי, דו"ח מחוקר תאונות ותצלומים של הרכב.
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_CivilService
+הודעה למנהל היחידה
+עובדי מדינה המעורבים בתאונת דרכים חייבים להודע בכתב למנהל יחידתם
+---
+באם נעדר עובד בשל תאונה, וסיבת ההיעדרות קשורה בפגיעה של צד שלישי בעובד, דהיינו תאונת דרכים, יודיע העובד מיד בכתב על כך למנהל יחידתו. מנהל היחידה יעביר את העניין ליועץ המשפטי ולמנהל משאבי אנוש של המשרד. היועץ המשפטי יחליט אם להמליץ בפני הפרקליטות לתבוע מאת המזיק את הכספים אשר המדינה שילמה לעובד בעד תקופת היעדרו מן העבודה, בהתאם לחוק לתיקון דיני הנזיקין האזרחיים (הטבת נזקי גוף) התשכ"ד- 1964. במקרה כאמור, יפנה היועץ המשפטי למחלקה לתביעות ומיקור חוץ בפרקליטות המדינה, להחלטתה והמשך טיפולה.
+
+באם הוחלט בהתאם לאמור לעיל, לתבוע מאת המזיק את הכספים אשר המדינה שילמה לעובד, חייב העובד להושיט כל עזרה ולעשות כל פעולה סבירה כדי לסייע למדינה במימוש זכויותיה.
+
+העובד לא יעשה כל פעולה העלולה לפגוע בזכויות אלו של המדינה או למנוע בעד מימושן.
+
+במקרה בו תבע העובד באופן עצמאי וקיבל פיצויי נזיקין לרגל תאונה כאמור לעיל, ובתוכם פיצוי בעד תקופת היעדרו מן העבודה, כולה או חלקה, עליו להעביר למדינה אותו פיצוי, אולם לא יותר ממה ששילמה המדינה. יודגש, כי העובד יידרש להשיב למדינה את מלוא התשלום עבור ימי המחלה, גם במקרה שתביעתו הפרטית תסתיים בפשרה. אך עם זאת, הוראות אלה אינן חלות על פיצויים שקיבל העובד מכוח פוליסה פרטית לביטוח מחלה או תאונות.
+
+במקרה בו לא העביר העובד את הפיצוי שקיבל, יורה מנהל משאבי אנוש על קיזוז הסכומים, שקיבל העובד מהמדינה, ממשכורתו של העובד או מתשלומים שהוא זכאי להם מאת המדינה.
+
+
 
 # HealthRelatedRights/Properties/InternalFlags
 מידע טכני
@@ -368,15 +416,15 @@ b1LikeMedicalStatus
 
 
 # HealthRelatedRights/Properties/InternalFlags/foreignWorker
-foreignWorker
-Not Israeli or Palestinian
+עובד זר
+עובד שאינו אזרח ישראלי או פלשתינאי
 
 # HealthRelatedRights/Properties/InternalFlags/pregnancy
-pregnancy
+הריון
 
 
 # HealthRelatedRights/Properties/InternalFlags/lightIllness
-lightIllness
+מחלה קלה
 
 
 # HealthRelatedRights/Benefits/MaxSickDays
@@ -420,16 +468,32 @@ RoadAccidentCompensation
 
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/possibleNIAid
-possibleNIAid
-May be eligile for stipend or other help from National Insurance.
+פיצויים מבט״ל
+ייתכנו פיצויים מביטוח לאומי
+---
+נפגעי תאונות דרכים ובני משפחותיהם עשויים להיות זכאים לקבל גמלאות שונות מהמוסד לביטוח לאומי. חשוב לציין כי בטיפול בנפגעי התאונות ומשפחותיהם קיימת הפרדה ברורה בין מצבים שבהם התאונה התרחשה במהלך עבודתו של המבוטח לבין מצבים שבהם התאונה ארעה שלא במסגרת העבודה.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/lawyerFeesCapped
 lawyerFeesCapped
 A lawyer request more than a specified amount for handing this case.
 
-# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPayment
-roadAccidentPayment
-Paid by the insurance company of the vehicle. Needs to be claimed.
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPaymentPassenger
+פיצויי תאונת דרכים
+פיצויים המשולמים על ידי חברת הביטוח של הרכב בו נסע הנפגע.
+---
+פיצויים המשולמים על ידי חברת הביטוח של הרכב בו נסע הנפגע. יש לתבוע פיצויים אלו מחברת הביטוח.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPaymentPedestrian
+פיצויי תאונת דרכים
+פיצויים המשולמים על ידי חברת הביטוח של הרכב הפוגע.
+---
+פיצויים המשולמים על ידי חברת הביטוח של הרכב הפוגע. יש לתבוע פיצויים אלו מחברת הביטוח.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/urgentPayOption
+תשלום תכוף
+יכול להיות שניתן לדרוש תשלום תכוף מחברת הביטוח
+---
+במקרים מסוימים ניתן לדרוש בתחילת ההליך תשלום על חשבון הסכום שייפסק בסיום התביעה. תשלום זה מכונה "תשלום תכוף" ורצוי לפנות לייעוץ משפטי בטרם הצגת הדרישה לחברת הביטוח או לבית המשפט.
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
 fullFromDayOneProbably
@@ -524,6 +588,11 @@ Check if your work contract gives you additional rights.
 שימוש בימי מחלה לעזרה לקרוב
 ניתן להשתמש בימי המחלה שצברת על מנת לעזור לקרובים
 
+# HealthRelatedRights/Notices/roadAccidentAllowanceSubtraction
+הפחתת גמלאות מדמי ביטוח
+סכומי הגמלאות עשויים להיות מופחתים מהפיצויים שישולמו לנפגע מחברת הביטוח, אם יתבע אותה לפי חוק פיצויים לנפגעי תאונות דרכים.
+
+
 # HealthRelatedRights/Properties/Pregnancy/fertilityTreatments
 טיפולי פוריות
 
@@ -561,23 +630,38 @@ Check if your work contract gives you additional rights.
 ---
 אין לפטר עובד/ת, במהלך תקופת הזכאות להיעדר מהעבודה עקב טיפולי הפריה חוץ גופית או טיפולי פוריות, וכן במשך תקופה של 150 ימים שלאחר מכן, אלא אם ניתן לכך היתר ממשרד הכלכלה.
 
-# HealthRelatedRights/Benefits/FerilityTreatmentSickDays
+# HealthRelatedRights/Benefits/SeveranceProtection/roadAccident
+תאונת דרכים
+הגנה מפני פיטורין בזמן טיפולים עקב תאונת דרכים
+---
+בדומה למחלה רגילה, על פי סעיף 4(א) לחוק דמי מחלה, למעסיק אסור לפטר עובד שנעדר מהעבודה עקב מחלתו, בתקופה שבה הוא זכאי לדמי מחלה. המעסיק אינו יכול למנוע מהעובד להיעדר מהעבודה במהלך ימי המחלה או להתנות את היעדרותו בתנאי כלשהו (מלבד המצאת אישור רפואי).
+
+עם זאת, ישנם מקרים שבהם ניתן לפטר את העובד, על אף היותו חולה וזכאי לימי מחלה- וזאת במקרים הבאים:
+* באם המעסיק נתן לעובד הודעה מוקדמת לפיטורים, בטרם נעדר העובד עקב מחלתו.
+* באם מקום העבודה נקלע לאחד מהמצבים הבאים: מקום העבודה הפסיק לפעול באופן קבוע, או שהמעסיק הוכרז כפושט רגל (במקרה שהמעסיק הוא תאגיד- ניתן צו פירוק לפי פקודת החברות).
+
+# HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
+הגנת פיטורין לעובדים שעתיים
+---
+מעסיק אינו רשאי לפטר עובד שנעדר מהעבודה עקב מחלתו בתקופה שבה הוא זכאי לדמי מחלה.
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays
 ימי מחלה עבור טיפולי פוריות
 
 
-# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d16
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d16
 4 סדרות, 16 יום לסדרה
 זכאות לעד 4 סדרות, עד 16 יום לסדרה. סה״כ 64 יום בשנה ע״ח ימי מחלה
 
-# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d18
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d18
 4 סדרות, 18 יום לסדרה
 זכאות לעד 4 סדרות, עד 18 יום לסדרה. סה״כ 72 יום בשנה ע״ח ימי מחלה
 
-# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d20
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d20
 4 סדרות, 20 יום לסדרה
 זכאות לעד 4 סדרות, עד 20 יום לסדרה. סה״כ 80 יום בשנה ע״ח ימי מחלה
 
-# HealthRelatedRights/Benefits/FerilityTreatmentSickDays/s4d22
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d22
 4 סדרות, 22 יום לסדרה
 זכאות לעד 4 סדרות, עד 22 יום לסדרה. סה״כ 88 יום בשנה ע״ח ימי מחלה
 # HealthRelatedRights/Properties/Pregnancy/miscarriage
@@ -643,3 +727,6 @@ Check if your work contract gives you additional rights.
 מבוטח שנגרם לו אי-כושר עבודה חלקי ושעות עבודתו צומצמו על פי אישור רופא קופת חולים, זכאי לדמי פגיעה מופחתים, בהתאם לשעות העבודה שנקבעו באישור הרפואי.
 לפירוט חישוב דמי הפגיעה ראו:
 [כאן](https://www.kolzchut.org.il/he/%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%93%D7%9E%D7%99_%D7%94%D7%A4%D7%92%D7%99%D7%A2%D7%94_%D7%9C%D7%A0%D7%A4%D7%92%D7%A2_%D7%AA%D7%90%D7%95%D7%A0%D7%AA_%D7%A2%D7%91%D7%95%D7%93%D7%94).
+# HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
+hourlySickDays
+Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.

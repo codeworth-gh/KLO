@@ -714,3 +714,71 @@ reduced injury allowance
 
 # HealthRelatedRights/Benefits/WorkRelatedHealthIssues/injuryAllowance
 injury allowance
+# HealthRelatedRights/Duties/roadAccidentDocumentation_Driver
+roadAccidentDocumentation_Driver
+Driver and car license, compulsory insurance, relevant medical docs
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_NonDriver
+roadAccidentDocumentation_NonDriver
+Id, medical docs, details of the hitting driver and car
+
+# HealthRelatedRights/Duties/roadAccidentDocumentation_DamageEvidence
+roadAccidentDocumentation_DamageEvidence
+Documentation proving that a damage was done (e.g. photos of the damaged car)
+
+# HealthRelatedRights/Notices/hourlyWorkerCloseRelative
+hourlyWorkerCloseRelative
+Can use sick days allowance to attend to a close sick relative.
+
+# HealthRelatedRights/Notices/roadAccidentAllowanceSubtraction
+roadAccidentAllowanceSubtraction
+Road accident allowances may be substracted from insurance fees
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays
+FertilityTreatmentSickDays
+
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d16
+s4d16
+Up to 4 series, 16 days each, max total of 64 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d18
+s4d18
+Up to 4 series, 18 days each, max total of 72 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d20
+s4d20
+Up to 4 series, 20 days each, max total of 80 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/FertilityTreatmentSickDays/s4d22
+s4d22
+Up to 4 series, 22 days each, max total of 88 days yearly, based on regular sick days
+
+# HealthRelatedRights/Benefits/PaidSicknessDays/psdFormulaHourly
+psdFormulaHourly
+Based on the ratio of worker's working days to worker's possible working days (+more details).
+
+# HealthRelatedRights/Benefits/SeveranceProtection/roadAccident
+roadAccident
+Employee can't be fired for missing work due to sickness, while employee is entitled to sick days (some conditions apply).
+
+# HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
+hourlySickDays
+Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.
+
+# HealthRelatedRights/Benefits/TaxExemptions/taxFreeFundsWithdrowals
+taxFreeFundsWithdrowals
+Can withdraw pension or other saving funds with no tax. See https://taxes.gov.il/TaxesFormsList/itc159.pdf
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPaymentPassenger
+roadAccidentPaymentPassenger
+Paid by the insurance company of the passenger's vehicle. Needs to be claimed.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPaymentPedestrian
+roadAccidentPaymentPedestrian
+Paid by the insurance company of the hitting vehicle. Needs to be claimed.
+
+# HealthRelatedRights/Benefits/RoadAccidentCompensation/urgentPayOption
+urgentPayOption
+Worker may able to claim "urgent pay". Seek legal consulting before doing this.
+

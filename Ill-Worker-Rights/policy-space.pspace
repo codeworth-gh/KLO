@@ -7,7 +7,7 @@ Properties[Factual description of the case]: consists of LegalStatus, Gender, Em
 Duties[What the employee is required do]: some of
   supportingMedicalDocumentation,
   singleParentStatement,
-  medicalStatementForDependency[Employer mnay require a medical statement declaring that the ill is dependent on others for basic actions],
+  medicalStatementForDependency[Employer may require a medical statement declaring that the ill is dependent on others for basic actions],
   sickSpouseStatement[Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3],
   sickParentStatement[https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf],
   guardianDocument[״צו אפוטרופוס חתום״],
@@ -15,6 +15,10 @@ Duties[What the employee is required do]: some of
   handleVisa,
   fertilityTreatments[Provide doctor's approval, inform the employer beforehand, limited to available sickness days],
   roadAccidentInvolvmentStatement[A statement from the police validating that you were involved in a road accident],
+  roadAccidentDocumentation_Driver[Driver and car license, compulsory insurance, relevant medical docs],
+  roadAccidentDocumentation_NonDriver[Id, medical docs, details of the hitting driver and car],
+  roadAccidentDocumentation_DamageEvidence[Documentation proving that a damage was done (e.g. photos of the damaged car)],
+  roadAccidentDocumentation_CivilService[Civil service workers need to report road accidents to their manager.],
   workRelatedInjuryNisClaim[A claim to national insurance for injury allowance]
 .
 
@@ -22,15 +26,16 @@ Notices[Relevant information for case in point]: some of
   kupatHolimNotice[Medical statements should be obtained from the Kupat Holim the sick person is registered to. Employer may ignore medical statements from private doctors.],
   fertilityTreatmentsAbsence[Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.],
   fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.],
-  hourlyWorkerCloseRelative[Can use sick days allowance to attend to a close sick relative.]
+  hourlyWorkerCloseRelative[Can use sick days allowance to attend to a close sick relative.],
+  roadAccidentAllowanceSubtraction[Road accident allowances may be substracted from insurance fees]
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
                       SpouseSickness, SeveranceProtection, RoadAccidentCompensation,
-                      PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation, SeverenceBenefits,
-                      TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave, UnpaidVacation,
-                      PrivateInsuranceCompensation, MedicalCare, SicknessPay, MaxSickDays,
-                      FerilityTreatmentSickDays, MiscarriageSickDays, WorkRelatedHealthIssues.
+                      PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation,
+                      SeverenceBenefits, TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave,
+                      UnpaidVacation, PrivateInsuranceCompensation, MedicalCare, SicknessPay,
+                      MaxSickDays, FertilityTreatmentSickDays, MiscarriageSickDays, WorkRelatedHealthIssues.
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
@@ -40,13 +45,13 @@ Recommendations: some of
   keepPayingPrivateInsurance[Must keep paying private insurance, even when not working.],
   lossOfWorkAbilityWarning[If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.],
   getPrivateMedicalInsurance[You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
-    Employer can take between 125 to 136 ILS for this from your monthly salary.],
+                             Employer can take between 125 to 136 ILS for this from your monthly salary.],
   emergencyMedicalTreatmentIsFree[All emergency medical treatment is free in Israel.],
   pregnancyRelatedIssuesNotCovered[The medical insurance will not cover any pregrnancy-related issues.],
   b1VisaDuringSickness[Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. ],
   checkWorkContractBenefits[Check if your work contract gives you additional rights.],
   extendedMiscarriageLeave[eligible to up to 6 week leave, pending on medical doctor approval]
-  .
+.
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
 
@@ -125,15 +130,18 @@ TaxExemptions: some of
 .
 
 RoadAccidentCompensation: some of
-  possibleNIAid[May be eligile for stipend or other help from National Insurance.],
+  possibleNIAid[May be eligible for stipend or other help from National Insurance.],
   lawyerFeesCapped[A lawyer request more than a specified amount for handing this case.],
-  roadAccidentPayment[Paid by the insurance company of the vehicle. Needs to be claimed.]
+  roadAccidentPaymentPassenger[Paid by the insurance company of the passenger's vehicle. Needs to be claimed.],
+  roadAccidentPaymentPedestrian[Paid by the insurance company of the hitting vehicle. Needs to be claimed.],
+  urgentPayOption[Worker may able to claim "urgent pay". Seek legal consulting before doing this.]
 .
 
 SeveranceProtection: some of
   fertilityGeneral[Can't fire during treatment and 150 days after, unless approved by Ministry of Labour],
   fertilityCivilService[Can't fire during treatment and 150 days after, unless approved by Ministry of Finance. Limited to 2 births with current spouse while working for the state.],
   miscarriage[Can't fire, downscale position, or otherwise hurt income.],
+  roadAccident[Employee can't be fired for missing work due to sickness, while employee is entitled to sick days (some conditions apply).],
   hourlySickDays[Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.]
 .
 
@@ -147,7 +155,7 @@ UnpaidVacation: TODO.
 PrivateInsuranceCompensation: TODO.
 MedicalCare: TODO.
 
-FerilityTreatmentSickDays: one of
+FertilityTreatmentSickDays: one of
   s4d16[Up to 4 series, 16 days each, max total of 64 days yearly, based on regular sick days],
   s4d18[Up to 4 series, 18 days each, max total of 72 days yearly, based on regular sick days],
   s4d20[Up to 4 series, 20 days each, max total of 80 days yearly, based on regular sick days],
@@ -165,7 +173,6 @@ MiscarriageSickDays: one of
   week[Up to 7 days based on sick day allowance],
   weekCivilService[Up to 7 days based on sick day allowance, immediatly after the miscarriage],
   fullMaternityLeave[Full maternity leave, including other maternity benefits (same as non-silent birth)].
-
 
 InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of
   b1LikeMedicalStatus,

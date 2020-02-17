@@ -49,3 +49,6 @@ less than a year: פחות משנה
 miscarriage: הפלה
 yes, fully: כן, באופן מלא
 yes, partially: כן, באופן חלקי
+driver: נהג
+passenger: נוסע
+pedestrian/bike rider: הולך רגל/רוכב אופניים

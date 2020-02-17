@@ -525,8 +525,24 @@ Make sure the salary units are set.
     {answers:
       {road accident:
         [set: SimpleBenefits+=freeMedicalCare;
-              RoadAccidentCompensation+=lawyerFeesCapped,roadAccidentPayment;
-              Duties+=roadAccidentInvolvmentStatement]
+              RoadAccidentCompensation+=lawyerFeesCapped, urgentPayOption;
+              Duties+=roadAccidentInvolvmentStatement;
+              Notices+=roadAccidentAllowanceSubtraction;
+              SeveranceProtection+=roadAccident]
+        [>accident-road-pedOrPass< ask:
+          {text: How where you involved in the accident?}
+          {answers:
+            {driver: [set: RoadAccidentCompensation+=roadAccidentPaymentPassenger; Duties+=roadAccidentDocumentation_Driver]}
+            {passenger: [set: RoadAccidentCompensation+=roadAccidentPaymentPassenger; Duties+=roadAccidentDocumentation_NonDriver]}
+            {pedestrian/bike rider: [set: RoadAccidentCompensation+=roadAccidentPaymentPedestrian; Duties+=roadAccidentDocumentation_NonDriver]}
+          }
+        ]
+        [>accident-road-policePresence< ask:
+          {text: Is there any police documentation of the accident?}
+          {answers:
+            {no: [set: Duties+=roadAccidentDocumentation_DamageEvidence]}
+          }
+        ]
         [>accident-road-filter< ask:
           {text: Was the travel related to your work?}
           {terms:
@@ -536,10 +552,19 @@ Make sure the salary units are set.
             {yes: [call: pWorkRelatedAcciedentBenefits] }
           }
         ]
+        [when:
+          { Sector=unset : [call:pCaseProperties] }
+        ]
         [consider:
           {slot: LegalStatus }
           {options:
             { israeliCitizenship: [set: RoadAccidentCompensation+=possibleNIAid] }
+          }
+        ]
+        [consider:
+          {slot: Sector}
+          {options:
+            {civilService: [set: Duties+=roadAccidentDocumentation_CivilService]}
           }
         ]
       }
@@ -609,14 +634,14 @@ Make sure the salary units are set.
       [when:
         {Sector=civilService:
           [when:
-            {InternalFlags+=sixDayWorkweek: [set: FerilityTreatmentSickDays=s4d22] }
-            {else: [set: FerilityTreatmentSickDays=s4d18]}
+            {InternalFlags+=sixDayWorkweek: [set: FertilityTreatmentSickDays=s4d22] }
+            {else: [set: FertilityTreatmentSickDays=s4d18]}
           ]
         }
         {else:
           [when:
-            {InternalFlags+=sixDayWorkweek: [set: FerilityTreatmentSickDays=s4d20] }
-            {else: [set: FerilityTreatmentSickDays=s4d16]}
+            {InternalFlags+=sixDayWorkweek: [set: FertilityTreatmentSickDays=s4d20] }
+            {else: [set: FertilityTreatmentSickDays=s4d16]}
           ]
         }
       ]

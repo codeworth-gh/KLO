@@ -57,3 +57,6 @@ less than a year: less than a year
 miscarriage: miscarriage
 yes, fully: yes, fully
 yes, partially: yes, partially
+driver: driver
+passanger: passanger
+pedestrian/bike rider: pedestrian/bike rider
