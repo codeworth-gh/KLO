@@ -71,7 +71,6 @@
 סקטור
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/civilService
-שירות ציבורי
 עובדי מדינה
 
 # HealthRelatedRights/Properties/EmploymentDescription/Sector/manpower
@@ -178,7 +177,7 @@
 
 # HealthRelatedRights/Benefits/ChildSickness/dialysisOrMalignantChildPay
 דמי טיפול ילד
-Can use up to 90 days/year, based on sick days or vacation days
+ניתן לנצל עד 90 ימים לשנה, על בסיס ימי מחלה או חופשה של העובד
 
 # HealthRelatedRights/Recommendations
 המלצות
@@ -222,11 +221,11 @@ Can use up to 90 days/year, based on sick days or vacation days
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseDays
 ימי מחלה בן/בת זוג
-Can use up to 6 days a year from your allowance to aid your sick spouse.
+ניתן לנצל עד 6 ימי מחלה על מנת לעזור לבן/בת זוג חולים
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/aidingOrganDonor
 סיוע לתרומת איברים
-Eligible for 7 days each year for nursing a spouse that donated an organ.
+ניתן לנצל עד 7 ימי מחלה על מנת לעזור לבן/בת זוג שתרמו איבר
 
 # HealthRelatedRights/Benefits/ParentSickness
 מחלת הורה
@@ -238,11 +237,11 @@ Eligible for 7 days each year for nursing a spouse that donated an organ.
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/sickParentDays
 ימי מחלה הורה
-Can use up to 8 days a year from your allowance to aid your sick parent.
+עובד יכול לנצל עד 8 ימי מחלה שצבר על מנת לעזור להורה חולה
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/aidingOrganDonor
 סיוע לתרומת איברים
-Eligible for 7 days each year for nursing a parent that donated an organ.
+ניתן לנצל עד 7 ימי מחלה על מנת לעזור להורה שתרם איבר
 
 # HealthRelatedRights/Benefits/SicknessPay
 דמי מחלה
@@ -250,15 +249,19 @@ Eligible for 7 days each year for nursing a parent that donated an organ.
 
 # HealthRelatedRights/Benefits/SicknessPay/gradual
 הדרגתיים
-None for the first day, 1/2 salary for days 2 and 3, full after
+תשלום הדרגתי עבור ימי המחלה
+---
+* יום מחלה ראשון - אין פיצוי
+* ימים 2 ו-3 למחלה - חצי משכורת יומית
+* יום 4 ואילך - משכורת מלאה
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOne
 מלאים
-Full salary from sick day 1
+פיצויי מחלה מלאים החל מהיום הראשון למחלה
 
 # HealthRelatedRights/Benefits/ChildSickness/sickChildDays
 ימי מחלה ילדים
-Parents can use up to 8 sick days from their allowance for aiding their sick children.
+הורים יכולים לנצל עד 8 ימי מחלה שצברו על מנת לטפל בילדיהם החולים
 
 # HealthRelatedRights/Properties/EmploymentDescription/EmploymentScope/singleFullTime
 משרה מלאה
@@ -273,20 +276,27 @@ Parents can use up to 8 sick days from their allowance for aiding their sick chi
 
 
 # HealthRelatedRights/Benefits/SpouseSickness/SickSpouseFlags/sickSpouseMalignant
-sickSpouseMalignant
-Can use up to 60 days from your sick/vacation days for treating your spouse.
+בן/בת זוג חולה כרוני
+עד 60 ימי מחלה מהצבירה
+---
+עובד יכול לנצל עד 60 ימי מחלה להם הוא זכאי, על מנת לטפל בבן/בת זוג הסובלים ממחלה כרונית.
 
 # HealthRelatedRights/Duties/medicalStatementForDependency
-medicalStatementForDependency
-Employer may require a medical statement declaring that the ill is dependent on others for basic actions
+אישור לצורך בסיעוד
+המעסיק רשאי לדרוש אישור רפואי כי בן/בת הזוג צריך סיעוד לצורך פעולות בסיסיות
 
 # HealthRelatedRights/Duties/sickSpouseStatement
-sickSpouseStatement
-Employer may require this: https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3
+הצהרה על מחלת בן זוג
+הצהרה כי בן/בת הזוג חולים, וכי מחלה זו גרמה להעדרות מעבודה
+---
+המעביד רשאי לדרוש הצהרה [זו](https://www.nevo.co.il/law_html/law01/074_009.htm#Seif3).
+
 
 # HealthRelatedRights/Duties/sickParentStatement
-sickParentStatement
-https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf
+הצהרה על מחלת הורה
+---
+המעסיק רשאי לדרוש הצהרה [זו](https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זקיפת_ימי_מחלה_עקב_מחלת_הורה.pdf).
+
 
 # HealthRelatedRights/Benefits/PaidSicknessDays
 חישוב ימי מחלה
@@ -316,11 +326,15 @@ https://www.kolzchut.org.il/w/he/images/8/83/הצהרת_עובד_לצורך_זק
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/fundingForNursingHospitalization
 מימון אישפוז
-Financial aid for hospitalization: https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation
+---
+סיוע במימון האישפוז:
+https://www.health.gov.il/Subjects/Geriatrics/GeriatricHospitalization/Pages/CodeHospitalization.aspx#calculation
 
 # HealthRelatedRights/Benefits/ParentSickness/SickParentFlags/niiParentNursingAllowance
-niiParentNursingAllowance
-May claim parent nursing allowance from national insurance (http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx).
+זכאות לקצבת אשפוז
+---
+ניתן לתבוע את ביטוח לאומי עבור קצבת אשפוז, כמפורט בלינק הבא:
+http://www.btl.gov.il/benefits/Long_Term_Care/Pages/שיעורי%20הגמלה.aspx.
 
 # HealthRelatedRights/Benefits/TaxExemptions
 הטבות מס
@@ -342,12 +356,15 @@ May claim parent nursing allowance from national insurance (http://www.btl.gov.i
 לפרטים ראו https://taxes.gov.il/TaxesFormsList/itc159.pdf
 
 # HealthRelatedRights/Recommendations/noEligibilityForSickDays
-noEligibilityForSickDays
-Worker is not eligible for sick days from the employer because of this condition.
+אין זכאות לימי מחלה
+---
+המחלה המתוארת לא מזכה בימי מחלה.
 
 # HealthRelatedRights/Recommendations/freelanceConsultLawyer
-freelanceConsultLawyer
-Freelance workers should consult a lawyer regarding benefits from their employers.
+ייעוץ משפטי
+לעצמאים מומלץ לפנות לייעוץ משפטי
+---
+תנאי ההעסקה של עצמאים משתנים מאוד ותלויים בחוזה שלהם. לכן מומלץ לפנות לייעוץ משפטי במקרים אלו.
 
 # HealthRelatedRights/Properties/EmploymentDescription/SalaryUnits/unset
 לא מפורט
@@ -412,7 +429,8 @@ Freelance workers should consult a lawyer regarding benefits from their employer
 מידע שנשמר לצרכי חישובים פנימיים. אפשר להתעלם - אם עלינו על משהו חשוב, זה יופיע במקום אחר
 
 # HealthRelatedRights/Properties/InternalFlags/b1LikeMedicalStatus
-b1LikeMedicalStatus
+דמוי ב׳1
+מצב משפטי מקביל לוויזה ב׳1
 
 
 # HealthRelatedRights/Properties/InternalFlags/foreignWorker
@@ -428,43 +446,54 @@ b1LikeMedicalStatus
 
 
 # HealthRelatedRights/Benefits/MaxSickDays
-MaxSickDays
-Amount of sick days, varies by sector
+תקרת ימי מחלה
+הכמות המרבית של ימי מחלה שהעובד יכול לצבור
 
 # HealthRelatedRights/Benefits/MaxSickDays/regular
-regular
-Can claim 1.5 days per employment month, up to 90 days. Work contract may enable more.
+1.5/90
+1.5 ימי מחלה לחודש עבודה, עד 90 יום צבירה
+---
+בכל חודש העובד צובר יום וחצי מחלה. לא ניתן לצבור יותר מ-90 יום. חוזה העבודה יכול לאפשר צבירה מהירה יותר או תקרת צבירה גבוהה יותר.
 
 # HealthRelatedRights/Benefits/MaxSickDays/ext2_130
-ext2_130
-Can claim 2 days per employment month, up to 130 days
+2/130
+2 ימי מחלה לחודש עבודה, עד 130 יום צבירה
+---
+בכל חודש העובד צובר יומיים מחלה. לא ניתן לצבור יותר מ-130 יום. חוזה העבודה יכול לאפשר צבירה מהירה יותר או תקרת צבירה גבוהה יותר.
+
 
 # HealthRelatedRights/Benefits/MaxSickDays/ext66
-ext66
-Can claim up to 66 days per year
+66
+תקרת צבירה של 60 יום
 
 # HealthRelatedRights/Benefits/MaxSickDays/ext110
-ext110
-Can claim up to 110 days per year
+110
+תקרת צבירה של 110 יום
 
 # HealthRelatedRights/Benefits/MaxSickDays/ext220
-ext220
-Can claim up to 220 days per year
+220
+תקרת צבירה של 220 יום
 
 # HealthRelatedRights/Benefits/SimpleBenefits/canRegisterChildToKupatHolim
-canRegisterChildToKupatHolim
-Child can be registered to Kupat Holim Meuhedet (https://www.meuhedet.co.il/en/)
+רישום ילד לקופ״ח
+ניתן לרשום את הילד לקופת חולים
+---
+ניתן לרשום את הילד לקופת חולים מאוחדת:
+https://www.meuhedet.co.il/en/
 
 # HealthRelatedRights/Benefits/SimpleBenefits/privateHealthInsuranceByEmployer
-privateHealthInsuranceByEmployer
-The employer has to provide private health insurance, even for non-registered workers.
+ביטוח בריאות פרטי ע״ח המעסיק
+---
+על המעסיק לספק ביטוח בריאות פרטי. חובה זו חלה גם עבור עובדים לא מתועדים.
 
 # HealthRelatedRights/Benefits/SimpleBenefits/pregnancyRelatedIssuesCovered
-pregnancyRelatedIssuesCovered
-Private insurance has to cover all preganancy-related treatments, including amniocentesis when recommended.
+כיסוי הריון
+על הביטוח הפרטי לכסות טיפולי הריון
+---
+על הביטוח הפרטי לכסות טיפולים הקשורים בהריון. כיסוי זה כולל בדיקת מי שפיר, אם יש המלצה לבצע בדיקה זו.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation
-RoadAccidentCompensation
+פיצויי תאונת דרכים
 
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/possibleNIAid
@@ -474,8 +503,8 @@ RoadAccidentCompensation
 נפגעי תאונות דרכים ובני משפחותיהם עשויים להיות זכאים לקבל גמלאות שונות מהמוסד לביטוח לאומי. חשוב לציין כי בטיפול בנפגעי התאונות ומשפחותיהם קיימת הפרדה ברורה בין מצבים שבהם התאונה התרחשה במהלך עבודתו של המבוטח לבין מצבים שבהם התאונה ארעה שלא במסגרת העבודה.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/lawyerFeesCapped
-lawyerFeesCapped
-A lawyer request more than a specified amount for handing this case.
+שכ״ט עו״ד מוגבל
+עורכי דין לא יכולים לדרוש שכר טרחה מעבר לסכום מסויים עבור טיפול במקרה זה.
 
 # HealthRelatedRights/Benefits/RoadAccidentCompensation/roadAccidentPaymentPassenger
 פיצויי תאונת דרכים
@@ -496,61 +525,72 @@ A lawyer request more than a specified amount for handing this case.
 במקרים מסוימים ניתן לדרוש בתחילת ההליך תשלום על חשבון הסכום שייפסק בסיום התביעה. תשלום זה מכונה "תשלום תכוף" ורצוי לפנות לייעוץ משפטי בטרם הצגת הדרישה לחברת הביטוח או לבית המשפט.
 
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
-fullFromDayOneProbably
-Probably eligible for full salary from sick day 1
+דמי מחלה מלאים מיד
+העובד זכאי לדמי מחלה מלאים החל מיום המחלה הראשון
 
 # HealthRelatedRights/Benefits/ChildSickness/disabledChildDays
-disabledChildDays
-Can claim 18 days and 52 hours for treating disabled child.
+זכאות ילד נכה
+ניתן לדרוש 18 ימים ו-52 שעות על מנת לטפל בילד נכה
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentDisabledChildDays
-singleParentDisabledChildDays
-Can claim 36 days and 104 hours for treating disabled child.
+זכאות הורה יחיד לילד נכה
+ניתן לדרוש 36 ימים ו-104 שעות על מנת לטפל בילד נכה
 
 # HealthRelatedRights/Benefits/ChildSickness/singleGuardianAdult
-singleGuardianAdult
-Single adult taking care of child (e.g. single parent).
+אפוטרופוס יחיד
+מבוגר יחיד המטפל בילד
+---
+לדוגמא: הורה יחיד.
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentSickChildDays
-singleParentSickChildDays
-Can claim 16 child sickness days per year.
+ימי מחלה הורה יחיד
+ניתן לדרוש עד 16 יום בשנה לטיפול במחלות הילד
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentDialisisMalignantChildDays
 singleParentDialisisMalignantChildDays
-Can claim up to 110 sick days, when employed for more than a year.
+ימי מחלה הורה יחיד לילד חולה כרוני
+ניתן לדרוש עד 110 ימים לטיפול בילד
+---
+הורה יחיד לילד הסובל ממחלה כרונית יכול לדרוש עד 110 ימים לטיפול בילד, החל מהשנה השניה להעסקתו.
 
 # HealthRelatedRights/Recommendations/checkPrivateInsuranceCoverage
-checkPrivateInsuranceCoverage
-Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.
+בדיקה: ביטוח פרטי
+יכול להיות כי הביטוח הפרטי שלך מכסה את מצבך הבריאותי
+---
+יש לבצע את הבדיקה מול חברת הביטוח. ביטוח זה לא יכסה טיפולי פוריות או טיפולים פסיכולוגיים.
 
 # HealthRelatedRights/Recommendations/keepPayingPrivateInsurance
-keepPayingPrivateInsurance
-Must keep paying private insurance, even when not working.
+המשך תשלומים לביטוח פרטי
+יש להמשיך לשלם לביטוח הפרטי, גם כשלא עובדים
 
 # HealthRelatedRights/Recommendations/lossOfWorkAbilityWarning
-lossOfWorkAbilityWarning
-If a medical opinion stated that you have lost your ability to work, your private insurance expires. In such case, it is advisible to seek second opinion.
+אזהרת אובדן כושר עבודה
+---
+אם קיימת חוות דעת רפואית כי איבדת את כושר עבודתך, הביטוח הרפואי הפרטי שלך מתבטל. במקרים אלו מומלץ לקבל חוות דעת נוספת.
 
 # HealthRelatedRights/Recommendations/getPrivateMedicalInsurance
-getPrivateMedicalInsurance
-You need to get private medical insurance; your employer has to get you one, even if you do not have work permit.
-    Employer can take between 125 to 136 ILS for this from your monthly salary.
+ביטוח פרטי
+יש לקבל ביטוח רפואי פרטי
+---
+על מעסיקך לרכוש עבורך ביטוח רפואי פרטי, גם אם אין לך רשיון עבודה. המעסיק רשאי לנכות 125-136₪ ממשכורתך עבור ביטוח זה.
 
 # HealthRelatedRights/Recommendations/emergencyMedicalTreatmentIsFree
-emergencyMedicalTreatmentIsFree
-All emergency medical treatment is free in Israel.
+טיפולי חירום חינם
+כל טיפולי החירום הרפואיים בישראל ניתנים חינם
 
 # HealthRelatedRights/Recommendations/pregnancyRelatedIssuesNotCovered
-pregnancyRelatedIssuesNotCovered
-The medical insurance will not cover any pregrnancy-related issues.
+אין כיסוי להריון
+הביטוח הרפואי לא מכסה טיפולים הקשורים בהריון
 
 # HealthRelatedRights/Recommendations/b1VisaDuringSickness
-b1VisaDuringSickness
-Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa.
+ויזה ב׳1 בזמן מחלה
+יש לקבל ויזה לתקופת המחלה
+---
+עבור תקופות מחלה של 3 חודשים או יותר, ניתן לקבל ויזת תייר.
 
 # HealthRelatedRights/Recommendations/checkWorkContractBenefits
-checkWorkContractBenefits
-Check if your work contract gives you additional rights.
+בדיקה: זכויות בחוזה
+יש לבדוק האם חוזה ההעסקה נותן לעובד זכויות נוספות
 
 # HealthRelatedRights/Duties/fertilityTreatments
 חובות טיפולי פוריות
