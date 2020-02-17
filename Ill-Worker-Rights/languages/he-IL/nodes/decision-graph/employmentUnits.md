@@ -1,1 +1,1 @@
-How is your salary calculated?
+איך מחושבת משכורתך?

@@ -1,5 +1,5 @@
-Did you miss work beacuse of a medical condition?
+האם נעדרת מהעבודה בגלל מצב רפואי?
 
-### Terms
-* *miss work*: Days or hours
-* *medical condition*: Ephemeral or permanent health issues, either yours or of someone related to you.
+### הסברים
+* *העדרות מעבודה* העדרות למשך ימים או שעות.
+* *מצב רפואי* כולל בעיות קבועות או חולפות, גם שלך וגם של אנשים הקרובים אליך.

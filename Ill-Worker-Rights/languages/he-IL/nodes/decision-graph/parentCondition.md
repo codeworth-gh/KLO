@@ -1,1 +1,1 @@
-What is your parent medical condition?
+מהו מצבו הרפואי של ההורה שלך?

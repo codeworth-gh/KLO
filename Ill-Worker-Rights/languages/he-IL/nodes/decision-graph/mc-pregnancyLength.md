@@ -1,1 +1,1 @@
-Did the miscarriage occur after the 22nd week?
+האם ההפלה התרחשה אחרי שבוע 22?

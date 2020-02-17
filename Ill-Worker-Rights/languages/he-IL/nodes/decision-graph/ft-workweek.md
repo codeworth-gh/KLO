@@ -1,1 +1,1 @@
-How many workdays do you have each week? 
+כמה ימי עבודה בשבוע מוגדרים במקום העסקתך?

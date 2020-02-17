@@ -1,1 +1,1 @@
-You may be eligible for benefits, but not from the legislation covered by this interview.
+יכול להיות כי אתם זכאים לפיצויים, אולם לא מהדין המכוסה בראיון זה.

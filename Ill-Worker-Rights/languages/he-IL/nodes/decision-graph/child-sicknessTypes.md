@@ -1,1 +1,1 @@
-Does the child suffers from any of the following: 
+האם הילד סובל מאחת המחלות הבאות:

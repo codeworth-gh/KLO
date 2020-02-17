@@ -1,1 +1,1 @@
-Do you have private medical insurance?
+האם יש לך ביטוח בריאות פרטי?

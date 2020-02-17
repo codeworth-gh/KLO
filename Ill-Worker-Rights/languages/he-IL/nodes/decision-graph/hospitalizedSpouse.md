@@ -1,1 +1,1 @@
-Is your spouse hospitalized in a nursing institute?
+האם בן/בת הזוג שלך מאושפז/ת במוסד סיעודי?

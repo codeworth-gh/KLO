@@ -1,1 +1,1 @@
-Is your parent's medical condition related to them donating an organ?
+האם מצבו הרפואי השל ההורה קשור לתרומת האיברים?

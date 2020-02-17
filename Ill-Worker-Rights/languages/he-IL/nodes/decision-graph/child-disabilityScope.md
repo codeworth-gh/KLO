@@ -1,1 +1,1 @@
-Is the disability your child suffers from permanent?
+האם הנכות ממנה סובל ילדך קבועה?

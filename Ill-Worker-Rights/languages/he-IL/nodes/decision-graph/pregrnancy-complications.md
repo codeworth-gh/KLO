@@ -1,1 +1,1 @@
-Were you instructed by a doctor not to work during the pregrnancy?
+האם קיבלת הוראה מרופא שלא לעבוד במהלך ההריון?

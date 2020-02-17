@@ -1,4 +1,3 @@
-Are there any other adults that have legal custody over the sick child?
+האם ישנם מבוגרים נוספים בעלי משמורת חוקית על הילד?
 
-### Terms
-* *other adults*: Including spouses. In foster families, this also includes the biological parents of the child.
+מבוגרים נוספים לדוגמא יכולים להיות בני או בנות זוג. במשפחות אומנה, ״מבוגרים נוספים״ מתייחס גם להורים הביולוגיים.

@@ -1,1 +1,1 @@
-Select the sector you are employed in:
+בחר/י את התחום בו את/ה מועסק/ת:

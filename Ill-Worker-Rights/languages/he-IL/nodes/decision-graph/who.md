@@ -1,4 +1,4 @@
-Who suffers from the health condition in question?
+מי סובל מהמצב הרפואי?
 
-### Terms
-* *child*: Including when the child is over 18.
+### הסברים
+* *ילד* כולל ילדים מעל גיל 18

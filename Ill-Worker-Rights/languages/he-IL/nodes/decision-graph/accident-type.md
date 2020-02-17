@@ -1,5 +1,5 @@
-Describe the accident
+תיאור התאונה:
 
-### Terms
-* *work related*: An accident that happend during work, or on the way to/from it.
-* *non work-related*: An accident that did not happen at work, or on the way to/from work.
+### הסברים
+* *קשור לעבודה* תאונה שהתרחשה במהלך העבודה, או בדרך ממנה או אליה
+* *לא קשורה לעבודה* תאונה שהתרחשה בלי קשר לעבודה

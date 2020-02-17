@@ -1,4 +1,4 @@
-Is your spouse depends on others for basic actions?
+האם בן/בת הזוג שלך תלוי באחרים לצורך ביצוע פעולות בסיסיות?
 
-### Terms
-* *basic actions*: Eating, drinking, bathroom, cleaning, unaided moving in the house.
+### הסברים
+* *פעולות בסיסיות* אכילה, שתיה, הלוכה לשירותים, רחצה, תנועה בבית

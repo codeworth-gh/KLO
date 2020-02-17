@@ -1,1 +1,1 @@
-Does your medical condition requires a leave longer than 7 days? 
+האם מצבך הרפואי דרש העדרות של יותר מ-7 ימי עבודה?

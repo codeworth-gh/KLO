@@ -1,4 +1,1 @@
-Was the travel related to your work?
-
-### Terms
-* *work related*: Travel to/from work, during work, or because of work (e.g. getting a visa).
+האם הנסיעה היתה קשורה לעבודה? למשל, נסיעה אל/ממקום העבודה, בזמן העבודה, או בגלל העבודה (לדוגמא: בשביל לקבל ויזה)?

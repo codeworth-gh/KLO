@@ -1,1 +1,1 @@
-Is your parent hospitalized in a nursing institute?
+האם ההורה שלך מאושפז במוסד סיעודי?

@@ -1,4 +1,4 @@
-Is your parent depents on others for basic actions, and is not hospitalized in a nursing institute?
+האם ההורה שלך תלוי באחרים על מנת לבצע פעולות בסיסיות, ואינו מאושפז במוסד סיעודי?
 
-### Terms
-* *basic actions*: Eating, drinking, bathroom, cleaning, unaided moving in the house.
+### הסברים
+* *פעולות בסיסיות* אכילה, שתיה, הלוכה לשירותים, רחצה, תנועה בבית 

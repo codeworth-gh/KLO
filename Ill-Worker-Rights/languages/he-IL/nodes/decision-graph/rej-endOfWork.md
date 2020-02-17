@@ -1,1 +1,1 @@
-Please use our End of Employment interview, at: https://klo-rights.codeworth.io/models/end-of-employment/latest
+אנא השתמשו בשאלון [הזה](https://klo-rights.codeworth.io/models/end-of-employment/latest).

@@ -1,1 +1,1 @@
-How where you involved in the accident?
+איך היית מעורב/ת בתאונה?

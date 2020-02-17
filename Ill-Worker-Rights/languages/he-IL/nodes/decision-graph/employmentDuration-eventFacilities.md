@@ -1,1 +1,1 @@
-Are you employed in your current position for two years or more?
+האם אתה מועסק בתפקידך הנוכחי שנתיים או יותר?

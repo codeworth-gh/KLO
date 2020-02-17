@@ -1,1 +1,1 @@
-Did you lose your job while realising your health-related benefits?
+האם איבדת את מקום עבודתך בזמן שמימשת את זכויותך הרפואיות?

@@ -1,1 +1,1 @@
-You are not eligible to benefits from the employer, since the illness occured on a day you were not supposed to work anyway.
+אינך זכאי לפיצויים מהמעביד, כיוון שהמחלה התרחשה ביום שלא היה יום עבודה.

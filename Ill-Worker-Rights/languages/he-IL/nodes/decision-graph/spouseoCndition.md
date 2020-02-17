@@ -1,1 +1,1 @@
-What causes youe spouse's medical condition?
+מה גרם למצב הרפואי של בן/בת זוגך?

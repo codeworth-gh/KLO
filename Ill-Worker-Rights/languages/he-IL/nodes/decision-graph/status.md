@@ -1,1 +1,1 @@
-What is your current status in Israel? 
+מה הסטטוס הנוכחי שלך בישראל?

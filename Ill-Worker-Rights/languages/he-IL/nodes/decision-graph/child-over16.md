@@ -1,1 +1,1 @@
-Is the child at least 16 years old?
+האם הילד בן יותר מ-16 שנים?

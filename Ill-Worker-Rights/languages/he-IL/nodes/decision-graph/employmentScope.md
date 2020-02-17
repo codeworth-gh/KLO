@@ -1,1 +1,1 @@
-What is the scope of your employment?
+מהו היקף העסקתך?

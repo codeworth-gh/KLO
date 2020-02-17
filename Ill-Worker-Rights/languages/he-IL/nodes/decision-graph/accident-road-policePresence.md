@@ -1,1 +1,1 @@
-Is there any police documentation of the accident?
+האם קיים תעוד משטרתי לתאונה?
