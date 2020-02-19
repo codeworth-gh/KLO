@@ -782,3 +782,91 @@ Paid by the insurance company of the hitting vehicle. Needs to be claimed.
 urgentPayOption
 Worker may able to claim "urgent pay". Seek legal consulting before doing this.
 
+# HealthRelatedRights/Duties/roadAccidentDocumentation_CivilService
+roadAccidentDocumentation_CivilService
+Civil service workers need to report road accidents to their manager.
+
+# HealthRelatedRights/Duties/workRelatedEmployerStatement
+workRelatedEmployerStatement
+Employer must fill form BL250 *immediatly*.
+
+# HealthRelatedRights/Duties/updateEmployer
+updateEmployer
+Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.
+
+# HealthRelatedRights/Notices/cantRedeemSickDays
+cantRedeemSickDays
+You cannot redeem your sick days by being paid for them (unlike vacation days).
+
+# HealthRelatedRights/Notices/canRedeemSomeSickDays
+canRedeemSomeSickDays
+You might be able to redeem some sick days. See TAKSHIR.
+
+# HealthRelatedRights/Notices/paySickFeesWithSalary
+paySickFeesWithSalary
+Employer has to pay for sick leave on the same date as the salary. Otherwise, it constitutes a wage withholding.
+
+# HealthRelatedRights/Notices/civilServicePersonalSickStatement
+civilServicePersonalSickStatement
+You're allowed up to two sick days per year based on own statement (no doctor statement needed).
+
+# HealthRelatedRights/Notices/palestinianWorkRelatedIllness
+palestinianWorkRelatedIllness
+You are eligible for getting all medical and restirative treatments in Israel. If you decline, you can get in the west bank, and receive monetary refunds based on receipts, from Israel's BTL.
+
+# HealthRelatedRights/Notices/noPermitWorkRelatedIllness
+noPermitWorkRelatedIllness
+You are eligible for medical treatment even if you have no insurance. You are eligible for allowance if the accident is recognized as a work accident, only after leaving Israel.
+
+# HealthRelatedRights/Properties/Accident
+Accident
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime
+AccidentTime
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime/notDuringWork
+notDuringWork
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime/duringWork
+duringWork
+
+
+# HealthRelatedRights/Properties/Accident/AccidentType
+AccidentType
+
+
+# HealthRelatedRights/Properties/Accident/AccidentType/other
+other
+
+
+# HealthRelatedRights/Properties/Accident/AccidentType/roadAccident
+roadAccident
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation
+AccidentWorkRelation
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation/unrelated
+unrelated
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation/related
+related
+
+
+# HealthRelatedRights/Benefits/MaxSickDays/ext25_90
+ext25_90
+Can claim 2.5 days per employment month, up to 90 days.
+
+# HealthRelatedRights/Recommendations/possiblyWorkRelatedAccident
+possiblyWorkRelatedAccident
+Since it is not clear whether the accident is related to work, it is recommended that you consult worker aid organizations, or a BTL's "guiding hand" center.
+
+# HealthRelatedRights/Recommendations/workRelatedChronicDisease
+workRelatedChronicDisease
+Consult an occupational doctor. Fill the BTL form at refer to an occupational doctor, fill form at: https://www.health.gov.il/DocLib/occupational-register-report.pdf
+

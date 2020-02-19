@@ -77,7 +77,7 @@
 [consider:
   {slot:Sector}
   {options:
-    {civilService: [set: Notices+=canRedeemSomeSickDays] }
+    {civilService: [set: Notices+=canRedeemSomeSickDays, civilServicePersonalSickStatement] }
   }
   {else:
     [set: Notices+=cantRedeemSickDays]
@@ -129,7 +129,7 @@
             {accident: [call: pAccidents]}
             {temporary illness (medium/light): [call: pSickDaysCalcTemp][call: pLightIllness]}
             {serious illness or disability: [call: pSeriousIllness]}
-            {work-related illness: [todo: work-related illness]}
+            {work-related illness: [call: pWorkRelatedIllness]}
           }
         ]
       }
@@ -143,7 +143,7 @@
             {accident: [call: pAccidents]}
             {temporary illness (medium/light): [call: pSickDaysCalcTemp][call: pLightIllness]}
             {serious illness or disability: [call: pSeriousIllness]}
-            {work-related illness: [todo: work-related illness]}
+            {work-related illness: [call: pWorkRelatedIllness]}
             {pregnancy:
               [set: InternalFlags+=pregnancy]
               [>pregrnancy-complications< ask:
@@ -347,7 +347,7 @@
       }
       {answers:
         {yes: [set: Duties+=declaration_OnlyAdultToUseBenefits] }
-        {no:  [set: ChildSickness+=singleGuardianAdult]}
+        {no:  [set: ChildSickness+=singleGuardianAdult; Duties+=singleParentStatement]}
       }
     ]
     [>child-sicknessTypes< ask:
@@ -540,7 +540,8 @@ Make sure the salary units are set.
               RoadAccidentCompensation+=lawyerFeesCapped, urgentPayOption;
               Duties+=roadAccidentInvolvmentStatement;
               Notices+=roadAccidentAllowanceSubtraction;
-              SeveranceProtection+=roadAccident]
+              SeveranceProtection+=roadAccident;
+              AccidentType=roadAccident]
         [>accident-road-pedOrPass< ask:
           {text: How where you involved in the accident?}
           {answers:
@@ -561,7 +562,7 @@ Make sure the salary units are set.
             {work related: Travel to/from work, during work, or because of work (e.g. getting a visa).}
           }
           {answers:
-            {yes: [call: pWorkRelatedAcciedentBenefits] }
+            {yes: [call: pWorkRelatedAccidentBenefits] }
           }
         ]
         [when:
@@ -580,9 +581,12 @@ Make sure the salary units are set.
           }
         ]
       }
-      {work related: [call: pWorkRelatedAcciedentBenefits]}
+      {work related:
+        [set: AccidentType=roadAccident]
+        [call: pWorkRelatedAccidentBenefits]
+      }
       {non-work related:
-        [set: SicknessPay = gradual]
+        [set: SicknessPay=gradual; AccidentType=roadAccident]
         [consider:
           {slot: LegalStatus}
           {options:
@@ -615,7 +619,13 @@ Make sure the salary units are set.
 
 [-->pSeriousIllness<
   [call: pAllIllness]
-  [todo: serious illness]
+  [consider:
+    {slot: LegalStatus}
+    {options:
+      {israeliCitizenship: [set: Recommendations+=niiAccidentPayment] }
+    }
+  ]
+  [todo: serious illness - pending student work]
 --]
 
 [-->pLightIllness<
@@ -628,8 +638,12 @@ Make sure the salary units are set.
                 Duties+=fertilityTreatments;
                 Notices+=fertilityTreatmentsAbsence]
   [when:
-    {Sector=civilService: [set: SimpleBenefits += fertilityTreatmentAbsenceCivilService]}
-    {else: [set: SimpleBenefits += fertilityTreatmentAbsence]}
+    {Sector=civilService:
+       [set: SimpleBenefits += fertilityTreatmentAbsenceCivilService;
+            SeveranceProtection +=fertilityCivilService ]}
+    {else:
+      [set: SimpleBenefits += fertilityTreatmentAbsence;
+           SeveranceProtection +=fertilityGeneral]}
   ]
   [when:
     {EmploymentScope=singlePartTime:
@@ -683,7 +697,7 @@ Make sure the salary units are set.
   ]
 --]
 
-[-->pWorkRelatedAcciedentBenefits<
+[-->pWorkRelatedAccidentBenefits<
   [>wrab-IsFull< ask:
     {text: Did you lose your ability to work because of the accident?}
     {answers:
@@ -700,4 +714,53 @@ Make sure the salary units are set.
       }
     }
   ]
+  [>wrab-accident-when< ask:
+    {text: Did the accident happen while you were working?}
+    {answers:
+      {yes: [set: AccidentTime=duringWork]}
+      {no:  [set: AccidentTime=notDuringWork]}
+    }
+  ]
+  [>wrad-accident-reason< ask:
+    {text: Did the accident happen because of work?}
+    {answers:
+      {yes: [set: AccidentWorkRelation=related]}
+      {no:  [set: AccidentWorkRelation=unrelated]}
+    }
+  ]
+  [when:
+    { AccidentTime=duringWork; AccidentWorkRelation=related:
+      [todo: Additional questionnaire regarding work related accident that happened during work]
+      [consider:
+        {slot: LegalStatus}
+        {options:
+          {b1Visa: [set: Duties+=handleVisa]}
+          {palestinian: [set: Notices+=palestinianWorkRelatedIllness]}
+          {noPermit:}
+        }
+      ]
+    }
+    { AccidentTime=notDuringWork; AccidentWorkRelation=related:
+      [>wrad-accident-type< ask:
+        {text: Do you suffer from a medical event or a crhonic disease?}
+        {answers:
+          {chronic disease: [set: Recommendations+=workRelatedChronicDisease]}
+          {medical event: }
+        }
+      ]
+    }
+    { AccidentTime=duringWork; AccidentWorkRelation=unrelated:
+      [todo: Additional questionnaire re non work related accident that happened during work]
+      [set: Recommendations+=possiblyWorkRelatedAccident]}
+    { AccidentTime=notDuringWork; AccidentWorkRelation=unrelated:
+      [call: pSeriousIllness][end]
+    }
+  ]
+  [call: pWorkRelatedIllness]
+--]
+
+[-->pWorkRelatedIllness<
+  [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement;
+       Recommendations+=niiAccidentPayment]
+  [todo: work-related illness]
 --]

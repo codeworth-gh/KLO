@@ -1,0 +1,1 @@
+Do you suffer from a medical event or a crhonic disease?

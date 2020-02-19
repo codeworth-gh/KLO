@@ -13,6 +13,9 @@
 
 # HealthRelatedRights/Duties/singleParentStatement
 הצהרת הורה יחיד
+הצהרה כי הילד נמצא בחזקתך הבלעדית
+---
+על העובד להצהיר בפני המעסיק כי הוא הורה יחיד, ושהילד נמצא בחזקתו הבלעדית.
 
 
 # HealthRelatedRights/Duties/guardianDocument
@@ -20,7 +23,9 @@
 
 # HealthRelatedRights/Duties/handleVisa
 טיפול בויזה
-
+יש לדאוג לויזה לתקופת המחלה
+---
+*חשוב:* פקיעת הויזה תגרור הפסקות הקצבה
 
 # HealthRelatedRights/Properties
 פרטי המקרה
@@ -149,16 +154,43 @@
 # HealthRelatedRights/Properties/LegalStatus/noPermit
 ללא היתר
 
-# HealthRelatedRights/Properties/AccidentType
+# HealthRelatedRights/Properties/Accident
+פרטי התאונה
+
+# HealthRelatedRights/Properties/Accident/AccidentType
 סוג תאונה
 
 
-# HealthRelatedRights/Properties/AccidentType/other
+# HealthRelatedRights/Properties/Accident/AccidentType/other
 אחר
 
 
-# HealthRelatedRights/Properties/AccidentType/roadAccident
+# HealthRelatedRights/Properties/Accident/AccidentType/roadAccident
 תאונת דרכים
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime
+זמן התאונה
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime/notDuringWork
+לא בזמן העבודה
+
+
+# HealthRelatedRights/Properties/Accident/AccidentTime/duringWork
+בזמן העבודה
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation
+תאונה קשורה לעבודה
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation/unrelated
+לא קשורה
+
+
+# HealthRelatedRights/Properties/Accident/AccidentWorkRelation/related
+קשורה
 
 
 # HealthRelatedRights/Benefits
@@ -186,6 +218,8 @@
 # HealthRelatedRights/Recommendations/niiAccidentPayment
 פיצויי תאונה מביטוח לאומי
 יש לבדוק זכאות לפיצויים מביטוח לאומי. על בסיס ביטוח תאונות אישיות.
+---
+ניתן לפנות ללשכת ״יד מכוונת״ של ביטוח לאומי לייעוץ חינם. [פרטים](https://www.btl.gov.il/snifim/Pages/yadMechavenet1.aspx?gclid=CjwKCAiA1rPyBRAREiwA1UIy8NkDdMQRXPece5TwZBe3Mk4rGD1Sf9lcKvCMYEl8PB94lQixwk3L4xoCWjsQAvD_BwE).
 
 # HealthRelatedRights/Duties/declaration_OnlyAdultToUseBenefits
 הצהרת בוגר נהנה יחיד
@@ -773,6 +807,7 @@ https://www.prisha.co.il/article/%D7%A4%D7%93%D7%99%D7%95%D7%9F-%D7%99%D7%9E%D7%
 עד 6 שבועות באישור רופא
 ---
 אם בעקבות ההפלה מצבה הבריאותי של העובדת מחייב היעדרות ארוכה יותר, העובדת יכולה להביא אישור רופא, ובכך תהא זכאית להיעדר עד 6 שבועות מהעבודה
+
 # HealthRelatedRights/Duties/workRelatedInjuryNisClaim
 תביעת בט״ל לדמי פגיעה
 יש להגיש לביטוח לאומי תביעה לדמי פגיעה
@@ -780,6 +815,13 @@ https://www.prisha.co.il/article/%D7%A4%D7%93%D7%99%D7%95%D7%9F-%D7%99%D7%9E%D7%
 – על העובד להגיש טופס תביעה לביטוח לאומי והודעה על פגיעה בעבודה בצירוף מסמכים רפואיים רלוונטיים.
 לנוהל הגשת תביעה לביטוח לאומי המלא ראו
 [כאן](https://www.btl.gov.il/benefits/Work_Injury/%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94/Pages/%D7%90%D7%95%D7%A4%D7%9F%20%D7%94%D7%92%D7%A9%D7%AA%20%D7%AA%D7%91%D7%99%D7%A2%D7%94%20%D7%9C%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94.aspx).
+
+# HealthRelatedRights/Duties/workRelatedInjuryNisClaim
+טופס בל250
+על המעסיק למלא באופן מיידי טופס בל250 בקשה למתן טיפול רפואי לנפגע עבודה
+---
+לינק לטופס:
+https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
 
 # HealthRelatedRights/Benefits/WorkRelatedHealthIssues
 זכויות בתאונות עבודה
@@ -807,3 +849,36 @@ https://www.prisha.co.il/article/%D7%A4%D7%93%D7%99%D7%95%D7%9F-%D7%99%D7%9E%D7%
 # HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
 hourlySickDays
 Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.
+
+# HealthRelatedRights/Duties/workRelatedEmployerStatement
+הצהרת מעביד על תאונה
+על המעביד למלא באופן מיידי טופב בל/250
+---
+טופס זה הוא בקשה למתן טיפול רפואי לנפגע תאונת עבודה.
+
+לינק לטופס:
+https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
+
+# HealthRelatedRights/Notices/palestinianWorkRelatedIllness
+זכאות לטיפול (פלסטינאים)
+זכאות לטיפול בישראל, או להחזר הוצאות מביטוח לאומי על טיפולים בגדה.
+---
+אתה זכאי לקבלת טיפול רפואי ומשקם בישראל. לחלופין, אתה זכאי לקבל טיפולים אלו בגדה, ולקבל החזר הוצאות מול קבלות מביטוח לאומי.
+
+# HealthRelatedRights/Notices/noPermitWorkRelatedIllness
+זכות לטיפול (לא רשומים)
+זכאות לטיפול גם בלי ביטוח. קבלת גמלאות רק עם עזיבת ישראל
+---
+אתה זכאי לטיפול רפואי גם אם אינך מבוטח. אם התאונה הוכרה כתאונת עבודה, תהיה זכאי לקצבאות רק אחרי שתעזוב את ישראל.
+
+# HealthRelatedRights/Recommendations/possiblyWorkRelatedAccident
+קישור תאונה לעבודה
+מכיוון שלא ברור האם התאונה קשורה לעבודה, מומלץ לפנות לייעוץ בארגון סיוע, או ל-״יד מכוונת״ של ביטוח לאומי.
+[לאתר ״יד מכוונת״](https://www.btl.gov.il/snifim/Pages/yadMechavenet1.aspx?gclid=CjwKCAiA1rPyBRAREiwA1UIy8NkDdMQRXPece5TwZBe3Mk4rGD1Sf9lcKvCMYEl8PB94lQixwk3L4xoCWjsQAvD_BwE)
+
+# HealthRelatedRights/Recommendations/workRelatedChronicDisease
+ייעוץ מרופא תעסוקתי
+מומלץ להתייעץ עם רופא המתמחה במחלות הקשורות לעבודה.
+---
+על הרופא למלא טופס דיווח על חשד למחלה תעסוקתית:
+https://www.health.gov.il/DocLib/occupational-register-report.pdf

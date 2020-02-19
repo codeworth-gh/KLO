@@ -1,7 +1,7 @@
 HealthRelatedRights: consists of Duties, Benefits, Recommendations, Notices, Properties.
 
 Properties[Factual description of the case]: consists of LegalStatus, Gender, EmploymentDescription,
-                                                          Pregnancy, AccidentType,
+                                                          Pregnancy, Accident,
                                                           Parenting, RelationToSickPerson, InternalFlags.
 
 Duties[What the employee is required do]: some of
@@ -20,6 +20,7 @@ Duties[What the employee is required do]: some of
   roadAccidentDocumentation_DamageEvidence[Documentation proving that a damage was done (e.g. photos of the damaged car)],
   roadAccidentDocumentation_CivilService[Civil service workers need to report road accidents to their manager.],
   workRelatedInjuryNisClaim[A claim to national insurance for injury allowance],
+  workRelatedEmployerStatement[Employer must fill form BL250 *immediately*.],
   updateEmployer[Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.]
 .
 
@@ -32,7 +33,9 @@ Notices[Relevant information for case in point]: some of
   cantRedeemSickDays[You cannot redeem your sick days by being paid for them (unlike vacation days).],
   canRedeemSomeSickDays[You might be able to redeem some sick days. See TAKSHIR.],
   paySickFeesWithSalary[Employer has to pay for sick leave on the same date as the salary. Otherwise, it constitutes a wage withholding.],
-  civilServicePersonalSickStatement[You're allowed up to two sick days per year based on own statement (no doctor statement needed).]
+  civilServicePersonalSickStatement[You're allowed up to two sick days per year based on own statement (no doctor statement needed).],
+  palestinianWorkRelatedIllness[You are eligible for getting all medical and restirative treatments in Israel. If you decline, you can get in the west bank, and receive monetary refunds based on receipts, from Israel's BTL.],
+  noPermitWorkRelatedIllness[You are eligible for medical treatment even if you have no insurance. You are eligible for allowance if the accident is recognized as a work accident, only after leaving Israel.]
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -55,7 +58,9 @@ Recommendations: some of
   pregnancyRelatedIssuesNotCovered[The medical insurance will not cover any pregrnancy-related issues.],
   b1VisaDuringSickness[Arrange visa for the duration of the sickness. For illnesses 3 months or longer, it is possible to get a tourist visa. ],
   checkWorkContractBenefits[Check if your work contract gives you additional rights.],
-  extendedMiscarriageLeave[eligible to up to 6 week leave, pending on medical doctor approval]
+  extendedMiscarriageLeave[eligible to up to 6 week leave, pending on medical doctor approval],
+  possiblyWorkRelatedAccident[Since it is not clear whether the accident is related to work, it is recommended that you consult worker aid organizations, or a BTL's "guiding hand" center.],
+  workRelatedChronicDisease[Consult an occupational doctor. Fill the BTL form at refer to an occupational doctor, fill form at: https://www.health.gov.il/DocLib/occupational-register-report.pdf]
 .
 
 LegalStatus: one of israeliCitizenship, b1Visa, palestinian, noPermit.
@@ -72,7 +77,11 @@ RelationToSickPerson[How is the worker related to the person whose health issues
                           childOfSick,
                           self.
 Pregnancy: one of regular, complicated, fertilityTreatments, miscarriage.
+
+Accident: consists of AccidentType, AccidentTime, AccidentWorkRelation.
 AccidentType: one of other, roadAccident.
+AccidentTime: one of notDuringWork, duringWork.
+AccidentWorkRelation: one of unrelated, related.
 
 EmploymentDescription: consists of SalaryUnits, EmploymentType, EmploymentScope, Sector.
 SalaryUnits: one of unset, monthly, daily, hourly.
@@ -177,7 +186,7 @@ MaxSickDays[Amount of sick days, varies by sector]: one of
 
 MiscarriageSickDays: one of
   week[Up to 7 days based on sick day allowance],
-  weekCivilService[Up to 7 days based on sick day allowance, immediatly after the miscarriage],
+  weekCivilService[Up to 7 days based on sick day allowance, immediately after the miscarriage],
   fullMaternityLeave[Full maternity leave, including other maternity benefits (same as non-silent birth)].
 
 InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: some of

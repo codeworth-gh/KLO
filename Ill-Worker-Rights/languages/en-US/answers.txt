@@ -60,3 +60,6 @@ yes, partially: yes, partially
 driver: driver
 passanger: passanger
 pedestrian/bike rider: pedestrian/bike rider
+chronic disease: chronic disease
+medical event: medical event
+passenger: passenger
