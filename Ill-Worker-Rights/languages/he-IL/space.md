@@ -289,6 +289,10 @@
 * ימים 2 ו-3 למחלה - חצי משכורת יומית
 * יום 4 ואילך - משכורת מלאה
 
+# HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
+מלאים(?)
+ככל הנראה העובד זכאי לדמי מחלה מלאים החל מיום המחלה הראשון
+
 # HealthRelatedRights/Benefits/SicknessPay/fullFromDayOne
 מלאים
 פיצויי מחלה מלאים החל מהיום הראשון למחלה
@@ -564,10 +568,6 @@ https://www.meuhedet.co.il/en/
 ---
 במקרים מסוימים ניתן לדרוש בתחילת ההליך תשלום על חשבון הסכום שייפסק בסיום התביעה. תשלום זה מכונה "תשלום תכוף" ורצוי לפנות לייעוץ משפטי בטרם הצגת הדרישה לחברת הביטוח או לבית המשפט.
 
-# HealthRelatedRights/Benefits/SicknessPay/fullFromDayOneProbably
-דמי מחלה מלאים מיד
-העובד זכאי לדמי מחלה מלאים החל מיום המחלה הראשון
-
 # HealthRelatedRights/Benefits/ChildSickness/disabledChildDays
 זכאות ילד נכה
 ניתן לדרוש 18 ימים ו-52 שעות על מנת לטפל בילד נכה
@@ -587,7 +587,6 @@ https://www.meuhedet.co.il/en/
 ניתן לדרוש עד 16 יום בשנה לטיפול במחלות הילד
 
 # HealthRelatedRights/Benefits/ChildSickness/singleParentDialisisMalignantChildDays
-singleParentDialisisMalignantChildDays
 ימי מחלה הורה יחיד לילד חולה כרוני
 ניתן לדרוש עד 110 ימים לטיפול בילד
 ---
