@@ -5,7 +5,10 @@
   }
 ]
 [set: SalaryUnits=unset; Sector=unset]
-[set: Duties+=supportingMedicalDocumentation; Notices+=kupatHolimNotice; Recommendations+=checkWorkContractBenefits]
+[set:
+  Duties+=supportingMedicalDocumentation,updateEmployer;
+  Notices+=kupatHolimNotice, paySickFeesWithSalary;
+  Recommendations+=checkWorkContractBenefits]
 [>sIntro< section:
   {title: Introduction}
   [>initialFilter-missWork< ask:
@@ -69,6 +72,15 @@
         }
       ]
     }
+  }
+]
+[consider:
+  {slot:Sector}
+  {options:
+    {civilService: [set: Notices+=canRedeemSomeSickDays] }
+  }
+  {else:
+    [set: Notices+=cantRedeemSickDays]
   }
 ]
 
@@ -203,7 +215,7 @@
         {slot: Sector}
         {options:
           {unset: [set: MaxSickDays=regular] }
-          {civilService: [todo: find civil service sick days accumulation scheme][set: MaxSickDays=regular]}
+          {civilService: [set: MaxSickDays=ext25_90]}
           {manpower: [set: MaxSickDays=ext2_130]}
           {houseKeeping: [set: MaxSickDays=regular]}
           {security: [set: MaxSickDays=ext2_130]}

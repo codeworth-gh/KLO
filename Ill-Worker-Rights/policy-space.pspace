@@ -19,7 +19,8 @@ Duties[What the employee is required do]: some of
   roadAccidentDocumentation_NonDriver[Id, medical docs, details of the hitting driver and car],
   roadAccidentDocumentation_DamageEvidence[Documentation proving that a damage was done (e.g. photos of the damaged car)],
   roadAccidentDocumentation_CivilService[Civil service workers need to report road accidents to their manager.],
-  workRelatedInjuryNisClaim[A claim to national insurance for injury allowance]
+  workRelatedInjuryNisClaim[A claim to national insurance for injury allowance],
+  updateEmployer[Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.]
 .
 
 Notices[Relevant information for case in point]: some of
@@ -27,7 +28,11 @@ Notices[Relevant information for case in point]: some of
   fertilityTreatmentsAbsence[Absence for fertility treatment is based on sick days. Partial absence is also possible, with full payment from the first hour.],
   fertilityTreatmentsPartialWorkAbsence[Days off amount are proportional to the job position part size. If a full position is considered to be more than 182 hours, number of hours will be calculated as 182.],
   hourlyWorkerCloseRelative[Can use sick days allowance to attend to a close sick relative.],
-  roadAccidentAllowanceSubtraction[Road accident allowances may be substracted from insurance fees]
+  roadAccidentAllowanceSubtraction[Road accident allowances may be substracted from insurance fees],
+  cantRedeemSickDays[You cannot redeem your sick days by being paid for them (unlike vacation days).],
+  canRedeemSomeSickDays[You might be able to redeem some sick days. See TAKSHIR.],
+  paySickFeesWithSalary[Employer has to pay for sick leave on the same date as the salary. Otherwise, it constitutes a wage withholding.],
+  civilServicePersonalSickStatement[You're allowed up to two sick days per year based on own statement (no doctor statement needed).]
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -78,7 +83,7 @@ EmploymentType: one of selfEmployed, employee.
 
 ProcessFairness[Was the severance process OK and legal]: one of ok, flawed, illegal.
 
-Sector: one of unset, civilService[State workers], manpower,
+Sector: one of unset, civilService[People workimg for the state], manpower,
                 houseKeeping, security, eventFacilities[e.g. wedding gardens],
                 hotels.
 
@@ -164,6 +169,7 @@ FertilityTreatmentSickDays: one of
 
 MaxSickDays[Amount of sick days, varies by sector]: one of
   regular[Can claim 1.5 days per employment month, up to 90 days. Work contract may enable more.],
+  ext25_90[Can claim 2.5 days per employment month, up to 90 days.],
   ext2_130[Can claim 2 days per employment month, up to 130 days],
   ext66[Can claim up to 66 days per year],
   ext110[Can claim up to 110 days per year],

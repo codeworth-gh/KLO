@@ -87,8 +87,8 @@
         [>employmentType< ask:
           {text: How were you employed? }
           {answers:
-            { direct:          [set: Employment/Type=direct] }
-            { contractor:
+            {direct: [set: Employment/Type=direct] }
+            {contractor:
               [set: Employment/Type=contractor]
               [>contractorChange< ask:
                 {text: Was the contractor employing you replaced by another contractor, and you stayed, in effect, at the same work place?}
@@ -97,8 +97,8 @@
                 }
               ]
             }
-            { jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
-            { freelance:
+            {jointEmployment: [set: Employment/Type=jointEmployment; Notices += jointEmploymentNotice] }
+            {freelance:
               [set: Employment/Type=freelance; Recommendations+=consultLawyer]
               [>freelanceSummary< reject: You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.]
             }
