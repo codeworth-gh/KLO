@@ -1,5 +1,6 @@
-Why did you have to leave this job?
+لماذا قررت أن تترك العمل ؟
 
 ### Terms
-* *employer collapse*: E.g. chapter 11, bankruptcy (either formal or not)
-* *employer change*: E.g. company takover, nursing a wife and then moving to nursing her husband.
+* *عجز صاحب العمل عن مزاولة العمل*: حسب المادة ١١ إعلان الافلاس
+
+* *تغيير صاحب العمل*:  إستحواذ على الشركة, nursing a wife and then moving to nursing her husband.

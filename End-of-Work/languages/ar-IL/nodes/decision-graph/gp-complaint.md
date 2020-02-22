@@ -1,1 +1,1 @@
-Were you fired after filing a complaint or getting advice from a lawyer?
+هل تم طردك بعد تقديم شكوى أو إستشارة محامي؟

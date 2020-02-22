@@ -1,1 +1,1 @@
-What's your current status in Israel? 
+ما نوع الاقامه لديك في اسرائيل ؟

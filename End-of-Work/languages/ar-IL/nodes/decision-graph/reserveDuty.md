@@ -1,1 +1,1 @@
-Where you fired during reserve duty, or within 30 days of completing one?
+هل تم طردك خلال الخدمة الاحتياطية(الجيش) ، أو بعد ختم الخدمة الإحتياطية ب-٣٠ يوم ؟

@@ -1,1 +1,1 @@
-Is your new home at least 40 km from your old home?
+هل يبتعد مكان اقامتك الجديد على الأقل ٤٠ كيلومتر من مكان اقامتك السابق ؟

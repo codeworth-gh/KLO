@@ -1,1 +1,1 @@
-Are you a woman?
+هل أنت إمرأة ؟

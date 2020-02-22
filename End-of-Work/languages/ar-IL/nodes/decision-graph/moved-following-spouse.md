@@ -1,4 +1,4 @@
-Which of the following apply
+أياً من التالي ينطبق على حالتك ؟
 
 ### Terms
-* *Moved in with spouse*: The spouse has to live there before, not just you two guys moving in together.
+* يجب على الزوجة/الزوج أن يكونو مقيمين هناك من قبل.

@@ -1,1 +1,1 @@
-Do you plan to stay in Israel?
+هل تنوي على البقاء في إسرائيل؟

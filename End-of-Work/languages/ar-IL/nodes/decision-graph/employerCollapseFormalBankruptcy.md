@@ -1,1 +1,1 @@
-Is the employer formally declared as bankrupt?
+هل أعلن صاحب العمل إفلاسه ؟

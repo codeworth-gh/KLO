@@ -1,1 +1,1 @@
-can your workplace be adjusted to your medical condition?
+هل يمكن (مواءمة) تكييف مكان عملك ليراعي حالتك الصحية ؟ (إصابة، إعاقة )

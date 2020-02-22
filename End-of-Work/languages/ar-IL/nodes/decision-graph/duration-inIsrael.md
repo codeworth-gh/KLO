@@ -1,1 +1,1 @@
-How long have you been in Israel?
+ما هي المدة التي مكثت بها في إسرائيل ؟

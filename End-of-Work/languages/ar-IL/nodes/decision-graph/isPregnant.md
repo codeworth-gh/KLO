@@ -1,1 +1,1 @@
-Were you pregnant when your employment ended?
+هل كنت حامل حين طردك من العمل ؟

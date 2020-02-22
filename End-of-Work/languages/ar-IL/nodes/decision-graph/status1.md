@@ -1,1 +1,1 @@
-Are you an Israeli citizen?
+هل أنت مواطن إسرائيلي ؟ 

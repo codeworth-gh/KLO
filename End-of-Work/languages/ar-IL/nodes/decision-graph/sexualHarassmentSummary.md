@@ -1,1 +1,1 @@
-Sexual harassment is a complicated issue that should be handled by a lawyer. If you do not have one, we can refer you is needed.
+التحرش الجنسي أمر خطير ومعقد، يجب التعامل معه من خلال توكيل محامي ! إن لم يكن لديك محامي فنحن قادرين على مساعدتك في هذا الأمر .

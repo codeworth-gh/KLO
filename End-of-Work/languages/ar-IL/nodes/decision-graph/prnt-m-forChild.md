@@ -1,1 +1,1 @@
-Are you single, or does your wife has a job? 
+هل أنت أعزب أو يوجد لدى زوجتك وظيفة ؟ 

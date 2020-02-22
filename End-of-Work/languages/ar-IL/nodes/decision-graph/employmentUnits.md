@@ -1,1 +1,1 @@
-How was your salary calculated?
+كيف تم حساب معاشك ؟ 

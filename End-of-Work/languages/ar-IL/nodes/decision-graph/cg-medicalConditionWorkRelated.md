@@ -1,1 +1,1 @@
-Do you think your medical condition is related to your work?
+هل تظن أن حالتك الطبية (إصابة ، إعاقة هي نتيجة عملك ؟

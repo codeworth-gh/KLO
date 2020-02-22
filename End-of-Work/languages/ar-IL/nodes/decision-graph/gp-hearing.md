@@ -1,4 +1,4 @@
-Did you get a hearing prior to being fired?
+هل قام صاحب العمل بنقاش سبب طردك في جلسة معك؟
 
 ### Terms
-* *hearing*: A meeting with the employer to declared as "before job termination" talk.
+* *جلسة*: لقاء مع صاحب العمل يناقش به سبب طردك 

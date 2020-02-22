@@ -1,1 +1,1 @@
-How long were you employed?
+ما هي المدة التي اشتغلت بها  ؟

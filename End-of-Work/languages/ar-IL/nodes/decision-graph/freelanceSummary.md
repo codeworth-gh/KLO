@@ -1,1 +1,1 @@
-You still be able to get some benefits. We recommend consulting a lawyer, we can refer you if needed.
+لك الحق في إستلام تعويضات، ننصحك في إستشارة محامي . نستطيع أن نشيرك إلى محامي في حال احتياجك إلى ذلك .

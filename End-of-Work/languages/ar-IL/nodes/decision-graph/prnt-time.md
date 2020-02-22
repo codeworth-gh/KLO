@@ -1,4 +1,4 @@
-Did more than 9 month pass since the day you've recevied the child
+هل مرت ٩ أشهر على وفود طفلك إلى عائلتك النووية؟ 
 
 ### Terms
-* *day*: Date of birth, adoption, or other way of becoming a legal guardian of the child.
+* *وفود* يعني : يوم الولاده ، يوم التبني أو يوم إستلام ولاية الأمر 

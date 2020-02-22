@@ -1,4 +1,5 @@
-Were you fired during maternity leave?
+
+هل تم طردك خلال إجازة الأمومة ؟ 
 
 ### Terms
-* *maternity leave*: including for fathers and adopting parents.
+* *إجازة الأمومة*: تشمل الآباء والمتبنيين  

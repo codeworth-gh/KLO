@@ -1,1 +1,1 @@
-The health issue that made me leave is:
+الحالة الصحية(الاصابة/الاعاقة) التي اجبرتك على ترك عملك هي

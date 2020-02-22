@@ -1,4 +1,3 @@
-Are you living with your sick relative, and providing for him?
-
+هل تسكن مع الأقرباء الذين يحتاجون إلى رعايتك؟
 ### Terms
-* *providing*: Taking active part in financing his/her needs.
+* *الرعاية*: تعني أنك تتحمل المسؤولية الكاملة في الصرف عنهم 

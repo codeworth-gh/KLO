@@ -1,4 +1,4 @@
-Did you move because of status change regarding your spouse?
+هل غيرت مكان سكنك بسبب تغير طبيعة العلاقة مع زوجك/زوجتك ؟
 
 ### Terms
-* *status change*: Marriage, divorce, moving in together...
+* تغير العلاقة يعني : زواج ، طلاق ، أو الإنتقال للعيش معاً

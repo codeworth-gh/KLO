@@ -1,1 +1,1 @@
-What was the scope of your employment?
+ما هو نوع الدوام في عملك الماضي؟ 

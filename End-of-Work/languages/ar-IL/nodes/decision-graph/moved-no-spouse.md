@@ -1,1 +1,1 @@
-Did you move to any of the following
+ما هي طبيعة المنطقة التي تم الانتقال إليها ؟

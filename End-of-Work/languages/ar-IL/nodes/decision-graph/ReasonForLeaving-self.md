@@ -1,1 +1,1 @@
-What is the reason for your decision to leave this job?
+ما كان السبب الذي دفعك إلى ترك عمالك ؟

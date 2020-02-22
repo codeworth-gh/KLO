@@ -1,1 +1,1 @@
-How were you employed? 
+ما كانت علاقتك مع صاحب العمل ؟
