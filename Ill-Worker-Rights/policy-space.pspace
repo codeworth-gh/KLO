@@ -194,6 +194,10 @@ InternalFlags[Internal data sotred for the interview. Can be safely ignored.]: s
   foreignWorker[Not Israeli or Palestinian],
   pregnancy, lightIllness, sixDayWorkweek.
 
-WorkRelatedHealthIssues: one of
+WorkRelatedHealthIssues: consists of WR_InjuryAllowance, WR_Benefits.
+
+WR_InjuryAllowance: one of
   reducedInjuryAllowance,
   injuryAllowance.
+
+WR_Benefits: some of workDisabilityAllowance, treatmentTravelExpenses.

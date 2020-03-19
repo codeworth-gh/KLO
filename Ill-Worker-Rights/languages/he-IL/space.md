@@ -811,11 +811,14 @@ https://www.prisha.co.il/article/%D7%A4%D7%93%D7%99%D7%95%D7%9F-%D7%99%D7%9E%D7%
 תביעת בט״ל לדמי פגיעה
 יש להגיש לביטוח לאומי תביעה לדמי פגיעה
 ---
+לשם קבלת הטיפול, על העובד שנפגע לפנות לקופת החולים בה הוא מבוטח. עובד שכיר יפנה לקבלת הטיפול עם טופס בקשה למתן טיפול רפואי, שמולא ע"י המעסיק או אדם מטעמו.
+עובד עצמאי יפנה לקבלת הטיפול עם טופס בקשה למתן טיפול רפואי לעצמאי. השירות יינתן ישירות ע"י קופת החולים או באמצעות נותני שירות מטעם הקופה/ ספקים הנמצאים בהסדר עם הקופה (אלא אם מדובר בטיפולי שיניים, עזרה ראשונה או טיפול פרטי שהקופה אישרה מראש).
+
 – על העובד להגיש טופס תביעה לביטוח לאומי והודעה על פגיעה בעבודה בצירוף מסמכים רפואיים רלוונטיים.
 לנוהל הגשת תביעה לביטוח לאומי המלא ראו
 [כאן](https://www.btl.gov.il/benefits/Work_Injury/%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94/Pages/%D7%90%D7%95%D7%A4%D7%9F%20%D7%94%D7%92%D7%A9%D7%AA%20%D7%AA%D7%91%D7%99%D7%A2%D7%94%20%D7%9C%D7%93%D7%9E%D7%99%20%D7%A4%D7%92%D7%99%D7%A2%D7%94.aspx).
 
-# HealthRelatedRights/Duties/workRelatedInjuryNisClaim
+# HealthRelatedRights/Duties/workRelatedEmployerStatement
 טופס בל250
 על המעסיק למלא באופן מיידי טופס בל250 בקשה למתן טיפול רפואי לנפגע עבודה
 ---
@@ -824,9 +827,21 @@ https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
 
 # HealthRelatedRights/Benefits/WorkRelatedHealthIssues
 זכויות בתאונות עבודה
+---
+ביטוח תאונות עבודה חל על כלל העובדים בישראל, כולל עובדים זרים. עובדים שנפגעו במהלך עבודתם זכאים לתשלום דמי פגיעה מהמוסד לביטוח לאומי עבור ימי ההיעדרות מהעבודה והוצאות הטיפול הרפואי.
+
+[טפסים לנפגעי תאונת עבודה באתר ביטול לאומי](https://www.btl.gov.il/%D7%98%D7%A4%D7%A1%D7%99%D7%9D%20%D7%95%D7%90%D7%99%D7%A9%D7%95%D7%A8%D7%99%D7%9D/forms/Work_Disability_and_Dependants_forms/Pages/default.aspx).
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance
+דמי פגיעה
+תשלום מביטוח לאומי לתקופה קצרה לאחר הפגיעה, הנועד לעזור בשיקום המיידי של הנפגע.
+---
+נפגעי עבודה בתקופה שלאחר הפגיעה- במהלך התקופה שבה הם אינם יכולים לעבוד ועד 90 ימים מיום הפגיעה, זכאים לתשלום דמי פגיעה ולטיפול רפואי חינם, שיסייעו להם לעבור את הימים שלאחר הפגיעה. דמי הפגיעה משולמים לכל היותר עבור 13 שבועות ולא יעלו על 1,114.38 ₪ ליום (נכון ל-2020). הוצאות הפינוי וההעברה ע"י אמבולנס ביום הפגיעה בלבד יוחזרו באמצעות קופת החולים.
 
 
-# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/reducedInjuryAllowance
+[היקף הטיפול הרפואי באתר המוסד לביטוח לאומי](https://www.btl.gov.il/benefits/Work_Injury/TipulRefui/Pages/HekefTipul.aspx).
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance/reducedInjuryAllowance
 דמי פגיעה
 מבוטח שעל פי אישור רפואי אינו מסוגל לעבוד, זכאי לתשלום דמי פגיעה כפיצוי על אובדן שכר או הכנסה.
 ---
@@ -836,7 +851,7 @@ https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
 [כאן](https://www.kolzchut.org.il/he/%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%93%D7%9E%D7%99_%D7%94%D7%A4%D7%92%D7%99%D7%A2%D7%94_%D7%9C%D7%A0%D7%A4%D7%92%D7%A2_%D7%AA%D7%90%D7%95%D7%A0%D7%AA_%D7%A2%D7%91%D7%95%D7%93%D7%94).
 
 
-# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/injuryAllowance
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance/injuryAllowance
 דמי פגיעה מופחתים
 מבוטח שאיבד את כושר עבודתו באופן חלקי, זכאי לתשלום דמי פגיעה כפיצוי על אובדן שכר או הכנסה.
 ---
@@ -845,6 +860,21 @@ https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
 מבוטח שנגרם לו אי-כושר עבודה חלקי ושעות עבודתו צומצמו על פי אישור רופא קופת חולים, זכאי לדמי פגיעה מופחתים, בהתאם לשעות העבודה שנקבעו באישור הרפואי.
 לפירוט חישוב דמי הפגיעה ראו:
 [כאן](https://www.kolzchut.org.il/he/%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%93%D7%9E%D7%99_%D7%94%D7%A4%D7%92%D7%99%D7%A2%D7%94_%D7%9C%D7%A0%D7%A4%D7%92%D7%A2_%D7%AA%D7%90%D7%95%D7%A0%D7%AA_%D7%A2%D7%91%D7%95%D7%93%D7%94).
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits
+סימונים
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits/workDisabilityAllowance
+קצבת נכות מעבודה?
+תיתכן זכאות לקצבת נכות מעבודה
+---
+נפגעי תאונות עבודה שיש להם דרגת נכות יציבה הגבוהה מ-%5 יכולים להיות זכאים לקצבת נכות מעבודה. תביעה לקביעת דרגת נכות מעבודה תטופל רק אם הוגשה קודם לכן תביעה לדמי פגיעה, שבעקבותיה הוכרה הפגיעה כפגיעה בעבודה.
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits/treatmentTravelExpenses
+דמי נסיעה לטיפול
+---
+נפגעי עבודה שהמוסד לביטוח לאומי הכיר בפגיעתם כפגיעה בעבודה זכאים, בהתאם לתנאים, להחזר מלא של הוצאות נסיעה לקבלת הטיפול הרפואי הקשור לפגיעה.
+
 # HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
 hourlySickDays
 Employee that missed work due to sickness can't be fired while they're still eligible for sickness pay.

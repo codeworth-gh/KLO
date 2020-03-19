@@ -703,21 +703,23 @@ Make sure the salary units are set.
     {answers:
       {yes, fully:
         [set: Duties+=supportingMedicalDocumentation;
-           WorkRelatedHealthIssues=injuryAllowance]
+           WR_InjuryAllowance=injuryAllowance;
+           WR_Benefits+=workDisabilityAllowance]
       }
       {yes, partially:
         [set: Duties+=supportingMedicalDocumentation;
-           WorkRelatedHealthIssues=reducedInjuryAllowance]
+           WR_InjuryAllowance=reducedInjuryAllowance;
+           WR_Benefits+=workDisabilityAllowance]
       }
       {no:
-        [todo: I'm assuming this is regular sick days?]
+        [todo: work related accident with no permanent damage. I'm assuming this is regular sick days?]
       }
     }
   ]
   [>wrab-accident-when< ask:
     {text: Did the accident happen while you were working?}
     {answers:
-      {yes: [set: AccidentTime=duringWork]}
+      {yes: [set: AccidentTime=duringWork; WR_Benefits+=treatmentTravelExpenses]}
       {no:  [set: AccidentTime=notDuringWork]}
     }
   ]

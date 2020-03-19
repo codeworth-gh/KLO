@@ -870,3 +870,27 @@ Since it is not clear whether the accident is related to work, it is recommended
 workRelatedChronicDisease
 Consult an occupational doctor. Fill the BTL form at refer to an occupational doctor, fill form at: https://www.health.gov.il/DocLib/occupational-register-report.pdf
 
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance
+WR_InjuryAllowance
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance/reducedInjuryAllowance
+reducedInjuryAllowance
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_InjuryAllowance/injuryAllowance
+injuryAllowance
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits
+WR_Benefits
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits/workDisabilityAllowance
+workDisabilityAllowance
+
+
+# HealthRelatedRights/Benefits/WorkRelatedHealthIssues/WR_Benefits/treatmentTravelExpenses
+treatmentTravelExpenses
+
+
