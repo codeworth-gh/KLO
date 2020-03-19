@@ -19,9 +19,11 @@ Duties[What the employee is required do]: some of
   roadAccidentDocumentation_NonDriver[Id, medical docs, details of the hitting driver and car],
   roadAccidentDocumentation_DamageEvidence[Documentation proving that a damage was done (e.g. photos of the damaged car)],
   roadAccidentDocumentation_CivilService[Civil service workers need to report road accidents to their manager.],
+  workAccidentClaimLimit[Must claim work related accident benefits within a year of the accident],
   workRelatedInjuryNisClaim[A claim to national insurance for injury allowance],
   workRelatedEmployerStatement[Employer must fill form BL250 *immediately*.],
-  updateEmployer[Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.]
+  updateEmployer[Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.],
+  professionalDiseaseMedicalStatement[Worker must present a disease statement from a doctor.]
 .
 
 Notices[Relevant information for case in point]: some of
@@ -35,7 +37,10 @@ Notices[Relevant information for case in point]: some of
   paySickFeesWithSalary[Employer has to pay for sick leave on the same date as the salary. Otherwise, it constitutes a wage withholding.],
   civilServicePersonalSickStatement[You're allowed up to two sick days per year based on own statement (no doctor statement needed).],
   palestinianWorkRelatedIllness[You are eligible for getting all medical and restirative treatments in Israel. If you decline, you can get in the west bank, and receive monetary refunds based on receipts, from Israel's BTL.],
-  noPermitWorkRelatedIllness[You are eligible for medical treatment even if you have no insurance. You are eligible for allowance if the accident is recognized as a work accident, only after leaving Israel.]
+  noPermitWorkRelatedIllness[You are eligible for medical treatment even if you have no insurance. You are eligible for allowance if the accident is recognized as a work accident, only after leaving Israel.],
+  workRelatedNotice[Many notices, see localizations],
+  professionalDiseaseNotice[Many notices, see localizations],
+  injuryAllowanceSelfEmployed[Allowance is paid for the entire absence period (up to 91 days), starting after the first 12 days.]
 .
 
 Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSickness,
@@ -46,7 +51,7 @@ Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSic
                       MaxSickDays, FertilityTreatmentSickDays, MiscarriageSickDays, WorkRelatedHealthIssues.
 
 Recommendations: some of
-  niiAccidentPayment[Check eligibility for NII payemnt due to the accident. This is a personal accidents insurance.],
+  niiAccidentPayment[Check eligibility for NII payemnt due to an accident. This is a personal accidents insurance.],
   noEligibilityForSickDays[Worker is not eligible for sick days from the employer because of this condition.],
   freelanceConsultLawyer[Freelance workers should consult a lawyer regarding benefits from their employers.],
   checkPrivateInsuranceCoverage[Your private insurance policy may cover your condition. It will not cover fertility or psychologial treatment.],

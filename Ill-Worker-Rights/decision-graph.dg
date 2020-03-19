@@ -83,7 +83,14 @@
     [set: Notices+=cantRedeemSickDays]
   }
 ]
-
+[when:
+  {EmploymentType=selfEmployed:
+    [when:
+      {WR_InjuryAllowance=injuryAllowance: [set: Notices+=injuryAllowanceSelfEmployed]}
+      {WR_InjuryAllowance=reducedInjuryAllowance: [set: Notices+=injuryAllowanceSelfEmployed]}
+    ]
+  }
+]
 <********************>
 <* END OF MAIN PART *>
 <********************>
@@ -744,7 +751,7 @@ Make sure the salary units are set.
     }
     { AccidentTime=notDuringWork; AccidentWorkRelation=related:
       [>wrad-accident-type< ask:
-        {text: Do you suffer from a medical event or a crhonic disease?}
+        {text: Do you suffer from a medical event or from a crhonic disease?}
         {answers:
           {chronic disease: [set: Recommendations+=workRelatedChronicDisease]}
           {medical event: }
@@ -758,11 +765,39 @@ Make sure the salary units are set.
       [call: pSeriousIllness][end]
     }
   ]
-  [call: pWorkRelatedIllness]
+  [when:
+     {AccidentWorkRelation=related: [set: Duties+=workAccidentClaimLimit]}
+  ]
+  [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement;
+     Recommendations+=niiAccidentPayment]
 --]
 
 [-->pWorkRelatedIllness<
-  [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement;
-       Recommendations+=niiAccidentPayment]
-  [todo: work-related illness]
+  [set: Recommendations+=workRelatedChronicDisease]
+  [>wri-filter< ask:
+    {text: Is your disease in the official professional diseases list, published by NII?}
+    {answers:
+      {no:[end]}
+    }
+  ]
+  [>wri-IsFull< ask:
+    {text: Did you lose your ability to work because of the illness?}
+    {answers:
+      {yes, fully:
+        [set: Duties+=supportingMedicalDocumentation;
+           WR_InjuryAllowance=injuryAllowance;
+           WR_Benefits+=workDisabilityAllowance]
+      }
+      {yes, partially:
+        [set: Duties+=supportingMedicalDocumentation;
+           WR_InjuryAllowance=reducedInjuryAllowance;
+           WR_Benefits+=workDisabilityAllowance]
+      }
+      {no:}
+    }
+  ]
+  [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement,professionalDiseaseMedicalStatement;
+       Recommendations+=niiAccidentPayment;
+       Notices+=professionalDiseaseNotice]
+
 --]
