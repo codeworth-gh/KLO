@@ -23,7 +23,8 @@ Duties[What the employee is required do]: some of
   workRelatedInjuryNisClaim[A claim to national insurance for injury allowance],
   workRelatedEmployerStatement[Employer must fill form BL250 *immediately*.],
   updateEmployer[Must update employer of sick leave within 3 days of the first day of missing work. Provide an leave duration estimate if possible.],
-  professionalDiseaseMedicalStatement[Worker must present a disease statement from a doctor.]
+  professionalDiseaseMedicalStatement[Worker must present a disease statement from a doctor.],
+  requestWorkplaceAdjustments[The worker has to request her employer to adjust her workplace to better fit her limitations.]
 .
 
 Notices[Relevant information for case in point]: some of
@@ -48,7 +49,8 @@ Benefits: consists of SimpleBenefits, PaidSicknessDays, ChildSickness, ParentSic
                       PersonalAccidentCompensation, UnpaidLeave, CompensationAccumulation,
                       SeverenceBenefits, TaxExemptions, IncomeSecurity, ProlongedMaternatyLeave,
                       UnpaidVacation, PrivateInsuranceCompensation, MedicalCare, SicknessPay,
-                      MaxSickDays, FertilityTreatmentSickDays, MiscarriageSickDays, WorkRelatedHealthIssues.
+                      MaxSickDays, FertilityTreatmentSickDays, MiscarriageSickDays,
+                      WorkRelatedHealthIssues, SeriousIllness.
 
 Recommendations: some of
   niiAccidentPayment[Check eligibility for NII payemnt due to an accident. This is a personal accidents insurance.],
@@ -173,6 +175,8 @@ ProlongedMaternatyLeave: TODO.
 UnpaidVacation: TODO.
 PrivateInsuranceCompensation: TODO.
 MedicalCare: TODO.
+
+SeriousIllness: some of workplaceAdjustments.
 
 FertilityTreatmentSickDays: one of
   s4d16[Up to 4 series, 16 days each, max total of 64 days yearly, based on regular sick days],

@@ -632,7 +632,8 @@ Make sure the salary units are set.
       {israeliCitizenship: [set: Recommendations+=niiAccidentPayment] }
     }
   ]
-  [todo: serious illness - pending student work]
+  [set: Duties+=requestWorkplaceAdjustments;
+        SeriousIllness += workplaceAdjustments]
 --]
 
 [-->pLightIllness<
@@ -770,6 +771,7 @@ Make sure the salary units are set.
   ]
   [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement;
      Recommendations+=niiAccidentPayment]
+  [when:{LegalStatus=noPermit: [set: Notices+=noPermitWorkRelatedIllness]}]
 --]
 
 [-->pWorkRelatedIllness<
@@ -799,5 +801,5 @@ Make sure the salary units are set.
   [set: Duties+=workRelatedInjuryNisClaim,workRelatedEmployerStatement,professionalDiseaseMedicalStatement;
        Recommendations+=niiAccidentPayment;
        Notices+=professionalDiseaseNotice]
-
+  [when:{LegalStatus=noPermit: [set: Notices+=noPermitWorkRelatedIllness]}]
 --]
