@@ -658,6 +658,12 @@ https://www.meuhedet.co.il/en/
 # HealthRelatedRights/Notices
 הודעות
 
+# HealthRelatedRights/Notices/injuryAllowanceSelfEmployed
+תשלום דמי פגיעה-עצמאים
+---
+ישולמו דמי פגיעה עבור כל תקופת ההעדרות (עד 91 יום). תחילת התשלום תהיה 12 יום לאחר אירוע הפגיעה.
+
+
 # HealthRelatedRights/Notices/kupatHolimNotice
 אישורים מקופת חולים
 יש להביא אישורים רפואיים מקופת החולים בה החולה חבר. מעסיקים רשאים להתעלם מאישורים רפואיים מרופאים פרטיים.
@@ -758,6 +764,10 @@ https://www.prisha.co.il/article/%D7%A4%D7%93%D7%99%D7%95%D7%9F-%D7%99%D7%9E%D7%
 # HealthRelatedRights/Benefits/SeveranceProtection
 הגנה בפני פיטורין
 
+
+# HealthRelatedRights/Benefits/SeveranceProtection/hourlySickDays
+ימי מחלה לֿעובדים שעתיים
+אין לפטר עובד שעתי שהפסיד עבודה אם הוא עדיין זכאי לימי מחלה
 
 # HealthRelatedRights/Benefits/SeveranceProtection/fertilityGeneral
 טיפולי פוריות
@@ -949,6 +959,9 @@ https://www.btl.gov.il/טפסים%20ואישורים/Documents/T250.pdf
 ---
 על הרופא למלא טופס דיווח על חשד למחלה תעסוקתית:
 https://www.health.gov.il/DocLib/occupational-register-report.pdf
+
+# HealthRelatedRights/Benefits/SeriousIllness
+נכות או מחלה קשה
 
 # HealthRelatedRights/Benefits/SeriousIllness/workplaceAdjustments
 התאמת מקום עבודה
